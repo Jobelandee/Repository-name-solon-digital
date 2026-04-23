@@ -1,24 +1,62 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import IndustriesScale from './components/IndustriesScale';
+import OurStory from './components/OurStory';
+import AuditForm from './components/AuditForm';
+import ConfirmationPage from './components/ConfirmationPage';
+import InsightsPage from './components/InsightsPage';
+import MethodPage from './components/MethodPage';
+import ContactPage from './components/ContactPage';
+import ChatBot from './components/ChatBot';
 import './App.css';
+
+function Layout({ children }) {
+
+  return (
+    <div className="min-h-screen bg-alabaster">
+      <Header />
+      <div className="pt-20">{children}</div>
+      <footer className="bg-soft-stone text-charcoal py-12 px-6 border-t border-gold border-opacity-20">
+        <div className="max-w-6xl mx-auto text-center space-y-4">
+          <p className="text-charcoal">
+            Solon Digital - Building Smart Websites That Work
+          </p>
+          <p className="text-gray-dark text-sm opacity-70">
+            Copyright 2025. All rights reserved.
+          </p>
+        </div>
+      </footer>
+      <ChatBot />
+    </div>
+  );
+}
+
+function Home() {
+  return (
+    <Layout>
+      <Hero />
+      <IndustriesScale />
+      <OurStory />
+      <div id="audit">
+        <AuditForm />
+      </div>
+    </Layout>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/confirmation" element={<ConfirmationPage />} />
+        <Route path="/insights" element={<Layout><InsightsPage /></Layout>} />
+        <Route path="/method" element={<Layout><MethodPage /></Layout>} />
+        <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
+      </Routes>
+    </Router>
   );
 }
 
