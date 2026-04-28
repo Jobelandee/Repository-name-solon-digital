@@ -10,6 +10,7 @@ import InsightsPage from './components/InsightsPage';
 import MethodPage from './components/MethodPage';
 import ContactPage from './components/ContactPage';
 import ChatBot from './components/ChatBot';
+import WhatsAppButton from './components/WhatsAppButton';
 import './App.css';
 
 function Layout({ children }) {
@@ -29,6 +30,7 @@ function Layout({ children }) {
         </div>
       </footer>
       <ChatBot />
+      <WhatsAppButton />
     </div>
   );
 }

@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { getChatResponse } from '../services/claudeApi';
+import { websiteContent } from '../data/websiteContent';
 
 export default function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { id: 1, text: 'Hola! 👋 How can I help you today?', sender: 'bot' }
+    { id: 1, text: 'Hola! 👋 How can I help you today? Ask me anything about our services, pricing, or process!', sender: 'bot' }
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -18,26 +20,6 @@ export default function ChatBot() {
     scrollToBottom();
   }, [messages]);
 
-  const faqResponses = {
-    'price': 'Our custom website packages start at €2,500 for small businesses. Each project is tailored to your specific needs.',
-    'cost': 'Website development costs depend on complexity. Basic sites: €2,500. E-commerce: €5,000+. Let\'s discuss your budget!',
-    'contact': 'You can reach us via WhatsApp, email at info@solondigital.com, or fill out our booking form on this page.',
-    'how long': 'Most projects take 4-6 weeks from start to launch. We\'ll give you a timeline once we understand your needs.',
-    'features': 'We build custom sites with fast loading, mobile optimization, booking systems, chatbots, and SEO setup.',
-    'booking': 'You can book a free strategy call using the form below, or message us via WhatsApp!',
-    'payment': 'We accept all major payment methods. Payment plans available for larger projects.',
-    'services': 'We offer: custom website design, e-commerce setup, booking systems, chatbot integration, and digital strategy.',
-    'help': `I can help you with:
-• Pricing & costs
-• Our services
-• Booking information
-• Contact details
-• Timeline & process
-• Payment options
-
-Just ask your question!`
-  };
-
   const handleSend = async (e) => {
     e.preventDefault();
     if (!input.trim()) return;
@@ -47,25 +29,29 @@ Just ask your question!`
     setInput('');
     setLoading(true);
 
-    setTimeout(() => {
-      const lowerInput = input.toLowerCase();
-      let response = 'Great question! For more detailed information, please reach out via WhatsApp or our booking form. 😊';
-
-      Object.keys(faqResponses).forEach(key => {
-        if (lowerInput.includes(key)) {
-          response = faqResponses[key];
-        }
-      });
+    try {
+      // Call Claude API with website content context
+      const response = await getChatResponse(input, websiteContent);
 
       const botMessage = {
         id: Date.now() + 1,
-        text: response,
-        sender: 'bot'
+        text: response.error ? response.message : response.message,
+        sender: 'bot',
+        showWhatsAppButton: response.suggestWhatsApp && !response.error,
       };
 
       setMessages(prev => [...prev, botMessage]);
+    } catch (error) {
+      console.error('Chat error:', error);
+      const errorMessage = {
+        id: Date.now() + 1,
+        text: 'Sorry, I encountered an error. Please try again or reach us via WhatsApp: +34 621 80 58 64',
+        sender: 'bot',
+      };
+      setMessages(prev => [...prev, errorMessage]);
+    } finally {
       setLoading(false);
-    }, 600);
+    }
   };
 
   return (
@@ -140,19 +126,44 @@ Just ask your question!`
                   style={{
                     display: 'flex',
                     justifyContent: msg.sender === 'user' ? 'flex-end' : 'flex-start',
+                    alignItems: msg.showWhatsAppButton ? 'flex-start' : 'auto',
                   }}
                 >
-                  <div style={{
-                    background: msg.sender === 'user' ? '#D4AF37' : 'rgba(255, 255, 255, 0.08)',
-                    color: msg.sender === 'user' ? '#000' : '#DDD',
-                    padding: '0.8rem 1rem',
-                    borderRadius: '8px',
-                    maxWidth: '80%',
-                    wordWrap: 'break-word',
-                    fontSize: '0.9rem',
-                    lineHeight: 1.4,
-                  }}>
-                    {msg.text}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', maxWidth: '80%' }}>
+                    <div style={{
+                      background: msg.sender === 'user' ? '#D4AF37' : 'rgba(255, 255, 255, 0.08)',
+                      color: msg.sender === 'user' ? '#000' : '#DDD',
+                      padding: '0.8rem 1rem',
+                      borderRadius: '8px',
+                      wordWrap: 'break-word',
+                      fontSize: '0.9rem',
+                      lineHeight: 1.4,
+                    }}>
+                      {msg.text}
+                    </div>
+                    {msg.showWhatsAppButton && (
+                      <motion.a
+                        href={websiteContent.contact.whatsAppLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        style={{
+                          background: '#25D366',
+                          color: '#FFFFFF',
+                          padding: '0.6rem 1rem',
+                          borderRadius: '6px',
+                          textDecoration: 'none',
+                          fontSize: '0.85rem',
+                          fontWeight: 600,
+                          textAlign: 'center',
+                          cursor: 'pointer',
+                          border: 'none',
+                          display: 'block',
+                        }}
+                      >
+                        💬 Chat on WhatsApp
+                      </motion.a>
+                    )}
                   </div>
                 </motion.div>
               ))}
@@ -176,49 +187,80 @@ Just ask your question!`
               <div ref={messagesEndRef} />
             </div>
 
-            {/* Input */}
-            <form
-              onSubmit={handleSend}
-              style={{
-                padding: '1rem',
-                borderTop: '1px solid rgba(212, 175, 55, 0.2)',
-                display: 'flex',
-                gap: '0.6rem',
-              }}
-            >
-              <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask anything..."
+            {/* Input Footer */}
+            <div style={{
+              padding: '0.75rem',
+              borderTop: '1px solid rgba(212, 175, 55, 0.2)',
+              background: 'rgba(0, 0, 0, 0.5)',
+            }}>
+              {/* Chat Input Form */}
+              <form
+                onSubmit={handleSend}
                 style={{
-                  flex: 1,
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  border: '1px solid rgba(212, 175, 55, 0.2)',
-                  borderRadius: '6px',
-                  padding: '0.6rem 0.8rem',
-                  color: '#FFF',
-                  fontSize: '0.9rem',
-                  outline: 'none',
-                }}
-              />
-              <button
-                type="submit"
-                disabled={loading}
-                style={{
-                  background: '#D4AF37',
-                  color: '#000',
-                  border: 'none',
-                  borderRadius: '6px',
-                  padding: '0.6rem 1rem',
-                  cursor: 'pointer',
-                  fontWeight: 600,
-                  opacity: loading ? 0.7 : 1,
+                  display: 'flex',
+                  gap: '0.6rem',
+                  marginBottom: '0.6rem',
                 }}
               >
-                Send
-              </button>
-            </form>
+                <input
+                  type="text"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  placeholder="Ask anything..."
+                  style={{
+                    flex: 1,
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '1px solid rgba(212, 175, 55, 0.2)',
+                    borderRadius: '6px',
+                    padding: '0.6rem 0.8rem',
+                    color: '#FFF',
+                    fontSize: '0.9rem',
+                    outline: 'none',
+                  }}
+                />
+                <button
+                  type="submit"
+                  disabled={loading}
+                  style={{
+                    background: '#D4AF37',
+                    color: '#000',
+                    border: 'none',
+                    borderRadius: '6px',
+                    padding: '0.6rem 1rem',
+                    cursor: 'pointer',
+                    fontWeight: 600,
+                    opacity: loading ? 0.7 : 1,
+                  }}
+                >
+                  Send
+                </button>
+              </form>
+
+              {/* WhatsApp Quick Link */}
+              <motion.a
+                href={websiteContent.contact.whatsAppLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.02 }}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  background: '#25D366',
+                  color: '#FFFFFF',
+                  padding: '0.5rem 1rem',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  fontSize: '0.85rem',
+                  fontWeight: 600,
+                  width: '100%',
+                  border: 'none',
+                  cursor: 'pointer',
+                }}
+              >
+                💬 Chat on WhatsApp
+              </motion.a>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

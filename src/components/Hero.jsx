@@ -164,9 +164,9 @@ export default function Hero() {
               Start Your Audit →
             </motion.a>
 
-            {/* Ghost Secondary Button */}
+            {/* Ghost Secondary Button - Links to Our Story */}
             <motion.a
-              href="#vision"
+              href="#our-story"
               whileHover={{ scale: 1.07, y: -3 }}
               whileTap={{ scale: 0.96 }}
               style={{
@@ -196,7 +196,7 @@ export default function Hero() {
                 e.currentTarget.style.boxShadow = 'none';
               }}
             >
-              View the Blueprint
+              Our Story →
             </motion.a>
           </motion.div>
 

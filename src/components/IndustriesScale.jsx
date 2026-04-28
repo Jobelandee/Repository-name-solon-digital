@@ -2,31 +2,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { websiteContent } from '../data/websiteContent';
 
 export default function IndustriesScale() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: false, amount: 0.2 });
 
-  const industries = [
-    {
-      title: 'Gyms & Padelclubs',
-      glowColor: '#D4AF37',
-      accentColor: '#4A90E2',
-      text: 'Stop the WhatsApp booking chaos. Automate your courts and grow your community.',
-    },
-    {
-      title: 'Real Estate',
-      glowColor: '#8B7355',
-      accentColor: '#D4A574',
-      text: 'Convert global searchers into pre-qualified leads. High-performance landing pages for Tenerife property.',
-    },
-    {
-      title: 'Local Services',
-      glowColor: '#FFD700',
-      accentColor: '#FFA500',
-      text: 'From Restaurants to Spas. Be found on page 1 of Google and automate your inquiries.',
-    },
-  ];
+  // Map websiteContent industries to the format used here
+  const industries = websiteContent.industries.map(ind => ({
+    title: ind.title,
+    glowColor: ind.glowColor,
+    accentColor: ind.accentColor,
+    text: ind.description,
+  }));
 
   return (
     <section
@@ -88,7 +76,7 @@ export default function IndustriesScale() {
               textShadow: '0 8px 32px rgba(212, 175, 55, 0.25)',
             }}
           >
-            The Cost of Waiting
+            {websiteContent.sections.industriesTitle}
           </h2>
           <p
             style={{
@@ -100,7 +88,7 @@ export default function IndustriesScale() {
               letterSpacing: '-0.005em',
             }}
           >
-            Every day you delay is a day your competitors gain ground.
+            {websiteContent.sections.industriesSubtitle}
           </p>
         </motion.div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { websiteContent } from '../data/websiteContent';
 
 export default function ContactPage() {
   return (
@@ -137,7 +138,7 @@ export default function ContactPage() {
               Quick chat via WhatsApp
             </p>
             <a
-              href="https://wa.me/34612345678?text=Hola!%20I'm%20interested%20in%20your%20website%20services"
+              href={websiteContent.contact.whatsAppLink}
               target="_blank"
               rel="noopener noreferrer"
               style={{

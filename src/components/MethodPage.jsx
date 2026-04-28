@@ -1,34 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { websiteContent } from '../data/websiteContent';
 
 export default function MethodPage() {
-  const methods = [
-    {
-      num: '1',
-      title: 'Discovery & Strategy',
-      description: 'We start by understanding your business, goals, and target audience to create a tailored digital strategy.',
-    },
-    {
-      num: '2',
-      title: 'Design & Planning',
-      description: 'Our team designs a beautiful, functional website that aligns with your brand and user needs.',
-    },
-    {
-      num: '3',
-      title: 'Development',
-      description: 'We build your website with clean code, fast performance, and the latest web technologies.',
-    },
-    {
-      num: '4',
-      title: 'Testing & Launch',
-      description: 'Rigorous testing ensures everything works perfectly before launch on your domain.',
-    },
-    {
-      num: '5',
-      title: 'Support & Growth',
-      description: 'Post-launch support and continuous optimization to help your website grow and convert.',
-    },
-  ];
+  const methods = websiteContent.method;
 
   return (
     <div style={{
@@ -59,14 +34,14 @@ export default function MethodPage() {
           marginBottom: '1rem',
           letterSpacing: '-0.02em',
         }}>
-          Our Method
+          {websiteContent.sections.methodTitle}
         </h1>
         <p style={{
           fontSize: '1.1rem',
           color: '#666',
           lineHeight: 1.6,
         }}>
-          We follow a proven process that ensures your website is built right, launches smoothly, and drives real results for your business.
+          {websiteContent.sections.methodSubtitle}
         </p>
       </motion.div>
 

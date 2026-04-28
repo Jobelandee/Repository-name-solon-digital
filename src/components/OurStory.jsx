@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { websiteContent } from '../data/websiteContent';
 
 export default function OurStory() {
   const ref = useRef(null);
@@ -9,6 +10,7 @@ export default function OurStory() {
 
   return (
     <section
+      id="our-story"
       ref={ref}
       style={{
         background: 'linear-gradient(180deg, #0a0a0a 0%, #0a0a0a 100%)',
@@ -112,9 +114,9 @@ export default function OurStory() {
                 paddingTop: '0.5rem',
               }}
             >
-              Dutch Innovation.{' '}
+              {websiteContent.story.headline.split('.')[0]}.{' '}
               <span style={{ color: '#D4AF37', display: 'block' }}>
-                Tenerife Roots.
+                {websiteContent.story.headline.split('.')[1]}.
               </span>
             </h2>
 
@@ -135,17 +137,11 @@ export default function OurStory() {
                 gap: '1.5rem',
               }}
             >
-              <p style={{ margin: 0 }}>
-                We moved from the Netherlands to Tenerife because we saw a massive gap: local businesses losing hours to manual work and thousands in revenue to outdated digital tools. We saw the potential, and we moved here to fix it.
-              </p>
-
-              <p style={{ margin: 0 }}>
-                We don't just build websites; we build{' '}
-                <span style={{ color: '#D4AF37', fontWeight: 600 }}>
-                  AI-driven systems
-                </span>{' '}
-                that act as your most efficient employee, saving you time and money.
-              </p>
+              {websiteContent.story.narrative.map((paragraph, idx) => (
+                <p key={idx} style={{ margin: 0 }}>
+                  {paragraph}
+                </p>
+              ))}
             </motion.div>
 
             {/* Founder Cards — Stacked on Mobile, 2-Col on Desktop */}

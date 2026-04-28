@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../config/firebase';
 import { sendEmails } from '../services/emailService';
 
@@ -42,34 +42,34 @@ export default function AuditForm() {
       return;
     }
 
+    const bookingData = {
+      name: formData.name,
+      businessName: formData.businessName,
+      whatsapp: formData.whatsapp,
+      email: formData.email || `${formData.name}@booking.local`,
+      createdAt: new Date().toISOString(),
+      status: 'pending',
+    };
+
+    // Save to localStorage immediately
+    localStorage.setItem('bookingData', JSON.stringify(bookingData));
+
+    // Try Firebase & Email in background (don't wait)
     try {
-      const bookingData = {
-        name: formData.name,
-        businessName: formData.businessName,
-        whatsapp: formData.whatsapp,
-        email: formData.email || `${formData.name}@booking.local`,
-        createdAt: serverTimestamp(),
-        status: 'pending',
-      };
-
-      try {
-        await addDoc(collection(db, 'bookings'), bookingData);
-        await sendEmails(bookingData);
-      } catch (firebaseErr) {
-        console.warn('Firebase/Email error (non-critical):', firebaseErr.message);
-      }
-
-      setSubmitted(true);
-      localStorage.setItem('bookingData', JSON.stringify(bookingData));
-      setTimeout(() => {
-        navigate('/confirmation');
-      }, 1500);
+      addDoc(collection(db, 'bookings'), bookingData).catch(() => {});
+      sendEmails(bookingData).catch(() => {});
     } catch (err) {
-      setError('Something went wrong. Please try again.');
-      console.error(err);
-    } finally {
-      setLoading(false);
+      // Silently fail - don't block user experience
     }
+
+    // Mark as submitted and redirect
+    setSubmitted(true);
+    setLoading(false);
+
+    // Redirect to confirmation
+    setTimeout(() => {
+      navigate('/confirmation');
+    }, 600);
   };
 
   return (
