@@ -12,6 +12,12 @@ export default function ConfirmationPage() {
   useEffect(() => {
     if (!bookingData) {
       navigate('/');
+    } else {
+      // Auto redirect after 4 seconds on confirmation page
+      const timer = setTimeout(() => {
+        navigate('/');
+      }, 4000);
+      return () => clearTimeout(timer);
     }
   }, [bookingData, navigate]);
 
