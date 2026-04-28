@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../config/firebase';
 import { sendEmails } from '../services/emailService';
+import { saveBookingToSheet } from '../services/googleSheetsService';
 
 export default function AuditForm() {
   const ref = useRef(null);
@@ -54,10 +55,11 @@ export default function AuditForm() {
     // Save to localStorage immediately
     localStorage.setItem('bookingData', JSON.stringify(bookingData));
 
-    // Try Firebase & Email in background (don't wait)
+    // Try Firebase, Email & Google Sheets in background (don't wait)
     try {
       addDoc(collection(db, 'bookings'), bookingData).catch(() => {});
       sendEmails(bookingData).catch(() => {});
+      saveBookingToSheet(bookingData).catch(() => {});
     } catch (err) {
       // Silently fail - don't block user experience
     }

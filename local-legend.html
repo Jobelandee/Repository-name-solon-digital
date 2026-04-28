@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Legend - Solon Digital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 4/5;
+            background: #000;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: none;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 40px;
+            text-align: center;
+            background: #000;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        /* Slide 1 - Premium Hook */
+        .slide-1 {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+        }
+
+        /* Slide 2 - Before/After */
+        .slide-2 {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+        }
+
+        /* Slide 3 - Template Problem */
+        .slide-3 {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+        }
+
+        /* Slide 4 - Design Philosophy */
+        .slide-4 {
+            background: linear-gradient(135deg, #2a2a2a 0%, #0d0d0d 100%);
+            border-top: 3px solid #D4AF37;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 72px;
+            font-weight: 700;
+            color: #D4AF37;
+            line-height: 1.1;
+            letter-spacing: -2px;
+        }
+
+        .subtitle {
+            font-size: 36px;
+            color: #D4AF37;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 32px;
+            color: #fff;
+            line-height: 1.4;
+            max-width: 100%;
+        }
+
+        .small-text {
+            font-size: 24px;
+            color: #999;
+        }
+
+        .highlight {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+
+        .accent-line {
+            width: 100px;
+            height: 4px;
+            background: #D4AF37;
+            margin: 40px auto;
+        }
+
+        /* Before/After Comparison */
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .comparison-item {
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .old-school {
+            background: rgba(200, 50, 50, 0.15);
+            border: 2px solid rgba(200, 50, 50, 0.5);
+        }
+
+        .new-solon {
+            background: rgba(212, 175, 55, 0.15);
+            border: 2px solid #D4AF37;
+        }
+
+        .comparison-label {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .old-school .comparison-label {
+            color: #ff6b6b;
+        }
+
+        .new-solon .comparison-label {
+            color: #D4AF37;
+        }
+
+        .comparison-desc {
+            font-size: 18px;
+            color: #fff;
+            line-height: 1.4;
+        }
+
+        /* Problem List */
+        .problem-list {
+            text-align: left;
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        .problem-item {
+            font-size: 24px;
+            color: #fff;
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .problem-item:before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #ff6b6b;
+            font-weight: 700;
+        }
+
+        .cta-button {
+            background: #D4AF37;
+            color: #000;
+            padding: 28px 60px;
+            font-size: 24px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 40px;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* Navigation */
+        .nav-buttons {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 20;
+        }
+
+        .nav-btn {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #D4AF37;
+            background: transparent;
+            color: #D4AF37;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-btn:hover {
+            background: #D4AF37;
+            color: #000;
+        }
+
+        /* Indicators */
+        .indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 20;
+        }
+
+        .indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+            background: #D4AF37;
+            width: 24px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .slide {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .comparison {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <!-- Slide 1: Premium Hook -->
+        <div class="slide slide-1 active">
+            <div class="content">
+                <h1>Your Business<br>is Premium</h1>
+                <div class="accent-line"></div>
+                <h1 style="color: #fff; font-size: 56px;">Your Digital Presence<br>Should Be Too</h1>
+            </div>
+        </div>
+
+        <!-- Slide 2: Before/After Design -->
+        <div class="slide slide-2">
+            <div class="content">
+                <div class="subtitle">The Difference</div>
+
+                <div class="comparison">
+                    <div class="comparison-item old-school">
+                        <div class="comparison-label">Old School</div>
+                        <div class="comparison-desc">
+                            Busy. Cluttered. Template-based. Looks like everyone else.
+                        </div>
+                    </div>
+                    <div class="comparison-item new-solon">
+                        <div class="comparison-label">Solon</div>
+                        <div class="comparison-desc">
+                            Clean. Intentional. Custom. Uniquely yours.
+                        </div>
+                    </div>
+                </div>
+
+                <p style="font-size: 24px; margin-top: 40px; color: #D4AF37;">Space. Silence. Focus.</p>
+            </div>
+        </div>
+
+        <!-- Slide 3: Template Problem -->
+        <div class="slide slide-3">
+            <div class="content">
+                <h1 style="font-size: 60px;">Why Template Sites<br>Kill Your Brand</h1>
+                <div class="accent-line"></div>
+
+                <div class="problem-list">
+                    <div class="problem-item">Padel clubs all look the same</div>
+                    <div class="problem-item">Real estate gets lost in clutter</div>
+                    <div class="problem-item">Premium doesn't look premium</div>
+                    <div class="problem-item">No personality. No trust.</div>
+                </div>
+
+                <p style="font-size: 26px; color: #D4AF37; margin-top: 40px; font-weight: 700;">
+                    Your clients deserve better.<br>You deserve better.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 4: Design Philosophy -->
+        <div class="slide slide-4">
+            <div class="content">
+                <h1 style="font-size: 68px;">Clean Design<br>is the Silent<br>Ambassador<br>of Your Brand</h1>
+                <div class="accent-line"></div>
+
+                <p style="font-size: 28px; color: #fff; margin: 40px 0;">
+                    Every pixel matters. Every space serves a purpose.
+                </p>
+
+                <p class="small-text">Luxury doesn't shout. It whispers. And people listen.</p>
+
+                <button class="cta-button">Start Your Design</button>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <button class="nav-btn" id="prev">❮</button>
+            <button class="nav-btn" id="next">❯</button>
+        </div>
+
+        <!-- Indicators -->
+        <div class="indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+
+            slides[n].classList.add('active');
+            indicators[n].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        document.getElementById('next').addEventListener('click', nextSlide);
+        document.getElementById('prev').addEventListener('click', prevSlide);
+
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solon Digital - Instagram Carousel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 4/5;
+            background: #000;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: none;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 40px;
+            text-align: center;
+            background: #000;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        /* Slide 1 - Hero with image */
+        .slide-1 {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('IMG_8978.jpg') center/cover;
+            background-attachment: fixed;
+        }
+
+        .slide-1 .content {
+            z-index: 10;
+        }
+
+        /* Slide 2 - Problem */
+        .slide-2 {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+        }
+
+        /* Slide 3 - Solution */
+        .slide-3 {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+        }
+
+        /* Slide 4 - Examples */
+        .slide-4 {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+        }
+
+        /* Slide 5 - CTA */
+        .slide-5 {
+            background: linear-gradient(135deg, #2a2a2a 0%, #0d0d0d 100%);
+            border-top: 3px solid #D4AF37;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        h1 {
+            font-size: 72px;
+            font-weight: 700;
+            color: #D4AF37;
+            line-height: 1.1;
+            letter-spacing: -2px;
+        }
+
+        .subtitle {
+            font-size: 36px;
+            color: #D4AF37;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 32px;
+            color: #fff;
+            line-height: 1.4;
+            max-width: 100%;
+        }
+
+        .highlight {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+
+        .accent-line {
+            width: 100px;
+            height: 4px;
+            background: #D4AF37;
+            margin: 40px auto;
+        }
+
+        .slide-2 h1,
+        .slide-3 h1,
+        .slide-4 h1,
+        .slide-5 h1 {
+            font-size: 64px;
+        }
+
+        /* Examples Grid */
+        .examples-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .example-item {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff;
+        }
+
+        .example-item strong {
+            color: #D4AF37;
+            display: block;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            background: #D4AF37;
+            color: #000;
+            padding: 28px 60px;
+            font-size: 24px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 40px;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Navigation */
+        .nav-buttons {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 20;
+        }
+
+        .nav-btn {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #D4AF37;
+            background: transparent;
+            color: #D4AF37;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-btn:hover {
+            background: #D4AF37;
+            color: #000;
+        }
+
+        /* Slide Indicators */
+        .indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 20;
+        }
+
+        .indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+            background: #D4AF37;
+            width: 24px;
+            border-radius: 4px;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            .slide {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .nav-buttons {
+                bottom: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <!-- Slide 1: Hero -->
+        <div class="slide slide-1 active">
+            <div class="content">
+                <h1 style="font-size: 54px;">Business Owner<br>You're Losing Money</h1>
+                <div class="accent-line"></div>
+                <p style="font-size: 24px; color: #fff; font-weight: 600; margin-top: 30px;">We're Here to Fix It</p>
+                <button class="cta-button" style="margin-top: 40px;">Let's Talk</button>
+            </div>
+        </div>
+
+        <!-- Slide 2: Problem -->
+        <div class="slide slide-2">
+            <div class="content">
+                <div class="subtitle">The Problem</div>
+                <h1>Manual Processes<br>Lose You Money</h1>
+                <div class="accent-line"></div>
+                <p>Booking calls manually? Leads falling through the cracks? Your website not converting?</p>
+                <p style="font-size: 16px; color: #999; margin-top: 10px;">Every hour you spend on repetitive tasks is revenue left on the table.</p>
+            </div>
+        </div>
+
+        <!-- Slide 3: Solution -->
+        <div class="slide slide-3">
+            <div class="content">
+                <div class="subtitle">The Solution</div>
+                <h1>AI Systems That<br>Generate Sales<br>While You Sleep</h1>
+                <div class="accent-line"></div>
+                <p>Transform your business into a <span class="highlight">24/7 revenue machine</span></p>
+                <p style="font-size: 16px; color: #999;">Automation that works. Always.</p>
+            </div>
+        </div>
+
+        <!-- Slide 4: What We Do -->
+        <div class="slide slide-4">
+            <div class="content">
+                <div class="subtitle">What We Build</div>
+                <h1 style="font-size: 38px; margin-bottom: 20px;">AI-Powered Systems</h1>
+
+                <div class="examples-grid">
+                    <div class="example-item">
+                        <strong>📅 Automated Booking</strong>
+                        24/7 appointment scheduling
+                    </div>
+                    <div class="example-item">
+                        <strong>🎯 Lead Generation</strong>
+                        AI captures & qualifies leads
+                    </div>
+                    <div class="example-item">
+                        <strong>🌐 AI Websites</strong>
+                        That convert visitors to sales
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: CTA -->
+        <div class="slide slide-5">
+            <div class="content">
+                <h1>Stop Losing Money<br>to Old Systems</h1>
+                <div class="accent-line"></div>
+                <p style="margin-bottom: 10px;">Let's calculate how much time & revenue you're wasting</p>
+                <p style="font-size: 14px; color: #999;">Get a free AI audit for your business</p>
+                <button class="cta-button">DM Us Now</button>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <button class="nav-btn" id="prev">❮</button>
+            <button class="nav-btn" id="next">❯</button>
+        </div>
+
+        <!-- Indicators -->
+        <div class="indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+            <span class="indicator" data-slide="4"></span>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+
+            slides[n].classList.add('active');
+            indicators[n].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        document.getElementById('next').addEventListener('click', nextSlide);
+        document.getElementById('prev').addEventListener('click', prevSlide);
+
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+    </script>
+</body>
+</html>
