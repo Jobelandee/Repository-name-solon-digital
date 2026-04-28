@@ -69,7 +69,7 @@ export default function AuditForm() {
     // Redirect to confirmation
     setTimeout(() => {
       navigate('/confirmation');
-    }, 600);
+    }, 4000);
   };
 
   return (
