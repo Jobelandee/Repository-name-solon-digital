@@ -67,8 +67,8 @@ export default function ContactPage() {
               border: '1px solid #e8e8e8',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = '#D4AF37';
-              e.currentTarget.style.boxShadow = '0 12px 32px rgba(212, 175, 55, 0.15)';
+              e.currentTarget.style.borderColor = '#0077BE';
+              e.currentTarget.style.boxShadow = '0 12px 32px rgba(0, 119, 190, 0.15)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.borderColor = '#e8e8e8';
@@ -92,7 +92,7 @@ export default function ContactPage() {
               Send us an email anytime
             </p>
             <a href="mailto:job@gymtogether.nl" style={{
-              color: '#D4AF37',
+              color: '#0077BE',
               textDecoration: 'none',
               fontWeight: 600,
             }}>
@@ -164,8 +164,8 @@ export default function ContactPage() {
               border: '1px solid #e8e8e8',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = '#D4AF37';
-              e.currentTarget.style.boxShadow = '0 12px 32px rgba(212, 175, 55, 0.15)';
+              e.currentTarget.style.borderColor = '#0077BE';
+              e.currentTarget.style.boxShadow = '0 12px 32px rgba(0, 119, 190, 0.15)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.borderColor = '#e8e8e8';
@@ -189,7 +189,7 @@ export default function ContactPage() {
               Schedule your free strategy session
             </p>
             <a href="/#audit" style={{
-              color: '#D4AF37',
+              color: '#0077BE',
               textDecoration: 'none',
               fontWeight: 600,
             }}>

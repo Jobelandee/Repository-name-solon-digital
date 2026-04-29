@@ -46,8 +46,8 @@ export default function Stats() {
           right: 0,
           bottom: 0,
           backgroundImage: `
-            linear-gradient(0deg, transparent 24%, rgba(212, 175, 55, 0.03) 25%, rgba(212, 175, 55, 0.03) 26%, transparent 27%, transparent 74%, rgba(212, 175, 55, 0.03) 75%, rgba(212, 175, 55, 0.03) 76%, transparent 77%, transparent),
-            linear-gradient(90deg, transparent 24%, rgba(212, 175, 55, 0.03) 25%, rgba(212, 175, 55, 0.03) 26%, transparent 27%, transparent 74%, rgba(212, 175, 55, 0.03) 75%, rgba(212, 175, 55, 0.03) 76%, transparent 77%, transparent)
+            linear-gradient(0deg, transparent 24%, rgba(0, 119, 190, 0.03) 25%, rgba(0, 119, 190, 0.03) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.03) 75%, rgba(0, 119, 190, 0.03) 76%, transparent 77%, transparent),
+            linear-gradient(90deg, transparent 24%, rgba(0, 119, 190, 0.03) 25%, rgba(0, 119, 190, 0.03) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.03) 75%, rgba(0, 119, 190, 0.03) 76%, transparent 77%, transparent)
           `,
           backgroundSize: '60px 60px',
           opacity: 0.2,
@@ -120,7 +120,7 @@ function StatCard({ stat, index, inView }) {
       style={{
         background: 'rgba(255, 255, 255, 0.05)',
         backdropFilter: 'blur(15px)',
-        border: '1px solid rgba(212, 175, 55, 0.15)',
+        border: '1px solid rgba(0, 119, 190, 0.15)',
         borderRadius: '16px',
         padding: '4rem 3rem',
         textAlign: 'center',
@@ -143,14 +143,14 @@ function StatCard({ stat, index, inView }) {
           letterSpacing: '-0.02em',
           background: stat.isLava
             ? 'linear-gradient(135deg, #FF8C00, #FFB700, #FFFFFF)'
-            : 'linear-gradient(135deg, #D4AF37, #FFFFFF)',
+            : 'linear-gradient(135deg, #0077BE, #FFFFFF)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
           textShadow: stat.isLava
             ? '0 0 30px rgba(255, 140, 0, 0.5), 0 8px 30px rgba(255, 140, 0, 0.3)'
-            : '0 0 30px rgba(212, 175, 55, 0.5), 0 8px 30px rgba(212, 175, 55, 0.3)',
-          filter: stat.isLava ? 'drop-shadow(0 0 20px rgba(255, 140, 0, 0.6))' : 'drop-shadow(0 0 20px rgba(212, 175, 55, 0.5))',
+            : '0 0 30px rgba(0, 119, 190, 0.5), 0 8px 30px rgba(0, 119, 190, 0.3)',
+          filter: stat.isLava ? 'drop-shadow(0 0 20px rgba(255, 140, 0, 0.6))' : 'drop-shadow(0 0 20px rgba(0, 119, 190, 0.5))',
         }}
       >
         {stat.keyword}
@@ -164,7 +164,7 @@ function StatCard({ stat, index, inView }) {
         style={{
           fontSize: '1.1rem',
           fontWeight: 700,
-          color: stat.isLava ? '#FFB700' : '#D4AF37',
+          color: stat.isLava ? '#FFB700' : '#0077BE',
           marginBottom: '1.5rem',
           letterSpacing: '0.05em',
           textTransform: 'uppercase',

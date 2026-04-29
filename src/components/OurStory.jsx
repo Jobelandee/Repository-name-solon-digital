@@ -31,8 +31,8 @@ export default function OurStory() {
           right: 0,
           bottom: 0,
           backgroundImage: `
-            linear-gradient(0deg, transparent 24%, rgba(212, 175, 55, 0.015) 25%, rgba(212, 175, 55, 0.015) 26%, transparent 27%, transparent 74%, rgba(212, 175, 55, 0.015) 75%, rgba(212, 175, 55, 0.015) 76%, transparent 77%, transparent),
-            linear-gradient(90deg, transparent 24%, rgba(212, 175, 55, 0.015) 25%, rgba(212, 175, 55, 0.015) 26%, transparent 27%, transparent 74%, rgba(212, 175, 55, 0.015) 75%, rgba(212, 175, 55, 0.015) 76%, transparent 77%, transparent)
+            linear-gradient(0deg, transparent 24%, rgba(0, 119, 190, 0.015) 25%, rgba(0, 119, 190, 0.015) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.015) 75%, rgba(0, 119, 190, 0.015) 76%, transparent 77%, transparent),
+            linear-gradient(90deg, transparent 24%, rgba(0, 119, 190, 0.015) 25%, rgba(0, 119, 190, 0.015) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.015) 75%, rgba(0, 119, 190, 0.015) 76%, transparent 77%, transparent)
           `,
           backgroundSize: '60px 60px',
           zIndex: 0,
@@ -70,8 +70,8 @@ export default function OurStory() {
               position: 'relative',
               borderRadius: '16px',
               overflow: 'hidden',
-              boxShadow: '0 0 60px rgba(212, 175, 55, 0.3), 0 20px 60px rgba(0, 0, 0, 0.5)',
-              border: '2px solid rgba(212, 175, 55, 0.2)',
+              boxShadow: '0 0 60px rgba(0, 119, 190, 0.3), 0 20px 60px rgba(0, 0, 0, 0.5)',
+              border: '2px solid rgba(0, 119, 190, 0.2)',
               width: '100%',
               order: 0,
             }}
@@ -115,7 +115,7 @@ export default function OurStory() {
               }}
             >
               {websiteContent.story.headline.split('.')[0]}.{' '}
-              <span style={{ color: '#D4AF37', display: 'block' }}>
+              <span style={{ color: '#0077BE', display: 'block' }}>
                 {websiteContent.story.headline.split('.')[1]}.
               </span>
             </h2>
@@ -216,21 +216,21 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
       style={{
         background: 'rgba(255, 255, 255, 0.04)',
         backdropFilter: 'blur(15px)',
-        border: '1px solid rgba(212, 175, 55, 0.2)',
+        border: '1px solid rgba(0, 119, 190, 0.2)',
         borderRadius: '12px',
         padding: '1.8rem',
         position: 'relative',
         overflow: 'hidden',
-        boxShadow: '0 0 20px rgba(212, 175, 55, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.04)',
+        boxShadow: '0 0 20px rgba(0, 119, 190, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.04)',
         transition: 'all 0.3s ease',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 0.4)';
-        e.currentTarget.style.boxShadow = '0 0 30px rgba(212, 175, 55, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.06)';
+        e.currentTarget.style.borderColor = 'rgba(0, 119, 190, 0.4)';
+        e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.06)';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 0.2)';
-        e.currentTarget.style.boxShadow = '0 0 20px rgba(212, 175, 55, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.04)';
+        e.currentTarget.style.borderColor = 'rgba(0, 119, 190, 0.2)';
+        e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 119, 190, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.04)';
       }}
     >
       {/* Icon */}
@@ -266,7 +266,7 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
         style={{
           fontSize: '0.85rem',
           fontWeight: 600,
-          color: '#D4AF37',
+          color: '#0077BE',
           marginBottom: '0.8rem',
           fontFamily: 'Inter, sans-serif',
           letterSpacing: '-0.005em',

@@ -35,8 +35,8 @@ export default function IndustriesScale() {
           right: 0,
           bottom: 0,
           backgroundImage: `
-            linear-gradient(0deg, transparent 24%, rgba(212, 175, 55, 0.02) 25%, rgba(212, 175, 55, 0.02) 26%, transparent 27%, transparent 74%, rgba(212, 175, 55, 0.02) 75%, rgba(212, 175, 55, 0.02) 76%, transparent 77%, transparent),
-            linear-gradient(90deg, transparent 24%, rgba(212, 175, 55, 0.02) 25%, rgba(212, 175, 55, 0.02) 26%, transparent 27%, transparent 74%, rgba(212, 175, 55, 0.02) 75%, rgba(212, 175, 55, 0.02) 76%, transparent 77%, transparent)
+            linear-gradient(0deg, transparent 24%, rgba(0, 119, 190, 0.02) 25%, rgba(0, 119, 190, 0.02) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.02) 75%, rgba(0, 119, 190, 0.02) 76%, transparent 77%, transparent),
+            linear-gradient(90deg, transparent 24%, rgba(0, 119, 190, 0.02) 25%, rgba(0, 119, 190, 0.02) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.02) 75%, rgba(0, 119, 190, 0.02) 76%, transparent 77%, transparent)
           `,
           backgroundSize: '60px 60px',
           zIndex: 0,
@@ -73,7 +73,7 @@ export default function IndustriesScale() {
               marginBottom: '1.2rem',
               letterSpacing: '-0.02em',
               lineHeight: 1.1,
-              textShadow: '0 8px 32px rgba(212, 175, 55, 0.25)',
+              textShadow: '0 8px 32px rgba(0, 119, 190, 0.25)',
             }}
           >
             {websiteContent.sections.industriesTitle}
@@ -119,9 +119,9 @@ export default function IndustriesScale() {
             justifyContent: 'center',
             flexWrap: 'wrap',
             padding: '4rem 2rem',
-            background: 'rgba(212, 175, 55, 0.08)',
+            background: 'rgba(0, 119, 190, 0.08)',
             borderRadius: '20px',
-            border: '1px solid rgba(212, 175, 55, 0.2)',
+            border: '1px solid rgba(0, 119, 190, 0.2)',
           }}
         >
           {/* Secondary CTA - Show All Pillars */}
@@ -130,7 +130,7 @@ export default function IndustriesScale() {
             whileHover={{ scale: 1.06 }}
             whileTap={{ scale: 0.96 }}
             style={{
-              color: '#D4AF37',
+              color: '#0077BE',
               padding: '1.1rem 2.5rem',
               borderRadius: '8px',
               textDecoration: 'none',
@@ -138,19 +138,19 @@ export default function IndustriesScale() {
               fontSize: '0.95rem',
               fontFamily: 'Inter, sans-serif',
               letterSpacing: '-0.01em',
-              border: '2px solid rgba(212, 175, 55, 0.5)',
+              border: '2px solid rgba(0, 119, 190, 0.5)',
               background: 'transparent',
               cursor: 'pointer',
               transition: 'all 0.3s ease',
               display: 'inline-block',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'rgba(212, 175, 55, 0.1)';
-              e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 1)';
+              e.currentTarget.style.background = 'rgba(0, 119, 190, 0.1)';
+              e.currentTarget.style.borderColor = 'rgba(0, 119, 190, 1)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = 'transparent';
-              e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 0.5)';
+              e.currentTarget.style.borderColor = 'rgba(0, 119, 190, 0.5)';
             }}
           >
             Show All Pillars →
@@ -162,7 +162,7 @@ export default function IndustriesScale() {
             whileHover={{ scale: 1.07, y: -2 }}
             whileTap={{ scale: 0.96 }}
             style={{
-              background: '#D4AF37',
+              background: '#0077BE',
               color: '#1a1a1a',
               padding: '1.1rem 2.5rem',
               borderRadius: '8px',
@@ -173,15 +173,15 @@ export default function IndustriesScale() {
               letterSpacing: '-0.01em',
               border: 'none',
               cursor: 'pointer',
-              boxShadow: '0 0 30px rgba(212, 175, 55, 0.7), 0 8px 20px rgba(212, 175, 55, 0.4)',
+              boxShadow: '0 0 30px rgba(0, 119, 190, 0.7), 0 8px 20px rgba(0, 119, 190, 0.4)',
               transition: 'all 0.3s ease',
               display: 'inline-block',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = '0 0 50px rgba(212, 175, 55, 0.9), 0 12px 35px rgba(212, 175, 55, 0.5)';
+              e.currentTarget.style.boxShadow = '0 0 50px rgba(0, 119, 190, 0.9), 0 12px 35px rgba(0, 119, 190, 0.5)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = '0 0 30px rgba(212, 175, 55, 0.7), 0 8px 20px rgba(212, 175, 55, 0.4)';
+              e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.7), 0 8px 20px rgba(0, 119, 190, 0.4)';
             }}
           >
             Claim Your Audit →
@@ -253,7 +253,7 @@ function IndustryCard({ industry, index, inView }) {
         style={{
           height: '3px',
           width: '40px',
-          background: '#D4AF37',
+          background: '#0077BE',
           borderRadius: '2px',
           marginBottom: '2rem',
           position: 'relative',

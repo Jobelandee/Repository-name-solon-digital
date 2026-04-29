@@ -44,7 +44,7 @@ export default function Vision() {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: index * 0.15 }}
           >
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.12em', color: '#D4AF37', textTransform: 'uppercase', marginBottom: '1rem', display: 'block' }}>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.12em', color: '#0077BE', textTransform: 'uppercase', marginBottom: '1rem', display: 'block' }}>
               {point.label}
             </span>
             <h3>{point.title}</h3>

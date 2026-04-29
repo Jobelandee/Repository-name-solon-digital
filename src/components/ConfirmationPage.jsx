@@ -36,8 +36,8 @@ export default function ConfirmationPage() {
         right: 0,
         bottom: 0,
         backgroundImage: `
-          linear-gradient(0deg, transparent 24%, rgba(212, 175, 55, 0.05) 25%, rgba(212, 175, 55, 0.05) 26%, transparent 27%, transparent 74%, rgba(212, 175, 55, 0.05) 75%, rgba(212, 175, 55, 0.05) 76%, transparent 77%, transparent),
-          linear-gradient(90deg, transparent 24%, rgba(212, 175, 55, 0.05) 25%, rgba(212, 175, 55, 0.05) 26%, transparent 27%, transparent 74%, rgba(212, 175, 55, 0.05) 75%, rgba(212, 175, 55, 0.05) 76%, transparent 77%, transparent)
+          linear-gradient(0deg, transparent 24%, rgba(0, 119, 190, 0.05) 25%, rgba(0, 119, 190, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.05) 75%, rgba(0, 119, 190, 0.05) 76%, transparent 77%, transparent),
+          linear-gradient(90deg, transparent 24%, rgba(0, 119, 190, 0.05) 25%, rgba(0, 119, 190, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.05) 75%, rgba(0, 119, 190, 0.05) 76%, transparent 77%, transparent)
         `,
         backgroundSize: '60px 60px',
         opacity: 0.3,
@@ -52,7 +52,7 @@ export default function ConfirmationPage() {
         transform: 'translateX(-50%)',
         width: '1000px',
         height: '1000px',
-        background: 'radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(0, 119, 190, 0.15) 0%, transparent 70%)',
         zIndex: 1,
         pointerEvents: 'none',
       }} />
@@ -86,9 +86,9 @@ export default function ConfirmationPage() {
             width: '80px',
             height: '80px',
             borderRadius: '50%',
-            background: 'linear-gradient(135deg, #D4AF37, #E5C158)',
+            background: 'linear-gradient(135deg, #0077BE, #E5C158)',
             marginBottom: '2rem',
-            boxShadow: '0 8px 32px rgba(212, 175, 55, 0.4)',
+            boxShadow: '0 8px 32px rgba(0, 119, 190, 0.4)',
           }}>
             <svg style={{ width: '48px', height: '48px', color: 'white' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
@@ -101,7 +101,7 @@ export default function ConfirmationPage() {
             color: '#FFFFFF',
             marginBottom: '1rem',
             fontFamily: 'Playfair Display, serif',
-            textShadow: '0 4px 20px rgba(212, 175, 55, 0.3)',
+            textShadow: '0 4px 20px rgba(0, 119, 190, 0.3)',
             letterSpacing: '-0.02em',
           }}>
             We've Got Your Back!
@@ -122,7 +122,7 @@ export default function ConfirmationPage() {
           style={{
             background: 'rgba(255, 255, 255, 0.08)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(212, 175, 55, 0.2)',
+            border: '1px solid rgba(0, 119, 190, 0.2)',
             borderRadius: '16px',
             padding: '3rem',
             marginBottom: '2rem',
@@ -156,15 +156,15 @@ export default function ConfirmationPage() {
                 width: '40px',
                 height: '40px',
                 borderRadius: '8px',
-                background: 'rgba(212, 175, 55, 0.15)',
+                background: 'rgba(0, 119, 190, 0.15)',
                 flexShrink: 0,
               }}>
-                <svg style={{ width: '20px', height: '20px', color: '#D4AF37' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg style={{ width: '20px', height: '20px', color: '#0077BE' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
               <div>
-                <p style={{ fontSize: '0.85rem', fontWeight: 700, color: '#D4AF37', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.25rem' }}>Name</p>
+                <p style={{ fontSize: '0.85rem', fontWeight: 700, color: '#0077BE', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.25rem' }}>Name</p>
                 <p style={{ fontSize: '1.1rem', color: '#FFFFFF', fontWeight: 500 }}>{bookingData.name}</p>
               </div>
             </motion.div>
@@ -182,15 +182,15 @@ export default function ConfirmationPage() {
                 width: '40px',
                 height: '40px',
                 borderRadius: '8px',
-                background: 'rgba(212, 175, 55, 0.15)',
+                background: 'rgba(0, 119, 190, 0.15)',
                 flexShrink: 0,
               }}>
-                <svg style={{ width: '20px', height: '20px', color: '#D4AF37' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg style={{ width: '20px', height: '20px', color: '#0077BE' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
               <div>
-                <p style={{ fontSize: '0.85rem', fontWeight: 700, color: '#D4AF37', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.25rem' }}>Email</p>
+                <p style={{ fontSize: '0.85rem', fontWeight: 700, color: '#0077BE', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.25rem' }}>Email</p>
                 <p style={{ fontSize: '1.1rem', color: '#FFFFFF', fontWeight: 500 }}>{bookingData.email}</p>
               </div>
             </motion.div>
@@ -209,15 +209,15 @@ export default function ConfirmationPage() {
                   width: '40px',
                   height: '40px',
                   borderRadius: '8px',
-                  background: 'rgba(212, 175, 55, 0.15)',
+                  background: 'rgba(0, 119, 190, 0.15)',
                   flexShrink: 0,
                 }}>
-                  <svg style={{ width: '20px', height: '20px', color: '#D4AF37' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg style={{ width: '20px', height: '20px', color: '#0077BE' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                   </svg>
                 </div>
                 <div>
-                  <p style={{ fontSize: '0.85rem', fontWeight: 700, color: '#D4AF37', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.25rem' }}>Website</p>
+                  <p style={{ fontSize: '0.85rem', fontWeight: 700, color: '#0077BE', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.25rem' }}>Website</p>
                   <p style={{ fontSize: '1.1rem', color: '#FFFFFF', fontWeight: 500, wordBreak: 'break-all' }}>{bookingData.brandUrl}</p>
                 </div>
               </motion.div>
@@ -230,7 +230,7 @@ export default function ConfirmationPage() {
           style={{
             background: 'rgba(255, 255, 255, 0.08)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(212, 175, 55, 0.2)',
+            border: '1px solid rgba(0, 119, 190, 0.2)',
             borderRadius: '16px',
             padding: '3rem',
             marginBottom: '2rem',
@@ -270,7 +270,7 @@ export default function ConfirmationPage() {
                   width: '36px',
                   height: '36px',
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #D4AF37, #E5C158)',
+                  background: 'linear-gradient(135deg, #0077BE, #E5C158)',
                   fontWeight: 700,
                   color: '#1a1a1a',
                   fontSize: '1rem',
@@ -303,7 +303,7 @@ export default function ConfirmationPage() {
           <motion.button
             onClick={() => navigate('/')}
             style={{
-              background: '#D4AF37',
+              background: '#0077BE',
               color: '#1a1a1a',
               padding: '1rem 2.5rem',
               fontSize: '1rem',
@@ -311,11 +311,11 @@ export default function ConfirmationPage() {
               borderRadius: '4px',
               border: 'none',
               cursor: 'pointer',
-              boxShadow: '0 0 20px rgba(212, 175, 55, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
+              boxShadow: '0 0 20px rgba(0, 119, 190, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
             }}
             whileHover={{
               scale: 1.08,
-              boxShadow: '0 0 30px rgba(212, 175, 55, 0.8), 0 8px 24px rgba(212, 175, 55, 0.4)',
+              boxShadow: '0 0 30px rgba(0, 119, 190, 0.8), 0 8px 24px rgba(0, 119, 190, 0.4)',
             }}
             whileTap={{ scale: 0.95 }}
           >
@@ -329,7 +329,7 @@ export default function ConfirmationPage() {
               fontSize: '1rem',
               fontWeight: 600,
               borderRadius: '4px',
-              border: '1px solid rgba(212, 175, 55, 0.6)',
+              border: '1px solid rgba(0, 119, 190, 0.6)',
               color: '#E0E0E0',
               textDecoration: 'none',
               cursor: 'pointer',
@@ -337,7 +337,7 @@ export default function ConfirmationPage() {
             }}
             whileHover={{
               scale: 1.08,
-              backgroundColor: 'rgba(212, 175, 55, 0.1)',
+              backgroundColor: 'rgba(0, 119, 190, 0.1)',
             }}
             whileTap={{ scale: 0.95 }}
           >

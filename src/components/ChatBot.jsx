@@ -71,7 +71,7 @@ export default function ChatBot() {
               maxWidth: '90vw',
               height: '500px',
               background: '#0a0a0a',
-              border: '1px solid rgba(212, 175, 55, 0.3)',
+              border: '1px solid rgba(0, 119, 190, 0.3)',
               borderRadius: '12px',
               boxShadow: '0 20px 60px rgba(0, 0, 0, 0.6)',
               display: 'flex',
@@ -83,13 +83,13 @@ export default function ChatBot() {
             {/* Header */}
             <div style={{
               padding: '1.2rem',
-              borderBottom: '1px solid rgba(212, 175, 55, 0.2)',
+              borderBottom: '1px solid rgba(0, 119, 190, 0.2)',
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
             }}>
               <div>
-                <h3 style={{ margin: '0 0 0.2rem 0', color: '#D4AF37', fontSize: '1rem', fontWeight: 700 }}>
+                <h3 style={{ margin: '0 0 0.2rem 0', color: '#0077BE', fontSize: '1rem', fontWeight: 700 }}>
                   Solon Assistant
                 </h3>
                 <p style={{ margin: 0, color: '#888', fontSize: '0.8rem' }}>Always here to help</p>
@@ -131,7 +131,7 @@ export default function ChatBot() {
                 >
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', maxWidth: '80%' }}>
                     <div style={{
-                      background: msg.sender === 'user' ? '#D4AF37' : 'rgba(255, 255, 255, 0.08)',
+                      background: msg.sender === 'user' ? '#0077BE' : 'rgba(255, 255, 255, 0.08)',
                       color: msg.sender === 'user' ? '#000' : '#DDD',
                       padding: '0.8rem 1rem',
                       borderRadius: '8px',
@@ -177,7 +177,7 @@ export default function ChatBot() {
                       style={{
                         width: '6px',
                         height: '6px',
-                        background: '#D4AF37',
+                        background: '#0077BE',
                         borderRadius: '50%',
                       }}
                     />
@@ -190,7 +190,7 @@ export default function ChatBot() {
             {/* Input Footer */}
             <div style={{
               padding: '0.75rem',
-              borderTop: '1px solid rgba(212, 175, 55, 0.2)',
+              borderTop: '1px solid rgba(0, 119, 190, 0.2)',
               background: 'rgba(0, 0, 0, 0.5)',
             }}>
               {/* Chat Input Form */}
@@ -210,7 +210,7 @@ export default function ChatBot() {
                   style={{
                     flex: 1,
                     background: 'rgba(255, 255, 255, 0.05)',
-                    border: '1px solid rgba(212, 175, 55, 0.2)',
+                    border: '1px solid rgba(0, 119, 190, 0.2)',
                     borderRadius: '6px',
                     padding: '0.6rem 0.8rem',
                     color: '#FFF',
@@ -222,7 +222,7 @@ export default function ChatBot() {
                   type="submit"
                   disabled={loading}
                   style={{
-                    background: '#D4AF37',
+                    background: '#0077BE',
                     color: '#000',
                     border: 'none',
                     borderRadius: '6px',
@@ -277,12 +277,12 @@ export default function ChatBot() {
           width: '60px',
           height: '60px',
           borderRadius: '50%',
-          background: 'linear-gradient(135deg, #D4AF37 0%, #E5C158 100%)',
+          background: 'linear-gradient(135deg, #0077BE 0%, #E5C158 100%)',
           border: 'none',
           color: '#000',
           fontSize: '1.8rem',
           cursor: 'pointer',
-          boxShadow: '0 8px 25px rgba(212, 175, 55, 0.5)',
+          boxShadow: '0 8px 25px rgba(0, 119, 190, 0.5)',
           zIndex: 899,
           display: 'flex',
           alignItems: 'center',

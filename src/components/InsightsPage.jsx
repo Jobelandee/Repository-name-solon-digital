@@ -79,8 +79,8 @@ export default function InsightsPage() {
                 transition: 'all 0.3s ease',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#D4AF37';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(212, 175, 55, 0.15)';
+                e.currentTarget.style.borderColor = '#0077BE';
+                e.currentTarget.style.boxShadow = '0 12px 32px rgba(0, 119, 190, 0.15)';
                 e.currentTarget.style.transform = 'translateY(-6px)';
               }}
               onMouseLeave={(e) => {
@@ -93,7 +93,7 @@ export default function InsightsPage() {
                 fontSize: '0.75rem',
                 textTransform: 'uppercase',
                 letterSpacing: '0.12em',
-                color: '#D4AF37',
+                color: '#0077BE',
                 fontWeight: 700,
                 marginBottom: '1rem',
               }}>
@@ -132,7 +132,7 @@ export default function InsightsPage() {
                 </span>
                 <a href="#read-more" style={{
                   textDecoration: 'none',
-                  color: '#D4AF37',
+                  color: '#0077BE',
                   fontWeight: 600,
                   fontSize: '0.95rem',
                   transition: 'all 0.3s ease',

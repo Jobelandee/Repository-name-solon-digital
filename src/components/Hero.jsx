@@ -76,7 +76,25 @@ export default function Hero() {
             textAlign: 'left',
           }}
         >
-          {/* Massive Main Headline - White with Gold Accent */}
+          {/* Brand Tagline */}
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.05 }}
+            style={{
+              color: '#FF9500',
+              fontSize: '0.95rem',
+              fontWeight: 700,
+              fontFamily: 'Outfit, sans-serif',
+              marginBottom: '1rem',
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+            }}
+          >
+            ⚡ AI Automation voor meer leads en zichtbaarheid
+          </motion.p>
+
+          {/* Massive Main Headline - White with Ocean Blue Accent */}
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -92,10 +110,10 @@ export default function Hero() {
               lineHeight: 1.2,
             }}
           >
-            Smart Websites.{' '}
+            Build Smarter.{' '}
             <br />
-            <span style={{ color: '#D4AF37', fontWeight: 900 }}>
-              Tenerife Roots.
+            <span style={{ color: '#0077BE', fontWeight: 900 }}>
+              Scale Faster.
             </span>
           </motion.h1>
 
@@ -115,7 +133,7 @@ export default function Hero() {
               maxWidth: '500px',
             }}
           >
-            Stop the manual grind. We build high-performance systems that turn local traffic into predictable growth.
+            AI-powered automation for websites & marketing. Generate more leads. Increase visibility. Stop competing on price.
           </motion.p>
 
           {/* CTA Buttons - Side by Side */}
@@ -137,7 +155,7 @@ export default function Hero() {
               whileHover={{ scale: 1.07, y: -3 }}
               whileTap={{ scale: 0.96 }}
               style={{
-                background: '#D4AF37',
+                background: '#0077BE',
                 color: '#1a1a1a',
                 padding: '1.2rem 3rem',
                 borderRadius: '8px',
@@ -148,17 +166,17 @@ export default function Hero() {
                 letterSpacing: '-0.01em',
                 border: 'none',
                 cursor: 'pointer',
-                boxShadow: '0 0 40px rgba(212, 175, 55, 0.8), 0 12px 35px rgba(212, 175, 55, 0.45)',
+                boxShadow: '0 0 40px rgba(0, 119, 190, 0.8), 0 12px 35px rgba(0, 119, 190, 0.45)',
                 transition: 'all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
                 display: 'inline-block',
                 whiteSpace: 'nowrap',
                 position: 'relative',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = '0 0 60px rgba(212, 175, 55, 1), 0 18px 50px rgba(212, 175, 55, 0.6)';
+                e.currentTarget.style.boxShadow = '0 0 60px rgba(0, 119, 190, 1), 0 18px 50px rgba(0, 119, 190, 0.6)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = '0 0 40px rgba(212, 175, 55, 0.8), 0 12px 35px rgba(212, 175, 55, 0.45)';
+                e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 119, 190, 0.8), 0 12px 35px rgba(0, 119, 190, 0.45)';
               }}
             >
               Start Your Audit →
@@ -186,9 +204,9 @@ export default function Hero() {
                 whiteSpace: 'nowrap',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = 'rgba(212, 175, 55, 0.12)';
-                e.currentTarget.style.borderColor = '#D4AF37';
-                e.currentTarget.style.boxShadow = '0 0 20px rgba(212, 175, 55, 0.3)';
+                e.currentTarget.style.backgroundColor = 'rgba(0, 119, 190, 0.12)';
+                e.currentTarget.style.borderColor = '#0077BE';
+                e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 119, 190, 0.3)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundColor = 'transparent';

@@ -21,7 +21,7 @@ export default function Header() {
             fontFamily: 'Playfair Display, serif',
             fontSize: '1.3rem',
             fontWeight: 700,
-            color: '#D4AF37',
+            color: '#0077BE',
             letterSpacing: '-0.01em',
           }}>
             Solon

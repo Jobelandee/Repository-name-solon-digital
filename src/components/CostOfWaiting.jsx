@@ -16,7 +16,7 @@ export default function CostOfWaiting() {
     },
     {
       title: 'The Time Thief',
-      color: '#D4AF37',
+      color: '#0077BE',
       description: 'Managing bookings via WhatsApp and manual calls is a full-time job you shouldn\'t have. We automate the grind.',
       icon: '⏰',
     },
@@ -128,16 +128,16 @@ export default function CostOfWaiting() {
             textAlign: 'center',
             marginTop: '5rem',
             padding: '3rem 2rem',
-            background: 'rgba(212, 175, 55, 0.1)',
+            background: 'rgba(0, 119, 190, 0.1)',
             borderRadius: '16px',
-            border: '1px solid rgba(212, 175, 55, 0.3)',
+            border: '1px solid rgba(0, 119, 190, 0.3)',
           }}
         >
           <h3
             style={{
               fontSize: '1.8rem',
               fontWeight: 700,
-              color: '#D4AF37',
+              color: '#0077BE',
               marginBottom: '1rem',
               fontFamily: 'Playfair Display, serif',
             }}

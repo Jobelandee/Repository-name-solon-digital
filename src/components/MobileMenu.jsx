@@ -84,11 +84,11 @@ export default function MobileMenu({ onClose }) {
                   fontFamily: 'Inter, sans-serif',
                   display: 'block',
                   padding: '0.75rem 0',
-                  borderBottom: '1px solid rgba(212, 175, 55, 0.2)',
+                  borderBottom: '1px solid rgba(0, 119, 190, 0.2)',
                   transition: 'all 0.3s ease',
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.color = '#D4AF37';
+                  e.currentTarget.style.color = '#0077BE';
                   e.currentTarget.style.paddingLeft = '0.5rem';
                 }}
                 onMouseLeave={(e) => {
@@ -110,7 +110,7 @@ export default function MobileMenu({ onClose }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
           style={{
-            background: '#D4AF37',
+            background: '#0077BE',
             color: '#1a1a1a',
             padding: '0.95rem 1.5rem',
             borderRadius: '8px',
@@ -123,7 +123,7 @@ export default function MobileMenu({ onClose }) {
             transition: 'all 0.3s ease',
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.boxShadow = '0 0 30px rgba(212, 175, 55, 0.7)';
+            e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.7)';
             e.currentTarget.style.transform = 'scale(1.05)';
           }}
           onMouseLeave={(e) => {

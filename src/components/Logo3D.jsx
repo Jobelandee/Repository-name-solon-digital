@@ -16,7 +16,7 @@ const Logo3DModel = ({ mousePos }) => {
       <mesh>
         <icosahedronGeometry args={[1.5, 4]} />
         <meshStandardMaterial
-          color="#D4AF37"
+          color="#0077BE"
           metalness={0.9}
           roughness={0.1}
           envMapIntensity={1}
@@ -49,7 +49,7 @@ export default function Logo3D() {
     >
       <ambientLight intensity={0.7} />
       <pointLight position={[10, 10, 10]} intensity={1} />
-      <pointLight position={[-10, -10, -10]} intensity={0.5} color="#D4AF37" />
+      <pointLight position={[-10, -10, -10]} intensity={0.5} color="#0077BE" />
       <Logo3DModel mousePos={mousePos} />
     </Canvas>
   );

@@ -93,8 +93,8 @@ export default function AuditForm() {
           right: 0,
           bottom: 0,
           backgroundImage: `
-            linear-gradient(0deg, transparent 24%, rgba(212, 175, 55, 0.02) 25%, rgba(212, 175, 55, 0.02) 26%, transparent 27%, transparent 74%, rgba(212, 175, 55, 0.02) 75%, rgba(212, 175, 55, 0.02) 76%, transparent 77%, transparent),
-            linear-gradient(90deg, transparent 24%, rgba(212, 175, 55, 0.02) 25%, rgba(212, 175, 55, 0.02) 26%, transparent 27%, transparent 74%, rgba(212, 175, 55, 0.02) 75%, rgba(212, 175, 55, 0.02) 76%, transparent 77%, transparent)
+            linear-gradient(0deg, transparent 24%, rgba(0, 119, 190, 0.02) 25%, rgba(0, 119, 190, 0.02) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.02) 75%, rgba(0, 119, 190, 0.02) 76%, transparent 77%, transparent),
+            linear-gradient(90deg, transparent 24%, rgba(0, 119, 190, 0.02) 25%, rgba(0, 119, 190, 0.02) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.02) 75%, rgba(0, 119, 190, 0.02) 76%, transparent 77%, transparent)
           `,
           backgroundSize: '60px 60px',
           zIndex: 0,
@@ -157,7 +157,7 @@ export default function AuditForm() {
           style={{
             background: 'rgba(255, 255, 255, 0.07)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(212, 175, 55, 0.2)',
+            border: '1px solid rgba(0, 119, 190, 0.2)',
             borderRadius: '20px',
             padding: '3.5rem',
             maxWidth: '500px',
@@ -234,13 +234,13 @@ export default function AuditForm() {
                     width: '100%',
                     padding: '0.95rem 1.2rem',
                     background: 'rgba(255, 255, 255, 0.05)',
-                    border: focused === 'name' ? '1.5px solid #D4AF37' : '1.5px solid rgba(212, 175, 55, 0.3)',
+                    border: focused === 'name' ? '1.5px solid #0077BE' : '1.5px solid rgba(0, 119, 190, 0.3)',
                     borderRadius: '8px',
                     color: '#FFFFFF',
                     fontSize: '1rem',
                     fontFamily: 'Inter, sans-serif',
                     transition: 'all 0.3s ease',
-                    boxShadow: focused === 'name' ? '0 0 15px rgba(212, 175, 55, 0.3)' : 'none',
+                    boxShadow: focused === 'name' ? '0 0 15px rgba(0, 119, 190, 0.3)' : 'none',
                     outline: 'none',
                   }}
                 />
@@ -274,13 +274,13 @@ export default function AuditForm() {
                     width: '100%',
                     padding: '0.95rem 1.2rem',
                     background: 'rgba(255, 255, 255, 0.05)',
-                    border: focused === 'businessName' ? '1.5px solid #D4AF37' : '1.5px solid rgba(212, 175, 55, 0.3)',
+                    border: focused === 'businessName' ? '1.5px solid #0077BE' : '1.5px solid rgba(0, 119, 190, 0.3)',
                     borderRadius: '8px',
                     color: '#FFFFFF',
                     fontSize: '1rem',
                     fontFamily: 'Inter, sans-serif',
                     transition: 'all 0.3s ease',
-                    boxShadow: focused === 'businessName' ? '0 0 15px rgba(212, 175, 55, 0.3)' : 'none',
+                    boxShadow: focused === 'businessName' ? '0 0 15px rgba(0, 119, 190, 0.3)' : 'none',
                     outline: 'none',
                   }}
                 />
@@ -314,13 +314,13 @@ export default function AuditForm() {
                     width: '100%',
                     padding: '0.95rem 1.2rem',
                     background: 'rgba(255, 255, 255, 0.05)',
-                    border: focused === 'whatsapp' ? '1.5px solid #D4AF37' : '1.5px solid rgba(212, 175, 55, 0.3)',
+                    border: focused === 'whatsapp' ? '1.5px solid #0077BE' : '1.5px solid rgba(0, 119, 190, 0.3)',
                     borderRadius: '8px',
                     color: '#FFFFFF',
                     fontSize: '1rem',
                     fontFamily: 'Inter, sans-serif',
                     transition: 'all 0.3s ease',
-                    boxShadow: focused === 'whatsapp' ? '0 0 15px rgba(212, 175, 55, 0.3)' : 'none',
+                    boxShadow: focused === 'whatsapp' ? '0 0 15px rgba(0, 119, 190, 0.3)' : 'none',
                     outline: 'none',
                   }}
                 />
@@ -352,7 +352,7 @@ export default function AuditForm() {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 style={{
-                  background: '#D4AF37',
+                  background: '#0077BE',
                   color: '#1a1a1a',
                   padding: '1.15rem 2.5rem',
                   borderRadius: '8px',
@@ -363,17 +363,17 @@ export default function AuditForm() {
                   letterSpacing: '-0.01em',
                   cursor: loading ? 'not-allowed' : 'pointer',
                   opacity: loading ? 0.7 : 1,
-                  boxShadow: '0 0 30px rgba(212, 175, 55, 0.7), 0 8px 25px rgba(212, 175, 55, 0.4)',
+                  boxShadow: '0 0 30px rgba(0, 119, 190, 0.7), 0 8px 25px rgba(0, 119, 190, 0.4)',
                   transition: 'all 0.3s ease',
                   marginTop: '0.5rem',
                 }}
                 onMouseEnter={(e) => {
                   if (!loading) {
-                    e.currentTarget.style.boxShadow = '0 0 50px rgba(212, 175, 55, 0.9), 0 12px 35px rgba(212, 175, 55, 0.5)';
+                    e.currentTarget.style.boxShadow = '0 0 50px rgba(0, 119, 190, 0.9), 0 12px 35px rgba(0, 119, 190, 0.5)';
                   }
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 0 30px rgba(212, 175, 55, 0.7), 0 8px 25px rgba(212, 175, 55, 0.4)';
+                  e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.7), 0 8px 25px rgba(0, 119, 190, 0.4)';
                 }}
               >
                 {loading ? 'Booking...' : 'Book My Session →'}

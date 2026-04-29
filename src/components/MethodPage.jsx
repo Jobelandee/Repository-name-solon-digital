@@ -76,7 +76,7 @@ export default function MethodPage() {
                 width: '80px',
                 height: '80px',
                 borderRadius: '50%',
-                background: 'linear-gradient(135deg, #D4AF37, #E5C158)',
+                background: 'linear-gradient(135deg, #0077BE, #E5C158)',
                 fontWeight: 700,
                 fontSize: '2rem',
                 color: '#1a1a1a',
@@ -140,7 +140,7 @@ export default function MethodPage() {
         </p>
         <a href="/#audit" style={{
           display: 'inline-block',
-          background: '#D4AF37',
+          background: '#0077BE',
           color: '#1a1a1a',
           padding: '1rem 2.5rem',
           borderRadius: '4px',
@@ -148,14 +148,14 @@ export default function MethodPage() {
           fontWeight: 600,
           fontSize: '1rem',
           transition: 'all 0.3s ease',
-          boxShadow: '0 0 30px rgba(212, 175, 55, 0.7)',
+          boxShadow: '0 0 30px rgba(0, 119, 190, 0.7)',
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.boxShadow = '0 0 50px rgba(212, 175, 55, 0.9), 0 8px 25px rgba(212, 175, 55, 0.5)';
+          e.currentTarget.style.boxShadow = '0 0 50px rgba(0, 119, 190, 0.9), 0 8px 25px rgba(0, 119, 190, 0.5)';
           e.currentTarget.style.transform = 'translateY(-2px)';
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.boxShadow = '0 0 30px rgba(212, 175, 55, 0.7)';
+          e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.7)';
           e.currentTarget.style.transform = 'translateY(0)';
         }}
         >
