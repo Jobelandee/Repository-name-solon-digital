@@ -41,7 +41,7 @@ export default function IndustriesScale() {
     <section
       ref={ref}
       style={{
-        background: '#0a0a0a',
+        background: '#F5F5F5',
         padding: '8rem 2rem',
         position: 'relative',
         overflow: 'hidden',
@@ -55,7 +55,7 @@ export default function IndustriesScale() {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'linear-gradient(135deg, rgba(0, 119, 190, 0.05) 0%, rgba(255, 149, 0, 0.03) 100%)',
+          background: 'linear-gradient(135deg, rgba(0, 119, 190, 0.02) 0%, rgba(255, 149, 0, 0.01) 100%)',
           zIndex: 0,
         }}
       />
@@ -85,7 +85,7 @@ export default function IndustriesScale() {
             style={{
               fontSize: 'clamp(2.8rem, 5vw, 3.8rem)',
               fontWeight: 800,
-              color: '#ffffff',
+              color: '#333333',
               fontFamily: 'Outfit, sans-serif',
               marginBottom: '1.2rem',
               letterSpacing: '-0.02em',
@@ -97,7 +97,7 @@ export default function IndustriesScale() {
           <p
             style={{
               fontSize: '1.15rem',
-              color: '#b0b0b0',
+              color: '#666666',
               fontFamily: 'Outfit, sans-serif',
               lineHeight: 1.7,
               fontWeight: 400,
@@ -218,22 +218,22 @@ function IndustryCard({ industry, index, inView }) {
       transition={{ duration: 0.8, delay: index * 0.15 }}
       whileHover={{ y: -12, transition: { duration: 0.3 } }}
       style={{
-        background: '#1a1a1a',
-        border: '1px solid #333333',
+        background: '#FFFFFF',
+        border: '1px solid #E0E0E0',
         borderRadius: '20px',
         padding: '3.5rem 2.5rem',
         position: 'relative',
         overflow: 'hidden',
-        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
         transition: 'all 0.4s ease',
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = '#0077BE';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.25)';
+        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.12)';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#333333';
-        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
+        e.currentTarget.style.borderColor = '#E0E0E0';
+        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.05)';
       }}
     >
       {/* Subtle Gradient Background */}
@@ -266,12 +266,12 @@ function IndustryCard({ industry, index, inView }) {
         }}
       />
 
-      {/* Top Blue Accent Line */}
+      {/* Top Orange Accent Line */}
       <div
         style={{
           height: '3px',
           width: '40px',
-          background: '#0077BE',
+          background: '#FF9500',
           borderRadius: '2px',
           marginBottom: '2rem',
           position: 'relative',
@@ -287,7 +287,7 @@ function IndustryCard({ industry, index, inView }) {
         style={{
           fontSize: '1.8rem',
           fontWeight: 800,
-          color: '#ffffff',
+          color: '#0077BE',
           marginBottom: '1.5rem',
           fontFamily: 'Outfit, sans-serif',
           letterSpacing: '-0.01em',
@@ -306,7 +306,7 @@ function IndustryCard({ industry, index, inView }) {
         style={{
           fontSize: '1.05rem',
           lineHeight: 1.8,
-          color: '#b0b0b0',
+          color: '#555555',
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 400,
           marginBottom: '2rem',

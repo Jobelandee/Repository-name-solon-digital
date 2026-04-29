@@ -15,7 +15,7 @@ export default function OurStory() {
       id="our-story"
       ref={ref}
       style={{
-        background: '#0a0a0a',
+        background: '#FFFFFF',
         paddingTop: 'clamp(4rem, 8vw, 8rem)',
         paddingBottom: 'clamp(6rem, 12vw, 12rem)',
         paddingLeft: 'clamp(1.5rem, 4vw, 2rem)',
@@ -32,7 +32,7 @@ export default function OurStory() {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'linear-gradient(135deg, rgba(0, 119, 190, 0.05) 0%, rgba(255, 149, 0, 0.03) 100%)',
+          background: 'linear-gradient(135deg, rgba(0, 119, 190, 0.02) 0%, rgba(255, 149, 0, 0.01) 100%)',
           zIndex: 0,
           pointerEvents: 'none',
         }}
@@ -104,7 +104,7 @@ export default function OurStory() {
               style={{
                 fontSize: 'clamp(1.75rem, 4vw, 3.2rem)',
                 fontWeight: 800,
-                color: '#ffffff',
+                color: '#333333',
                 fontFamily: 'Outfit, sans-serif',
                 marginBottom: 0,
                 letterSpacing: '-0.02em',
@@ -125,7 +125,7 @@ export default function OurStory() {
               transition={{ duration: 0.8, delay: 0.2 }}
               style={{
                 fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
-                color: '#d0d0d0',
+                color: '#555555',
                 fontFamily: 'Outfit, sans-serif',
                 lineHeight: 1.85,
                 fontWeight: 400,
@@ -209,22 +209,22 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
       transition={{ duration: 0.8, delay: index * 0.1 + 0.25 }}
       whileHover={{ y: -4, transition: { duration: 0.3 } }}
       style={{
-        background: '#1a1a1a',
-        border: '1px solid #333333',
+        background: '#F5F5F5',
+        border: '1px solid #E0E0E0',
         borderRadius: '12px',
         padding: '1.8rem',
         position: 'relative',
         overflow: 'hidden',
-        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
         transition: 'all 0.3s ease',
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = '#0077BE';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.2)';
+        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.12)';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#333333';
-        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
+        e.currentTarget.style.borderColor = '#E0E0E0';
+        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.05)';
       }}
     >
       {/* Icon */}
@@ -244,7 +244,7 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
         style={{
           fontSize: '1.2rem',
           fontWeight: 700,
-          color: '#ffffff',
+          color: '#0077BE',
           marginBottom: '0.3rem',
           fontFamily: 'Outfit, sans-serif',
           letterSpacing: '-0.01em',
@@ -276,7 +276,7 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
         style={{
           fontSize: '0.95rem',
           lineHeight: 1.6,
-          color: '#b0b0b0',
+          color: '#555555',
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 400,
           position: 'relative',

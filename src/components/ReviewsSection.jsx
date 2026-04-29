@@ -35,7 +35,7 @@ export default function ReviewsSection() {
     <section
       ref={ref}
       style={{
-        background: '#0a0a0a',
+        background: '#FFFFFF',
         padding: '8rem 2rem',
         position: 'relative',
         overflow: 'hidden',
@@ -66,7 +66,7 @@ export default function ReviewsSection() {
             style={{
               fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
               fontWeight: 700,
-              color: '#ffffff',
+              color: '#0077BE',
               fontFamily: 'Outfit, sans-serif',
               marginBottom: '1rem',
               letterSpacing: '-0.02em',
@@ -78,7 +78,7 @@ export default function ReviewsSection() {
           <p
             style={{
               fontSize: '1.1rem',
-              color: '#b0b0b0',
+              color: '#333333',
               fontFamily: 'Outfit, sans-serif',
               lineHeight: 1.7,
               fontWeight: 400,
@@ -115,24 +115,24 @@ function ReviewCard({ review, index, inView }) {
       transition={{ duration: 0.8, delay: index * 0.1 }}
       whileHover={{ y: -8, transition: { duration: 0.3 } }}
       style={{
-        background: '#1a1a1a',
-        border: '1px solid #333333',
+        background: '#F5F5F5',
+        border: '1px solid #E0E0E0',
         borderRadius: '16px',
         padding: '2rem',
         position: 'relative',
         overflow: 'hidden',
-        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
         transition: 'all 0.3s ease',
         display: 'flex',
         flexDirection: 'column',
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = '#0077BE';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.2)';
+        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.12)';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#333333';
-        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
+        e.currentTarget.style.borderColor = '#E0E0E0';
+        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.05)';
       }}
     >
       {/* Stars */}
@@ -149,7 +149,7 @@ function ReviewCard({ review, index, inView }) {
         style={{
           fontSize: '1rem',
           lineHeight: 1.8,
-          color: '#d0d0d0',
+          color: '#555555',
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 400,
           marginBottom: '1.5rem',
@@ -160,12 +160,12 @@ function ReviewCard({ review, index, inView }) {
       </p>
 
       {/* Author */}
-      <div style={{ borderTop: '1px solid #333333', paddingTop: '1rem' }}>
+      <div style={{ borderTop: '1px solid #E0E0E0', paddingTop: '1rem' }}>
         <p
           style={{
             fontSize: '0.95rem',
             fontWeight: 700,
-            color: '#ffffff',
+            color: '#0077BE',
             margin: '0 0 0.25rem 0',
             fontFamily: 'Outfit, sans-serif',
           }}

@@ -10,8 +10,8 @@ export default function Header() {
 
   return (
     <header className="solon-header" style={{
-      background: '#0a0a0a',
-      borderBottom: '1px solid rgba(0, 119, 190, 0.2)',
+      background: '#0077BE',
+      borderBottom: '1px solid rgba(0, 119, 190, 0.3)',
       padding: '0.5rem 0',
     }}>
       <div className="container">
@@ -25,7 +25,7 @@ export default function Header() {
           transition: 'all 0.3s ease',
           fontSize: '1.3rem',
           fontWeight: 700,
-          color: '#FF9500',
+          color: '#FFFFFF',
           fontFamily: 'Outfit, sans-serif',
         }}
         onMouseEnter={(e) => {
@@ -65,7 +65,7 @@ export default function Header() {
               onClick={() => i18n.changeLanguage('es')}
               title="Español"
               style={{
-                background: i18n.language === 'es' ? '#C73584' : 'transparent',
+                background: i18n.language === 'es' ? '#FFFFFF' : 'transparent',
                 border: 'none',
                 padding: '0.5rem 0.8rem',
                 borderRadius: '6px',
@@ -160,6 +160,17 @@ export default function Header() {
           <MobileMenu onClose={() => setIsMobileMenuOpen(false)} />
         )}
       </div>
+      <style>{`
+        .nav-links a {
+          color: #FFFFFF;
+          text-decoration: none;
+          font-weight: 500;
+          transition: opacity 0.3s ease;
+        }
+        .nav-links a:hover {
+          opacity: 0.8;
+        }
+      `}</style>
     </header>
   );
 }
