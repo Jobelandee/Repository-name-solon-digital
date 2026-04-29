@@ -29,16 +29,16 @@
       "desc": "Aangepaste websites die bezoekers omzetten in klanten"
     },
     "service2": {
-      "name": "E-Commerce Oplossingen",
-      "desc": "Veilige en schaalbare online winkels voor uw bedrijf"
+      "name": "SEO Optimalisatie",
+      "desc": "Rank eerst op Google en domineer uw markt"
     },
     "service3": {
       "name": "AI-automatisering",
       "desc": "Slimme automatisering om tijd te besparen en efficiëntie te verhogen"
     },
     "service4": {
-      "name": "SEO en Marketing",
-      "desc": "Zorg dat uw ideale klanten u online vinden"
+      "name": "AI Chatbots",
+      "desc": "24/7 intelligente klantenondersteuning en leadgeneratie"
     }
   },
   "method": {

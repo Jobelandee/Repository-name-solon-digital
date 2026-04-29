@@ -29,16 +29,16 @@
       "desc": "Sitios web personalizados que convierten visitantes en clientes"
     },
     "service2": {
-      "name": "Soluciones E-Commerce",
-      "desc": "Tiendas en línea seguras y escalables para tu negocio"
+      "name": "Optimización SEO",
+      "desc": "Posiciónate primero en Google y domina tu mercado"
     },
     "service3": {
       "name": "Automatización IA",
       "desc": "Automatización inteligente para ahorrar tiempo y eficiencia"
     },
     "service4": {
-      "name": "SEO y Marketing",
-      "desc": "Sé encontrado por tus clientes ideales en línea"
+      "name": "Chatbots IA",
+      "desc": "Soporte al cliente 24/7 inteligente y generación de leads"
     }
   },
   "method": {

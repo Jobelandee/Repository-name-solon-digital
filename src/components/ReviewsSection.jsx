@@ -9,23 +9,23 @@ export default function ReviewsSection() {
 
   const reviews = [
     {
-      name: 'María García López',
+      name: 'Maria Garcia',
       company: 'Gym Adeje',
-      text: 'Solon Digital transformó completamente mi negocio. En 3 meses, triplicamos nuestras reservas. El servicio al cliente es excelente y la automatización funciona perfectamente.',
+      text: 'Solon Digital completely transformed our business. In 3 months, we tripled our bookings. Excellent customer service and the automation works perfectly.',
       rating: 5,
-      image: 'https://i.pravatar.cc/150?img=1&u=mariagarcialopez',
+      image: 'https://i.pravatar.cc/150?img=1&u=mariagarcia',
     },
     {
-      name: 'Carlos Rodríguez',
+      name: 'Carlos Rodriguez',
       company: 'Real Estate Tenerife',
-      text: 'La automatización IA que implementaron es increíble. Ahora recibo leads calificados automáticamente. En dos meses conseguí 5 ventas que de otra forma no hubiera podido hacer.',
+      text: 'The AI automation they implemented is incredible. Now I receive qualified leads automatically. In two months I closed 5 sales that I wouldn\'t have been able to make otherwise.',
       rating: 5,
       image: 'https://i.pravatar.cc/150?img=2&u=carlosrodriguez',
     },
     {
-      name: 'Isabel Martínez',
-      company: 'Restaurante Las Américas',
-      text: 'Profesionales, eficientes y orientados a resultados. Entienden perfectamente el mercado local de Tenerife. Mi web ahora aparece en primera página de Google. Muy recomendable!',
+      name: 'Isabel Martinez',
+      company: 'Restaurant Las Americas',
+      text: 'Professional, efficient and results-oriented. They truly understand the local Tenerife market. My website now appears on Google\'s first page. Highly recommended!',
       rating: 5,
       image: 'https://i.pravatar.cc/150?img=3&u=isabelmartinez',
     },
@@ -73,7 +73,7 @@ export default function ReviewsSection() {
               lineHeight: 1.1,
             }}
           >
-            Lo Que Dicen Nuestros Clientes
+            What Our Clients Say
           </h2>
           <p
             style={{
@@ -84,7 +84,7 @@ export default function ReviewsSection() {
               fontWeight: 400,
             }}
           >
-            Empresas de todo el mundo han crecido con nuestras soluciones
+            Businesses worldwide have grown with our solutions
           </p>
         </motion.div>
 

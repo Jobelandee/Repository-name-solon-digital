@@ -29,16 +29,16 @@
       "desc": "Custom websites that convert visitors into customers"
     },
     "service2": {
-      "name": "E-Commerce Solutions",
-      "desc": "Secure, scalable online stores for your business"
+      "name": "SEO Optimization",
+      "desc": "Rank first on Google and dominate your market"
     },
     "service3": {
       "name": "AI Automation",
       "desc": "Smart automation to save time and increase efficiency"
     },
     "service4": {
-      "name": "SEO & Marketing",
-      "desc": "Get found by your ideal customers online"
+      "name": "AI Chatbots",
+      "desc": "24/7 intelligent customer support and lead generation"
     }
   },
   "method": {
