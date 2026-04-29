@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import './config/i18n'; // Initialize i18n
 import Header from './components/Header';
 import Hero from './components/Hero';
 import IndustriesScale from './components/IndustriesScale';
@@ -14,6 +16,7 @@ import WhatsAppButton from './components/WhatsAppButton';
 import './App.css';
 
 function Layout({ children }) {
+  const { t } = useTranslation();
 
   return (
     <div className="min-h-screen bg-alabaster">
@@ -22,10 +25,10 @@ function Layout({ children }) {
       <footer className="bg-soft-stone text-charcoal py-12 px-6 border-t border-blue border-opacity-20">
         <div className="max-w-6xl mx-auto text-center space-y-4">
           <p className="text-charcoal">
-            Solon Digital - Building Smart Websites That Work
+            {t('footer.company')} - {t('footer.tagline')}
           </p>
           <p className="text-gray-dark text-sm opacity-70">
-            Copyright 2025. All rights reserved.
+            {t('footer.copyright')}
           </p>
         </div>
       </footer>

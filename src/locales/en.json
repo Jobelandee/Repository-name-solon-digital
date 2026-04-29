@@ -1,0 +1,124 @@
+{
+  "header": {
+    "services": "Services",
+    "process": "Process",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "⚡ AI Automation for more leads and visibility",
+    "headline1": "Build Smarter.",
+    "headline2": "Scale Faster.",
+    "description": "AI-powered automation for websites & marketing. Generate more leads. Increase visibility. Stop competing on price.",
+    "cta_audit": "Start Your Audit →",
+    "cta_story": "Our Story →",
+    "urgency": "Stop giving your competitors the lead. Start scaling today."
+  },
+  "stats": {
+    "label1": "Years Experience",
+    "label2": "Projects Delivered",
+    "label3": "Team Members",
+    "label4": "Client Satisfaction"
+  },
+  "services": {
+    "title": "What We Do",
+    "description": "Professional web solutions tailored to your business needs",
+    "service1": {
+      "name": "Web Development",
+      "desc": "Custom websites that convert visitors into customers"
+    },
+    "service2": {
+      "name": "E-Commerce Solutions",
+      "desc": "Secure, scalable online stores for your business"
+    },
+    "service3": {
+      "name": "AI Automation",
+      "desc": "Smart automation to save time and increase efficiency"
+    },
+    "service4": {
+      "name": "SEO & Marketing",
+      "desc": "Get found by your ideal customers online"
+    }
+  },
+  "method": {
+    "title": "Our 5-Step Process",
+    "step1": {
+      "title": "Discovery",
+      "desc": "We analyze your business, goals, and competition"
+    },
+    "step2": {
+      "title": "Strategy",
+      "desc": "Create a tailored digital roadmap for your success"
+    },
+    "step3": {
+      "title": "Design",
+      "desc": "Beautiful, user-focused design that converts"
+    },
+    "step4": {
+      "title": "Development",
+      "desc": "Build fast, secure, and scalable solutions"
+    },
+    "step5": {
+      "title": "Optimization",
+      "desc": "Continuous improvement and performance tracking"
+    }
+  },
+  "auditForm": {
+    "title": "Claim Your Growth Audit",
+    "subtitle": "Spend 15 minutes with us. Leave with a digital roadmap. No fluff, just results.",
+    "name": "Full Name",
+    "namePlaceholder": "Your full name",
+    "business": "Business Name",
+    "businessPlaceholder": "Your business name",
+    "whatsapp": "WhatsApp Number",
+    "whatsappPlaceholder": "+34 XXX XX XX XX",
+    "button": "Book My Session →",
+    "error": "Please fill in all fields",
+    "privacy": "We respect your privacy. Your data is secure.",
+    "loading": "Booking...",
+    "success_title": "Thank you!",
+    "success_message": "We'll be in touch shortly via WhatsApp."
+  },
+  "confirmation": {
+    "title": "We've Got Your Back!",
+    "subtitle": "Your demo request has been received. We'll review your information and reach out shortly.",
+    "yourInfo": "Your Information",
+    "name": "Name",
+    "email": "Email",
+    "website": "Website",
+    "whatsNext": "What's Next?",
+    "step1Title": "We Review Your Data",
+    "step1Desc": "Our team will analyze your website and business goals",
+    "step2Title": "Schedule Your Demo",
+    "step2Desc": "We'll reach out to set up a time that works for you",
+    "step3Title": "Get Your Strategy",
+    "step3Desc": "Discover exactly how we can help your business grow",
+    "backHome": "Back to Home",
+    "contactUs": "Contact Us",
+    "footerMessage": "Your information is secure and handled with complete confidentiality."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have questions? We're here to help.",
+    "email_label": "Send us an email anytime",
+    "whatsapp_label": "Message us on WhatsApp",
+    "address_label": "Visit us in Tenerife",
+    "address": "Tenerife, Spain"
+  },
+  "footer": {
+    "company": "Solon Digital",
+    "tagline": "AI-Powered Web Solutions for Growth",
+    "copyright": "© 2025 Solon Digital. All rights reserved.",
+    "services": "Services",
+    "process": "Our Process",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "chatbot": {
+    "title": "Solon Assistant",
+    "subtitle": "Always here to help",
+    "placeholder": "Ask anything...",
+    "send": "Send",
+    "whatsapp_button": "💬 Chat on WhatsApp"
+  }
+}

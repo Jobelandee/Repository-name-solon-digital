@@ -1,0 +1,124 @@
+{
+  "header": {
+    "services": "Servicios",
+    "process": "Proceso",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "tagline": "⚡ Automatización IA para más leads y visibilidad",
+    "headline1": "Construye Más Inteligente.",
+    "headline2": "Escala Más Rápido.",
+    "description": "Automatización impulsada por IA para sitios web y marketing. Genera más leads. Aumenta la visibilidad. Deja de competir por precio.",
+    "cta_audit": "Inicia Tu Auditoría →",
+    "cta_story": "Nuestra Historia →",
+    "urgency": "Deja de darle ventaja a tus competidores. Comienza a escalar hoy."
+  },
+  "stats": {
+    "label1": "Años de Experiencia",
+    "label2": "Proyectos Completados",
+    "label3": "Miembros del Equipo",
+    "label4": "Satisfacción del Cliente"
+  },
+  "services": {
+    "title": "Qué Hacemos",
+    "description": "Soluciones web profesionales adaptadas a tus necesidades",
+    "service1": {
+      "name": "Desarrollo Web",
+      "desc": "Sitios web personalizados que convierten visitantes en clientes"
+    },
+    "service2": {
+      "name": "Soluciones E-Commerce",
+      "desc": "Tiendas en línea seguras y escalables para tu negocio"
+    },
+    "service3": {
+      "name": "Automatización IA",
+      "desc": "Automatización inteligente para ahorrar tiempo y eficiencia"
+    },
+    "service4": {
+      "name": "SEO y Marketing",
+      "desc": "Sé encontrado por tus clientes ideales en línea"
+    }
+  },
+  "method": {
+    "title": "Nuestro Proceso de 5 Pasos",
+    "step1": {
+      "title": "Descubrimiento",
+      "desc": "Analizamos tu negocio, objetivos y competencia"
+    },
+    "step2": {
+      "title": "Estrategia",
+      "desc": "Creamos una hoja de ruta digital personalizada para tu éxito"
+    },
+    "step3": {
+      "title": "Diseño",
+      "desc": "Diseño hermoso y enfocado en el usuario que convierte"
+    },
+    "step4": {
+      "title": "Desarrollo",
+      "desc": "Construimos soluciones rápidas, seguras y escalables"
+    },
+    "step5": {
+      "title": "Optimización",
+      "desc": "Mejora continua y seguimiento del rendimiento"
+    }
+  },
+  "auditForm": {
+    "title": "Reclama Tu Auditoría de Crecimiento",
+    "subtitle": "Pasa 15 minutos con nosotros. Sal con una hoja de ruta digital. Sin fluff, solo resultados.",
+    "name": "Nombre Completo",
+    "namePlaceholder": "Tu nombre completo",
+    "business": "Nombre del Negocio",
+    "businessPlaceholder": "Tu nombre del negocio",
+    "whatsapp": "Número de WhatsApp",
+    "whatsappPlaceholder": "+34 XXX XX XX XX",
+    "button": "Reserva Mi Sesión →",
+    "error": "Por favor, completa todos los campos",
+    "privacy": "Respetamos tu privacidad. Tus datos están seguros.",
+    "loading": "Reservando...",
+    "success_title": "¡Gracias!",
+    "success_message": "Nos pondremos en contacto pronto a través de WhatsApp."
+  },
+  "confirmation": {
+    "title": "¡Contamos Contigo!",
+    "subtitle": "Tu solicitud de demostración ha sido recibida. Revisaremos tu información y nos pondremos en contacto pronto.",
+    "yourInfo": "Tu Información",
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "website": "Sitio Web",
+    "whatsNext": "¿Qué Sigue?",
+    "step1Title": "Revisamos Tus Datos",
+    "step1Desc": "Nuestro equipo analizará tu sitio web y objetivos comerciales",
+    "step2Title": "Programar Tu Demo",
+    "step2Desc": "Nos pondremos en contacto para establecer un horario que te convenga",
+    "step3Title": "Obtén Tu Estrategia",
+    "step3Desc": "Descubre exactamente cómo podemos ayudar a que tu negocio crezca",
+    "backHome": "Volver al Inicio",
+    "contactUs": "Contáctanos",
+    "footerMessage": "Tu información es segura y se maneja con confidencialidad completa."
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "¿Tienes preguntas? Estamos aquí para ayudarte.",
+    "email_label": "Envíanos un correo en cualquier momento",
+    "whatsapp_label": "Envíanos un mensaje por WhatsApp",
+    "address_label": "Visítanos en Tenerife",
+    "address": "Tenerife, España"
+  },
+  "footer": {
+    "company": "Solon Digital",
+    "tagline": "Soluciones Web Impulsadas por IA para el Crecimiento",
+    "copyright": "© 2025 Solon Digital. Todos los derechos reservados.",
+    "services": "Servicios",
+    "process": "Nuestro Proceso",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "chatbot": {
+    "title": "Asistente Solon",
+    "subtitle": "Siempre aquí para ayudarte",
+    "placeholder": "Pregunta algo...",
+    "send": "Enviar",
+    "whatsapp_button": "💬 Chat en WhatsApp"
+  }
+}

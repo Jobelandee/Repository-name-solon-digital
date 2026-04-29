@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section className="hero-section" style={{ position: 'relative', overflow: 'hidden' }}>
       {/* Video Background - Your Brand Logo - Optimized */}
@@ -91,7 +94,7 @@ export default function Hero() {
               textTransform: 'uppercase',
             }}
           >
-            ⚡ AI Automation voor meer leads en zichtbaarheid
+            {t('hero.tagline')}
           </motion.p>
 
           {/* Massive Main Headline - White with Ocean Blue Accent */}
@@ -110,10 +113,10 @@ export default function Hero() {
               lineHeight: 1.2,
             }}
           >
-            Build Smarter.{' '}
+            {t('hero.headline1')}{' '}
             <br />
             <span style={{ color: '#0077BE', fontWeight: 900 }}>
-              Scale Faster.
+              {t('hero.headline2')}
             </span>
           </motion.h1>
 
@@ -133,7 +136,7 @@ export default function Hero() {
               maxWidth: '500px',
             }}
           >
-            AI-powered automation for websites & marketing. Generate more leads. Increase visibility. Stop competing on price.
+            {t('hero.description')}
           </motion.p>
 
           {/* CTA Buttons - Side by Side */}
@@ -179,7 +182,7 @@ export default function Hero() {
                 e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 119, 190, 0.8), 0 12px 35px rgba(0, 119, 190, 0.45)';
               }}
             >
-              Start Your Audit →
+              {t('hero.cta_audit')}
             </motion.a>
 
             {/* Ghost Secondary Button - Links to Our Story */}
@@ -214,7 +217,7 @@ export default function Hero() {
                 e.currentTarget.style.boxShadow = 'none';
               }}
             >
-              Our Story →
+              {t('hero.cta_story')}
             </motion.a>
           </motion.div>
 
@@ -231,7 +234,7 @@ export default function Hero() {
               letterSpacing: '0.02em',
             }}
           >
-            Stop giving your competitors the lead. Start scaling today.
+            {t('hero.urgency')}
           </motion.p>
         </motion.div>
       </div>

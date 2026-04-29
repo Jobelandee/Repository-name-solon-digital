@@ -3,12 +3,14 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../config/firebase';
 import { sendEmails } from '../services/emailService';
 import { saveBookingToSheet } from '../services/googleSheetsService';
 
 export default function AuditForm() {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const inView = useInView(ref, { once: false, amount: 0.3 });
   const navigate = useNavigate();
@@ -38,7 +40,7 @@ export default function AuditForm() {
     setError(null);
 
     if (!formData.name || !formData.businessName || !formData.whatsapp) {
-      setError('Please fill in all fields');
+      setError({t('auditForm.error')});
       setLoading(false);
       return;
     }
@@ -133,7 +135,7 @@ export default function AuditForm() {
               lineHeight: 1.1,
             }}
           >
-            Claim Your Growth Audit
+            {t('auditForm.title')}
           </h2>
           <p
             style={{
@@ -145,7 +147,7 @@ export default function AuditForm() {
               letterSpacing: '-0.005em',
             }}
           >
-            Spend 15 minutes with us. Leave with a digital roadmap. No fluff, just results.
+            {t('auditForm.subtitle')}
           </p>
         </motion.div>
 
@@ -201,7 +203,7 @@ export default function AuditForm() {
                   fontFamily: 'Inter, sans-serif',
                 }}
               >
-                We'll be in touch shortly via WhatsApp.
+                {t('auditForm.success_message')}
               </p>
             </motion.div>
           ) : (
@@ -220,7 +222,7 @@ export default function AuditForm() {
                     textTransform: 'uppercase',
                   }}
                 >
-                  Full Name
+                  {t('auditForm.name')}
                 </label>
                 <input
                   type="text"
@@ -229,7 +231,7 @@ export default function AuditForm() {
                   onChange={handleChange}
                   onFocus={() => setFocused('name')}
                   onBlur={() => setFocused(null)}
-                  placeholder="Your full name"
+                  placeholder="{t('auditForm.namePlaceholder')}"
                   style={{
                     width: '100%',
                     padding: '0.95rem 1.2rem',
@@ -269,7 +271,7 @@ export default function AuditForm() {
                   onChange={handleChange}
                   onFocus={() => setFocused('businessName')}
                   onBlur={() => setFocused(null)}
-                  placeholder="Your business name"
+                  placeholder="{t('auditForm.businessPlaceholder')}"
                   style={{
                     width: '100%',
                     padding: '0.95rem 1.2rem',
@@ -376,7 +378,7 @@ export default function AuditForm() {
                   e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.7), 0 8px 25px rgba(0, 119, 190, 0.4)';
                 }}
               >
-                {loading ? 'Booking...' : 'Book My Session →'}
+                {loading ? t('auditForm.loading') : t('auditForm.button')
               </motion.button>
 
               {/* Privacy Note */}
@@ -389,7 +391,7 @@ export default function AuditForm() {
                   marginTop: '0.5rem',
                 }}
               >
-                We respect your privacy. Your data is secure.
+                t('auditForm.privacy')
               </p>
             </form>
           )}
