@@ -19,9 +19,9 @@ function Layout({ children }) {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-alabaster">
+    <div className="min-h-screen bg-black">
       <Header />
-      <div className="pt-20">{children}</div>
+      <div>{children}</div>
       <footer className="bg-soft-stone text-charcoal py-12 px-6 border-t border-blue border-opacity-20">
         <div className="max-w-6xl mx-auto text-center space-y-4">
           <p className="text-charcoal">

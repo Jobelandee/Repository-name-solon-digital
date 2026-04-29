@@ -141,7 +141,7 @@ export default function AuditForm() {
             style={{
               fontSize: '1.1rem',
               color: '#D0D0D0',
-              fontFamily: 'Inter, sans-serif',
+              fontFamily: 'Outfit, sans-serif',
               lineHeight: 1.7,
               fontWeight: 400,
               letterSpacing: '-0.005em',
@@ -157,14 +157,13 @@ export default function AuditForm() {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.9, delay: 0.1 }}
           style={{
-            background: 'rgba(255, 255, 255, 0.07)',
-            backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(0, 119, 190, 0.2)',
-            borderRadius: '20px',
-            padding: '3.5rem',
+            background: '#FFFFFF',
+            border: '1px solid #E0E0E0',
+            borderRadius: '12px',
+            padding: '2.5rem',
             maxWidth: '500px',
             margin: '0 auto',
-            boxShadow: '0 20px 60px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.08)',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
           }}
         >
           {submitted ? (
@@ -181,6 +180,7 @@ export default function AuditForm() {
                 style={{
                   fontSize: '3rem',
                   marginBottom: '1rem',
+                  color: '#FF9500',
                 }}
               >
                 ✓
@@ -189,18 +189,19 @@ export default function AuditForm() {
                 style={{
                   fontSize: '1.5rem',
                   fontWeight: 700,
-                  color: '#FFFFFF',
+                  color: '#1a1a1a',
                   marginBottom: '0.5rem',
-                  fontFamily: 'Playfair Display, serif',
+                  fontFamily: 'Outfit, sans-serif',
                 }}
               >
-                Thank you!
+                {t('auditForm.success_title')}
               </h3>
               <p
                 style={{
-                  color: '#CCCCCC',
+                  color: '#666666',
                   fontSize: '1rem',
-                  fontFamily: 'Inter, sans-serif',
+                  fontFamily: 'Outfit, sans-serif',
+                  lineHeight: 1.6,
                 }}
               >
                 {t('auditForm.success_message')}
@@ -216,8 +217,8 @@ export default function AuditForm() {
                     marginBottom: '0.6rem',
                     fontSize: '0.9rem',
                     fontWeight: 600,
-                    color: '#E8E8E8',
-                    fontFamily: 'Inter, sans-serif',
+                    color: '#1a1a1a',
+                    fontFamily: 'Outfit, sans-serif',
                     letterSpacing: '0.02em',
                     textTransform: 'uppercase',
                   }}
@@ -231,18 +232,18 @@ export default function AuditForm() {
                   onChange={handleChange}
                   onFocus={() => setFocused('name')}
                   onBlur={() => setFocused(null)}
-                  placeholder="{t('auditForm.namePlaceholder')}"
+                  placeholder={t('auditForm.namePlaceholder')}
                   style={{
                     width: '100%',
                     padding: '0.95rem 1.2rem',
-                    background: 'rgba(255, 255, 255, 0.05)',
-                    border: focused === 'name' ? '1.5px solid #0077BE' : '1.5px solid rgba(0, 119, 190, 0.3)',
+                    background: '#F8F8F8',
+                    border: focused === 'name' ? '1.5px solid #0077BE' : '1.5px solid #D0D0D0',
                     borderRadius: '8px',
-                    color: '#FFFFFF',
+                    color: '#1a1a1a',
                     fontSize: '1rem',
-                    fontFamily: 'Inter, sans-serif',
+                    fontFamily: 'Outfit, sans-serif',
                     transition: 'all 0.3s ease',
-                    boxShadow: focused === 'name' ? '0 0 15px rgba(0, 119, 190, 0.3)' : 'none',
+                    boxShadow: focused === 'name' ? '0 0 12px rgba(0, 119, 190, 0.15)' : 'none',
                     outline: 'none',
                   }}
                 />
@@ -256,13 +257,13 @@ export default function AuditForm() {
                     marginBottom: '0.6rem',
                     fontSize: '0.9rem',
                     fontWeight: 600,
-                    color: '#E8E8E8',
-                    fontFamily: 'Inter, sans-serif',
+                    color: '#1a1a1a',
+                    fontFamily: 'Outfit, sans-serif',
                     letterSpacing: '0.02em',
                     textTransform: 'uppercase',
                   }}
                 >
-                  Business Name
+                  {t('auditForm.business')}
                 </label>
                 <input
                   type="text"
@@ -271,18 +272,18 @@ export default function AuditForm() {
                   onChange={handleChange}
                   onFocus={() => setFocused('businessName')}
                   onBlur={() => setFocused(null)}
-                  placeholder="{t('auditForm.businessPlaceholder')}"
+                  placeholder={t('auditForm.businessPlaceholder')}
                   style={{
                     width: '100%',
                     padding: '0.95rem 1.2rem',
-                    background: 'rgba(255, 255, 255, 0.05)',
-                    border: focused === 'businessName' ? '1.5px solid #0077BE' : '1.5px solid rgba(0, 119, 190, 0.3)',
+                    background: '#F8F8F8',
+                    border: focused === 'businessName' ? '1.5px solid #0077BE' : '1.5px solid #D0D0D0',
                     borderRadius: '8px',
-                    color: '#FFFFFF',
+                    color: '#1a1a1a',
                     fontSize: '1rem',
-                    fontFamily: 'Inter, sans-serif',
+                    fontFamily: 'Outfit, sans-serif',
                     transition: 'all 0.3s ease',
-                    boxShadow: focused === 'businessName' ? '0 0 15px rgba(0, 119, 190, 0.3)' : 'none',
+                    boxShadow: focused === 'businessName' ? '0 0 12px rgba(0, 119, 190, 0.15)' : 'none',
                     outline: 'none',
                   }}
                 />
@@ -296,13 +297,13 @@ export default function AuditForm() {
                     marginBottom: '0.6rem',
                     fontSize: '0.9rem',
                     fontWeight: 600,
-                    color: '#E8E8E8',
-                    fontFamily: 'Inter, sans-serif',
+                    color: '#1a1a1a',
+                    fontFamily: 'Outfit, sans-serif',
                     letterSpacing: '0.02em',
                     textTransform: 'uppercase',
                   }}
                 >
-                  WhatsApp Number
+                  {t('auditForm.whatsapp')}
                 </label>
                 <input
                   type="tel"
@@ -311,18 +312,18 @@ export default function AuditForm() {
                   onChange={handleChange}
                   onFocus={() => setFocused('whatsapp')}
                   onBlur={() => setFocused(null)}
-                  placeholder="+34 XXX XX XX XX"
+                  placeholder={t('auditForm.whatsappPlaceholder')}
                   style={{
                     width: '100%',
                     padding: '0.95rem 1.2rem',
-                    background: 'rgba(255, 255, 255, 0.05)',
-                    border: focused === 'whatsapp' ? '1.5px solid #0077BE' : '1.5px solid rgba(0, 119, 190, 0.3)',
+                    background: '#F8F8F8',
+                    border: focused === 'whatsapp' ? '1.5px solid #0077BE' : '1.5px solid #D0D0D0',
                     borderRadius: '8px',
-                    color: '#FFFFFF',
+                    color: '#1a1a1a',
                     fontSize: '1rem',
-                    fontFamily: 'Inter, sans-serif',
+                    fontFamily: 'Outfit, sans-serif',
                     transition: 'all 0.3s ease',
-                    boxShadow: focused === 'whatsapp' ? '0 0 15px rgba(0, 119, 190, 0.3)' : 'none',
+                    boxShadow: focused === 'whatsapp' ? '0 0 12px rgba(0, 119, 190, 0.15)' : 'none',
                     outline: 'none',
                   }}
                 />
@@ -335,64 +336,71 @@ export default function AuditForm() {
                   animate={{ opacity: 1, y: 0 }}
                   style={{
                     padding: '0.8rem 1rem',
-                    background: 'rgba(255, 71, 87, 0.15)',
-                    border: '1px solid rgba(255, 71, 87, 0.4)',
+                    background: '#FEE8E8',
+                    border: '1px solid #FF6B87',
                     borderRadius: '6px',
-                    color: '#FF6B87',
+                    color: '#D32F2F',
                     fontSize: '0.9rem',
-                    fontFamily: 'Inter, sans-serif',
+                    fontFamily: 'Outfit, sans-serif',
                   }}
                 >
                   {error}
                 </motion.div>
               )}
 
-              {/* Submit Button */}
+              {/* Submit Button - Orange */}
               <motion.button
                 type="submit"
                 disabled={loading}
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 style={{
-                  background: '#0077BE',
-                  color: '#1a1a1a',
+                  background: '#FF9500',
+                  color: '#FFFFFF',
                   padding: '1.15rem 2.5rem',
                   borderRadius: '8px',
                   border: 'none',
                   fontWeight: 700,
                   fontSize: '0.95rem',
-                  fontFamily: 'Inter, sans-serif',
+                  fontFamily: 'Outfit, sans-serif',
                   letterSpacing: '-0.01em',
                   cursor: loading ? 'not-allowed' : 'pointer',
                   opacity: loading ? 0.7 : 1,
-                  boxShadow: '0 0 30px rgba(0, 119, 190, 0.7), 0 8px 25px rgba(0, 119, 190, 0.4)',
+                  boxShadow: '0 4px 12px rgba(255, 149, 0, 0.3)',
                   transition: 'all 0.3s ease',
                   marginTop: '0.5rem',
+                  width: '100%',
                 }}
                 onMouseEnter={(e) => {
                   if (!loading) {
-                    e.currentTarget.style.boxShadow = '0 0 50px rgba(0, 119, 190, 0.9), 0 12px 35px rgba(0, 119, 190, 0.5)';
+                    e.currentTarget.style.background = '#E68600';
+                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 149, 0, 0.4)';
                   }
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.7), 0 8px 25px rgba(0, 119, 190, 0.4)';
+                  e.currentTarget.style.background = '#FF9500';
+                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(255, 149, 0, 0.3)';
                 }}
               >
                 {loading ? t('auditForm.loading') : t('auditForm.button')}
               </motion.button>
 
-              {/* Privacy Note */}
-              <p
+              {/* Privacy & Trust Note */}
+              <div
                 style={{
-                  fontSize: '0.8rem',
-                  color: '#888888',
+                  fontSize: '0.85rem',
+                  color: '#666666',
                   textAlign: 'center',
-                  fontFamily: 'Inter, sans-serif',
-                  marginTop: '0.5rem',
+                  fontFamily: 'Outfit, sans-serif',
+                  marginTop: '1.5rem',
+                  paddingTop: '1.5rem',
+                  borderTop: '1px solid #E0E0E0',
+                  lineHeight: 1.6,
                 }}
               >
-                t('auditForm.privacy')
-              </p>
+                <p style={{ margin: '0 0 0.5rem 0' }}>✓ No credit card required</p>
+                <p style={{ margin: '0' }}>{t('auditForm.privacy')}</p>
+              </div>
             </form>
           )}
         </motion.div>

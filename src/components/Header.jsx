@@ -9,25 +9,32 @@ export default function Header() {
   const { i18n, t } = useTranslation();
 
   return (
-    <header className="solon-header">
+    <header className="solon-header" style={{
+      backgroundImage: `url('/solon-logo.png')`,
+      backgroundSize: 'auto 80px',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'right center',
+      backgroundAttachment: 'local',
+    }}>
       <div className="container">
-        {/* Logo/Home Link */}
+        {/* Logo/Home Link - Logo is in header background */}
         <Link to="/" style={{
           textDecoration: 'none',
           color: 'inherit',
           display: 'flex',
           alignItems: 'center',
           marginRight: 'auto',
+          padding: '0.5rem 1rem',
+          transition: 'all 0.3s ease',
+          visibility: 'hidden',
+          width: '0',
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.opacity = '0.9';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.opacity = '1';
         }}>
-          <div style={{
-            fontFamily: 'Playfair Display, serif',
-            fontSize: '1.3rem',
-            fontWeight: 700,
-            color: '#0077BE',
-            letterSpacing: '-0.01em',
-          }}>
-            Solon
-          </div>
         </Link>
 
         {/* Desktop Navigation */}

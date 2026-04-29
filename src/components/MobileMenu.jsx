@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export default function MobileMenu({ onClose }) {
+  const { i18n, t } = useTranslation();
+
   const menuItems = [
-    { label: 'Insights', path: '/insights' },
-    { label: 'Method', path: '/method' },
-    { label: 'Contact', path: '/contact' },
+    { label: t('header.services'), path: '/insights' },
+    { label: t('header.process'), path: '/method' },
+    { label: t('header.contact'), path: '/contact' },
   ];
 
   return (
@@ -102,6 +105,48 @@ export default function MobileMenu({ onClose }) {
           ))}
         </nav>
 
+        {/* Language Switcher */}
+        <div style={{
+          display: 'flex',
+          gap: '0.5rem',
+          justifyContent: 'center',
+          paddingTop: '1rem',
+          borderTop: '1px solid rgba(0, 119, 190, 0.2)',
+        }}>
+          <button
+            onClick={() => { i18n.changeLanguage('en'); onClose(); }}
+            style={{
+              background: i18n.language === 'en' ? '#0077BE' : 'transparent',
+              color: i18n.language === 'en' ? '#1a1a1a' : '#FFFFFF',
+              border: '1px solid #0077BE',
+              padding: '0.6rem 1.2rem',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              fontSize: '0.9rem',
+              fontWeight: 600,
+              transition: 'all 0.3s ease',
+            }}
+          >
+            EN
+          </button>
+          <button
+            onClick={() => { i18n.changeLanguage('es'); onClose(); }}
+            style={{
+              background: i18n.language === 'es' ? '#0077BE' : 'transparent',
+              color: i18n.language === 'es' ? '#1a1a1a' : '#FFFFFF',
+              border: '1px solid #0077BE',
+              padding: '0.6rem 1.2rem',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              fontSize: '0.9rem',
+              fontWeight: 600,
+              transition: 'all 0.3s ease',
+            }}
+          >
+            ES
+          </button>
+        </div>
+
         {/* Booking CTA */}
         <motion.a
           href="/#audit"
@@ -110,8 +155,8 @@ export default function MobileMenu({ onClose }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
           style={{
-            background: '#0077BE',
-            color: '#1a1a1a',
+            background: '#FF9500',
+            color: '#FFFFFF',
             padding: '0.95rem 1.5rem',
             borderRadius: '8px',
             textDecoration: 'none',
@@ -123,7 +168,7 @@ export default function MobileMenu({ onClose }) {
             transition: 'all 0.3s ease',
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.7)';
+            e.currentTarget.style.boxShadow = '0 0 30px rgba(255, 149, 0, 0.7)';
             e.currentTarget.style.transform = 'scale(1.05)';
           }}
           onMouseLeave={(e) => {
@@ -131,7 +176,7 @@ export default function MobileMenu({ onClose }) {
             e.currentTarget.style.transform = 'scale(1)';
           }}
         >
-          Book My Session →
+          {t('hero.cta_audit')}
         </motion.a>
       </motion.div>
     </motion.div>

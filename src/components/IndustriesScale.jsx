@@ -3,14 +3,34 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { websiteContent } from '../data/websiteContent';
+import { useTranslation } from 'react-i18next';
 
 export default function IndustriesScale() {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const inView = useInView(ref, { once: false, amount: 0.2 });
 
-  // Map websiteContent industries to the format used here
-  const industries = websiteContent.industries.map(ind => ({
+  // Industries with their styling
+  const industries = [
+    {
+      title: t('industries.gym.title'),
+      description: t('industries.gym.description'),
+      glowColor: '#0077BE',
+      accentColor: '#4A90E2',
+    },
+    {
+      title: t('industries.realestate.title'),
+      description: t('industries.realestate.description'),
+      glowColor: '#8B7355',
+      accentColor: '#D4A574',
+    },
+    {
+      title: t('industries.services.title'),
+      description: t('industries.services.description'),
+      glowColor: '#0099FF',
+      accentColor: '#FFA500',
+    },
+  ].map(ind => ({
     title: ind.title,
     glowColor: ind.glowColor,
     accentColor: ind.accentColor,
@@ -77,19 +97,19 @@ export default function IndustriesScale() {
               textShadow: '0 8px 32px rgba(0, 119, 190, 0.25)',
             }}
           >
-            {websiteContent.sections.industriesTitle}
+            {t('industries.title')}
           </h2>
           <p
             style={{
               fontSize: '1.15rem',
               color: '#E0E0E0',
-              fontFamily: 'Inter, sans-serif',
+              fontFamily: 'Outfit, sans-serif',
               lineHeight: 1.7,
               fontWeight: 400,
               letterSpacing: '-0.005em',
             }}
           >
-            {websiteContent.sections.industriesSubtitle}
+            {t('industries.subtitle')}
           </p>
         </motion.div>
 
@@ -137,7 +157,7 @@ export default function IndustriesScale() {
               textDecoration: 'none',
               fontWeight: 700,
               fontSize: '0.95rem',
-              fontFamily: 'Inter, sans-serif',
+              fontFamily: 'Outfit, sans-serif',
               letterSpacing: '-0.01em',
               border: '2px solid rgba(0, 119, 190, 0.5)',
               background: 'transparent',
@@ -154,7 +174,7 @@ export default function IndustriesScale() {
               e.currentTarget.style.borderColor = 'rgba(0, 119, 190, 0.5)';
             }}
           >
-            Show All Pillars →
+            {t('header.services')} →
           </motion.a>
 
           {/* Primary CTA - Claim Your Audit */}
@@ -163,29 +183,29 @@ export default function IndustriesScale() {
             whileHover={{ scale: 1.07, y: -2 }}
             whileTap={{ scale: 0.96 }}
             style={{
-              background: '#0077BE',
-              color: '#1a1a1a',
+              background: '#FF9500',
+              color: '#FFFFFF',
               padding: '1.1rem 2.5rem',
               borderRadius: '8px',
               textDecoration: 'none',
               fontWeight: 700,
               fontSize: '0.95rem',
-              fontFamily: 'Inter, sans-serif',
+              fontFamily: 'Outfit, sans-serif',
               letterSpacing: '-0.01em',
               border: 'none',
               cursor: 'pointer',
-              boxShadow: '0 0 30px rgba(0, 119, 190, 0.7), 0 8px 20px rgba(0, 119, 190, 0.4)',
+              boxShadow: '0 0 30px rgba(255, 149, 0, 0.7), 0 8px 20px rgba(255, 149, 0, 0.4)',
               transition: 'all 0.3s ease',
               display: 'inline-block',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = '0 0 50px rgba(0, 119, 190, 0.9), 0 12px 35px rgba(0, 119, 190, 0.5)';
+              e.currentTarget.style.boxShadow = '0 0 50px rgba(255, 149, 0, 0.9), 0 12px 35px rgba(255, 149, 0, 0.5)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.7), 0 8px 20px rgba(0, 119, 190, 0.4)';
+              e.currentTarget.style.boxShadow = '0 0 30px rgba(255, 149, 0, 0.7), 0 8px 20px rgba(255, 149, 0, 0.4)';
             }}
           >
-            Claim Your Audit →
+            {t('auditForm.button')}
           </motion.a>
         </motion.div>
       </div>
@@ -291,7 +311,7 @@ function IndustryCard({ industry, index, inView }) {
           fontSize: '1.05rem',
           lineHeight: 1.8,
           color: '#D0D0D0',
-          fontFamily: 'Inter, sans-serif',
+          fontFamily: 'Outfit, sans-serif',
           fontWeight: 400,
           marginBottom: '2rem',
           position: 'relative',

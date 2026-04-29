@@ -6,30 +6,11 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section className="hero-section" style={{ position: 'relative', overflow: 'hidden' }}>
-      {/* Video Background - Your Brand Logo - Optimized */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          objectFit: 'contain',
-          objectPosition: 'center',
-          zIndex: 0,
-          opacity: 0.3,
-          backgroundColor: '#f8f8f8',
-          willChange: 'transform',
-        }}
-      >
-        <source src="/hero-bg.mp4" type="video/mp4" />
-      </video>
+    <section className="hero-section" style={{
+      position: 'relative',
+      overflow: 'hidden',
+      background: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)',
+    }}>
 
       {/* Subtle Left Gradient for Text Readability */}
       <div
@@ -84,12 +65,13 @@ export default function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.05 }}
+            className="tagline"
             style={{
               color: '#FF9500',
-              fontSize: '0.95rem',
+              fontSize: '18px',
               fontWeight: 700,
               fontFamily: 'Outfit, sans-serif',
-              marginBottom: '1rem',
+              marginBottom: '1.5rem',
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
             }}
@@ -104,40 +86,66 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.1 }}
             style={{
               color: '#FFFFFF',
-              fontSize: 'clamp(3.2rem, 7vw, 5.5rem)',
-              fontWeight: 800,
-              fontFamily: 'Playfair Display, serif',
-              marginBottom: '2rem',
+              fontSize: 'clamp(2.8rem, 6vw, 4.8rem)',
+              fontWeight: 700,
+              fontFamily: 'Outfit, sans-serif',
+              marginBottom: '1.5rem',
               textShadow: '0 4px 16px rgba(0, 0, 0, 0.4)',
-              letterSpacing: '-0.025em',
-              lineHeight: 1.2,
+              letterSpacing: '-0.02em',
+              lineHeight: 1.15,
             }}
           >
             {t('hero.headline1')}{' '}
-            <br />
-            <span style={{ color: '#0077BE', fontWeight: 900 }}>
+            <span style={{ color: '#0077BE' }}>
               {t('hero.headline2')}
             </span>
           </motion.h1>
 
-          {/* Supporting Copy */}
+          {/* Subheadline - What We Do */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{
               color: '#E8E8E8',
-              fontSize: '1.08rem',
-              lineHeight: 1.75,
+              fontSize: '1.3rem',
+              lineHeight: 1.8,
               fontWeight: 400,
-              fontFamily: 'Inter, sans-serif',
-              marginBottom: '2.8rem',
+              fontFamily: 'Outfit, sans-serif',
+              marginBottom: '2.5rem',
               letterSpacing: '-0.005em',
-              maxWidth: '500px',
+              maxWidth: '580px',
             }}
           >
             {t('hero.description')}
           </motion.p>
+
+          {/* Statistics Row */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
+              gap: '2rem',
+              marginBottom: '2.8rem',
+              maxWidth: '580px',
+            }}
+          >
+            <div style={{ textAlign: 'left' }}>
+              <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>42+</h3>
+              <p style={{ fontSize: '0.95rem', color: '#CCCCCC', margin: 0 }}>Businesses Growing</p>
+            </div>
+            <div style={{ textAlign: 'left' }}>
+              <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>40%</h3>
+              <p style={{ fontSize: '0.95rem', color: '#CCCCCC', margin: 0 }}>More Leads (Month 1)</p>
+            </div>
+            <div style={{ textAlign: 'left' }}>
+              <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>15+</h3>
+              <p style={{ fontSize: '0.95rem', color: '#CCCCCC', margin: 0 }}>Hours/Week Saved</p>
+            </div>
+          </motion.div>
 
           {/* CTA Buttons - Side by Side */}
           <motion.div
@@ -152,34 +160,38 @@ export default function Hero() {
               marginBottom: '2.5rem',
             }}
           >
-            {/* Gold Primary Button */}
+            {/* Primary Audit Button - Orange */}
             <motion.a
               href="#audit"
               whileHover={{ scale: 1.07, y: -3 }}
               whileTap={{ scale: 0.96 }}
               style={{
-                background: '#0077BE',
-                color: '#1a1a1a',
-                padding: '1.2rem 3rem',
-                borderRadius: '8px',
+                background: '#FF9500',
+                color: '#FFFFFF',
+                padding: '1rem 2.5rem',
+                borderRadius: '6px',
                 textDecoration: 'none',
-                fontWeight: 700,
-                fontSize: '0.98rem',
-                fontFamily: 'Inter, sans-serif',
+                fontWeight: 600,
+                fontSize: '1rem',
+                fontFamily: 'Outfit, sans-serif',
                 letterSpacing: '-0.01em',
                 border: 'none',
                 cursor: 'pointer',
-                boxShadow: '0 0 40px rgba(0, 119, 190, 0.8), 0 12px 35px rgba(0, 119, 190, 0.45)',
-                transition: 'all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                boxShadow: '0 6px 16px rgba(255, 149, 0, 0.3)',
+                transition: 'all 0.3s ease',
                 display: 'inline-block',
                 whiteSpace: 'nowrap',
                 position: 'relative',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = '0 0 60px rgba(0, 119, 190, 1), 0 18px 50px rgba(0, 119, 190, 0.6)';
+                e.currentTarget.style.background = '#E68600';
+                e.currentTarget.style.boxShadow = '0 8px 24px rgba(255, 149, 0, 0.4)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 119, 190, 0.8), 0 12px 35px rgba(0, 119, 190, 0.45)';
+                e.currentTarget.style.background = '#FF9500';
+                e.currentTarget.style.boxShadow = '0 6px 16px rgba(255, 149, 0, 0.3)';
+                e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
               {t('hero.cta_audit')}
@@ -192,28 +204,26 @@ export default function Hero() {
               whileTap={{ scale: 0.96 }}
               style={{
                 background: 'transparent',
-                color: '#FFFFFF',
-                padding: '1.2rem 3rem',
-                borderRadius: '8px',
+                color: '#0077BE',
+                padding: '1rem 2.5rem',
+                borderRadius: '6px',
                 textDecoration: 'none',
-                fontWeight: 700,
-                fontSize: '0.98rem',
-                fontFamily: 'Inter, sans-serif',
+                fontWeight: 600,
+                fontSize: '1rem',
+                fontFamily: 'Outfit, sans-serif',
                 letterSpacing: '-0.01em',
-                border: '2px solid rgba(255, 255, 255, 1)',
+                border: '2px solid #0077BE',
                 cursor: 'pointer',
-                transition: 'all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                transition: 'all 0.3s ease',
                 display: 'inline-block',
                 whiteSpace: 'nowrap',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = 'rgba(0, 119, 190, 0.12)';
-                e.currentTarget.style.borderColor = '#0077BE';
-                e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 119, 190, 0.3)';
+                e.currentTarget.style.backgroundColor = 'rgba(0, 119, 190, 0.1)';
+                e.currentTarget.style.boxShadow = '0 6px 16px rgba(0, 119, 190, 0.2)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundColor = 'transparent';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 1)';
                 e.currentTarget.style.boxShadow = 'none';
               }}
             >
@@ -257,7 +267,8 @@ export default function Hero() {
             font-size: 2.5rem !important;
           }
 
-          p[style*="D4AF37"][style*="Playfair"] {
+          p[style*="FF9500"][style*="Playfair"],
+          p[style*="FF9500"][style*="letterSpacing"] {
             text-align: center !important;
             font-size: 1.5rem !important;
             margin-bottom: 1.5rem !important;
@@ -274,7 +285,7 @@ export default function Hero() {
             margin-bottom: 1.5rem !important;
           }
 
-          a[style*="D4AF37"][style*="D4AF37"],
+          a[style*="FF9500"],
           a[style*="transparent"][style*="border: 2px"] {
             padding: 0.9rem 1.8rem !important;
             font-size: 0.85rem !important;

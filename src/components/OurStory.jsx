@@ -3,9 +3,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { websiteContent } from '../data/websiteContent';
+import { useTranslation } from 'react-i18next';
 
 export default function OurStory() {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const inView = useInView(ref, { once: false, amount: 0.2 });
 
@@ -115,9 +116,9 @@ export default function OurStory() {
                 paddingTop: '0.5rem',
               }}
             >
-              {websiteContent.story.headline.split('.')[0]}.{' '}
+              {t('ourstory.headline').split('.')[0]}.{' '}
               <span style={{ color: '#0077BE', display: 'block' }}>
-                {websiteContent.story.headline.split('.')[1]}.
+                {t('ourstory.headline').split('.')[1]}.
               </span>
             </h2>
 
@@ -129,7 +130,7 @@ export default function OurStory() {
               style={{
                 fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
                 color: '#E0E0E0',
-                fontFamily: 'Inter, sans-serif',
+                fontFamily: 'Outfit, sans-serif',
                 lineHeight: 1.85,
                 fontWeight: 400,
                 letterSpacing: '-0.005em',
@@ -138,11 +139,8 @@ export default function OurStory() {
                 gap: '1.5rem',
               }}
             >
-              {websiteContent.story.narrative.map((paragraph, idx) => (
-                <p key={idx} style={{ margin: 0 }}>
-                  {paragraph}
-                </p>
-              ))}
+              <p style={{ margin: 0 }}>{t('ourstory.narrative1')}</p>
+              <p style={{ margin: 0 }}>{t('ourstory.narrative2')}</p>
             </motion.div>
 
             {/* Founder Cards — Stacked on Mobile, 2-Col on Desktop */}
@@ -158,17 +156,17 @@ export default function OurStory() {
               className="founder-cards-grid"
             >
               <FounderCard
-                name="Job Eland"
-                role="Marketing Specialist & AI Expert"
-                bio="He turns complex data into high-performance digital machines that convert traffic into predictable profit."
+                name={t('ourstory.founder1_name')}
+                role={t('ourstory.founder1_title')}
+                bio={t('ourstory.founder1_desc')}
                 icon="🚀"
                 index={0}
                 inView={inView}
               />
               <FounderCard
-                name="Rodney"
-                role="Former Owner of 6 PT Studios"
-                bio="He knows exactly what it takes to lead a business, optimize daily operations, and scale local brands."
+                name={t('ourstory.founder2_name')}
+                role={t('ourstory.founder2_title')}
+                bio={t('ourstory.founder2_desc')}
                 icon="💪"
                 index={1}
                 inView={inView}
@@ -269,7 +267,7 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
           fontWeight: 600,
           color: '#0077BE',
           marginBottom: '0.8rem',
-          fontFamily: 'Inter, sans-serif',
+          fontFamily: 'Outfit, sans-serif',
           letterSpacing: '-0.005em',
           position: 'relative',
           zIndex: 2,
@@ -284,7 +282,7 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
           fontSize: '0.95rem',
           lineHeight: 1.6,
           color: '#D0D0D0',
-          fontFamily: 'Inter, sans-serif',
+          fontFamily: 'Outfit, sans-serif',
           fontWeight: 400,
           position: 'relative',
           zIndex: 2,

@@ -10,7 +10,7 @@
     "headline1": "Construye Más Inteligente.",
     "headline2": "Escala Más Rápido.",
     "description": "Automatización impulsada por IA para sitios web y marketing. Genera más leads. Aumenta la visibilidad. Deja de competir por precio.",
-    "cta_audit": "Inicia Tu Auditoría →",
+    "cta_audit": "Reserva Tu Auditoría Gratis →",
     "cta_story": "Nuestra Historia →",
     "urgency": "Deja de darle ventaja a tus competidores. Comienza a escalar hoy."
   },
@@ -64,20 +64,20 @@
     }
   },
   "auditForm": {
-    "title": "Reclama Tu Auditoría de Crecimiento",
-    "subtitle": "Pasa 15 minutos con nosotros. Sal con una hoja de ruta digital. Sin fluff, solo resultados.",
+    "title": "Reclama Tu Auditoría de Crecimiento Gratis",
+    "subtitle": "Pasa 15 minutos con nosotros. Sal con una hoja de ruta digital clara. Sin tarjeta de crédito requerida.",
     "name": "Nombre Completo",
     "namePlaceholder": "Tu nombre completo",
     "business": "Nombre del Negocio",
     "businessPlaceholder": "Tu nombre del negocio",
     "whatsapp": "Número de WhatsApp",
     "whatsappPlaceholder": "+34 XXX XX XX XX",
-    "button": "Reserva Mi Sesión →",
+    "button": "Reserva Mi Auditoría Gratis →",
     "error": "Por favor, completa todos los campos",
-    "privacy": "Respetamos tu privacidad. Tus datos están seguros.",
+    "privacy": "Te contactaremos por WhatsApp para programar tu auditoría de 15 minutos.",
     "loading": "Reservando...",
-    "success_title": "¡Gracias!",
-    "success_message": "Nos pondremos en contacto pronto a través de WhatsApp."
+    "success_title": "¡Perfecto! Tu auditoría está confirmada.",
+    "success_message": "Nos pondremos en contacto por WhatsApp en las próximas 24 horas para programar tu auditoría de crecimiento personalizada."
   },
   "confirmation": {
     "title": "¡Contamos Contigo!",
@@ -120,5 +120,36 @@
     "placeholder": "Pregunta algo...",
     "send": "Enviar",
     "whatsapp_button": "💬 Chat en WhatsApp"
+  },
+  "industries": {
+    "title": "El Costo de Esperar",
+    "subtitle": "Cada día que esperas es un día que tus competidores avanzan.",
+    "gym": {
+      "title": "Gimnasios y Padelclubs",
+      "description": "Detén el caos de reservas por WhatsApp. Automatiza tus pistas y crece tu comunidad."
+    },
+    "realestate": {
+      "title": "Bienes Raíces",
+      "description": "Convierte buscadores globales en leads prequalificados. Landing pages de alto rendimiento para propiedades en Tenerife."
+    },
+    "services": {
+      "title": "Servicios Locales",
+      "description": "Desde Restaurantes hasta Spas. Sé encontrado en la página 1 de Google y automatiza tus consultas."
+    }
+  },
+  "ourstory": {
+    "headline": "Innovación Holandesa. Raíces Canarias.",
+    "narrative1": "Nos mudamos de Holanda a Tenerife porque vimos una brecha masiva: negocios locales perdiendo horas en trabajo manual y miles en ingresos por herramientas digitales obsoletas. Vimos el potencial, y nos mudamos aquí para solucionarlo.",
+    "narrative2": "No solo construimos sitios web; construimos sistemas impulsados por IA que actúan como tu empleado más eficiente, ahorrándote tiempo y dinero.",
+    "founder1_name": "Job Eland",
+    "founder1_title": "Especialista en Marketing e Experto en IA",
+    "founder1_desc": "Transforma datos complejos en máquinas digitales de alto rendimiento que convierten tráfico en ganancia predecible.",
+    "founder2_name": "Rodney",
+    "founder2_title": "Propietario Anterior de 6 PT Studios",
+    "founder2_desc": "Sabe exactamente qué se necesita para dirigir un negocio, optimizar operaciones y escalar marcas locales."
+  },
+  "method": {
+    "general_title": "Nuestro Método",
+    "general_subtitle": "Seguimos un proceso probado que garantiza que tu sitio web se construya correctamente, se lance sin problemas e impulse resultados reales para tu negocio."
   }
 }

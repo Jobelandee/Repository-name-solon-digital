@@ -10,7 +10,7 @@
     "headline1": "Build Smarter.",
     "headline2": "Scale Faster.",
     "description": "AI-powered automation for websites & marketing. Generate more leads. Increase visibility. Stop competing on price.",
-    "cta_audit": "Start Your Audit →",
+    "cta_audit": "Book Your Free Audit →",
     "cta_story": "Our Story →",
     "urgency": "Stop giving your competitors the lead. Start scaling today."
   },
@@ -64,20 +64,20 @@
     }
   },
   "auditForm": {
-    "title": "Claim Your Growth Audit",
-    "subtitle": "Spend 15 minutes with us. Leave with a digital roadmap. No fluff, just results.",
+    "title": "Claim Your Free Growth Audit",
+    "subtitle": "Spend 15 minutes with us. Leave with a clear digital roadmap. No credit card required.",
     "name": "Full Name",
     "namePlaceholder": "Your full name",
     "business": "Business Name",
     "businessPlaceholder": "Your business name",
     "whatsapp": "WhatsApp Number",
     "whatsappPlaceholder": "+34 XXX XX XX XX",
-    "button": "Book My Session →",
+    "button": "Book My Free Audit →",
     "error": "Please fill in all fields",
-    "privacy": "We respect your privacy. Your data is secure.",
+    "privacy": "We'll contact you via WhatsApp to schedule your 15-minute audit.",
     "loading": "Booking...",
-    "success_title": "Thank you!",
-    "success_message": "We'll be in touch shortly via WhatsApp."
+    "success_title": "Perfect! Your audit is confirmed.",
+    "success_message": "We'll reach out on WhatsApp within the next 24 hours to schedule your personalized growth audit."
   },
   "confirmation": {
     "title": "We've Got Your Back!",
@@ -120,5 +120,36 @@
     "placeholder": "Ask anything...",
     "send": "Send",
     "whatsapp_button": "💬 Chat on WhatsApp"
+  },
+  "industries": {
+    "title": "The Cost of Waiting",
+    "subtitle": "Every day you delay is a day your competitors gain ground.",
+    "gym": {
+      "title": "Gyms & Padelclubs",
+      "description": "Stop the WhatsApp booking chaos. Automate your courts and grow your community."
+    },
+    "realestate": {
+      "title": "Real Estate",
+      "description": "Convert global searchers into pre-qualified leads. High-performance landing pages for Tenerife property."
+    },
+    "services": {
+      "title": "Local Services",
+      "description": "From Restaurants to Spas. Be found on page 1 of Google and automate your inquiries."
+    }
+  },
+  "ourstory": {
+    "headline": "Dutch Innovation. Tenerife Roots.",
+    "narrative1": "We moved from the Netherlands to Tenerife because we saw a massive gap: local businesses losing hours to manual work and thousands in revenue to outdated digital tools. We saw the potential, and we moved here to fix it.",
+    "narrative2": "We don't just build websites; we build AI-driven systems that act as your most efficient employee, saving you time and money.",
+    "founder1_name": "Job Eland",
+    "founder1_title": "Marketing Specialist & AI Expert",
+    "founder1_desc": "He turns complex data into high-performance digital machines that convert traffic into predictable profit.",
+    "founder2_name": "Rodney",
+    "founder2_title": "Former Owner of 6 PT Studios",
+    "founder2_desc": "He knows exactly what it takes to lead a business, optimize operations, and scale local brands."
+  },
+  "method": {
+    "general_title": "Our Method",
+    "general_subtitle": "We follow a proven process that ensures your website is built right, launches smoothly, and drives real results for your business."
   }
 }
