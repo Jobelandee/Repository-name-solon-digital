@@ -1,25 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { websiteContent } from '../data/websiteContent';
 
 export default function WhatsAppButton() {
   const whatsappUrl = websiteContent.contact.whatsAppLink;
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <motion.a
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      whileHover={{ scale: 1.15 }}
-      whileTap={{ scale: 0.95 }}
+      animate={{ scale: isHovered ? 1.15 : 1 }}
+      transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       style={{
         position: 'fixed',
-        bottom: '30px',
+        bottom: '110px',
         right: '30px',
         width: '50px',
         height: '50px',
         cursor: 'pointer',
-        zIndex: 898,
+        zIndex: 500,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

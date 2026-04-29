@@ -1,17 +1,13 @@
-import { useTranslation } from 'react-i18next';
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { getChatResponse } from '../services/claudeApi';
-import { websiteContent } from '../data/websiteContent';
 
 export default function ChatBot() {
-  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [isButtonHovered, setIsButtonHovered] = useState(false);
   const [messages, setMessages] = useState([
-    { id: 1, text: t('chatbot.subtitle'), sender: 'bot' }
+    { id: 1, text: 'Hola! 👋 Soy el asistente de Solon Digital. ¿En qué puedo ayudarte?', sender: 'bot' }
   ]);
   const [input, setInput] = useState('');
-  const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -22,38 +18,49 @@ export default function ChatBot() {
     scrollToBottom();
   }, [messages]);
 
-  const handleSend = async (e) => {
+  const faqResponses = {
+    'cuánto': 'Las webs empiezan desde €2,500. Te puedo dar un presupuesto personalizado. ¿Quieres hablar por WhatsApp?',
+    'cuanto': 'Las webs empiezan desde €2,500. Te puedo dar un presupuesto personalizado. ¿Quieres hablar por WhatsApp?',
+    'precio': 'Las webs empiezan desde €2,500. Te puedo dar un presupuesto personalizado. ¿Quieres hablar por WhatsApp?',
+    'time': 'Normalmente 1-2 semanas dependiendo de la complejidad. ¿Quieres agendar una llamada?',
+    'tiempo': 'Normalmente 1-2 semanas dependiendo de la complejidad. ¿Quieres agendar una llamada?',
+    'cuánto tiempo': 'Normalmente 1-2 semanas dependiendo de la complejidad. ¿Quieres agendar una llamada?',
+    'how long': '1-2 weeks depending on complexity. Want to schedule a call?',
+    'services': '✅ Web Development\n✅ SEO Optimization\n✅ AI Automation\n✅ AI Chatbots\n\n¿Cuál te interesa?',
+    'servicios': '✅ Desarrollo Web\n✅ Optimización SEO\n✅ Automatización IA\n✅ Chatbots IA\n\n¿Cuál te interesa?',
+    'seo': 'SEO te ayuda a aparecer en Google. Nuestros clientes ven resultados en 3-6 meses.',
+    'automation': 'La automatización IA maneja inquiries, bookings y leads 24/7 sin que hagas nada.',
+    'chatbot': 'Un chatbot IA responde clientes automáticamente en tu sitio web o WhatsApp.',
+    'desarrollo': 'Hacemos webs rápidas, modernas y que venden. Optimizadas para móvil y SEO.',
+  };
+
+  const handleSend = (e) => {
     e.preventDefault();
     if (!input.trim()) return;
 
     const userMessage = { id: Date.now(), text: input, sender: 'user' };
     setMessages(prev => [...prev, userMessage]);
+    const userInput = input.toLowerCase();
     setInput('');
-    setLoading(true);
 
-    try {
-      // Call Claude API with website content context
-      const response = await getChatResponse(input, websiteContent);
+    // Find matching FAQ response
+    let response = 'No entiendo esa pregunta. 🤔 ¿Pregunta sobre servicios, precios o tiempo?';
 
+    for (const [keyword, answer] of Object.entries(faqResponses)) {
+      if (userInput.includes(keyword)) {
+        response = answer;
+        break;
+      }
+    }
+
+    setTimeout(() => {
       const botMessage = {
         id: Date.now() + 1,
-        text: response.error ? response.message : response.message,
+        text: response,
         sender: 'bot',
-        showWhatsAppButton: response.suggestWhatsApp && !response.error,
       };
-
       setMessages(prev => [...prev, botMessage]);
-    } catch (error) {
-      console.error('Chat error:', error);
-      const errorMessage = {
-        id: Date.now() + 1,
-        text: 'Sorry, I encountered an error. Please try again or reach us via WhatsApp: +34 621 80 58 64',
-        sender: 'bot',
-      };
-      setMessages(prev => [...prev, errorMessage]);
-    } finally {
-      setLoading(false);
-    }
+    }, 500);
   };
 
   return (
@@ -145,10 +152,12 @@ export default function ChatBot() {
                     </div>
                     {msg.showWhatsAppButton && (
                       <motion.a
-                        href={websiteContent.contact.whatsAppLink}
+                        href="https://wa.me/34621805864?text=Hi%20Solon%20Digital"
                         target="_blank"
                         rel="noopener noreferrer"
-                        whileHover={{ scale: 1.05 }}
+                        animate={{ scale: 1 }}
+                        onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                        onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
                         style={{
                           background: '#25D366',
                           color: '#FFFFFF',
@@ -161,6 +170,7 @@ export default function ChatBot() {
                           cursor: 'pointer',
                           border: 'none',
                           display: 'block',
+                          transition: 'transform 0.2s ease',
                         }}
                       >
                         💬 Chat on WhatsApp
@@ -169,23 +179,6 @@ export default function ChatBot() {
                   </div>
                 </motion.div>
               ))}
-              {loading && (
-                <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
-                  {[0, 1, 2].map(i => (
-                    <motion.div
-                      key={i}
-                      animate={{ y: [0, -8, 0] }}
-                      transition={{ duration: 0.6, delay: i * 0.1, repeat: Infinity }}
-                      style={{
-                        width: '6px',
-                        height: '6px',
-                        background: '#0077BE',
-                        borderRadius: '50%',
-                      }}
-                    />
-                  ))}
-                </div>
-              )}
               <div ref={messagesEndRef} />
             </div>
 
@@ -222,7 +215,6 @@ export default function ChatBot() {
                 />
                 <button
                   type="submit"
-                  disabled={loading}
                   style={{
                     background: '#0077BE',
                     color: '#000',
@@ -231,7 +223,6 @@ export default function ChatBot() {
                     padding: '0.6rem 1rem',
                     cursor: 'pointer',
                     fontWeight: 600,
-                    opacity: loading ? 0.7 : 1,
                   }}
                 >
                   Send
@@ -240,10 +231,12 @@ export default function ChatBot() {
 
               {/* WhatsApp Quick Link */}
               <motion.a
-                href={websiteContent.contact.whatsAppLink}
+                href="https://wa.me/34621805864?text=Hi%20Solon%20Digital"
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.02 }}
+                animate={{ scale: 1 }}
+                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
+                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -258,6 +251,7 @@ export default function ChatBot() {
                   width: '100%',
                   border: 'none',
                   cursor: 'pointer',
+                  transition: 'transform 0.2s ease',
                 }}
               >
                 💬 Chat on WhatsApp
@@ -270,8 +264,10 @@ export default function ChatBot() {
       {/* Chat Button */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
+        animate={{ scale: isButtonHovered ? 1.1 : 1 }}
+        transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+        onMouseEnter={() => setIsButtonHovered(true)}
+        onMouseLeave={() => setIsButtonHovered(false)}
         style={{
           position: 'fixed',
           bottom: '30px',
