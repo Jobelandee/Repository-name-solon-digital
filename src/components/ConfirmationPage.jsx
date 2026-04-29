@@ -1,8 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 export default function ConfirmationPage() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
   const routeBookingData = location.state?.bookingData;
@@ -104,7 +106,7 @@ export default function ConfirmationPage() {
             textShadow: '0 4px 20px rgba(0, 119, 190, 0.3)',
             letterSpacing: '-0.02em',
           }}>
-            We've Got Your Back!
+            {t('confirmation.title')}
           </h1>
 
           <p style={{
@@ -113,7 +115,7 @@ export default function ConfirmationPage() {
             marginBottom: '2rem',
             lineHeight: 1.6,
           }}>
-            Your demo request has been received. We'll review your information and reach out shortly.
+            {t('confirmation.subtitle')} We'll review your information and reach out shortly.
           </p>
         </motion.div>
 
@@ -139,7 +141,7 @@ export default function ConfirmationPage() {
             marginBottom: '2rem',
             fontFamily: 'Playfair Display, serif',
           }}>
-            Your Information
+            {t('confirmation.yourInfo')}
           </h2>
 
           <div style={{ display: 'grid', gap: '1.5rem' }}>
@@ -247,7 +249,7 @@ export default function ConfirmationPage() {
             marginBottom: '2rem',
             fontFamily: 'Playfair Display, serif',
           }}>
-            What's Next?
+            {t('confirmation.whatsNext')}
           </h3>
 
           <div style={{ display: 'grid', gap: '1.5rem' }}>
@@ -319,7 +321,7 @@ export default function ConfirmationPage() {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            Back to Home
+            {t('confirmation.backHome')}
           </motion.button>
 
           <motion.a
@@ -341,7 +343,7 @@ export default function ConfirmationPage() {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            Contact Us
+            {t('confirmation.contactUs')}
           </motion.a>
         </motion.div>
 
@@ -357,7 +359,7 @@ export default function ConfirmationPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          Your information is secure and handled with complete confidentiality.
+          {t('confirmation.footerMessage')} and handled with complete confidentiality.
         </motion.p>
       </motion.div>
     </div>

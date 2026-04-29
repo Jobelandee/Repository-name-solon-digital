@@ -40,7 +40,7 @@ export default function AuditForm() {
     setError(null);
 
     if (!formData.name || !formData.businessName || !formData.whatsapp) {
-      setError({t('auditForm.error')});
+      setError(t('auditForm.error'));
       setLoading(false);
       return;
     }
@@ -378,7 +378,7 @@ export default function AuditForm() {
                   e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.7), 0 8px 25px rgba(0, 119, 190, 0.4)';
                 }}
               >
-                {loading ? t('auditForm.loading') : t('auditForm.button')
+                {loading ? t('auditForm.loading') : t('auditForm.button')}
               </motion.button>
 
               {/* Privacy Note */}

@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { websiteContent } from '../data/websiteContent';
 
 export default function ContactPage() {
+  const { t } = useTranslation();
+
   return (
     <div style={{
       background: '#FFFFFF',
@@ -32,14 +35,14 @@ export default function ContactPage() {
           marginBottom: '1rem',
           letterSpacing: '-0.02em',
         }}>
-          Get In Touch
+          {t('contact.title')}
         </h1>
         <p style={{
           fontSize: '1.1rem',
           color: '#666',
           lineHeight: 1.6,
         }}>
-          Have questions? We'd love to hear from you. Reach out through any of the methods below.
+          {t('contact.subtitle')} We'd love to hear from you. Reach out through any of the methods below.
         </p>
       </motion.div>
 
@@ -89,7 +92,7 @@ export default function ContactPage() {
               color: '#666',
               marginBottom: '1rem',
             }}>
-              Send us an email anytime
+              {t('contact.email_label')}
             </p>
             <a href="mailto:info@solondigital.com" style={{
               color: '#0077BE',

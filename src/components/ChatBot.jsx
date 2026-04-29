@@ -1,12 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getChatResponse } from '../services/claudeApi';
 import { websiteContent } from '../data/websiteContent';
 
 export default function ChatBot() {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { id: 1, text: 'Hola! 👋 How can I help you today? Ask me anything about our services, pricing, or process!', sender: 'bot' }
+    { id: 1, text: t('chatbot.subtitle'), sender: 'bot' }
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
