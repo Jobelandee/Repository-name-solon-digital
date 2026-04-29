@@ -1,8 +1,10 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export default function InsightsPage() {
+  const { t } = useTranslation();
   const [selectedPost, setSelectedPost] = useState(null);
   const blogPosts = [
     {
@@ -162,7 +164,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
           marginBottom: '1rem',
           letterSpacing: '-0.02em',
         }}>
-          Insights
+          {t('insights.title')}
         </h1>
         <p style={{
           fontSize: '1.1rem',
@@ -171,7 +173,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
           margin: '0 auto',
           lineHeight: 1.6,
         }}>
-          Discover the latest trends, tips, and strategies for growing your digital presence.
+          {t('insights.subtitle')}
         </p>
       </motion.div>
 
@@ -192,6 +194,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
+              onClick={() => setSelectedPost(post)}
               style={{
                 background: '#F5F5F5',
                 border: '1px solid #E0E0E0',

@@ -10,17 +10,17 @@ export default function InsightsGrid() {
     {
       category: 'Hospitality',
       title: 'Direct Bookings: The Ocean of Difference',
-      link: '#',
+      link: '/insights',
     },
     {
       category: 'Tech',
       title: 'Lava-Fast Loading Speeds for Gyms',
-      link: '#',
+      link: '/insights',
     },
     {
       category: 'Real Estate',
       title: 'Modern Architecture in Digital Sales',
-      link: '#',
+      link: '/insights',
     },
   ];
 

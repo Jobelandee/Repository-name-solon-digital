@@ -72,26 +72,6 @@ export default function Dashboard() {
               Results Dashboard
             </span>
           </div>
-          <h2 style={{
-            fontSize: 'clamp(2rem, 5vw, 3.2rem)',
-            fontWeight: 700,
-            color: '#333333',
-            fontFamily: 'Outfit, sans-serif',
-            marginBottom: '1rem',
-            letterSpacing: '-0.02em',
-          }}>
-            Real Results For Real Businesses
-          </h2>
-          <p style={{
-            fontSize: '1.05rem',
-            color: '#555555',
-            fontFamily: 'Outfit, sans-serif',
-            lineHeight: 1.6,
-            maxWidth: '600px',
-            margin: '0 auto',
-          }}>
-            See the impact our solutions deliver for businesses like yours
-          </p>
         </motion.div>
 
         {/* Stats Grid */}

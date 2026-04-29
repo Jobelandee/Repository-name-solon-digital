@@ -2,8 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function ServicesPage() {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const inView = useInView(ref, { once: false, amount: 0.2 });
 
@@ -15,7 +17,7 @@ export default function ServicesPage() {
       features: ['Responsive Design', 'Fast Performance', 'SEO-Optimized', 'Secure & Scalable']
     },
     {
-      icon: '🔍',
+      icon: '📊',
       title: 'SEO Optimization',
       description: 'Rank first on Google and dominate your market',
       features: ['Keyword Research', 'On-Page SEO', 'Link Building', 'Monthly Reports']
@@ -63,7 +65,7 @@ export default function ServicesPage() {
             marginBottom: '1.5rem',
             letterSpacing: '-0.02em',
           }}>
-            Our Services
+            {t('servicesPage.title') || 'Our Services'}
           </h1>
           <p style={{
             fontSize: '1.2rem',
@@ -73,7 +75,7 @@ export default function ServicesPage() {
             maxWidth: '700px',
             margin: '0 auto 4rem',
           }}>
-            Everything you need to grow your business online
+            {t('servicesPage.subtitle') || 'Everything you need to grow your business online'}
           </p>
         </motion.div>
       </div>

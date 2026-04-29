@@ -62,7 +62,9 @@
     "step5": {
       "title": "Optimización",
       "desc": "Mejora continua y seguimiento del rendimiento"
-    }
+    },
+    "general_title": "Nuestro Método",
+    "general_subtitle": "Seguimos un proceso probado que garantiza que tu sitio web se construya correctamente, se lance sin problemas e impulse resultados reales para tu negocio."
   },
   "auditForm": {
     "title": "Reclama Tu Auditoría de Crecimiento Gratis",
@@ -149,12 +151,12 @@
     "founder2_title": "Propietario Anterior de 6 PT Studios",
     "founder2_desc": "Sabe exactamente qué se necesita para dirigir un negocio, optimizar operaciones y escalar marcas locales."
   },
-  "method": {
-    "general_title": "Nuestro Método",
-    "general_subtitle": "Seguimos un proceso probado que garantiza que tu sitio web se construya correctamente, se lance sin problemas e impulse resultados reales para tu negocio."
-  },
   "insights": {
-    "title": "Perspectivas y Estrategia",
+    "title": "Perspectivas",
     "subtitle": "Descubre las últimas tendencias, consejos y estrategias para hacer crecer tu presencia digital."
+  },
+  "servicesPage": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Todo lo que necesitas para hacer crecer tu negocio en línea"
   }
 }

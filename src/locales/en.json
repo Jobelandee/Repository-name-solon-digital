@@ -62,7 +62,9 @@
     "step5": {
       "title": "Optimization",
       "desc": "Continuous improvement and performance tracking"
-    }
+    },
+    "general_title": "Our Method",
+    "general_subtitle": "We follow a proven process that ensures your website is built right, launches smoothly, and drives real results for your business."
   },
   "auditForm": {
     "title": "Claim Your Free Growth Audit",
@@ -149,12 +151,12 @@
     "founder2_title": "Former Owner of 6 PT Studios",
     "founder2_desc": "He knows exactly what it takes to lead a business, optimize operations, and scale local brands."
   },
-  "method": {
-    "general_title": "Our Method",
-    "general_subtitle": "We follow a proven process that ensures your website is built right, launches smoothly, and drives real results for your business."
-  },
   "insights": {
-    "title": "Insights & Strategy",
+    "title": "Insights",
     "subtitle": "Discover the latest trends, tips, and strategies for growing your digital presence."
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "subtitle": "Everything you need to grow your business online"
   }
 }

@@ -22,7 +22,7 @@ export default function Hero() {
           height: '100%',
           display: 'flex',
           alignItems: 'center',
-          padding: '4rem 2rem 4rem 5%',
+          padding: '2rem 1.5rem 2rem 1.5rem',
         }}
       >
         <motion.div

@@ -62,7 +62,9 @@
     "step5": {
       "title": "Optimalisatie",
       "desc": "Voortdurende verbetering en prestatiebewaking"
-    }
+    },
+    "general_title": "Onze Methode",
+    "general_subtitle": "We volgen een bewezen proces dat ervoor zorgt dat uw website correct wordt gebouwd, soepel wordt gelanceerd en echte resultaten voor uw business oplevert."
   },
   "auditForm": {
     "title": "Claim Uw Gratis Groei Audit",
@@ -149,12 +151,12 @@
     "founder2_title": "Voormalig Eigenaar van 6 PT Studios",
     "founder2_desc": "Weet precies wat nodig is om een bedrijf te leiden, activiteiten te optimaliseren en lokale merken te schalen."
   },
-  "method": {
-    "general_title": "Onze Methode",
-    "general_subtitle": "We volgen een bewezen proces dat ervoor zorgt dat uw website correct wordt gebouwd, soepel wordt gelanceerd en echte resultaten voor uw bedrijf oplevert."
-  },
   "insights": {
-    "title": "Inzichten en Strategie",
+    "title": "Inzichten",
     "subtitle": "Ontdek de nieuwste trends, tips en strategieën om uw digitale aanwezigheid te vergroten."
+  },
+  "servicesPage": {
+    "title": "Onze Diensten",
+    "subtitle": "Alles wat u nodig hebt om uw online business te laten groeien"
   }
 }
