@@ -178,7 +178,7 @@ export default function IndustriesScale() {
             whileHover={{ scale: 1.07, y: -2 }}
             whileTap={{ scale: 0.96 }}
             style={{
-              background: '#C73584',
+              background: '#FF9500',
               color: '#FFFFFF',
               padding: '1.1rem 2.5rem',
               borderRadius: '8px',
@@ -198,7 +198,7 @@ export default function IndustriesScale() {
               e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.4)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = '#C73584';
+              e.currentTarget.style.background = '#FF9500';
               e.currentTarget.style.boxShadow = '0 6px 16px rgba(0, 119, 190, 0.3)';
             }}
           >

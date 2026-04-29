@@ -80,7 +80,7 @@ export default function Header() {
               onClick={() => i18n.changeLanguage('it')}
               title="Italiano"
               style={{
-                background: i18n.language === 'it' ? '#C73584' : 'transparent',
+                background: i18n.language === 'it' ? '#FF9500' : 'transparent',
                 border: 'none',
                 padding: '0.5rem 0.8rem',
                 borderRadius: '6px',
@@ -95,7 +95,7 @@ export default function Header() {
               onClick={() => i18n.changeLanguage('nl')}
               title="Nederlands"
               style={{
-                background: i18n.language === 'nl' ? '#C73584' : 'transparent',
+                background: i18n.language === 'nl' ? '#FF9500' : 'transparent',
                 border: 'none',
                 padding: '0.5rem 0.8rem',
                 borderRadius: '6px',

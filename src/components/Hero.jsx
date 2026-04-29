@@ -97,7 +97,7 @@ export default function Hero() {
             }}
           >
             {t('hero.headline1')}{' '}
-            <span style={{ color: '#C73584' }}>
+            <span style={{ color: '#FF9500' }}>
               {t('hero.headline2')}
             </span>
           </motion.h1>
@@ -135,7 +135,7 @@ export default function Hero() {
             }}
           >
             <div style={{ textAlign: 'left' }}>
-              <h3 style={{ fontSize: '2.2rem', color: '#C73584', margin: '0 0 0.5rem 0', fontWeight: 700 }}>42+</h3>
+              <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>42+</h3>
               <p style={{ fontSize: '0.95rem', color: '#666666', margin: 0 }}>Businesses Growing</p>
             </div>
             <div style={{ textAlign: 'left' }}>
@@ -167,7 +167,7 @@ export default function Hero() {
               whileHover={{ scale: 1.07, y: -3 }}
               whileTap={{ scale: 0.96 }}
               style={{
-                background: '#C73584',
+                background: '#FF9500',
                 color: '#FFFFFF',
                 padding: '1rem 2.5rem',
                 borderRadius: '8px',
@@ -190,7 +190,7 @@ export default function Hero() {
                 e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#C73584';
+                e.currentTarget.style.background = '#FF9500';
                 e.currentTarget.style.boxShadow = '0 6px 16px rgba(199, 53, 132, 0.3)';
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
@@ -205,7 +205,7 @@ export default function Hero() {
               whileTap={{ scale: 0.96 }}
               style={{
                 background: 'transparent',
-                color: '#C73584',
+                color: '#FF9500',
                 padding: '1rem 2.5rem',
                 borderRadius: '6px',
                 textDecoration: 'none',
@@ -213,7 +213,7 @@ export default function Hero() {
                 fontSize: '1rem',
                 fontFamily: 'Outfit, sans-serif',
                 letterSpacing: '-0.01em',
-                border: '2px solid #C73584',
+                border: '2px solid #FF9500',
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
                 display: 'inline-block',

@@ -233,7 +233,7 @@ export default function AuditForm() {
                     width: '100%',
                     padding: '0.95rem 1.2rem',
                     background: '#F8F8F8',
-                    border: focused === 'name' ? '1.5px solid #C73584' : '1.5px solid #D0D0D0',
+                    border: focused === 'name' ? '1.5px solid #FF9500' : '1.5px solid #D0D0D0',
                     borderRadius: '8px',
                     color: '#1a1a1a',
                     fontSize: '1rem',
@@ -273,7 +273,7 @@ export default function AuditForm() {
                     width: '100%',
                     padding: '0.95rem 1.2rem',
                     background: '#F8F8F8',
-                    border: focused === 'businessName' ? '1.5px solid #C73584' : '1.5px solid #D0D0D0',
+                    border: focused === 'businessName' ? '1.5px solid #FF9500' : '1.5px solid #D0D0D0',
                     borderRadius: '8px',
                     color: '#1a1a1a',
                     fontSize: '1rem',
@@ -313,7 +313,7 @@ export default function AuditForm() {
                     width: '100%',
                     padding: '0.95rem 1.2rem',
                     background: '#F8F8F8',
-                    border: focused === 'whatsapp' ? '1.5px solid #C73584' : '1.5px solid #D0D0D0',
+                    border: focused === 'whatsapp' ? '1.5px solid #FF9500' : '1.5px solid #D0D0D0',
                     borderRadius: '8px',
                     color: '#1a1a1a',
                     fontSize: '1rem',
@@ -351,7 +351,7 @@ export default function AuditForm() {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 style={{
-                  background: '#C73584',
+                  background: '#FF9500',
                   color: '#FFFFFF',
                   padding: '1.15rem 2.5rem',
                   borderRadius: '8px',
@@ -374,7 +374,7 @@ export default function AuditForm() {
                   }
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = '#C73584';
+                  e.currentTarget.style.background = '#FF9500';
                   e.currentTarget.style.boxShadow = '0 4px 12px rgba(199, 53, 132, 0.3)';
                 }}
               >

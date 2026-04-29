@@ -4,10 +4,12 @@ import { useTranslation } from 'react-i18next';
 import './config/i18n'; // Initialize i18n
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Dashboard from './components/Dashboard';
 import IndustriesScale from './components/IndustriesScale';
 import ServicesOverview from './components/ServicesOverview';
 import OurStory from './components/OurStory';
 import ReviewsSection from './components/ReviewsSection';
+import FAQ from './components/FAQ';
 import AuditForm from './components/AuditForm';
 import ConfirmationPage from './components/ConfirmationPage';
 import InsightsPage from './components/InsightsPage';
@@ -21,7 +23,7 @@ function Layout({ children }) {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen" style={{ background: '#F8F5FF' }}>
+    <div className="min-h-screen" style={{ background: '#FFFFFF' }}>
       <Header />
       <div>{children}</div>
       <footer className="bg-soft-stone text-charcoal py-12 px-6 border-t border-blue border-opacity-20">
@@ -44,10 +46,12 @@ function Home() {
   return (
     <Layout>
       <Hero />
+      <Dashboard />
       <IndustriesScale />
       <ServicesOverview />
       <OurStory />
       <ReviewsSection />
+      <FAQ />
       <div id="audit">
         <AuditForm />
       </div>
