@@ -78,7 +78,7 @@ export default function ChatBot() {
               boxShadow: '0 20px 60px rgba(0, 0, 0, 0.6)',
               display: 'flex',
               flexDirection: 'column',
-              zIndex: 900,
+              zIndex: 999,
               backdropFilter: 'blur(10px)',
             }}
           >

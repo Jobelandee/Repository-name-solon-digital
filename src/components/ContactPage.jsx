@@ -30,8 +30,8 @@ export default function ContactPage() {
         <h1 style={{
           fontSize: 'clamp(2rem, 5vw, 3.5rem)',
           fontWeight: 700,
-          color: '#1a1a1a',
-          fontFamily: 'Playfair Display, serif',
+          color: '#333333',
+          fontFamily: 'Outfit, sans-serif',
           marginBottom: '1rem',
           letterSpacing: '-0.02em',
         }}>
@@ -39,8 +39,9 @@ export default function ContactPage() {
         </h1>
         <p style={{
           fontSize: '1.1rem',
-          color: '#666',
+          color: '#555555',
           lineHeight: 1.6,
+          fontFamily: 'Outfit, sans-serif',
         }}>
           {t('contact.subtitle')} We'd love to hear from you. Reach out through any of the methods below.
         </p>
@@ -63,18 +64,18 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0 }}
             style={{
-              background: '#F8F8F8',
+              background: '#F5F5F5',
               padding: '2rem',
               borderRadius: '12px',
               textAlign: 'center',
-              border: '1px solid #e8e8e8',
+              border: '1px solid #E0E0E0',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.borderColor = '#0077BE';
               e.currentTarget.style.boxShadow = '0 12px 32px rgba(0, 119, 190, 0.15)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = '#e8e8e8';
+              e.currentTarget.style.borderColor = '#E0E0E0';
               e.currentTarget.style.boxShadow = 'none';
             }}
           >
@@ -82,15 +83,16 @@ export default function ContactPage() {
             <h3 style={{
               fontSize: '1.3rem',
               fontWeight: 700,
-              color: '#1a1a1a',
+              color: '#333333',
               marginBottom: '0.5rem',
-              fontFamily: 'Playfair Display, serif',
+              fontFamily: 'Outfit, sans-serif',
             }}>
               Email
             </h3>
             <p style={{
-              color: '#666',
+              color: '#555555',
               marginBottom: '1rem',
+              fontFamily: 'Outfit, sans-serif',
             }}>
               {t('contact.email_label')}
             </p>
@@ -98,6 +100,7 @@ export default function ContactPage() {
               color: '#0077BE',
               textDecoration: 'none',
               fontWeight: 600,
+              fontFamily: 'Outfit, sans-serif',
             }}>
               info@solondigital.com
             </a>
@@ -109,18 +112,18 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             style={{
-              background: '#F8F8F8',
+              background: '#F5F5F5',
               padding: '2rem',
               borderRadius: '12px',
               textAlign: 'center',
-              border: '1px solid #e8e8e8',
+              border: '1px solid #E0E0E0',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.borderColor = '#25D366';
               e.currentTarget.style.boxShadow = '0 12px 32px rgba(37, 211, 102, 0.15)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = '#e8e8e8';
+              e.currentTarget.style.borderColor = '#E0E0E0';
               e.currentTarget.style.boxShadow = 'none';
             }}
           >
@@ -128,15 +131,16 @@ export default function ContactPage() {
             <h3 style={{
               fontSize: '1.3rem',
               fontWeight: 700,
-              color: '#1a1a1a',
+              color: '#333333',
               marginBottom: '0.5rem',
-              fontFamily: 'Playfair Display, serif',
+              fontFamily: 'Outfit, sans-serif',
             }}>
               WhatsApp
             </h3>
             <p style={{
-              color: '#666',
+              color: '#555555',
               marginBottom: '1rem',
+              fontFamily: 'Outfit, sans-serif',
             }}>
               Quick chat via WhatsApp
             </p>
@@ -148,6 +152,7 @@ export default function ContactPage() {
                 color: '#25D366',
                 textDecoration: 'none',
                 fontWeight: 600,
+                fontFamily: 'Outfit, sans-serif',
               }}
             >
               Start Chat
@@ -160,18 +165,18 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             style={{
-              background: '#F8F8F8',
+              background: '#F5F5F5',
               padding: '2rem',
               borderRadius: '12px',
               textAlign: 'center',
-              border: '1px solid #e8e8e8',
+              border: '1px solid #E0E0E0',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.borderColor = '#0077BE';
               e.currentTarget.style.boxShadow = '0 12px 32px rgba(0, 119, 190, 0.15)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = '#e8e8e8';
+              e.currentTarget.style.borderColor = '#E0E0E0';
               e.currentTarget.style.boxShadow = 'none';
             }}
           >
@@ -179,15 +184,16 @@ export default function ContactPage() {
             <h3 style={{
               fontSize: '1.3rem',
               fontWeight: 700,
-              color: '#1a1a1a',
+              color: '#333333',
               marginBottom: '0.5rem',
-              fontFamily: 'Playfair Display, serif',
+              fontFamily: 'Outfit, sans-serif',
             }}>
               Book a Demo
             </h3>
             <p style={{
-              color: '#666',
+              color: '#555555',
               marginBottom: '1rem',
+              fontFamily: 'Outfit, sans-serif',
             }}>
               Schedule your free strategy session
             </p>
@@ -195,6 +201,7 @@ export default function ContactPage() {
               color: '#0077BE',
               textDecoration: 'none',
               fontWeight: 600,
+              fontFamily: 'Outfit, sans-serif',
             }}>
               Book Now
             </a>
@@ -208,8 +215,8 @@ export default function ContactPage() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
         style={{
-          background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%)',
-          color: '#FFFFFF',
+          background: '#F5F5F5',
+          color: '#333333',
           padding: '4rem 2rem',
           textAlign: 'center',
         }}
@@ -218,16 +225,18 @@ export default function ContactPage() {
           fontSize: '2rem',
           fontWeight: 700,
           marginBottom: '1rem',
-          fontFamily: 'Playfair Display, serif',
+          fontFamily: 'Outfit, sans-serif',
+          color: '#0077BE',
         }}>
           What to Expect
         </h2>
         <p style={{
           fontSize: '1rem',
-          color: '#E0E0E0',
+          color: '#555555',
           maxWidth: '600px',
           margin: '0 auto',
           lineHeight: 1.8,
+          fontFamily: 'Outfit, sans-serif',
         }}>
           Whether you reach out via email, WhatsApp, or our booking form, we'll respond within 24 hours.
           We'll listen to your needs, understand your goals, and discuss how we can help grow your digital presence.

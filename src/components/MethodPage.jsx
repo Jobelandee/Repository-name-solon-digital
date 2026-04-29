@@ -30,8 +30,8 @@ export default function MethodPage() {
         <h1 style={{
           fontSize: 'clamp(2rem, 5vw, 3.5rem)',
           fontWeight: 700,
-          color: '#1a1a1a',
-          fontFamily: 'Playfair Display, serif',
+          color: '#333333',
+          fontFamily: 'Outfit, sans-serif',
           marginBottom: '1rem',
           letterSpacing: '-0.02em',
         }}>
@@ -39,8 +39,9 @@ export default function MethodPage() {
         </h1>
         <p style={{
           fontSize: '1.1rem',
-          color: '#666',
+          color: '#555555',
           lineHeight: 1.6,
+          fontFamily: 'Outfit, sans-serif',
         }}>
           {websiteContent.sections.methodSubtitle}
         </p>
@@ -80,7 +81,7 @@ export default function MethodPage() {
                 background: 'linear-gradient(135deg, #0077BE, #0099FF)',
                 fontWeight: 700,
                 fontSize: '2rem',
-                color: '#1a1a1a',
+                color: '#333333',
                 flexShrink: 0,
               }}>
                 {method.num}
@@ -91,9 +92,9 @@ export default function MethodPage() {
                 <h3 style={{
                   fontSize: '1.5rem',
                   fontWeight: 700,
-                  color: '#1a1a1a',
+                  color: '#333333',
                   marginBottom: '0.75rem',
-                  fontFamily: 'Playfair Display, serif',
+                  fontFamily: 'Outfit, sans-serif',
                 }}>
                   {method.title}
                 </h3>
@@ -126,7 +127,7 @@ export default function MethodPage() {
           fontSize: '2.5rem',
           fontWeight: 700,
           marginBottom: '1rem',
-          fontFamily: 'Playfair Display, serif',
+          fontFamily: 'Outfit, sans-serif',
         }}>
           Ready to Get Started?
         </h2>
@@ -142,7 +143,7 @@ export default function MethodPage() {
         <a href="/#audit" style={{
           display: 'inline-block',
           background: '#0077BE',
-          color: '#1a1a1a',
+          color: '#333333',
           padding: '1rem 2.5rem',
           borderRadius: '4px',
           textDecoration: 'none',

@@ -7,27 +7,27 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'How long does it take to build a website?',
-      answer: 'Most custom websites take 4-6 weeks from discovery to launch. Simple projects start at 2-3 weeks, while complex e-commerce sites may take 8-12 weeks.'
-    },
-    {
-      question: 'What is the cost of your services?',
-      answer: 'Website projects start at €2,500. AI automation setups range from €5,000-15,000 depending on complexity. SEO packages start at €500/month. We provide custom quotes after understanding your goals.'
+      answer: '1-2 weeks depending on what needs to happen. Simple websites start faster, while complex projects with integrations take longer.'
     },
     {
       question: 'Do you offer ongoing support?',
-      answer: 'Yes! We offer 3-month included support with all projects, then monthly maintenance packages starting at €200/month including updates, security patches, and performance optimization.'
+      answer: 'Yes! We offer support with all projects including updates, security patches, and performance optimization.'
     },
     {
       question: 'Can I expand my website later?',
-      answer: 'Absolutely. We build scalable solutions from day one. Adding new features, integrations, or pages is straightforward and cost-effective with our modular approach.'
+      answer: 'Absolutely. We build scalable solutions from day one. Adding new features, integrations, or pages is straightforward with our modular approach.'
     },
     {
       question: 'Do you guarantee Google first page ranking?',
-      answer: 'We don\'t guarantee rankings (no honest SEO agency does), but we implement proven strategies. Our clients typically see top 5 positions within 3-6 months for targeted keywords.'
+      answer: 'We don\'t guarantee rankings, but we implement proven SEO strategies. Our clients typically see top positions within 3-6 months for targeted keywords.'
     },
     {
       question: 'How does AI automation help my business?',
-      answer: 'AI automation handles repetitive tasks: customer support, lead qualification, booking scheduling, form responses. This saves 10+ hours/week while improving customer experience and conversion rates.'
+      answer: 'AI automation handles repetitive tasks: customer support, lead qualification, booking scheduling, form responses. This saves time while improving customer experience and conversion rates.'
+    },
+    {
+      question: 'What languages do you support?',
+      answer: 'We support English, Spanish, Italian, and Dutch. We can build multilingual websites and chatbots for your audience.'
     }
   ];
 

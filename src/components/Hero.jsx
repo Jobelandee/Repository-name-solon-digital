@@ -10,38 +10,10 @@ export default function Hero() {
       position: 'relative',
       overflow: 'hidden',
       background: 'linear-gradient(135deg, #FFFFFF 0%, #F5F5F5 100%)',
-      paddingTop: '4rem',
-      paddingBottom: '4rem',
+      paddingTop: '2rem',
+      paddingBottom: '2rem',
+      minHeight: 'auto',
     }}>
-
-      {/* Subtle Left Gradient for Text Readability */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '45%',
-          height: '100%',
-          background: 'linear-gradient(90deg, rgba(0, 0, 0, 0.08) 0%, transparent 100%)',
-          zIndex: 1,
-          pointerEvents: 'none',
-        }}
-      />
-
-      {/* Smooth Fade-to-Black at Bottom */}
-      <div
-        style={{
-          position: 'absolute',
-          bottom: 0,
-          left: 0,
-          right: 0,
-          height: '200px',
-          background: 'linear-gradient(180deg, transparent 0%, rgba(10, 10, 10, 0.5) 50%, rgba(10, 10, 10, 1) 100%)',
-          zIndex: 2,
-          pointerEvents: 'none',
-        }}
-      />
-
       {/* Content Container - Pure Editorial Left Layout */}
       <div
         style={{

@@ -1,8 +1,9 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function InsightsPage() {
+  const [selectedPost, setSelectedPost] = useState(null);
   const blogPosts = [
     {
       id: 1,
@@ -49,6 +50,90 @@ Don't wake up a year from now wishing you started today. The digital gap in the 
 Stop guessing and start scaling. We are offering a Free Digital Growth Audit for businesses in Tenerife and Mallorca this month. We will identify exactly where your current site is losing you money and provide a roadmap to fix it.`,
     },
   ];
+
+  if (selectedPost) {
+    return (
+      <div style={{
+        background: '#FFFFFF',
+        minHeight: '100vh',
+        paddingTop: '2rem',
+      }}>
+        {/* Back Button */}
+        <div style={{
+          maxWidth: '900px',
+          margin: '0 auto',
+          padding: '2rem 2rem 0',
+        }}>
+          <button
+            onClick={() => setSelectedPost(null)}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: '#0077BE',
+              fontSize: '1rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              marginBottom: '2rem',
+              fontFamily: 'Outfit, sans-serif',
+            }}
+          >
+            ← Back to Insights
+          </button>
+        </div>
+
+        {/* Blog Post Content */}
+        <article style={{
+          maxWidth: '900px',
+          margin: '0 auto',
+          padding: '2rem',
+          fontFamily: 'Outfit, sans-serif',
+        }}>
+          <div style={{
+            marginBottom: '2rem',
+          }}>
+            <div style={{
+              fontSize: '0.75rem',
+              textTransform: 'uppercase',
+              letterSpacing: '0.12em',
+              color: '#0077BE',
+              fontWeight: 700,
+              marginBottom: '1rem',
+            }}>
+              {selectedPost.category}
+            </div>
+            <h1 style={{
+              fontSize: '2.5rem',
+              fontFamily: 'Outfit, sans-serif',
+              color: '#333333',
+              fontWeight: 700,
+              marginBottom: '1rem',
+              lineHeight: 1.3,
+            }}>
+              {selectedPost.title}
+            </h1>
+            <div style={{
+              display: 'flex',
+              gap: '2rem',
+              color: '#999999',
+              fontSize: '0.9rem',
+            }}>
+              <span>{selectedPost.date}</span>
+              <span>{selectedPost.readTime}</span>
+            </div>
+          </div>
+
+          <div style={{
+            fontSize: '1rem',
+            lineHeight: 1.8,
+            color: '#555555',
+            whiteSpace: 'pre-wrap',
+          }}>
+            {selectedPost.content}
+          </div>
+        </article>
+      </div>
+    );
+  }
 
   return (
     <div style={{
@@ -167,19 +252,19 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
                 }}>
                   {post.date} • {post.readTime}
                 </span>
-                <a href={`#blog-${post.id}`} onClick={(e) => {
-                  e.preventDefault();
-                  alert(post.content);
-                }} style={{
+                <button onClick={() => setSelectedPost(post)} style={{
+                  background: 'none',
+                  border: 'none',
                   textDecoration: 'none',
                   color: '#0077BE',
                   fontWeight: 600,
                   fontSize: '0.95rem',
                   transition: 'all 0.3s ease',
                   cursor: 'pointer',
+                  fontFamily: 'Outfit, sans-serif',
                 }}>
                   Read More →
-                </a>
+                </button>
               </div>
             </motion.div>
           ))}

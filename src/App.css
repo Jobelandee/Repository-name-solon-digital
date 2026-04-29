@@ -206,14 +206,14 @@ p, span, body {
   right: 0;
   bottom: 0;
   background-image:
-    linear-gradient(0deg, transparent 24%, rgba(0, 119, 190, 0.05) 25%, rgba(0, 119, 190, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.05) 75%, rgba(0, 119, 190, 0.05) 76%, transparent 77%, transparent),
-    linear-gradient(90deg, transparent 24%, rgba(0, 119, 190, 0.05) 25%, rgba(0, 119, 190, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.05) 75%, rgba(0, 119, 190, 0.05) 76%, transparent 77%, transparent);
+    linear-gradient(0deg, transparent 24%, rgba(0, 119, 190, 0.02) 25%, rgba(0, 119, 190, 0.02) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.02) 75%, rgba(0, 119, 190, 0.02) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(0, 119, 190, 0.02) 25%, rgba(0, 119, 190, 0.02) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.02) 75%, rgba(0, 119, 190, 0.02) 76%, transparent 77%, transparent);
   background-size: 60px 60px;
   z-index: 0;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
-/* Spotlight effect */
+/* Spotlight effect - removed for cleaner appearance */
 .hero-section::after {
   content: '';
   position: absolute;
@@ -222,19 +222,9 @@ p, span, body {
   transform: translateX(-50%);
   width: 1000px;
   height: 1000px;
-  background: radial-gradient(circle, rgba(0, 119, 190, 0.15) 0%, transparent 70%);
+  background: none;
   z-index: 1;
   pointer-events: none;
-}
-
-/* Noise texture */
-.hero-section {
-  background-attachment: fixed;
-  background-blend-mode: overlay;
-}
-
-.hero-section::before {
-  mix-blend-mode: overlay;
 }
 
 .hero-section h1 {
@@ -243,7 +233,7 @@ p, span, body {
   line-height: 1.1;
   color: #333333;
   margin-bottom: 2rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Outfit', sans-serif;
   letter-spacing: -0.02em;
 }
 
@@ -326,7 +316,7 @@ p, span, body {
   color: #0077BE;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .stat-item p {
@@ -353,7 +343,7 @@ p, span, body {
 
 .vision-section h2 {
   font-size: clamp(2rem, 6vw, 3.5rem);
-  font-family: 'Playfair Display', serif;
+  font-family: 'Outfit', sans-serif;
   color: #333333;
   margin-bottom: 4rem;
   text-align: center;
@@ -430,7 +420,7 @@ p, span, body {
   justify-content: center;
 }
 
-/* 3D Background Grid */
+/* 3D Background Grid - minimized */
 .hero-conversion::before {
   content: '';
   position: absolute;
@@ -438,16 +428,12 @@ p, span, body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image:
-    linear-gradient(0deg, transparent 24%, rgba(0, 119, 190, 0.05) 25%, rgba(0, 119, 190, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.05) 75%, rgba(0, 119, 190, 0.05) 76%, transparent 77%, transparent),
-    linear-gradient(90deg, transparent 24%, rgba(0, 119, 190, 0.05) 25%, rgba(0, 119, 190, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.05) 75%, rgba(0, 119, 190, 0.05) 76%, transparent 77%, transparent);
-  background-size: 60px 60px;
+  background: none;
   z-index: 0;
-  opacity: 0.3;
-  mix-blend-mode: overlay;
+  opacity: 0;
 }
 
-/* Spotlight effect */
+/* Spotlight effect - removed */
 .hero-conversion::after {
   content: '';
   position: absolute;
@@ -456,7 +442,7 @@ p, span, body {
   transform: translateX(-50%);
   width: 1000px;
   height: 1000px;
-  background: radial-gradient(circle, rgba(0, 119, 190, 0.15) 0%, transparent 70%);
+  background: none;
   z-index: 1;
   pointer-events: none;
 }
@@ -465,7 +451,7 @@ p, span, body {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Outfit', sans-serif;
   letter-spacing: -0.02em;
   color: #FFFFFF;
   text-shadow: 0 4px 20px rgba(0, 119, 190, 0.3), 0 0 40px rgba(0, 119, 190, 0.1);
@@ -583,20 +569,11 @@ p, span, body {
 
 /* ===== FOOTER ===== */
 footer {
-  background: linear-gradient(90deg,
-    #0a0a0a 0%,
-    #004a7a 20%,
-    #0077BE 35%,
-    #0099FF 50%,
-    #0077BE 65%,
-    #004a7a 80%,
-    #0a0a0a 100%);
-  background-size: 200% 100%;
+  background: #0077BE;
   color: #FFFFFF;
   padding: 3rem 4rem;
   text-align: center;
-  border-top: 3px solid #0077BE;
-  animation: bannerFlow 12s ease-in-out infinite;
+  border-top: 1px solid rgba(0, 119, 190, 0.3);
 }
 
 footer p {
