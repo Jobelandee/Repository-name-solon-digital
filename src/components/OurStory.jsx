@@ -15,7 +15,7 @@ export default function OurStory() {
       id="our-story"
       ref={ref}
       style={{
-        background: 'linear-gradient(180deg, #0a0a0a 0%, #0a0a0a 100%)',
+        background: '#F8F5FF',
         paddingTop: 'clamp(4rem, 8vw, 8rem)',
         paddingBottom: 'clamp(6rem, 12vw, 12rem)',
         paddingLeft: 'clamp(1.5rem, 4vw, 2rem)',
@@ -24,7 +24,7 @@ export default function OurStory() {
         overflow: 'hidden',
       }}
     >
-      {/* Subtle Grid Pattern */}
+      {/* Subtle Gradient Pattern */}
       <div
         style={{
           position: 'absolute',
@@ -32,11 +32,7 @@ export default function OurStory() {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundImage: `
-            linear-gradient(0deg, transparent 24%, rgba(0, 119, 190, 0.015) 25%, rgba(0, 119, 190, 0.015) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.015) 75%, rgba(0, 119, 190, 0.015) 76%, transparent 77%, transparent),
-            linear-gradient(90deg, transparent 24%, rgba(0, 119, 190, 0.015) 25%, rgba(0, 119, 190, 0.015) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.015) 75%, rgba(0, 119, 190, 0.015) 76%, transparent 77%, transparent)
-          `,
-          backgroundSize: '60px 60px',
+          background: 'linear-gradient(135deg, rgba(199, 53, 132, 0.03) 0%, rgba(0, 119, 190, 0.03) 100%)',
           zIndex: 0,
           pointerEvents: 'none',
         }}
@@ -72,8 +68,8 @@ export default function OurStory() {
               position: 'relative',
               borderRadius: '16px',
               overflow: 'hidden',
-              boxShadow: '0 0 60px rgba(0, 119, 190, 0.3), 0 20px 60px rgba(0, 0, 0, 0.5)',
-              border: '2px solid rgba(0, 119, 190, 0.2)',
+              boxShadow: '0 8px 24px rgba(199, 53, 132, 0.15)',
+              border: '1px solid #E0E0E0',
               width: '100%',
               order: 0,
             }}
@@ -108,8 +104,8 @@ export default function OurStory() {
               style={{
                 fontSize: 'clamp(1.75rem, 4vw, 3.2rem)',
                 fontWeight: 800,
-                color: '#FFFFFF',
-                fontFamily: 'Playfair Display, serif',
+                color: '#1a1a4d',
+                fontFamily: 'Outfit, sans-serif',
                 marginBottom: 0,
                 letterSpacing: '-0.02em',
                 lineHeight: 1.2,
@@ -117,7 +113,7 @@ export default function OurStory() {
               }}
             >
               {t('ourstory.headline').split('.')[0]}.{' '}
-              <span style={{ color: '#0077BE', display: 'block' }}>
+              <span style={{ color: '#C73584', display: 'block' }}>
                 {t('ourstory.headline').split('.')[1]}.
               </span>
             </h2>
@@ -129,7 +125,7 @@ export default function OurStory() {
               transition={{ duration: 0.8, delay: 0.2 }}
               style={{
                 fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
-                color: '#E0E0E0',
+                color: '#444444',
                 fontFamily: 'Outfit, sans-serif',
                 lineHeight: 1.85,
                 fontWeight: 400,
@@ -213,23 +209,22 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
       transition={{ duration: 0.8, delay: index * 0.1 + 0.25 }}
       whileHover={{ y: -4, transition: { duration: 0.3 } }}
       style={{
-        background: 'rgba(255, 255, 255, 0.04)',
-        backdropFilter: 'blur(15px)',
-        border: '1px solid rgba(0, 119, 190, 0.2)',
+        background: '#FFFFFF',
+        border: '1px solid #E0E0E0',
         borderRadius: '12px',
         padding: '1.8rem',
         position: 'relative',
         overflow: 'hidden',
-        boxShadow: '0 0 20px rgba(0, 119, 190, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.04)',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
         transition: 'all 0.3s ease',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(0, 119, 190, 0.4)';
-        e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.06)';
+        e.currentTarget.style.borderColor = '#C73584';
+        e.currentTarget.style.boxShadow = '0 8px 24px rgba(199, 53, 132, 0.15)';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(0, 119, 190, 0.2)';
-        e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 119, 190, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.04)';
+        e.currentTarget.style.borderColor = '#E0E0E0';
+        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
       }}
     >
       {/* Icon */}
@@ -249,9 +244,9 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
         style={{
           fontSize: '1.2rem',
           fontWeight: 700,
-          color: '#FFFFFF',
+          color: '#1a1a4d',
           marginBottom: '0.3rem',
-          fontFamily: 'Playfair Display, serif',
+          fontFamily: 'Outfit, sans-serif',
           letterSpacing: '-0.01em',
           position: 'relative',
           zIndex: 2,
@@ -265,7 +260,7 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
         style={{
           fontSize: '0.85rem',
           fontWeight: 600,
-          color: '#0077BE',
+          color: '#C73584',
           marginBottom: '0.8rem',
           fontFamily: 'Outfit, sans-serif',
           letterSpacing: '-0.005em',
@@ -281,7 +276,7 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
         style={{
           fontSize: '0.95rem',
           lineHeight: 1.6,
-          color: '#D0D0D0',
+          color: '#444444',
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 400,
           position: 'relative',
