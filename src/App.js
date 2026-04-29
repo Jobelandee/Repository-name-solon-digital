@@ -5,7 +5,9 @@ import './config/i18n'; // Initialize i18n
 import Header from './components/Header';
 import Hero from './components/Hero';
 import IndustriesScale from './components/IndustriesScale';
+import ServicesOverview from './components/ServicesOverview';
 import OurStory from './components/OurStory';
+import ReviewsSection from './components/ReviewsSection';
 import AuditForm from './components/AuditForm';
 import ConfirmationPage from './components/ConfirmationPage';
 import InsightsPage from './components/InsightsPage';
@@ -43,7 +45,9 @@ function Home() {
     <Layout>
       <Hero />
       <IndustriesScale />
+      <ServicesOverview />
       <OurStory />
+      <ReviewsSection />
       <div id="audit">
         <AuditForm />
       </div>
