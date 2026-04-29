@@ -39,7 +39,6 @@ export default function InsightsGrid() {
           <motion.a
             href={item.link}
             className="read-more"
-            whileHover={{ marginLeft: '8px' }}
           >
             Read more
           </motion.a>

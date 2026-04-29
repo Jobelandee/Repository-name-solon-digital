@@ -158,8 +158,6 @@ export default function CostOfWaiting() {
           </p>
           <motion.a
             href="#audit"
-            whileHover={{ scale: 1.07, y: -2 }}
-            whileTap={{ scale: 0.96 }}
             style={{
               background: '#FF4444',
               color: '#FFFFFF',
@@ -197,7 +195,6 @@ function PainPointCard({ point, index, inView }) {
       initial={{ opacity: 0, y: 30 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.8, delay: index * 0.15 }}
-      whileHover={{ y: -8, transition: { duration: 0.3 } }}
       style={{
         background: 'rgba(255, 255, 255, 0.05)',
         backdropFilter: 'blur(15px)',

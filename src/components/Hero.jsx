@@ -136,8 +136,6 @@ export default function Hero() {
             {/* Primary Audit Button - Purple */}
             <motion.a
               href="#audit"
-              whileHover={{ scale: 1.07, y: -3 }}
-              whileTap={{ scale: 0.96 }}
               style={{
                 background: '#FF9500',
                 color: '#FFFFFF',
@@ -173,8 +171,6 @@ export default function Hero() {
             {/* Ghost Secondary Button - Links to Our Story */}
             <motion.a
               href="#our-story"
-              whileHover={{ scale: 1.07, y: -3 }}
-              whileTap={{ scale: 0.96 }}
               style={{
                 background: 'transparent',
                 color: '#FF9500',

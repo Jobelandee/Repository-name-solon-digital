@@ -25,8 +25,6 @@ export default function HeroConversion() {
         <p>Stop losing bookings to slow, outdated sites. We build smart websites for local legends.</p>
         <motion.button
           className="cta-blue"
-          whileHover={{ scale: 1.08 }}
-          whileTap={{ scale: 0.95 }}
         >
           Get a free demo →
         </motion.button>

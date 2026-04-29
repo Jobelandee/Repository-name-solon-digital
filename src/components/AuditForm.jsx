@@ -348,8 +348,6 @@ export default function AuditForm() {
               <motion.button
                 type="submit"
                 disabled={loading}
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.97 }}
                 style={{
                   background: '#FF9500',
                   color: '#FFFFFF',

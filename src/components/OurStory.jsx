@@ -207,7 +207,6 @@ function FounderCard({ name, role, bio, icon, index, inView }) {
       initial={{ opacity: 0, y: 20 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{ duration: 0.8, delay: index * 0.1 + 0.25 }}
-      whileHover={{ y: -4, transition: { duration: 0.3 } }}
       style={{
         background: '#F5F5F5',
         border: '1px solid #E0E0E0',

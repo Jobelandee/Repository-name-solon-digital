@@ -114,8 +114,6 @@ export default function Header() {
         <motion.button
           className="hamburger-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
           aria-label="Toggle menu"
           style={{
             background: 'none',

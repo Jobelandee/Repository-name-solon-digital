@@ -98,7 +98,6 @@ function DashboardCard({ stat, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: false, amount: 0.2 }}
-      whileHover={{ y: -4 }}
       style={{
         background: '#FFFFFF',
         border: '1px solid #E0E0E0',

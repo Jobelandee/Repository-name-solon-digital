@@ -241,8 +241,6 @@ export default function HiddenCost() {
           {/* CTA Button - High Impact */}
           <motion.a
             href="#audit"
-            whileHover={{ scale: 1.08, y: -3 }}
-            whileTap={{ scale: 0.96 }}
             style={{
               background: 'linear-gradient(135deg, #FF4444 0%, #FF6B6B 100%)',
               color: '#FFFFFF',
@@ -284,7 +282,6 @@ function RegretPillar({ pillar, index, inView }) {
       initial={{ opacity: 0, y: 40 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.8, delay: index * 0.15 }}
-      whileHover={{ y: -12, transition: { duration: 0.3 } }}
       style={{
         background: 'rgba(255, 255, 255, 0.06)',
         backdropFilter: 'blur(15px)',

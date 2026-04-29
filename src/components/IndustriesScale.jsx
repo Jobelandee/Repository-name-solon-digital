@@ -143,8 +143,6 @@ export default function IndustriesScale() {
           {/* Secondary CTA - Show All Pillars */}
           <motion.a
             href="#industries"
-            whileHover={{ scale: 1.06 }}
-            whileTap={{ scale: 0.96 }}
             style={{
               color: '#0077BE',
               padding: '1.1rem 2.5rem',
@@ -175,8 +173,6 @@ export default function IndustriesScale() {
           {/* Primary CTA - Claim Your Audit */}
           <motion.a
             href="#audit"
-            whileHover={{ scale: 1.07, y: -2 }}
-            whileTap={{ scale: 0.96 }}
             style={{
               background: '#FF9500',
               color: '#FFFFFF',
@@ -216,7 +212,6 @@ function IndustryCard({ industry, index, inView }) {
       initial={{ opacity: 0, y: 40 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.8, delay: index * 0.15 }}
-      whileHover={{ y: -12, transition: { duration: 0.3 } }}
       style={{
         background: '#FFFFFF',
         border: '1px solid #E0E0E0',

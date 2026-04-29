@@ -106,7 +106,6 @@ function ServiceCard({ service, index, inView }) {
       initial={{ opacity: 0, y: 40 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.8, delay: index * 0.1 }}
-      whileHover={{ y: -8 }}
       style={{
         background: '#F5F5F5',
         border: '1px solid #E0E0E0',
