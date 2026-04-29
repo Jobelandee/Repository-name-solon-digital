@@ -10,35 +10,37 @@ export default function Header() {
 
   return (
     <header className="solon-header" style={{
-      backgroundImage: `url('/solon-logo.png')`,
-      backgroundSize: 'auto 80px',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'right center',
-      backgroundAttachment: 'local',
+      background: '#0a0a0a',
+      borderBottom: '1px solid rgba(0, 119, 190, 0.2)',
+      padding: '0.5rem 0',
     }}>
       <div className="container">
-        {/* Logo/Home Link - Logo is in header background */}
+        {/* Logo/Home Link */}
         <Link to="/" style={{
           textDecoration: 'none',
           color: 'inherit',
           display: 'flex',
           alignItems: 'center',
           marginRight: 'auto',
-          padding: '0.5rem 1rem',
+          padding: '0.5rem 1.5rem',
           transition: 'all 0.3s ease',
-          visibility: 'hidden',
-          width: '0',
+          fontSize: '1.3rem',
+          fontWeight: 700,
+          color: '#FF9500',
+          fontFamily: 'Outfit, sans-serif',
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.opacity = '0.9';
+          e.currentTarget.style.opacity = '0.8';
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.opacity = '1';
         }}>
+          Solon Digital
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="nav-links">
+          <Link to="/">{t('header.home') || 'Home'}</Link>
           <Link to="/insights">{t('header.services')}</Link>
           <Link to="/method">{t('header.process')}</Link>
           <Link to="/contact">{t('header.contact')}</Link>
