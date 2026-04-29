@@ -77,7 +77,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
           marginBottom: '1rem',
           letterSpacing: '-0.02em',
         }}>
-          Insights & Strategy
+          Insights
         </h1>
         <p style={{
           fontSize: '1.1rem',
@@ -167,12 +167,16 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
                 }}>
                   {post.date} • {post.readTime}
                 </span>
-                <a href="#read-more" style={{
+                <a href={`#blog-${post.id}`} onClick={(e) => {
+                  e.preventDefault();
+                  alert(post.content);
+                }} style={{
                   textDecoration: 'none',
                   color: '#0077BE',
                   fontWeight: 600,
                   fontSize: '0.95rem',
                   transition: 'all 0.3s ease',
+                  cursor: 'pointer',
                 }}>
                   Read More →
                 </a>

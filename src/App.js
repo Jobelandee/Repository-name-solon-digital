@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import Dashboard from './components/Dashboard';
 import IndustriesScale from './components/IndustriesScale';
 import ServicesOverview from './components/ServicesOverview';
+import ServicesPage from './components/ServicesPage';
 import OurStory from './components/OurStory';
 import ReviewsSection from './components/ReviewsSection';
 import FAQ from './components/FAQ';
@@ -65,6 +66,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/confirmation" element={<ConfirmationPage />} />
+        <Route path="/services" element={<Layout><ServicesPage /></Layout>} />
         <Route path="/insights" element={<Layout><InsightsPage /></Layout>} />
         <Route path="/method" element={<Layout><MethodPage /></Layout>} />
         <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
