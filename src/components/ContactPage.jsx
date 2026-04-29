@@ -91,12 +91,12 @@ export default function ContactPage() {
             }}>
               Send us an email anytime
             </p>
-            <a href="mailto:job@gymtogether.nl" style={{
+            <a href="mailto:info@solondigital.com" style={{
               color: '#0077BE',
               textDecoration: 'none',
               fontWeight: 600,
             }}>
-              job@gymtogether.nl
+              info@solondigital.com
             </a>
           </motion.div>
 

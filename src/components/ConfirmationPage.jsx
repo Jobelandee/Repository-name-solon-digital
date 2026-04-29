@@ -323,7 +323,7 @@ export default function ConfirmationPage() {
           </motion.button>
 
           <motion.a
-            href="mailto:job@gymtogether.nl"
+            href="mailto:info@solondigital.com"
             style={{
               padding: '1rem 2.5rem',
               fontSize: '1rem',
