@@ -18,7 +18,6 @@ export default function Header() {
         {/* Logo/Home Link */}
         <Link to="/" style={{
           textDecoration: 'none',
-          color: 'inherit',
           display: 'flex',
           alignItems: 'center',
           marginRight: 'auto',
