@@ -50,7 +50,7 @@ export default function Header() {
               onClick={() => i18n.changeLanguage('en')}
               title="English"
               style={{
-                background: i18n.language === 'en' ? '#C73584' : 'transparent',
+                background: i18n.language === 'en' ? '#0077BE' : 'transparent',
                 border: 'none',
                 padding: '0.5rem 0.8rem',
                 borderRadius: '6px',

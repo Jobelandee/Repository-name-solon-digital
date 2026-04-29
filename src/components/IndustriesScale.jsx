@@ -41,7 +41,7 @@ export default function IndustriesScale() {
     <section
       ref={ref}
       style={{
-        background: '#F8F5FF',
+        background: '#0a0a0a',
         padding: '8rem 2rem',
         position: 'relative',
         overflow: 'hidden',
@@ -55,7 +55,7 @@ export default function IndustriesScale() {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'linear-gradient(135deg, rgba(199, 53, 132, 0.03) 0%, rgba(0, 119, 190, 0.03) 100%)',
+          background: 'linear-gradient(135deg, rgba(0, 119, 190, 0.05) 0%, rgba(255, 149, 0, 0.03) 100%)',
           zIndex: 0,
         }}
       />
@@ -85,7 +85,7 @@ export default function IndustriesScale() {
             style={{
               fontSize: 'clamp(2.8rem, 5vw, 3.8rem)',
               fontWeight: 800,
-              color: '#1a1a4d',
+              color: '#ffffff',
               fontFamily: 'Outfit, sans-serif',
               marginBottom: '1.2rem',
               letterSpacing: '-0.02em',
@@ -97,7 +97,7 @@ export default function IndustriesScale() {
           <p
             style={{
               fontSize: '1.15rem',
-              color: '#444444',
+              color: '#b0b0b0',
               fontFamily: 'Outfit, sans-serif',
               lineHeight: 1.7,
               fontWeight: 400,
@@ -135,9 +135,9 @@ export default function IndustriesScale() {
             justifyContent: 'center',
             flexWrap: 'wrap',
             padding: '4rem 2rem',
-            background: 'rgba(199, 53, 132, 0.08)',
+            background: 'rgba(0, 119, 190, 0.08)',
             borderRadius: '20px',
-            border: '1px solid rgba(199, 53, 132, 0.2)',
+            border: '1px solid rgba(0, 119, 190, 0.2)',
           }}
         >
           {/* Secondary CTA - Show All Pillars */}
@@ -146,7 +146,7 @@ export default function IndustriesScale() {
             whileHover={{ scale: 1.06 }}
             whileTap={{ scale: 0.96 }}
             style={{
-              color: '#C73584',
+              color: '#0077BE',
               padding: '1.1rem 2.5rem',
               borderRadius: '8px',
               textDecoration: 'none',
@@ -154,19 +154,19 @@ export default function IndustriesScale() {
               fontSize: '0.95rem',
               fontFamily: 'Outfit, sans-serif',
               letterSpacing: '-0.01em',
-              border: '2px solid rgba(199, 53, 132, 0.5)',
+              border: '2px solid rgba(0, 119, 190, 0.5)',
               background: 'transparent',
               cursor: 'pointer',
               transition: 'all 0.3s ease',
               display: 'inline-block',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'rgba(199, 53, 132, 0.1)';
-              e.currentTarget.style.borderColor = 'rgba(199, 53, 132, 1)';
+              e.currentTarget.style.background = 'rgba(0, 119, 190, 0.1)';
+              e.currentTarget.style.borderColor = 'rgba(0, 119, 190, 1)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = 'transparent';
-              e.currentTarget.style.borderColor = 'rgba(199, 53, 132, 0.5)';
+              e.currentTarget.style.borderColor = 'rgba(0, 119, 190, 0.5)';
             }}
           >
             {t('header.services')} →
@@ -189,17 +189,17 @@ export default function IndustriesScale() {
               letterSpacing: '-0.01em',
               border: 'none',
               cursor: 'pointer',
-              boxShadow: '0 6px 16px rgba(199, 53, 132, 0.3)',
+              boxShadow: '0 6px 16px rgba(0, 119, 190, 0.3)',
               transition: 'all 0.3s ease',
               display: 'inline-block',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = '#A82A6F';
-              e.currentTarget.style.boxShadow = '0 8px 24px rgba(199, 53, 132, 0.4)';
+              e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.4)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = '#C73584';
-              e.currentTarget.style.boxShadow = '0 6px 16px rgba(199, 53, 132, 0.3)';
+              e.currentTarget.style.boxShadow = '0 6px 16px rgba(0, 119, 190, 0.3)';
             }}
           >
             {t('auditForm.button')}
@@ -218,8 +218,8 @@ function IndustryCard({ industry, index, inView }) {
       transition={{ duration: 0.8, delay: index * 0.15 }}
       whileHover={{ y: -12, transition: { duration: 0.3 } }}
       style={{
-        background: '#FFFFFF',
-        border: '1px solid #E0E0E0',
+        background: '#1a1a1a',
+        border: '1px solid #333333',
         borderRadius: '20px',
         padding: '3.5rem 2.5rem',
         position: 'relative',
@@ -228,12 +228,12 @@ function IndustryCard({ industry, index, inView }) {
         transition: 'all 0.4s ease',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = '#C73584';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(199, 53, 132, 0.15)';
+        e.currentTarget.style.borderColor = '#0077BE';
+        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.25)';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#E0E0E0';
-        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+        e.currentTarget.style.borderColor = '#333333';
+        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
       }}
     >
       {/* Subtle Gradient Background */}
@@ -244,7 +244,7 @@ function IndustryCard({ industry, index, inView }) {
           right: -100,
           width: '300px',
           height: '300px',
-          background: `radial-gradient(circle, rgba(199, 53, 132, 0.08) 0%, transparent 70%)`,
+          background: `radial-gradient(circle, rgba(0, 119, 190, 0.08) 0%, transparent 70%)`,
           borderRadius: '50%',
           filter: 'blur(40px)',
           pointerEvents: 'none',
@@ -259,19 +259,19 @@ function IndustryCard({ industry, index, inView }) {
           right: '10%',
           width: '150px',
           height: '150px',
-          background: `radial-gradient(circle, rgba(199, 53, 132, 0.05) 0%, transparent 70%)`,
+          background: `radial-gradient(circle, rgba(0, 119, 190, 0.05) 0%, transparent 70%)`,
           borderRadius: '50%',
           filter: 'blur(20px)',
           pointerEvents: 'none',
         }}
       />
 
-      {/* Top Purple Accent Line */}
+      {/* Top Blue Accent Line */}
       <div
         style={{
           height: '3px',
           width: '40px',
-          background: '#C73584',
+          background: '#0077BE',
           borderRadius: '2px',
           marginBottom: '2rem',
           position: 'relative',
@@ -287,7 +287,7 @@ function IndustryCard({ industry, index, inView }) {
         style={{
           fontSize: '1.8rem',
           fontWeight: 800,
-          color: '#1a1a4d',
+          color: '#ffffff',
           marginBottom: '1.5rem',
           fontFamily: 'Outfit, sans-serif',
           letterSpacing: '-0.01em',
@@ -306,7 +306,7 @@ function IndustryCard({ industry, index, inView }) {
         style={{
           fontSize: '1.05rem',
           lineHeight: 1.8,
-          color: '#444444',
+          color: '#b0b0b0',
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 400,
           marginBottom: '2rem',

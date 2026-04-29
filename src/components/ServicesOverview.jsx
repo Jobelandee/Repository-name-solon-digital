@@ -32,7 +32,7 @@ export default function ServicesOverview() {
     <section
       ref={ref}
       style={{
-        background: '#F8F5FF',
+        background: '#0a0a0a',
         padding: '8rem 2rem',
         position: 'relative',
         overflow: 'hidden',
@@ -46,7 +46,7 @@ export default function ServicesOverview() {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'linear-gradient(135deg, rgba(199, 53, 132, 0.03) 0%, rgba(0, 119, 190, 0.03) 100%)',
+          background: 'linear-gradient(135deg, rgba(0, 119, 190, 0.05) 0%, rgba(255, 149, 0, 0.03) 100%)',
           zIndex: 0,
           pointerEvents: 'none',
         }}
@@ -77,7 +77,7 @@ export default function ServicesOverview() {
             style={{
               fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
               fontWeight: 700,
-              color: '#1a1a4d',
+              color: '#ffffff',
               fontFamily: 'Outfit, sans-serif',
               marginBottom: '1rem',
               letterSpacing: '-0.02em',
@@ -89,7 +89,7 @@ export default function ServicesOverview() {
           <p
             style={{
               fontSize: '1.1rem',
-              color: '#444444',
+              color: '#b0b0b0',
               fontFamily: 'Outfit, sans-serif',
               lineHeight: 1.7,
               fontWeight: 400,
@@ -133,25 +133,25 @@ function ServiceCard({ icon, translationKey, index, inView, t }) {
       transition={{ duration: 0.8, delay: index * 0.1 }}
       whileHover={{ y: -8, transition: { duration: 0.3 } }}
       style={{
-        background: '#FFFFFF',
-        border: '1px solid #E0E0E0',
+        background: '#1a1a1a',
+        border: '1px solid #333333',
         borderRadius: '16px',
         padding: '2.5rem',
         position: 'relative',
         overflow: 'hidden',
-        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
         transition: 'all 0.3s ease',
         display: 'flex',
         flexDirection: 'column',
         textAlign: 'center',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = '#C73584';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(199, 53, 132, 0.12)';
+        e.currentTarget.style.borderColor = '#0077BE';
+        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.2)';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#E0E0E0';
-        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.05)';
+        e.currentTarget.style.borderColor = '#333333';
+        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
       }}
     >
       {/* Icon */}
@@ -170,7 +170,7 @@ function ServiceCard({ icon, translationKey, index, inView, t }) {
         style={{
           fontSize: '1.3rem',
           fontWeight: 700,
-          color: '#1a1a4d',
+          color: '#ffffff',
           marginBottom: '1rem',
           fontFamily: 'Outfit, sans-serif',
           letterSpacing: '-0.01em',
@@ -184,7 +184,7 @@ function ServiceCard({ icon, translationKey, index, inView, t }) {
         style={{
           fontSize: '0.95rem',
           lineHeight: 1.7,
-          color: '#444444',
+          color: '#b0b0b0',
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 400,
         }}

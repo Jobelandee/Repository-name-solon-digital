@@ -9,28 +9,25 @@ export default function ReviewsSection() {
 
   const reviews = [
     {
-      name: 'María García',
-      company: 'Gym Tenerife',
-      text: 'Solon Digital transformó completamente mi negocio. En 3 meses, triplicamos nuestras reservas. El servicio al cliente es excelente.',
+      name: 'María García López',
+      company: 'Gym Adeje',
+      text: 'Solon Digital transformó completamente mi negocio. En 3 meses, triplicamos nuestras reservas. El servicio al cliente es excelente y la automatización funciona perfectamente.',
       rating: 5,
+      image: 'https://i.pravatar.cc/150?img=1&u=mariagarcialopez',
     },
     {
-      name: 'Juan López',
-      company: 'Real Estate - Canarias',
-      text: 'La automatización IA que implementaron es increíble. Ahora recibo leads calificados automáticamente. Muy recomendable.',
+      name: 'Carlos Rodríguez',
+      company: 'Real Estate Tenerife',
+      text: 'La automatización IA que implementaron es increíble. Ahora recibo leads calificados automáticamente. En dos meses conseguí 5 ventas que de otra forma no hubiera podido hacer.',
       rating: 5,
+      image: 'https://i.pravatar.cc/150?img=2&u=carlosrodriguez',
     },
     {
-      name: 'Sarah Mitchell',
-      company: 'Restaurant Barcelona',
-      text: 'Professional, efficient, and results-driven. They understood our business from day one. Highly recommend!',
+      name: 'Isabel Martínez',
+      company: 'Restaurante Las Américas',
+      text: 'Profesionales, eficientes y orientados a resultados. Entienden perfectamente el mercado local de Tenerife. Mi web ahora aparece en primera página de Google. Muy recomendable!',
       rating: 5,
-    },
-    {
-      name: 'Peter Müller',
-      company: 'Sports Club - Vienna',
-      text: 'Ausgezeichneter Service und erstaunliche Ergebnisse. Unsere Online-Präsenz hat sich komplett verbessert.',
-      rating: 5,
+      image: 'https://i.pravatar.cc/150?img=3&u=isabelmartinez',
     },
   ];
 
@@ -38,7 +35,7 @@ export default function ReviewsSection() {
     <section
       ref={ref}
       style={{
-        background: '#FFFFFF',
+        background: '#0a0a0a',
         padding: '8rem 2rem',
         position: 'relative',
         overflow: 'hidden',
@@ -69,7 +66,7 @@ export default function ReviewsSection() {
             style={{
               fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
               fontWeight: 700,
-              color: '#1a1a4d',
+              color: '#ffffff',
               fontFamily: 'Outfit, sans-serif',
               marginBottom: '1rem',
               letterSpacing: '-0.02em',
@@ -81,7 +78,7 @@ export default function ReviewsSection() {
           <p
             style={{
               fontSize: '1.1rem',
-              color: '#444444',
+              color: '#b0b0b0',
               fontFamily: 'Outfit, sans-serif',
               lineHeight: 1.7,
               fontWeight: 400,
@@ -118,24 +115,24 @@ function ReviewCard({ review, index, inView }) {
       transition={{ duration: 0.8, delay: index * 0.1 }}
       whileHover={{ y: -8, transition: { duration: 0.3 } }}
       style={{
-        background: '#F8F5FF',
-        border: '1px solid #E0E0E0',
+        background: '#1a1a1a',
+        border: '1px solid #333333',
         borderRadius: '16px',
         padding: '2rem',
         position: 'relative',
         overflow: 'hidden',
-        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
         transition: 'all 0.3s ease',
         display: 'flex',
         flexDirection: 'column',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = '#C73584';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(199, 53, 132, 0.12)';
+        e.currentTarget.style.borderColor = '#0077BE';
+        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.2)';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#E0E0E0';
-        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.05)';
+        e.currentTarget.style.borderColor = '#333333';
+        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
       }}
     >
       {/* Stars */}
@@ -152,7 +149,7 @@ function ReviewCard({ review, index, inView }) {
         style={{
           fontSize: '1rem',
           lineHeight: 1.8,
-          color: '#444444',
+          color: '#d0d0d0',
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 400,
           marginBottom: '1.5rem',
@@ -163,12 +160,12 @@ function ReviewCard({ review, index, inView }) {
       </p>
 
       {/* Author */}
-      <div style={{ borderTop: '1px solid #E0E0E0', paddingTop: '1rem' }}>
+      <div style={{ borderTop: '1px solid #333333', paddingTop: '1rem' }}>
         <p
           style={{
             fontSize: '0.95rem',
             fontWeight: 700,
-            color: '#1a1a4d',
+            color: '#ffffff',
             margin: '0 0 0.25rem 0',
             fontFamily: 'Outfit, sans-serif',
           }}
@@ -178,7 +175,7 @@ function ReviewCard({ review, index, inView }) {
         <p
           style={{
             fontSize: '0.85rem',
-            color: '#666666',
+            color: '#888888',
             margin: 0,
             fontFamily: 'Outfit, sans-serif',
           }}

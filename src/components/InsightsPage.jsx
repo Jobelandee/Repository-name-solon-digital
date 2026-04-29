@@ -52,7 +52,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
 
   return (
     <div style={{
-      background: '#FFFFFF',
+      background: '#0a0a0a',
       minHeight: '100vh',
       paddingTop: '2rem',
     }}>
@@ -72,7 +72,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
         <h1 style={{
           fontSize: 'clamp(2rem, 5vw, 3.5rem)',
           fontWeight: 700,
-          color: '#1a1a4d',
+          color: '#ffffff',
           fontFamily: 'Outfit, sans-serif',
           marginBottom: '1rem',
           letterSpacing: '-0.02em',
@@ -81,7 +81,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
         </h1>
         <p style={{
           fontSize: '1.1rem',
-          color: '#666',
+          color: '#b0b0b0',
           maxWidth: '600px',
           margin: '0 auto',
           lineHeight: 1.6,
@@ -108,20 +108,20 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
               style={{
-                background: '#FFFFFF',
-                border: '1px solid #E0E0E0',
+                background: '#1a1a1a',
+                border: '1px solid #333333',
                 borderRadius: '12px',
                 padding: '2rem',
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#C73584';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(199, 53, 132, 0.15)';
+                e.currentTarget.style.borderColor = '#0077BE';
+                e.currentTarget.style.boxShadow = '0 12px 32px rgba(0, 119, 190, 0.2)';
                 e.currentTarget.style.transform = 'translateY(-6px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#E0E0E0';
+                e.currentTarget.style.borderColor = '#333333';
                 e.currentTarget.style.boxShadow = 'none';
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
@@ -130,7 +130,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
                 fontSize: '0.75rem',
                 textTransform: 'uppercase',
                 letterSpacing: '0.12em',
-                color: '#C73584',
+                color: '#0077BE',
                 fontWeight: 700,
                 marginBottom: '1rem',
               }}>
@@ -139,7 +139,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
               <h3 style={{
                 fontSize: '1.4rem',
                 fontFamily: 'Outfit, sans-serif',
-                color: '#1a1a4d',
+                color: '#ffffff',
                 fontWeight: 700,
                 marginBottom: '1rem',
                 lineHeight: 1.3,
@@ -148,7 +148,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
               </h3>
               <p style={{
                 fontSize: '1rem',
-                color: '#666',
+                color: '#b0b0b0',
                 marginBottom: '1.5rem',
                 lineHeight: 1.6,
               }}>
@@ -159,17 +159,17 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 paddingTop: '1rem',
-                borderTop: '1px solid #f0f0f0',
+                borderTop: '1px solid #333333',
               }}>
                 <span style={{
                   fontSize: '0.85rem',
-                  color: '#999',
+                  color: '#666666',
                 }}>
                   {post.date} • {post.readTime}
                 </span>
                 <a href="#read-more" style={{
                   textDecoration: 'none',
-                  color: '#C73584',
+                  color: '#0077BE',
                   fontWeight: 600,
                   fontSize: '0.95rem',
                   transition: 'all 0.3s ease',

@@ -152,5 +152,9 @@
   "method": {
     "general_title": "Our Method",
     "general_subtitle": "We follow a proven process that ensures your website is built right, launches smoothly, and drives real results for your business."
+  },
+  "insights": {
+    "title": "Insights & Strategy",
+    "subtitle": "Discover the latest trends, tips, and strategies for growing your digital presence."
   }
 }

@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="hero-section" style={{
       position: 'relative',
       overflow: 'hidden',
-      background: 'linear-gradient(135deg, #F8F5FF 0%, #F3F0FF 100%)',
+      background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)',
       paddingTop: '4rem',
       paddingBottom: '4rem',
     }}>

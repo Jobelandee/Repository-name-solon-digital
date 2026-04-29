@@ -152,5 +152,9 @@
   "method": {
     "general_title": "Nuestro Método",
     "general_subtitle": "Seguimos un proceso probado que garantiza que tu sitio web se construya correctamente, se lance sin problemas e impulse resultados reales para tu negocio."
+  },
+  "insights": {
+    "title": "Perspectivas y Estrategia",
+    "subtitle": "Descubre las últimas tendencias, consejos y estrategias para hacer crecer tu presencia digital."
   }
 }
