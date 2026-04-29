@@ -9,7 +9,9 @@ export default function Hero() {
     <section className="hero-section" style={{
       position: 'relative',
       overflow: 'hidden',
-      background: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)',
+      background: 'linear-gradient(135deg, #F8F5FF 0%, #F3F0FF 100%)',
+      paddingTop: '4rem',
+      paddingBottom: '4rem',
     }}>
 
       {/* Subtle Left Gradient for Text Readability */}
@@ -79,24 +81,23 @@ export default function Hero() {
             {t('hero.tagline')}
           </motion.p>
 
-          {/* Massive Main Headline - White with Ocean Blue Accent */}
+          {/* Massive Main Headline - Dark Navy with Purple Accent */}
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.1 }}
             style={{
-              color: '#FFFFFF',
+              color: '#1a1a4d',
               fontSize: 'clamp(2.8rem, 6vw, 4.8rem)',
               fontWeight: 700,
               fontFamily: 'Outfit, sans-serif',
               marginBottom: '1.5rem',
-              textShadow: '0 4px 16px rgba(0, 0, 0, 0.4)',
               letterSpacing: '-0.02em',
               lineHeight: 1.15,
             }}
           >
             {t('hero.headline1')}{' '}
-            <span style={{ color: '#0077BE' }}>
+            <span style={{ color: '#C73584' }}>
               {t('hero.headline2')}
             </span>
           </motion.h1>
@@ -107,7 +108,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{
-              color: '#E8E8E8',
+              color: '#444444',
               fontSize: '1.3rem',
               lineHeight: 1.8,
               fontWeight: 400,
@@ -134,8 +135,8 @@ export default function Hero() {
             }}
           >
             <div style={{ textAlign: 'left' }}>
-              <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>42+</h3>
-              <p style={{ fontSize: '0.95rem', color: '#CCCCCC', margin: 0 }}>Businesses Growing</p>
+              <h3 style={{ fontSize: '2.2rem', color: '#C73584', margin: '0 0 0.5rem 0', fontWeight: 700 }}>42+</h3>
+              <p style={{ fontSize: '0.95rem', color: '#666666', margin: 0 }}>Businesses Growing</p>
             </div>
             <div style={{ textAlign: 'left' }}>
               <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>40%</h3>
@@ -160,16 +161,16 @@ export default function Hero() {
               marginBottom: '2.5rem',
             }}
           >
-            {/* Primary Audit Button - Orange */}
+            {/* Primary Audit Button - Purple */}
             <motion.a
               href="#audit"
               whileHover={{ scale: 1.07, y: -3 }}
               whileTap={{ scale: 0.96 }}
               style={{
-                background: '#FF9500',
+                background: '#C73584',
                 color: '#FFFFFF',
                 padding: '1rem 2.5rem',
-                borderRadius: '6px',
+                borderRadius: '8px',
                 textDecoration: 'none',
                 fontWeight: 600,
                 fontSize: '1rem',
@@ -177,20 +178,20 @@ export default function Hero() {
                 letterSpacing: '-0.01em',
                 border: 'none',
                 cursor: 'pointer',
-                boxShadow: '0 6px 16px rgba(255, 149, 0, 0.3)',
+                boxShadow: '0 6px 16px rgba(199, 53, 132, 0.3)',
                 transition: 'all 0.3s ease',
                 display: 'inline-block',
                 whiteSpace: 'nowrap',
                 position: 'relative',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#E68600';
-                e.currentTarget.style.boxShadow = '0 8px 24px rgba(255, 149, 0, 0.4)';
+                e.currentTarget.style.background = '#A82A6F';
+                e.currentTarget.style.boxShadow = '0 8px 24px rgba(199, 53, 132, 0.4)';
                 e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#FF9500';
-                e.currentTarget.style.boxShadow = '0 6px 16px rgba(255, 149, 0, 0.3)';
+                e.currentTarget.style.background = '#C73584';
+                e.currentTarget.style.boxShadow = '0 6px 16px rgba(199, 53, 132, 0.3)';
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
@@ -204,7 +205,7 @@ export default function Hero() {
               whileTap={{ scale: 0.96 }}
               style={{
                 background: 'transparent',
-                color: '#0077BE',
+                color: '#C73584',
                 padding: '1rem 2.5rem',
                 borderRadius: '6px',
                 textDecoration: 'none',
@@ -212,15 +213,15 @@ export default function Hero() {
                 fontSize: '1rem',
                 fontFamily: 'Outfit, sans-serif',
                 letterSpacing: '-0.01em',
-                border: '2px solid #0077BE',
+                border: '2px solid #C73584',
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
                 display: 'inline-block',
                 whiteSpace: 'nowrap',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = 'rgba(0, 119, 190, 0.1)';
-                e.currentTarget.style.boxShadow = '0 6px 16px rgba(0, 119, 190, 0.2)';
+                e.currentTarget.style.backgroundColor = 'rgba(199, 53, 132, 0.1)';
+                e.currentTarget.style.boxShadow = '0 6px 16px rgba(199, 53, 132, 0.2)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundColor = 'transparent';
@@ -238,7 +239,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.35 }}
             style={{
               fontSize: '0.88rem',
-              color: '#AAAAAA',
+              color: '#666666',
               fontFamily: 'Inter, sans-serif',
               fontWeight: 500,
               letterSpacing: '0.02em',

@@ -19,7 +19,7 @@ function Layout({ children }) {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen" style={{ background: '#F8F5FF' }}>
       <Header />
       <div>{children}</div>
       <footer className="bg-soft-stone text-charcoal py-12 px-6 border-t border-blue border-opacity-20">

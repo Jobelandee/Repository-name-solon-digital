@@ -80,13 +80,13 @@ export default function AuditForm() {
     <section
       ref={ref}
       style={{
-        background: '#0a0a0a',
+        background: '#F8F5FF',
         padding: '8rem 2rem',
         position: 'relative',
         overflow: 'hidden',
       }}
     >
-      {/* Subtle Background Grid */}
+      {/* Subtle Background Gradient */}
       <div
         style={{
           position: 'absolute',
@@ -94,11 +94,7 @@ export default function AuditForm() {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundImage: `
-            linear-gradient(0deg, transparent 24%, rgba(0, 119, 190, 0.02) 25%, rgba(0, 119, 190, 0.02) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.02) 75%, rgba(0, 119, 190, 0.02) 76%, transparent 77%, transparent),
-            linear-gradient(90deg, transparent 24%, rgba(0, 119, 190, 0.02) 25%, rgba(0, 119, 190, 0.02) 26%, transparent 27%, transparent 74%, rgba(0, 119, 190, 0.02) 75%, rgba(0, 119, 190, 0.02) 76%, transparent 77%, transparent)
-          `,
-          backgroundSize: '60px 60px',
+          background: 'linear-gradient(135deg, rgba(199, 53, 132, 0.03) 0%, rgba(0, 119, 190, 0.03) 100%)',
           zIndex: 0,
         }}
       />
@@ -128,8 +124,8 @@ export default function AuditForm() {
             style={{
               fontSize: 'clamp(2.5rem, 5vw, 3.8rem)',
               fontWeight: 700,
-              color: '#FFFFFF',
-              fontFamily: 'Playfair Display, serif',
+              color: '#1a1a4d',
+              fontFamily: 'Outfit, sans-serif',
               marginBottom: '1rem',
               letterSpacing: '-0.02em',
               lineHeight: 1.1,
@@ -140,7 +136,7 @@ export default function AuditForm() {
           <p
             style={{
               fontSize: '1.1rem',
-              color: '#D0D0D0',
+              color: '#444444',
               fontFamily: 'Outfit, sans-serif',
               lineHeight: 1.7,
               fontWeight: 400,
@@ -237,13 +233,13 @@ export default function AuditForm() {
                     width: '100%',
                     padding: '0.95rem 1.2rem',
                     background: '#F8F8F8',
-                    border: focused === 'name' ? '1.5px solid #0077BE' : '1.5px solid #D0D0D0',
+                    border: focused === 'name' ? '1.5px solid #C73584' : '1.5px solid #D0D0D0',
                     borderRadius: '8px',
                     color: '#1a1a1a',
                     fontSize: '1rem',
                     fontFamily: 'Outfit, sans-serif',
                     transition: 'all 0.3s ease',
-                    boxShadow: focused === 'name' ? '0 0 12px rgba(0, 119, 190, 0.15)' : 'none',
+                    boxShadow: focused === 'name' ? '0 0 12px rgba(199, 53, 132, 0.15)' : 'none',
                     outline: 'none',
                   }}
                 />
@@ -277,13 +273,13 @@ export default function AuditForm() {
                     width: '100%',
                     padding: '0.95rem 1.2rem',
                     background: '#F8F8F8',
-                    border: focused === 'businessName' ? '1.5px solid #0077BE' : '1.5px solid #D0D0D0',
+                    border: focused === 'businessName' ? '1.5px solid #C73584' : '1.5px solid #D0D0D0',
                     borderRadius: '8px',
                     color: '#1a1a1a',
                     fontSize: '1rem',
                     fontFamily: 'Outfit, sans-serif',
                     transition: 'all 0.3s ease',
-                    boxShadow: focused === 'businessName' ? '0 0 12px rgba(0, 119, 190, 0.15)' : 'none',
+                    boxShadow: focused === 'businessName' ? '0 0 12px rgba(199, 53, 132, 0.15)' : 'none',
                     outline: 'none',
                   }}
                 />
@@ -317,13 +313,13 @@ export default function AuditForm() {
                     width: '100%',
                     padding: '0.95rem 1.2rem',
                     background: '#F8F8F8',
-                    border: focused === 'whatsapp' ? '1.5px solid #0077BE' : '1.5px solid #D0D0D0',
+                    border: focused === 'whatsapp' ? '1.5px solid #C73584' : '1.5px solid #D0D0D0',
                     borderRadius: '8px',
                     color: '#1a1a1a',
                     fontSize: '1rem',
                     fontFamily: 'Outfit, sans-serif',
                     transition: 'all 0.3s ease',
-                    boxShadow: focused === 'whatsapp' ? '0 0 12px rgba(0, 119, 190, 0.15)' : 'none',
+                    boxShadow: focused === 'whatsapp' ? '0 0 12px rgba(199, 53, 132, 0.15)' : 'none',
                     outline: 'none',
                   }}
                 />
@@ -348,14 +344,14 @@ export default function AuditForm() {
                 </motion.div>
               )}
 
-              {/* Submit Button - Orange */}
+              {/* Submit Button - Purple */}
               <motion.button
                 type="submit"
                 disabled={loading}
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 style={{
-                  background: '#FF9500',
+                  background: '#C73584',
                   color: '#FFFFFF',
                   padding: '1.15rem 2.5rem',
                   borderRadius: '8px',
@@ -366,20 +362,20 @@ export default function AuditForm() {
                   letterSpacing: '-0.01em',
                   cursor: loading ? 'not-allowed' : 'pointer',
                   opacity: loading ? 0.7 : 1,
-                  boxShadow: '0 4px 12px rgba(255, 149, 0, 0.3)',
+                  boxShadow: '0 4px 12px rgba(199, 53, 132, 0.3)',
                   transition: 'all 0.3s ease',
                   marginTop: '0.5rem',
                   width: '100%',
                 }}
                 onMouseEnter={(e) => {
                   if (!loading) {
-                    e.currentTarget.style.background = '#E68600';
-                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 149, 0, 0.4)';
+                    e.currentTarget.style.background = '#A82A6F';
+                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(199, 53, 132, 0.4)';
                   }
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = '#FF9500';
-                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(255, 149, 0, 0.3)';
+                  e.currentTarget.style.background = '#C73584';
+                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(199, 53, 132, 0.3)';
                 }}
               >
                 {loading ? t('auditForm.loading') : t('auditForm.button')}
