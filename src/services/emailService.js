@@ -71,15 +71,15 @@ const generateUserEmailHTML = (name, businessName) => `
   <style>
     body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #FAFAF8 0%, #F5F3F0 100%); margin: 0; padding: 20px; }
     .container { max-width: 600px; margin: 0 auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-    .header { background: linear-gradient(135deg, #D4AF37 0%, #E5C158 100%); padding: 40px 20px; text-align: center; }
+    .header { background: linear-gradient(135deg, #0077BE 0%, #0099FF 100%); padding: 40px 20px; text-align: center; }
     .header h1 { color: white; margin: 0; font-size: 28px; }
     .content { padding: 40px; }
     .content h2 { color: #2A2A2A; font-size: 22px; margin: 0 0 15px 0; }
     .content p { color: #666666; font-size: 16px; line-height: 1.6; margin: 10px 0; }
-    .detail { background: #F5F3F0; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #D4AF37; }
-    .detail-label { color: #D4AF37; font-weight: 600; font-size: 12px; text-transform: uppercase; }
+    .detail { background: #F5F3F0; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #0077BE; }
+    .detail-label { color: #0077BE; font-weight: 600; font-size: 12px; text-transform: uppercase; }
     .detail-value { color: #2A2A2A; font-size: 16px; margin-top: 5px; }
-    .button { display: inline-block; background: #D4AF37; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 20px; }
+    .button { display: inline-block; background: #0077BE; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 20px; }
     .footer { background: #F5F3F0; padding: 20px; text-align: center; color: #999; font-size: 12px; }
   </style>
 </head>
@@ -124,9 +124,9 @@ const generateAdminEmailHTML = (name, email, businessName, whatsapp) => `
   <style>
     body { font-family: 'Inter', sans-serif; background: #f5f5f5; margin: 0; padding: 20px; }
     .container { max-width: 600px; margin: 0 auto; background: white; border-radius: 8px; padding: 20px; }
-    .header { background: #D4AF37; color: white; padding: 15px; border-radius: 6px; margin-bottom: 20px; }
-    .detail { margin: 15px 0; padding: 10px; background: #f9f9f9; border-left: 3px solid #D4AF37; }
-    .label { color: #D4AF37; font-weight: 600; font-size: 12px; text-transform: uppercase; }
+    .header { background: #0077BE; color: white; padding: 15px; border-radius: 6px; margin-bottom: 20px; }
+    .detail { margin: 15px 0; padding: 10px; background: #f9f9f9; border-left: 3px solid #0077BE; }
+    .label { color: #0077BE; font-weight: 600; font-size: 12px; text-transform: uppercase; }
     .value { color: #2A2A2A; font-size: 14px; margin-top: 5px; word-break: break-all; }
     .whatsapp-link { display: inline-block; background: #25D366; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; margin-top: 10px; font-weight: 600; }
   </style>

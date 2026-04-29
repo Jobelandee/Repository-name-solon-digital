@@ -189,7 +189,7 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.btn-gold {
+.btn-blue {
   background: #0077BE;
   color: #FFFFFF;
   box-shadow: 0 0 20px rgba(0, 119, 190, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -197,7 +197,7 @@ body {
   z-index: 10;
 }
 
-.btn-gold:hover {
+.btn-blue:hover {
   background: #005A94;
   transform: translateY(-2px);
   box-shadow: 0 0 30px rgba(0, 119, 190, 0.8), 0 8px 24px rgba(0, 119, 190, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -371,7 +371,7 @@ body {
   font-weight: 400;
 }
 
-.cta-gold {
+.cta-blue {
   background: #0077BE;
   color: #FFFFFF;
   border: none;
@@ -385,7 +385,7 @@ body {
   letter-spacing: -0.01em;
 }
 
-.cta-gold:hover {
+.cta-blue:hover {
   background: #005A94;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 119, 190, 0.3);
@@ -566,7 +566,7 @@ footer p {
     margin-bottom: 1.5rem;
   }
 
-  .cta-gold,
+  .cta-blue,
   .btn {
     padding: 0.8rem 1.5rem;
     font-size: 0.9rem;
@@ -653,7 +653,7 @@ footer p {
     font-size: 2rem;
   }
 
-  .cta-gold,
+  .cta-blue,
   .btn {
     padding: 0.9rem 2rem;
     font-size: 0.95rem;

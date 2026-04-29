@@ -72,17 +72,17 @@ html.lenis body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.shadow-gold {
+.shadow-blue {
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
 }
 
 /* Champagne Gold Hairlines */
-.border-gold-line {
-  border: 1px solid #D4AF37;
+.border-blue-line {
+  border: 1px solid #0077BE;
 }
 
-.divider-gold {
-  border-top: 1px solid #D4AF37;
+.divider-blue {
+  border-top: 1px solid #0077BE;
 }
 
 /* Soft Glassmorphism */
@@ -113,10 +113,10 @@ html.lenis body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D4AF37;
+  background: #0077BE;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #E5C158;
+  background: #0099FF;
 }

@@ -277,7 +277,7 @@ export default function ChatBot() {
           width: '60px',
           height: '60px',
           borderRadius: '50%',
-          background: 'linear-gradient(135deg, #0077BE 0%, #E5C158 100%)',
+          background: 'linear-gradient(135deg, #0077BE 0%, #0099FF 100%)',
           border: 'none',
           color: '#000',
           fontSize: '1.8rem',

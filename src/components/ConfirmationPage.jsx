@@ -86,7 +86,7 @@ export default function ConfirmationPage() {
             width: '80px',
             height: '80px',
             borderRadius: '50%',
-            background: 'linear-gradient(135deg, #0077BE, #E5C158)',
+            background: 'linear-gradient(135deg, #0077BE, #0099FF)',
             marginBottom: '2rem',
             boxShadow: '0 8px 32px rgba(0, 119, 190, 0.4)',
           }}>
@@ -270,7 +270,7 @@ export default function ConfirmationPage() {
                   width: '36px',
                   height: '36px',
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #0077BE, #E5C158)',
+                  background: 'linear-gradient(135deg, #0077BE, #0099FF)',
                   fontWeight: 700,
                   color: '#1a1a1a',
                   fontSize: '1rem',

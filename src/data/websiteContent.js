@@ -110,7 +110,7 @@ export const websiteContent = {
     {
       title: 'Gyms & Padelclubs',
       description: 'Stop the WhatsApp booking chaos. Automate your courts and grow your community.',
-      glowColor: '#D4AF37',
+      glowColor: '#0077BE',
       accentColor: '#4A90E2',
     },
     {
@@ -122,7 +122,7 @@ export const websiteContent = {
     {
       title: 'Local Services',
       description: 'From Restaurants to Spas. Be found on page 1 of Google and automate your inquiries.',
-      glowColor: '#FFD700',
+      glowColor: '#0099FF',
       accentColor: '#FFA500',
     },
   ],

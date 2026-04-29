@@ -76,7 +76,7 @@ export default function MethodPage() {
                 width: '80px',
                 height: '80px',
                 borderRadius: '50%',
-                background: 'linear-gradient(135deg, #0077BE, #E5C158)',
+                background: 'linear-gradient(135deg, #0077BE, #0099FF)',
                 fontWeight: 700,
                 fontSize: '2rem',
                 color: '#1a1a1a',

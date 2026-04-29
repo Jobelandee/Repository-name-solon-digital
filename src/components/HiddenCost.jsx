@@ -118,7 +118,7 @@ export default function HiddenCost() {
           <p
             style={{
               fontSize: '1.3rem',
-              color: '#FFD700',
+              color: '#0099FF',
               fontFamily: 'Inter, sans-serif',
               lineHeight: 1.6,
               fontWeight: 500,
@@ -137,7 +137,7 @@ export default function HiddenCost() {
           transition={{ duration: 1, delay: 0.2 }}
           style={{
             height: '3px',
-            background: 'linear-gradient(90deg, #FFD700 0%, #FF4444 50%, #FFD700 100%)',
+            background: 'linear-gradient(90deg, #0099FF 0%, #FF4444 50%, #0099FF 100%)',
             marginBottom: '5rem',
             borderRadius: '2px',
             boxShadow: '0 0 20px rgba(212, 175, 55, 0.5)',
@@ -314,7 +314,7 @@ function RegretPillar({ pillar, index, inView }) {
         style={{
           fontSize: '5rem',
           fontWeight: 900,
-          background: 'linear-gradient(135deg, #FFD700 0%, #FF9500 100%)',
+          background: 'linear-gradient(135deg, #0099FF 0%, #FF9500 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
@@ -347,7 +347,7 @@ function RegretPillar({ pillar, index, inView }) {
         style={{
           fontSize: '1.6rem',
           fontWeight: 700,
-          color: '#FFD700',
+          color: '#0099FF',
           marginBottom: '1.5rem',
           fontFamily: 'Playfair Display, serif',
           textShadow: '0 2px 12px rgba(212, 175, 55, 0.3)',

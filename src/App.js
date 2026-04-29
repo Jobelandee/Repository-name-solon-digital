@@ -19,7 +19,7 @@ function Layout({ children }) {
     <div className="min-h-screen bg-alabaster">
       <Header />
       <div className="pt-20">{children}</div>
-      <footer className="bg-soft-stone text-charcoal py-12 px-6 border-t border-gold border-opacity-20">
+      <footer className="bg-soft-stone text-charcoal py-12 px-6 border-t border-blue border-opacity-20">
         <div className="max-w-6xl mx-auto text-center space-y-4">
           <p className="text-charcoal">
             Solon Digital - Building Smart Websites That Work

@@ -24,7 +24,7 @@ export default function HeroConversion() {
         <h1>Is your website working for you, or against you?</h1>
         <p>Stop losing bookings to slow, outdated sites. We build smart websites for local legends.</p>
         <motion.button
-          className="cta-gold"
+          className="cta-blue"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
         >
