@@ -2,11 +2,15 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import enTranslations from '../locales/en.json';
 import esTranslations from '../locales/es.json';
+import itTranslations from '../locales/it.json';
+import nlTranslations from '../locales/nl.json';
 
 // Language resources
 const resources = {
   en: { translation: enTranslations },
   es: { translation: esTranslations },
+  it: { translation: itTranslations },
+  nl: { translation: nlTranslations },
 };
 
 // Initialize i18next

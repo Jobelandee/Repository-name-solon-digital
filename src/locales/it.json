@@ -1,0 +1,156 @@
+{
+  "header": {
+    "home": "Home",
+    "services": "Servizi",
+    "process": "Processo",
+    "about": "Chi Siamo",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "tagline": "⚡ Automazione IA per più lead e visibilità",
+    "headline1": "Costruisci Più Intelligente.",
+    "headline2": "Scala Più Veloce.",
+    "description": "Automazione basata su IA per siti web e marketing. Genera più lead. Aumenta la visibilità. Smetti di competere sul prezzo.",
+    "cta_audit": "Prenota il Tuo Audit Gratuito →",
+    "cta_story": "La Nostra Storia →",
+    "urgency": "Smetti di dare un vantaggio ai tuoi competitor. Inizia a scalare oggi."
+  },
+  "stats": {
+    "label1": "Anni di Esperienza",
+    "label2": "Progetti Completati",
+    "label3": "Membri del Team",
+    "label4": "Soddisfazione Clienti"
+  },
+  "services": {
+    "title": "Cosa Facciamo",
+    "description": "Soluzioni web professionali adattate alle tue esigenze",
+    "service1": {
+      "name": "Sviluppo Web",
+      "desc": "Siti web personalizzati che convertono visitatori in clienti"
+    },
+    "service2": {
+      "name": "Soluzioni E-Commerce",
+      "desc": "Negozi online sicuri e scalabili per il tuo business"
+    },
+    "service3": {
+      "name": "Automazione IA",
+      "desc": "Automazione intelligente per risparmiare tempo ed efficienza"
+    },
+    "service4": {
+      "name": "SEO e Marketing",
+      "desc": "Fatti trovare dai tuoi clienti ideali online"
+    }
+  },
+  "method": {
+    "title": "Il Nostro Processo in 5 Fasi",
+    "step1": {
+      "title": "Scoperta",
+      "desc": "Analizziamo il tuo business, i tuoi obiettivi e la concorrenza"
+    },
+    "step2": {
+      "title": "Strategia",
+      "desc": "Creiamo una roadmap digitale personalizzata per il tuo successo"
+    },
+    "step3": {
+      "title": "Design",
+      "desc": "Design bello e focalizzato sull'utente che converte"
+    },
+    "step4": {
+      "title": "Sviluppo",
+      "desc": "Costruiamo soluzioni veloci, sicure e scalabili"
+    },
+    "step5": {
+      "title": "Ottimizzazione",
+      "desc": "Miglioramento continuo e monitoraggio delle prestazioni"
+    }
+  },
+  "auditForm": {
+    "title": "Richiedi il Tuo Audit di Crescita Gratuito",
+    "subtitle": "Trascorri 15 minuti con noi. Ottieni una chiara roadmap digitale. Nessuna carta di credito richiesta.",
+    "name": "Nome Completo",
+    "namePlaceholder": "Il tuo nome completo",
+    "business": "Nome Azienda",
+    "businessPlaceholder": "Il nome della tua azienda",
+    "whatsapp": "Numero WhatsApp",
+    "whatsappPlaceholder": "+34 XXX XX XX XX",
+    "button": "Prenota il Mio Audit Gratuito →",
+    "error": "Per favore, completa tutti i campi",
+    "privacy": "Ti contatteremo via WhatsApp per programmare il tuo audit di 15 minuti.",
+    "loading": "Prenotazione in corso...",
+    "success_title": "Perfetto! Il tuo audit è confermato.",
+    "success_message": "Ti contatteremo su WhatsApp entro le prossime 24 ore per programmare il tuo audit di crescita personalizzato."
+  },
+  "confirmation": {
+    "title": "Ti Abbiamo Preso in Carico!",
+    "subtitle": "La tua richiesta di demo è stata ricevuta. Esamineremo le tue informazioni e ti contatteremo presto.",
+    "yourInfo": "Le Tue Informazioni",
+    "name": "Nome",
+    "email": "Email",
+    "website": "Sito Web",
+    "whatsNext": "Cosa Succede Adesso?",
+    "step1Title": "Esaminiamo i Tuoi Dati",
+    "step1Desc": "Il nostro team analizzerà il tuo sito web e i tuoi obiettivi aziendali",
+    "step2Title": "Programma la Tua Demo",
+    "step2Desc": "Ti contatteremo per stabilire un orario che ti convenga",
+    "step3Title": "Ottieni la Tua Strategia",
+    "step3Desc": "Scopri esattamente come possiamo aiutare la tua azienda a crescere",
+    "backHome": "Torna a Casa",
+    "contactUs": "Contattaci",
+    "footerMessage": "Le tue informazioni sono sicure e gestite con completa riservatezza."
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Hai domande? Siamo qui per aiutarti.",
+    "email_label": "Inviaci un'email in qualsiasi momento",
+    "whatsapp_label": "Inviaci un messaggio su WhatsApp",
+    "address_label": "Visitaci a Tenerife",
+    "address": "Tenerife, Spagna"
+  },
+  "footer": {
+    "company": "Solon Digital",
+    "tagline": "Soluzioni Web Alimentate da IA per la Crescita",
+    "copyright": "© 2025 Solon Digital. Tutti i diritti riservati.",
+    "services": "Servizi",
+    "process": "Il Nostro Processo",
+    "about": "Chi Siamo",
+    "contact": "Contatti"
+  },
+  "chatbot": {
+    "title": "Assistente Solon",
+    "subtitle": "Sempre qui per aiutarti",
+    "placeholder": "Chiedimi qualsiasi cosa...",
+    "send": "Invia",
+    "whatsapp_button": "💬 Chat su WhatsApp"
+  },
+  "industries": {
+    "title": "Il Costo dell'Attesa",
+    "subtitle": "Ogni giorno che aspetti è un giorno in cui i tuoi competitor guadagnano terreno.",
+    "gym": {
+      "title": "Palestre e Padelclub",
+      "description": "Ferma il caos delle prenotazioni su WhatsApp. Automatizza i tuoi campi e fai crescere la tua comunità."
+    },
+    "realestate": {
+      "title": "Immobiliare",
+      "description": "Converti i ricercatori globali in lead qualificati. Landing page ad alte prestazioni per proprietà a Tenerife."
+    },
+    "services": {
+      "title": "Servizi Locali",
+      "description": "Da Ristoranti a Spa. Fatti trovare nella pagina 1 di Google e automatizza le tue richieste."
+    }
+  },
+  "ourstory": {
+    "headline": "Innovazione Olandese. Radici Canarie.",
+    "narrative1": "Ci siamo trasferiti dall'Olanda a Tenerife perché abbiamo visto un grande vuoto: le aziende locali perdono ore di lavoro manuale e migliaia di ricavi a causa di strumenti digitali obsoleti. Abbiamo visto il potenziale e ci siamo trasferiti qui per risolverlo.",
+    "narrative2": "Non costruiamo solo siti web; costruiamo sistemi alimentati da IA che agiscono come il tuo dipendente più efficiente, risparmiandoti tempo e denaro.",
+    "founder1_name": "Job Eland",
+    "founder1_title": "Specialista di Marketing ed Esperto di IA",
+    "founder1_desc": "Trasforma dati complessi in macchine digitali ad alte prestazioni che convertono il traffico in profitto prevedibile.",
+    "founder2_name": "Rodney",
+    "founder2_title": "Proprietario Precedente di 6 PT Studios",
+    "founder2_desc": "Sa esattamente cosa serve per gestire un'azienda, ottimizzare le operazioni e scalare i brand locali."
+  },
+  "method": {
+    "general_title": "Il Nostro Metodo",
+    "general_subtitle": "Seguiamo un processo provato che garantisce che il tuo sito web sia costruito correttamente, lanciato senza problemi e guidi risultati reali per il tuo business."
+  }
+}

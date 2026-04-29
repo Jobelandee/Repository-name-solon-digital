@@ -44,39 +44,67 @@ export default function Header() {
           <Link to="/method">{t('header.process')}</Link>
           <Link to="/contact">{t('header.contact')}</Link>
 
-          {/* Language Switcher */}
-          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginLeft: '1rem' }}>
+          {/* Language Switcher with Flags */}
+          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginLeft: '1rem' }}>
             <button
               onClick={() => i18n.changeLanguage('en')}
+              title="English"
               style={{
-                background: i18n.language === 'en' ? '#0077BE' : 'transparent',
-                color: i18n.language === 'en' ? '#1a1a1a' : '#FFFFFF',
-                border: `1px solid ${i18n.language === 'en' ? '#0077BE' : '#0077BE'}`,
-                padding: '0.4rem 0.8rem',
-                borderRadius: '4px',
+                background: i18n.language === 'en' ? '#C73584' : 'transparent',
+                border: 'none',
+                padding: '0.5rem 0.8rem',
+                borderRadius: '6px',
                 cursor: 'pointer',
-                fontSize: '0.85rem',
-                fontWeight: 600,
+                fontSize: '1.2rem',
                 transition: 'all 0.3s ease',
               }}
             >
-              EN
+              🇬🇧
             </button>
             <button
               onClick={() => i18n.changeLanguage('es')}
+              title="Español"
               style={{
-                background: i18n.language === 'es' ? '#0077BE' : 'transparent',
-                color: i18n.language === 'es' ? '#1a1a1a' : '#FFFFFF',
-                border: `1px solid ${i18n.language === 'es' ? '#0077BE' : '#0077BE'}`,
-                padding: '0.4rem 0.8rem',
-                borderRadius: '4px',
+                background: i18n.language === 'es' ? '#C73584' : 'transparent',
+                border: 'none',
+                padding: '0.5rem 0.8rem',
+                borderRadius: '6px',
                 cursor: 'pointer',
-                fontSize: '0.85rem',
-                fontWeight: 600,
+                fontSize: '1.2rem',
                 transition: 'all 0.3s ease',
               }}
             >
-              ES
+              🇪🇸
+            </button>
+            <button
+              onClick={() => i18n.changeLanguage('it')}
+              title="Italiano"
+              style={{
+                background: i18n.language === 'it' ? '#C73584' : 'transparent',
+                border: 'none',
+                padding: '0.5rem 0.8rem',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                fontSize: '1.2rem',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              🇮🇹
+            </button>
+            <button
+              onClick={() => i18n.changeLanguage('nl')}
+              title="Nederlands"
+              style={{
+                background: i18n.language === 'nl' ? '#C73584' : 'transparent',
+                border: 'none',
+                padding: '0.5rem 0.8rem',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                fontSize: '1.2rem',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              🇳🇱
             </button>
           </div>
         </nav>

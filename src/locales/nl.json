@@ -1,0 +1,156 @@
+{
+  "header": {
+    "home": "Home",
+    "services": "Diensten",
+    "process": "Proces",
+    "about": "Over Ons",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "⚡ AI-automatisering voor meer leads en zichtbaarheid",
+    "headline1": "Bouw Slimmer.",
+    "headline2": "Groei Sneller.",
+    "description": "AI-aangedreven automatisering voor websites en marketing. Genereer meer leads. Verhoog zichtbaarheid. Stop met op prijs concurreren.",
+    "cta_audit": "Boek Uw Gratis Audit →",
+    "cta_story": "Ons Verhaal →",
+    "urgency": "Stop met uw concurrenten een vosprong te geven. Begin vandaag te schalen."
+  },
+  "stats": {
+    "label1": "Jaar Ervaring",
+    "label2": "Projecten Afgerond",
+    "label3": "Teamleden",
+    "label4": "Klant Tevredenheid"
+  },
+  "services": {
+    "title": "Wat We Doen",
+    "description": "Professionele weboplossingen afgestemd op uw bedrijfsbehoeften",
+    "service1": {
+      "name": "Webontwikkeling",
+      "desc": "Aangepaste websites die bezoekers omzetten in klanten"
+    },
+    "service2": {
+      "name": "E-Commerce Oplossingen",
+      "desc": "Veilige en schaalbare online winkels voor uw bedrijf"
+    },
+    "service3": {
+      "name": "AI-automatisering",
+      "desc": "Slimme automatisering om tijd te besparen en efficiëntie te verhogen"
+    },
+    "service4": {
+      "name": "SEO en Marketing",
+      "desc": "Zorg dat uw ideale klanten u online vinden"
+    }
+  },
+  "method": {
+    "title": "Ons 5-Stappen Proces",
+    "step1": {
+      "title": "Ontdekking",
+      "desc": "We analyseren uw bedrijf, doelstellingen en concurrentie"
+    },
+    "step2": {
+      "title": "Strategie",
+      "desc": "Creëer een op maat gemaakte digitale routekaart voor uw succes"
+    },
+    "step3": {
+      "title": "Ontwerp",
+      "desc": "Mooi, gebruikersgericht ontwerp dat converteert"
+    },
+    "step4": {
+      "title": "Ontwikkeling",
+      "desc": "Bouw snelle, veilige en schaalbare oplossingen"
+    },
+    "step5": {
+      "title": "Optimalisatie",
+      "desc": "Voortdurende verbetering en prestatiebewaking"
+    }
+  },
+  "auditForm": {
+    "title": "Claim Uw Gratis Groei Audit",
+    "subtitle": "Besteed 15 minuten bij ons. Ga weg met een duidelijke digitale routekaart. Geen creditcard nodig.",
+    "name": "Volledige Naam",
+    "namePlaceholder": "Uw volledige naam",
+    "business": "Bedrijfsnaam",
+    "businessPlaceholder": "De naam van uw bedrijf",
+    "whatsapp": "WhatsApp Nummer",
+    "whatsappPlaceholder": "+34 XXX XX XX XX",
+    "button": "Boek Mijn Gratis Audit →",
+    "error": "Vul alstublieft alle velden in",
+    "privacy": "We nemen contact met u op via WhatsApp om uw 15-minuten audit in te plannen.",
+    "loading": "Boeking...",
+    "success_title": "Perfect! Uw audit is bevestigd.",
+    "success_message": "We nemen contact met u op via WhatsApp in de komende 24 uur om uw persoonlijke groei audit in te plannen."
+  },
+  "confirmation": {
+    "title": "We Hebben U Te Pakken!",
+    "subtitle": "Uw demo-aanvraag is ontvangen. We zullen uw informatie bekijken en binnenkort contact opnemen.",
+    "yourInfo": "Uw Informatie",
+    "name": "Naam",
+    "email": "E-mail",
+    "website": "Website",
+    "whatsNext": "Wat Gebeurt er Nu?",
+    "step1Title": "We Bekijken Uw Gegevens",
+    "step1Desc": "Ons team analyseert uw website en zakelijke doelstellingen",
+    "step2Title": "Plan Uw Demo In",
+    "step2Desc": "We nemen contact op om een moment in te stellen dat voor u uitkomt",
+    "step3Title": "Krijg Uw Strategie",
+    "step3Desc": "Ontdek precies hoe we uw bedrijf kunnen helpen groeien",
+    "backHome": "Terug naar Home",
+    "contactUs": "Contact Opnemen",
+    "footerMessage": "Uw informatie is veilig en wordt volledig vertrouwelijk behandeld."
+  },
+  "contact": {
+    "title": "Neem Contact Met Ons Op",
+    "subtitle": "Heeft u vragen? We staan hier om te helpen.",
+    "email_label": "Stuur ons op elk moment een e-mail",
+    "whatsapp_label": "Stuur ons een bericht op WhatsApp",
+    "address_label": "Bezoek ons op Tenerife",
+    "address": "Tenerife, Spanje"
+  },
+  "footer": {
+    "company": "Solon Digital",
+    "tagline": "AI-Aangedreven Weboplossingen voor Groei",
+    "copyright": "© 2025 Solon Digital. Alle rechten voorbehouden.",
+    "services": "Diensten",
+    "process": "Ons Proces",
+    "about": "Over Ons",
+    "contact": "Contact"
+  },
+  "chatbot": {
+    "title": "Solon Assistent",
+    "subtitle": "Altijd hier om u te helpen",
+    "placeholder": "Stel me iets...",
+    "send": "Verzenden",
+    "whatsapp_button": "💬 Chat op WhatsApp"
+  },
+  "industries": {
+    "title": "De Kosten van Wachten",
+    "subtitle": "Elke dag dat u wacht is een dag dat uw concurrenten terrein winnen.",
+    "gym": {
+      "title": "Gyms en Padelclubs",
+      "description": "Stop de chaos van WhatsApp-boekingen. Automatiseer uw velden en groei uw gemeenschap."
+    },
+    "realestate": {
+      "title": "Onroerend Goed",
+      "description": "Converteer globale zoekers in gekwalificeerde leads. Krachtige landingspagina's voor Tenerife-eigendom."
+    },
+    "services": {
+      "title": "Lokale Diensten",
+      "description": "Van Restaurants tot Spa's. Zorg dat u op pagina 1 van Google wordt gevonden en automatiseer uw vragen."
+    }
+  },
+  "ourstory": {
+    "headline": "Nederlandse Innovatie. Canarische Wortels.",
+    "narrative1": "We zijn van Nederland naar Tenerife verhuisd omdat we een enorme kloof zagen: lokale bedrijven verliezen uren aan handmatig werk en duizenden aan inkomsten door verouderde digitale tools. We zagen het potentieel en verhuisden hier om het op te lossen.",
+    "narrative2": "We bouwen niet alleen websites; we bouwen AI-aangedreven systemen die fungeren als uw meest efficiënte werknemer, wat u tijd en geld bespaart.",
+    "founder1_name": "Job Eland",
+    "founder1_title": "Marketing Specialist & AI Expert",
+    "founder1_desc": "Zet complexe data om in krachtige digitale machines die verkeer omzetten in voorspelbare winst.",
+    "founder2_name": "Rodney",
+    "founder2_title": "Voormalig Eigenaar van 6 PT Studios",
+    "founder2_desc": "Weet precies wat nodig is om een bedrijf te leiden, activiteiten te optimaliseren en lokale merken te schalen."
+  },
+  "method": {
+    "general_title": "Onze Methode",
+    "general_subtitle": "We volgen een bewezen proces dat ervoor zorgt dat uw website correct wordt gebouwd, soepel wordt gelanceerd en echte resultaten voor uw bedrijf oplevert."
+  }
+}
