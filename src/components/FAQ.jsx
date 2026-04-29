@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 
 export default function FAQ() {
-  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
