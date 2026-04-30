@@ -158,5 +158,25 @@
   "servicesPage": {
     "title": "Onze Diensten",
     "subtitle": "Alles wat u nodig hebt om uw online business te laten groeien"
+  },
+  "keyBenefits": {
+    "sectionTitle": "Wat Je Krijgt Met Solon Digital",
+    "sectionSubtitle": "Deze 4 veranderingen zullen je bedrijf transformeren",
+    "benefit1": {
+      "title": "Meer Tijd",
+      "description": "Bespaar 15+ uren per week door automatisering. Geen handmatig werk meer met WhatsApp en bookings."
+    },
+    "benefit2": {
+      "title": "Betere Online Zichtbaarheid",
+      "description": "Verschijn op pagina 1 van Google. Bereik de 100.000+ toeristen die naar jouw service zoeken."
+    },
+    "benefit3": {
+      "title": "Beter Visitekaartje",
+      "description": "Professionele website die je bedrijf presenteert. Eerste indruk telt - maak het indruk."
+    },
+    "benefit4": {
+      "title": "Betere Opvolging op Leads",
+      "description": "24/7 automatische reacties op vragen. Verlies nooit meer een lead omdat je niet snel genoeg antwoordt."
+    }
   }
 }

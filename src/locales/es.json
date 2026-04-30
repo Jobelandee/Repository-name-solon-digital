@@ -158,5 +158,25 @@
   "servicesPage": {
     "title": "Nuestros Servicios",
     "subtitle": "Todo lo que necesitas para hacer crecer tu negocio en línea"
+  },
+  "keyBenefits": {
+    "sectionTitle": "Lo Que Obtienes Con Solon Digital",
+    "sectionSubtitle": "Estos 4 cambios transformarán tu negocio",
+    "benefit1": {
+      "title": "Más Tiempo",
+      "description": "Ahorra 15+ horas por semana mediante automatización. Sin más trabajo manual con WhatsApp y reservas."
+    },
+    "benefit2": {
+      "title": "Mejor Visibilidad en Línea",
+      "description": "Aparece en la página 1 de Google. Alcanza los 100.000+ turistas que buscan tu servicio."
+    },
+    "benefit3": {
+      "title": "Mejor Tarjeta de Presentación",
+      "description": "Sitio web profesional que presenta tu negocio. Las primeras impresiones importan - hazlas contar."
+    },
+    "benefit4": {
+      "title": "Mejor Seguimiento de Leads",
+      "description": "Respuestas automáticas 24/7 a consultas. Nunca pierdas un lead porque no respondiste lo suficientemente rápido."
+    }
   }
 }

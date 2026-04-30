@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import './config/i18n'; // Initialize i18n
 import Header from './components/Header';
 import Hero from './components/Hero';
+import KeyBenefits from './components/KeyBenefits';
 import IndustriesScale from './components/IndustriesScale';
 import ServicesOverview from './components/ServicesOverview';
 import ServicesPage from './components/ServicesPage';
@@ -46,6 +47,7 @@ function Home() {
   return (
     <Layout>
       <Hero />
+      <KeyBenefits />
       <IndustriesScale />
       <ServicesOverview />
       <OurStory />
