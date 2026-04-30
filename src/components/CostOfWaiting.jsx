@@ -194,8 +194,8 @@ export default function CostOfWaiting() {
 function PainPointCard({ point, index, inView }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      initial={{ opacity: 1, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: index * 0.15 }}
       style={{
         background: 'rgba(255, 255, 255, 0.05)',

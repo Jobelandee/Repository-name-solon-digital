@@ -111,8 +111,8 @@ export default function ReviewsSection() {
 function ReviewCard({ review, index, inView }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+      initial={{ opacity: 1, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: index * 0.1 }}
       style={{
         background: '#FFFFFF',
