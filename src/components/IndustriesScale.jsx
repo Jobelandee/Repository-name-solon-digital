@@ -221,6 +221,7 @@ function IndustryCard({ industry, index, inView }) {
         overflow: 'hidden',
         boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
         transition: 'all 0.4s ease',
+        textAlign: 'center',
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = '#0077BE';
@@ -269,6 +270,8 @@ function IndustryCard({ industry, index, inView }) {
           background: '#FF9500',
           borderRadius: '2px',
           marginBottom: '2rem',
+          marginLeft: 'auto',
+          marginRight: 'auto',
           position: 'relative',
           zIndex: 2,
         }}
