@@ -106,6 +106,8 @@ export default function Hero() {
               gap: '2rem',
               marginBottom: '2.8rem',
               maxWidth: '580px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
             }}
           >
             <div style={{ textAlign: 'left' }}>

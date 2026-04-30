@@ -194,7 +194,7 @@ p, span, body {
   .hero-section {
     padding: 40px 1rem;
     min-height: auto;
-    justify-content: flex-start !important;
+    justify-content: center !important;
   }
 }
 
