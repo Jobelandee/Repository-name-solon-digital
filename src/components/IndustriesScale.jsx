@@ -112,7 +112,7 @@ export default function IndustriesScale() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: '3rem',
             maxWidth: '1200px',
             margin: '0 auto 5rem',
