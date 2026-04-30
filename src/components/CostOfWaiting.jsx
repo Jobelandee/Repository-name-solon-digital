@@ -72,13 +72,13 @@ export default function CostOfWaiting() {
           style={{
             textAlign: 'center',
             marginBottom: '5rem',
-            maxWidth: '800px',
+            maxWidth: 'clamp(280px, 90vw, 800px)',
             margin: '0 auto 5rem',
           }}
         >
           <h2
             style={{
-              fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+              fontSize: 'clamp(1.75rem, 5vw, 4rem)',
               fontWeight: 800,
               color: '#FFFFFF',
               fontFamily: 'Playfair Display, serif',
@@ -92,7 +92,7 @@ export default function CostOfWaiting() {
           </h2>
           <p
             style={{
-              fontSize: '1.15rem',
+              fontSize: 'clamp(0.95rem, 3.5vw, 1.15rem)',
               color: '#E0E0E0',
               fontFamily: 'Inter, sans-serif',
               lineHeight: 1.7,
@@ -108,7 +108,7 @@ export default function CostOfWaiting() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: '2.5rem',
             maxWidth: '1200px',
             margin: '0 auto',
