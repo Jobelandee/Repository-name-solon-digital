@@ -31,7 +31,9 @@ export default function Hero() {
           transition={{ duration: 1, ease: 'easeOut' }}
           style={{
             maxWidth: 'clamp(280px, 90vw, 560px)',
-            textAlign: 'left',
+            textAlign: 'center',
+            marginLeft: 'auto',
+            marginRight: 'auto',
           }}
         >
           {/* Brand Tagline */}
