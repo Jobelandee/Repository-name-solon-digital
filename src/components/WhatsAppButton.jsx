@@ -16,8 +16,8 @@ export default function WhatsAppButton() {
       onMouseLeave={() => setIsHovered(false)}
       style={{
         position: 'fixed',
-        bottom: '30px',
-        right: '90px',
+        bottom: '110px',
+        right: '20px',
         width: '60px',
         height: '60px',
         borderRadius: '50%',
