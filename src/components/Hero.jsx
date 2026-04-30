@@ -10,8 +10,8 @@ export default function Hero() {
       position: 'relative',
       overflow: 'hidden',
       background: 'linear-gradient(135deg, #FFFFFF 0%, #F5F5F5 100%)',
-      paddingTop: '2rem',
-      paddingBottom: '2rem',
+      paddingTop: 'clamp(2rem, 5vw, 4rem)',
+      paddingBottom: 'clamp(2rem, 5vw, 4rem)',
       minHeight: 'auto',
     }}>
       {/* Content Container - Pure Editorial Left Layout */}
@@ -22,7 +22,7 @@ export default function Hero() {
           height: '100%',
           display: 'flex',
           alignItems: 'center',
-          padding: '2rem 1.5rem 2rem 1.5rem',
+          padding: 'clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 1.5rem)',
         }}
       >
         <motion.div
@@ -30,7 +30,8 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
           style={{
-            maxWidth: '560px',
+            maxWidth: '100%',
+            width: '100%',
             textAlign: 'left',
           }}
         >
@@ -42,7 +43,7 @@ export default function Hero() {
             className="tagline"
             style={{
               color: '#FF9500',
-              fontSize: '18px',
+              fontSize: 'clamp(13px, 3.5vw, 18px)',
               fontWeight: 700,
               fontFamily: 'Outfit, sans-serif',
               marginBottom: '1.5rem',
@@ -81,7 +82,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{
               color: '#444444',
-              fontSize: '1.3rem',
+              fontSize: 'clamp(0.95rem, 3.5vw, 1.3rem)',
               lineHeight: 1.8,
               fontWeight: 400,
               fontFamily: 'Outfit, sans-serif',
@@ -127,7 +128,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.25 }}
             style={{
               display: 'flex',
-              gap: '1.2rem',
+              gap: '1rem',
               alignItems: 'center',
               flexWrap: 'wrap',
               marginBottom: '2.5rem',
@@ -136,22 +137,21 @@ export default function Hero() {
             {/* Primary Audit Button - Purple */}
             <motion.a
               href="#audit"
+              className="hero-cta-button hero-cta-primary"
               style={{
                 background: '#FF9500',
                 color: '#FFFFFF',
-                padding: '1rem 2.5rem',
+                padding: 'clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2.5rem)',
                 borderRadius: '8px',
                 textDecoration: 'none',
                 fontWeight: 600,
-                fontSize: '1rem',
+                fontSize: 'clamp(0.9rem, 2.5vw, 1rem)',
                 fontFamily: 'Outfit, sans-serif',
                 letterSpacing: '-0.01em',
                 border: 'none',
                 cursor: 'pointer',
                 boxShadow: '0 6px 16px rgba(199, 53, 132, 0.3)',
                 transition: 'all 0.3s ease',
-                display: 'inline-block',
-                whiteSpace: 'nowrap',
                 position: 'relative',
               }}
               onMouseEnter={(e) => {
@@ -171,21 +171,20 @@ export default function Hero() {
             {/* Ghost Secondary Button - Links to Our Story */}
             <motion.a
               href="#our-story"
+              className="hero-cta-button hero-cta-secondary"
               style={{
                 background: 'transparent',
                 color: '#FF9500',
-                padding: '1rem 2.5rem',
+                padding: 'clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2.5rem)',
                 borderRadius: '6px',
                 textDecoration: 'none',
                 fontWeight: 600,
-                fontSize: '1rem',
+                fontSize: 'clamp(0.9rem, 2.5vw, 1rem)',
                 fontFamily: 'Outfit, sans-serif',
                 letterSpacing: '-0.01em',
                 border: '2px solid #FF9500',
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
-                display: 'inline-block',
-                whiteSpace: 'nowrap',
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = 'rgba(199, 53, 132, 0.1)';
@@ -221,47 +220,25 @@ export default function Hero() {
       {/* Mobile Responsive */}
       <style>{`
         @media (max-width: 768px) {
-          div[style*="padding: 4rem 2rem"] {
-            padding: 3rem 1.5rem 3rem 1.5rem !important;
-            justify-content: center;
-          }
-
-          div[style*="maxWidth: 560px"] {
-            max-width: 100% !important;
+          .hero-cta-button {
+            display: block !important;
+            width: 100% !important;
             text-align: center !important;
           }
 
-          h1[style*="Playfair"][style*="5.5rem"] {
-            text-align: center !important;
-            font-size: 2.5rem !important;
+          .hero-cta-button:not(:last-of-type) {
+            margin-bottom: 0.5rem;
           }
 
-          p[style*="FF9500"][style*="Playfair"],
-          p[style*="FF9500"][style*="letterSpacing"] {
-            text-align: center !important;
-            font-size: 1.5rem !important;
-            margin-bottom: 1.5rem !important;
+          div[style*="marginBottom: 2.5rem"] > motion > div {
+            flex-direction: column !important;
           }
+        }
 
-          p[style*="E8E8E8"][style*="1.08rem"] {
-            text-align: center !important;
-            font-size: 0.95rem !important;
-          }
-
-          div[style*="gap: 1.2rem"][style*="flex-wrap"] {
-            justify-content: center !important;
-            gap: 0.8rem !important;
-            margin-bottom: 1.5rem !important;
-          }
-
-          a[style*="FF9500"],
-          a[style*="transparent"][style*="border: 2px"] {
-            padding: 0.9rem 1.8rem !important;
-            font-size: 0.85rem !important;
-          }
-
-          p[style*="AAAAAA"] {
-            text-align: center !important;
+        @media (min-width: 769px) {
+          .hero-cta-button {
+            display: inline-block !important;
+            width: auto !important;
           }
         }
       `}</style>
