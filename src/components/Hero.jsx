@@ -110,15 +110,15 @@ export default function Hero() {
               marginRight: 'auto',
             }}
           >
-            <div style={{ textAlign: 'left' }}>
+            <div style={{ textAlign: 'center' }}>
               <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>42+</h3>
               <p style={{ fontSize: '0.95rem', color: '#666666', margin: 0 }}>Businesses Growing</p>
             </div>
-            <div style={{ textAlign: 'left' }}>
+            <div style={{ textAlign: 'center' }}>
               <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>40%</h3>
               <p style={{ fontSize: '0.95rem', color: '#CCCCCC', margin: 0 }}>More Leads (Month 1)</p>
             </div>
-            <div style={{ textAlign: 'left' }}>
+            <div style={{ textAlign: 'center' }}>
               <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>15+</h3>
               <p style={{ fontSize: '0.95rem', color: '#CCCCCC', margin: 0 }}>Hours/Week Saved</p>
             </div>
@@ -133,6 +133,7 @@ export default function Hero() {
               display: 'flex',
               gap: '1rem',
               alignItems: 'center',
+              justifyContent: 'center',
               flexWrap: 'wrap',
               marginBottom: '2.5rem',
             }}
