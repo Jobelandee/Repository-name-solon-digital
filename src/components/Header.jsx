@@ -5,10 +5,8 @@ import { useTranslation } from 'react-i18next';
 import MobileMenu from './MobileMenu';
 
 export default function Header() {
-  const { t } = useTranslation();
-
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { i18n, t } = useTranslation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <header className="solon-header" style={{
