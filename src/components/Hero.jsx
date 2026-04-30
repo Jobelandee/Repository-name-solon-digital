@@ -30,8 +30,7 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
           style={{
-            maxWidth: '100%',
-            width: '100%',
+            maxWidth: 'clamp(280px, 90vw, 560px)',
             textAlign: 'left',
           }}
         >
