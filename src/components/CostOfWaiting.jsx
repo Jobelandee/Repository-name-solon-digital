@@ -112,6 +112,8 @@ export default function CostOfWaiting() {
             gap: '2.5rem',
             maxWidth: '1200px',
             margin: '0 auto',
+            padding: '0 1rem',
+            placeItems: 'center',
           }}
         >
           {painPoints.map((point, index) => (
