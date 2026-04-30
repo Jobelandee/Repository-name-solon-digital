@@ -114,30 +114,28 @@ function ReviewCard({ review, index, inView }) {
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.8, delay: index * 0.1 }}
       style={{
-        background: '#F5F5F5',
-        border: '1px solid #E0E0E0',
-        borderRadius: '16px',
-        padding: '2rem',
+        background: '#FFFFFF',
+        border: '1px solid #E8E8E8',
+        borderRadius: '12px',
+        padding: '1.8rem',
         position: 'relative',
         overflow: 'hidden',
-        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
+        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)',
         transition: 'all 0.3s ease',
         display: 'flex',
         flexDirection: 'column',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = '#0077BE';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.12)';
+        e.currentTarget.style.boxShadow = '0 4px 16px rgba(0, 119, 190, 0.15)';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#E0E0E0';
-        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.05)';
+        e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.08)';
       }}
     >
       {/* Stars */}
       <div style={{ marginBottom: '1rem' }}>
         {[...Array(review.rating)].map((_, i) => (
-          <span key={i} style={{ color: '#FF9500', fontSize: '1.2rem' }}>
+          <span key={i} style={{ color: '#FFC400', fontSize: '1.1rem' }}>
             ★
           </span>
         ))}
@@ -146,41 +144,89 @@ function ReviewCard({ review, index, inView }) {
       {/* Review Text */}
       <p
         style={{
-          fontSize: '1rem',
-          lineHeight: 1.8,
-          color: '#555555',
+          fontSize: '0.95rem',
+          lineHeight: 1.7,
+          color: '#444444',
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 400,
           marginBottom: '1.5rem',
           flex: 1,
         }}
       >
-        "{review.text}"
+        {review.text}
       </p>
 
-      {/* Author */}
-      <div style={{ borderTop: '1px solid #E0E0E0', paddingTop: '1rem' }}>
-        <p
+      {/* Author with Avatar - Google Reviews Style */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid #F0F0F0', paddingTop: '1.2rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <img
+            src={review.image}
+            alt={review.name}
+            style={{
+              width: '40px',
+              height: '40px',
+              borderRadius: '50%',
+              objectFit: 'cover',
+              border: '2px solid #0077BE',
+            }}
+          />
+          <div>
+            <p
+              style={{
+                fontSize: '0.9rem',
+                fontWeight: 700,
+                color: '#222222',
+                margin: '0',
+                fontFamily: 'Outfit, sans-serif',
+              }}
+            >
+              {review.name}
+            </p>
+            <p
+              style={{
+                fontSize: '0.8rem',
+                color: '#888888',
+                margin: 0,
+                fontFamily: 'Outfit, sans-serif',
+              }}
+            >
+              {review.company}
+            </p>
+          </div>
+        </div>
+
+        {/* WhatsApp Button */}
+        <a
+          href="https://wa.me/34621805864"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
-            fontSize: '0.95rem',
-            fontWeight: 700,
-            color: '#0077BE',
-            margin: '0 0 0.25rem 0',
-            fontFamily: 'Outfit, sans-serif',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '40px',
+            height: '40px',
+            borderRadius: '50%',
+            background: '#25D366',
+            color: '#FFFFFF',
+            textDecoration: 'none',
+            fontSize: '1.2rem',
+            transition: 'all 0.3s ease',
+            border: 'none',
+            cursor: 'pointer',
           }}
-        >
-          {review.name}
-        </p>
-        <p
-          style={{
-            fontSize: '0.85rem',
-            color: '#888888',
-            margin: 0,
-            fontFamily: 'Outfit, sans-serif',
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = '#1ead5a';
+            e.currentTarget.style.transform = 'scale(1.1)';
           }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = '#25D366';
+            e.currentTarget.style.transform = 'scale(1)';
+          }}
+          title="Contact via WhatsApp"
         >
-          {review.company}
-        </p>
+          💬
+        </a>
       </div>
     </motion.div>
   );
