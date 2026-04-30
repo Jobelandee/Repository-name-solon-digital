@@ -1,9 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 export default function HiddenCost() {
+  const { t } = useTranslation();
+
   const ref = useRef(null);
   const inView = useInView(ref, { once: false, amount: 0.2 });
   const [timeElapsed, setTimeElapsed] = useState(0);
@@ -19,7 +22,7 @@ export default function HiddenCost() {
   const pillars = [
     {
       number: '01',
-      title: 'Vanishing Leads',
+      title: t('hidden_cost.pillar1_title'),
       description: 'While your site struggles to load, your potential clients are already booking with the competitor next door. You aren\'t just losing a click; you\'re losing a lifetime customer.',
       icon: '💸',
     },

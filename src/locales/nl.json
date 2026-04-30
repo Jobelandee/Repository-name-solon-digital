@@ -9,108 +9,90 @@
   "hero": {
     "tagline": "⚡ AI-automatisering voor meer leads en zichtbaarheid",
     "headline1": "Bouw Slimmer.",
-    "headline2": "Groei Sneller.",
-    "description": "AI-aangedreven automatisering voor websites en marketing. Genereer meer leads. Verhoog zichtbaarheid. Stop met op prijs concurreren.",
-    "cta_audit": "Boek Uw Gratis Audit →",
+    "headline2": "Schaal Sneller.",
+    "description": "AI-aangedreven automatisering voor websites & marketing. Genereer meer leads. Verhoog zichtbaarheid. Stop met op prijs concurreren.",
+    "cta_audit": "Boek Je Gratis Audit →",
     "cta_story": "Ons Verhaal →",
-    "urgency": "Stop met uw concurrenten een vosprong te geven. Begin vandaag te schalen."
+    "urgency": "Geef je concurrenten niet langer het voordeel. Begin vandaag met schalen."
   },
   "stats": {
-    "label1": "Jaar Ervaring",
+    "label1": "Jaren Ervaring",
     "label2": "Projecten Afgerond",
     "label3": "Teamleden",
-    "label4": "Klant Tevredenheid"
+    "label4": "Klanttevredenheid",
+    "stat1_keyword": "100%",
+    "stat1_label": "Volledig Aangepast",
+    "stat1_description": "Geen sjablonen. Elke website is handgemaakt voor de Canarische eilanden markt.",
+    "stat2_keyword": "Lava",
+    "stat2_label": "Bliksemsnelheid",
+    "stat2_description": "Extreme prestatie-optimalisatie. Snelheid die je klanten begeestert.",
+    "stat3_keyword": "AI-First",
+    "stat3_label": "Toekomstbestendig",
+    "stat3_description": "Digitale systemen die 24/7 werken en boekingen & leads automatiseren."
   },
   "services": {
     "title": "Wat We Doen",
-    "description": "Professionele weboplossingen afgestemd op uw bedrijfsbehoeften",
-    "service1": {
-      "name": "Webontwikkeling",
-      "desc": "Aangepaste websites die bezoekers omzetten in klanten"
-    },
-    "service2": {
-      "name": "SEO Optimalisatie",
-      "desc": "Rank eerst op Google en domineer uw markt"
-    },
-    "service3": {
-      "name": "AI-automatisering",
-      "desc": "Slimme automatisering om tijd te besparen en efficiëntie te verhogen"
-    },
-    "service4": {
-      "name": "AI Chatbots",
-      "desc": "24/7 intelligente klantenondersteuning en leadgeneratie"
-    }
+    "description": "Professionele weboplossingen afgestemd op jouw behoeften",
+    "service1": {"name": "Webontwikkeling", "desc": "Op maat gemaakte websites die bezoekers in klanten omzetten"},
+    "service2": {"name": "SEO-optimalisatie", "desc": "Rank als eerste op Google en domineer je markt"},
+    "service3": {"name": "AI-automatisering", "desc": "Slimme automatisering om tijd te besparen en efficiëntie te verhogen"},
+    "service4": {"name": "AI Chatbots", "desc": "24/7 intelligente klantenondersteuning en leadgenerering"}
   },
   "method": {
     "title": "Ons 5-Stappen Proces",
-    "step1": {
-      "title": "Ontdekking",
-      "desc": "We analyseren uw bedrijf, doelstellingen en concurrentie"
-    },
-    "step2": {
-      "title": "Strategie",
-      "desc": "Creëer een op maat gemaakte digitale routekaart voor uw succes"
-    },
-    "step3": {
-      "title": "Ontwerp",
-      "desc": "Mooi, gebruikersgericht ontwerp dat converteert"
-    },
-    "step4": {
-      "title": "Ontwikkeling",
-      "desc": "Bouw snelle, veilige en schaalbare oplossingen"
-    },
-    "step5": {
-      "title": "Optimalisatie",
-      "desc": "Voortdurende verbetering en prestatiebewaking"
-    },
+    "step1": {"title": "Ontdekking", "desc": "We analyseren je bedrijf, doelstellingen en concurrentie"},
+    "step2": {"title": "Strategie", "desc": "Creëer een op maat gemaakte digitale routekaart voor jouw succes"},
+    "step3": {"title": "Design", "desc": "Prachtig, gebruiker-gericht design dat omzet"},
+    "step4": {"title": "Ontwikkeling", "desc": "Bouw snelle, veilige en schaalbare oplossingen"},
+    "step5": {"title": "Optimalisatie", "desc": "Continue verbetering en prestatietracking"},
     "general_title": "Onze Methode",
-    "general_subtitle": "We volgen een bewezen proces dat ervoor zorgt dat uw website correct wordt gebouwd, soepel wordt gelanceerd en echte resultaten voor uw business oplevert."
+    "general_subtitle": "We volgen een bewezen proces dat garandeert dat je website correct wordt gebouwd, soepel wordt gelanceerd en echte resultaten oplevert voor je bedrijf."
   },
   "auditForm": {
-    "title": "Claim Uw Gratis Groei Audit",
-    "subtitle": "Besteed 15 minuten bij ons. Ga weg met een duidelijke digitale routekaart. Geen creditcard nodig.",
+    "title": "Claim Je Gratis Groeaudit",
+    "subtitle": "Besteed 15 minuten met ons. Vertrek met een duidelijke digitale routekaart. Geen creditcard nodig.",
     "name": "Volledige Naam",
-    "namePlaceholder": "Uw volledige naam",
+    "namePlaceholder": "Je volledige naam",
     "business": "Bedrijfsnaam",
-    "businessPlaceholder": "De naam van uw bedrijf",
+    "businessPlaceholder": "Je bedrijfsnaam",
     "whatsapp": "WhatsApp Nummer",
     "whatsappPlaceholder": "+34 XXX XX XX XX",
     "button": "Boek Mijn Gratis Audit →",
     "error": "Vul alstublieft alle velden in",
-    "privacy": "We nemen contact met u op via WhatsApp om uw 15-minuten audit in te plannen.",
-    "loading": "Boeking...",
-    "success_title": "Perfect! Uw audit is bevestigd.",
-    "success_message": "We nemen contact met u op via WhatsApp in de komende 24 uur om uw persoonlijke groei audit in te plannen."
+    "privacy": "We nemen contact via WhatsApp op om je 15-minuten audit in te plannen.",
+    "loading": "Reservering...",
+    "success_title": "Perfect! Je audit is bevestigd.",
+    "success_message": "We nemen binnen 24 uur via WhatsApp contact met je op om je gepersonaliseerde groeiaudit in te plannen."
   },
   "confirmation": {
-    "title": "We Hebben U Te Pakken!",
-    "subtitle": "Uw demo-aanvraag is ontvangen. We zullen uw informatie bekijken en binnenkort contact opnemen.",
-    "yourInfo": "Uw Informatie",
+    "title": "We hebben je!",
+    "subtitle": "Je demoverzoek is ontvangen. We zullen je informatie controleren en je snel contacteren.",
+    "yourInfo": "Je Gegevens",
     "name": "Naam",
     "email": "E-mail",
     "website": "Website",
-    "whatsNext": "Wat Gebeurt er Nu?",
-    "step1Title": "We Bekijken Uw Gegevens",
-    "step1Desc": "Ons team analyseert uw website en zakelijke doelstellingen",
-    "step2Title": "Plan Uw Demo In",
-    "step2Desc": "We nemen contact op om een moment in te stellen dat voor u uitkomt",
-    "step3Title": "Krijg Uw Strategie",
-    "step3Desc": "Ontdek precies hoe we uw bedrijf kunnen helpen groeien",
+    "whatsNext": "Wat Vervolgens?",
+    "step1Title": "We Controleren Je Gegevens",
+    "step1Desc": "Ons team analyseert je website en bedrijfsdoelstellingen",
+    "step2Title": "We Plannen Je Demo In",
+    "step2Desc": "We nemen contact op om een passend moment in te plannen",
+    "step3Title": "Je Strategie Ophalen",
+    "step3Desc": "Ontdek precies hoe we je kunnen helpen groeien",
     "backHome": "Terug naar Home",
-    "contactUs": "Contact Opnemen",
-    "footerMessage": "Uw informatie is veilig en wordt volledig vertrouwelijk behandeld."
+    "contactUs": "Neem Contact Op",
+    "footerMessage": "Je gegevens zijn veilig en worden met volledige vertrouwelijkheid behandeld."
   },
   "contact": {
-    "title": "Neem Contact Met Ons Op",
-    "subtitle": "Heeft u vragen? We staan hier om te helpen.",
-    "email_label": "Stuur ons op elk moment een e-mail",
-    "whatsapp_label": "Stuur ons een bericht op WhatsApp",
-    "address_label": "Bezoek ons op Tenerife",
+    "title": "Neem Contact Op",
+    "subtitle": "Heb je vragen? We helpen je graag.",
+    "email_label": "Stuur ons altijd een e-mail",
+    "whatsapp_label": "Bericht ons op WhatsApp",
+    "address_label": "Bezoek ons in Tenerife",
     "address": "Tenerife, Spanje"
   },
   "footer": {
     "company": "Solon Digital",
-    "tagline": "AI-Aangedreven Weboplossingen voor Groei",
+    "tagline": "AI-aangedreven Weboplossingen voor Groei",
     "copyright": "© 2025 Solon Digital. Alle rechten voorbehouden.",
     "services": "Diensten",
     "process": "Ons Proces",
@@ -119,64 +101,187 @@
   },
   "chatbot": {
     "title": "Solon Assistent",
-    "subtitle": "Altijd hier om u te helpen",
-    "placeholder": "Stel me iets...",
+    "subtitle": "Altijd hier om te helpen",
+    "placeholder": "Vraag iets...",
     "send": "Verzenden",
-    "whatsapp_button": "💬 Chat op WhatsApp"
+    "whatsapp_button": "💬 Chat op WhatsApp",
+    "faq": {
+      "greeting": "Hallo! 👋 Ik ben de assistent van Solon Digital. Hoe kan ik je helpen?",
+      "pricing": "Websites beginnen vanaf €2.500. Ik kan je een gepersonaliseerd prijsvoorstel geven. Wil je op WhatsApp praten?",
+      "timeline": "Normaal 1-2 weken afhankelijk van complexiteit. Wil je een gesprek inplannen?",
+      "services_list": "✅ Webontwikkeling\n✅ SEO-optimalisatie\n✅ AI-automatisering\n✅ AI Chatbots\n\nWat interesseert je?",
+      "services_list_es": "✅ Webontwikkeling\n✅ SEO-optimalisatie\n✅ AI-automatisering\n✅ AI Chatbots\n\nWat interesseert je?",
+      "seo_info": "SEO helpt je op Google te verschijnen. Onze klanten zien resultaten in 3-6 maanden.",
+      "automation_info": "AI-automatisering verwerkt vragen, boekingen en leads 24/7 zonder jouw inzet.",
+      "chatbot_info": "Een AI-chatbot antwoordt automatisch klanten op je website of WhatsApp.",
+      "development_info": "We bouwen snelle, moderne websites die verkopen. Geoptimaliseerd voor mobiel en SEO.",
+      "default": "Ik begrijp die vraag niet. 🤔 Vraag me over diensten, prijzen of timing?"
+    }
+  },
+  "faq_section": {
+    "header_label": "FAQ",
+    "header_title": "Veelgestelde Vragen",
+    "header_subtitle": "Alles wat je moet weten over onze diensten",
+    "q1_question": "Hoe lang duurt het bouwen van een website?",
+    "q1_answer": "1-2 weken afhankelijk van wat nodig is. Eenvoudige websites gaan sneller, complexe projecten met integraties nemen langer.",
+    "q2_question": "Bieden jullie doorlopende ondersteuning?",
+    "q2_answer": "Ja! We bieden ondersteuning voor alle projecten inclusief updates, beveiligingspatches en prestatieoptimalisatie.",
+    "q3_question": "Kan ik mijn website later uitbreiden?",
+    "q3_answer": "Absoluut. We bouwen schaalbare oplossingen vanaf dag één. Nieuwe functies, integraties of pagina's toevoegen is eenvoudig met onze modulaire aanpak.",
+    "q4_question": "Garanderen jullie eerste pagina ranking op Google?",
+    "q4_answer": "We garanderen geen rankings, maar implementeren bewezen SEO-strategieën. Onze klanten zien meestal topposities binnen 3-6 maanden voor doelzoekmogelijkheden.",
+    "q5_question": "Hoe helpt AI-automatisering mijn bedrijf?",
+    "q5_answer": "AI-automatisering verwerkt repetitieve taken: klantenondersteuning, leadkwalificatie, afsprakenplanning, formulierresponsen. Dit bespaart tijd en verbetert klantenervaring en conversies.",
+    "q6_question": "Welke talen ondersteunen jullie?",
+    "q6_answer": "We ondersteunen Engels, Spaans, Italiaans en Nederlands. We kunnen meertalige websites en chatbots voor je publiek bouwen."
+  },
+  "reviews_section": {
+    "header_title": "Wat Onze Klanten Zeggen",
+    "header_subtitle": "Bedrijven over de hele wereld zijn gegroeid met onze oplossingen",
+    "review1_name": "Maria Garcia",
+    "review1_company": "Gym Adeje",
+    "review1_text": "Solon Digital transformeerde ons bedrijf compleet. In 3 maanden verdrievoudigden we onze boekingen. Uitstekende klantenservice en de automatisering werkt perfect.",
+    "review2_name": "Carlos Rodriguez",
+    "review2_company": "Real Estate Tenerife",
+    "review2_text": "De AI-automatisering die ze implementeerden is ongelooflijk. Nu ontvang ik automatisch gekwalificeerde leads. In twee maanden sloot ik 5 verkopen die ik anders niet had kunnen maken.",
+    "review3_name": "Isabel Martinez",
+    "review3_company": "Restaurant Las Americas",
+    "review3_text": "Professioneel, efficiënt en resultaatgericht. Ze begrijpen de lokale Tenerife-markt echt. Mijn website verschijnt nu op de eerste pagina van Google. Zeer aanbevolen!"
+  },
+  "services_page": {
+    "title": "Onze Diensten",
+    "subtitle": "Alles wat je nodig hebt om je bedrijf online te laten groeien",
+    "service1_title": "Webontwikkeling",
+    "service1_description": "Op maat gemaakte websites die bezoekers in klanten omzetten",
+    "service1_feature1": "Responsief Ontwerp",
+    "service1_feature2": "Snelle Prestatie",
+    "service1_feature3": "SEO-geoptimaliseerd",
+    "service1_feature4": "Veilig & Schaalbaar",
+    "service2_title": "SEO-optimalisatie",
+    "service2_description": "Rank als eerste op Google en domineer je markt",
+    "service2_feature1": "Trefwoord Onderzoek",
+    "service2_feature2": "On-Page SEO",
+    "service2_feature3": "Link Building",
+    "service2_feature4": "Maandelijkse Rapporten",
+    "service3_title": "AI-automatisering",
+    "service3_description": "Slimme automatisering om tijd te besparen en efficiëntie te verhogen",
+    "service3_feature1": "Lead Kwalificatie",
+    "service3_feature2": "24/7 Ondersteuning",
+    "service3_feature3": "Workflowautomatisering",
+    "service3_feature4": "Kostenreductie",
+    "service4_title": "AI Chatbots",
+    "service4_description": "24/7 intelligente klantenondersteuning en leadgenerering",
+    "service4_feature1": "Instant Antwoorden",
+    "service4_feature2": "Lead Capture",
+    "service4_feature3": "FAQ Automatisering",
+    "service4_feature4": "Meertalig"
+  },
+  "cost_of_waiting": {
+    "title": "De Kosten van Wachten",
+    "subtitle": "Elke dag dat je vertraagt is een dag dat je concurrenten winnen.",
+    "painpoint1_title": "De Leak van Leads",
+    "painpoint1_description": "Elke dag dat je site traag is, stuurt 40% van je bezoekers weg naar een concurrent. Pure winst uit je deur.",
+    "painpoint2_title": "De Dief van Tijd",
+    "painpoint2_description": "Behandel je nog elke reservering en vraag handmatig via WhatsApp? Je bent niet persoonlijk, je bent inefficiënt. We automatiseren het werk.",
+    "painpoint3_title": "Het Onzichtbare Merk",
+    "painpoint3_description": "Ben je niet op pagina 1 van Google, dan besta je niet voor de 100.000+ toeristen die nu je service zoeken.",
+    "cta_heading": "Je Concurrenten Wachten Niet",
+    "cta_text": "Plan vandaag je groeiaudit in. Laat me je precies zien wat je verliest.",
+    "cta_button": "Claim Nu Je Gratis Audit"
+  },
+  "hidden_cost": {
+    "title": "Elke dag dat je wacht is een dag dat jouw competitie wint.",
+    "subtitle": "Een trage, verouderde website is niet alleen lelijk, het doodt winst.",
+    "pillar1_title": "Verdwijnende Leads",
+    "pillar1_description": "Terwijl je site worstelt met laden, boeken je potentiële klanten al met de concurrent hiernaast. Je verliest niet alleen een klik, je verliest een klant voor het leven.",
+    "pillar2_title": "Het Handwerk",
+    "pillar2_description": "Behandel je nog elke reservering en vraag handmatig? Dat zijn 10+ uren per week gestolen van je groei of familietijd. Automatisering is geen luxe, het is je vrijheid.",
+    "pillar3_title": "Digitaal Verval",
+    "pillar3_description": "Het Google-algoritme wacht op niemand. Hoe langer je op oud platform blijft, hoe moeilijker het wordt ooit in te halen. Word niet wakker over een jaar en wens dat je vandaag was begonnen.",
+    "warning_heading": "Word niet wakker over een jaar en wens dat je vandaag was begonnen.",
+    "warning_text": "Je concurrenten bewegen snel. Elke dag dat je aarzelt is een dag dat ze verder wegkomen.",
+    "warning_button": "Stop De Bloeding. Boek Je Audit →"
+  },
+  "vision": {
+    "main_heading": "Je website is je stille partner. Laat het werken.",
+    "gap_label": "DE KLOOF",
+    "gap_title": "De meeste lokale sites zijn digitale geesten.",
+    "gap_description": "Ben je site traag of moeilijk te vinden, dan verlies je klanten aan concurrentie elke dag.",
+    "solution_label": "DE OPLOSSING",
+    "solution_title": "Automatiseer je dagelijkse chaos.",
+    "solution_description": "Van boekingen tot klantenvragen, we bouwen systemen die het werk doen zodat jij dat niet hoeft.",
+    "growth_label": "DE GROEI",
+    "growth_title": "Zet bezoekers om in trouwe leden.",
+    "growth_description": "Zet lokaal verkeer om in lange termijn inkomsten met een naadloze, 24/7 digitale ervaring."
+  },
+  "dashboard": {
+    "stat1_label": "Gegenereerde Leads",
+    "stat1_change_desc": "Deze maand",
+    "stat2_label": "Omzetimpact",
+    "stat2_change_desc": "Jaar op jaar",
+    "stat3_label": "Actieve Automatiseringen",
+    "stat3_change_desc": "Draait",
+    "stat4_label": "Klantentevredenheid",
+    "stat4_change_desc": "Dit kwartaal"
   },
   "industries": {
     "title": "De Kosten van Wachten",
-    "subtitle": "Elke dag dat u wacht is een dag dat uw concurrenten terrein winnen.",
-    "gym": {
-      "title": "Gyms en Padelclubs",
-      "description": "Stop de chaos van WhatsApp-boekingen. Automatiseer uw velden en groei uw gemeenschap."
-    },
-    "realestate": {
-      "title": "Onroerend Goed",
-      "description": "Converteer globale zoekers in gekwalificeerde leads. Krachtige landingspagina's voor Tenerife-eigendom."
-    },
-    "services": {
-      "title": "Lokale Diensten",
-      "description": "Van Restaurants tot Spa's. Zorg dat u op pagina 1 van Google wordt gevonden en automatiseer uw vragen."
-    }
+    "subtitle": "Elke dag dat je vertraagt is een dag dat je concurrenten winnen.",
+    "gym": {"title": "Sportscholen & Padelclubs", "description": "Stop de WhatsApp-chaos in reserveringen. Automatiseer je banen en laat je gemeenschap groeien."},
+    "realestate": {"title": "Onroerend Goed", "description": "Zet globale zoekopdrachten om in voorgekwalificeerde leads. Krachtige landingspagina's voor Tenerife-eigendommen."},
+    "services": {"title": "Lokale Diensten", "description": "Van Restaurants tot Spa's. Verschijn op pagina 1 van Google en automatiseer je verzoeken."}
   },
   "ourstory": {
-    "headline": "Nederlandse Innovatie. Canarische Wortels.",
-    "narrative1": "We zijn van Nederland naar Tenerife verhuisd omdat we een enorme kloof zagen: lokale bedrijven verliezen uren aan handmatig werk en duizenden aan inkomsten door verouderde digitale tools. We zagen het potentieel en verhuisden hier om het op te lossen.",
-    "narrative2": "We bouwen niet alleen websites; we bouwen AI-aangedreven systemen die fungeren als uw meest efficiënte werknemer, wat u tijd en geld bespaart.",
+    "headline": "Nederlandse Innovatie. Tenerife Roots.",
+    "narrative1": "We verhuisden van Nederland naar Tenerife omdat we een massale kloof zagen: lokale bedrijven verliezen uren handwerk en duizenden inkomsten aan verouderde digitale tools. We zagen het potentieel en verhuisden om het op te lossen.",
+    "narrative2": "We bouwen niet alleen websites; we bouwen AI-aangedreven systemen die als je meest efficiënte werknemer fungeren en je tijd en geld besparen.",
     "founder1_name": "Job Eland",
     "founder1_title": "Marketing Specialist & AI Expert",
-    "founder1_desc": "Zet complexe data om in krachtige digitale machines die verkeer omzetten in voorspelbare winst.",
+    "founder1_desc": "Hij zet complexe gegevens om in digitale machines met hoge prestaties die verkeer in voorspelbare winst omzetten.",
     "founder2_name": "Rodney",
-    "founder2_title": "Voormalig Eigenaar van 6 PT Studios",
-    "founder2_desc": "Weet precies wat nodig is om een bedrijf te leiden, activiteiten te optimaliseren en lokale merken te schalen."
+    "founder2_title": "Voormalig Eigenaar van 6 PT-Studio's",
+    "founder2_desc": "Hij weet precies wat nodig is om een bedrijf te leiden, operaties te optimaliseren en lokale merken te schalen.",
+    "image_alt": "Job Eland en Rodney - Oprichters van Solon Digital"
   },
   "insights": {
-    "title": "Inzichten",
-    "subtitle": "Ontdek de nieuwste trends, tips en strategieën om uw digitale aanwezigheid te vergroten."
+    "title": "Insights",
+    "subtitle": "Ontdek de nieuwste trends, tips en strategieën voor je digitale aanwezigheid.",
+    "post1_category": "Digitale Strategie",
+    "post1_title": "Is Je Website een Digitaal Spook? De Verborgen Kosten van Verouderd Webdesign in Tenerife",
+    "post1_excerpt": "Tenerife is een land van kansen, maar veel bedrijven leven nog in het digitale stenen tijdperk. Ontdek waarom verouderde websites je grootste verborgen kosten zijn.",
+    "post1_date": "6 mei 2025",
+    "post1_read_time": "8 min lezing",
+    "post1_section1_title": "De \"Mañana\" Val: Waarom Snelheid Je Grootste Concurrent Is",
+    "post1_section1_content": "Op de Tenerife webdesign-markt horen we vaak \"mañana\". Maar online is er geen morgen. Statistieken tonen dat 40% van bezoekers vertrekt als het langer dan 3 seconden duurt. We bouwen \"Lava-Fast\" systemen.",
+    "post1_section2_title": "Stop de WhatsApp-Chaos: Automatiseer of Sterf",
+    "post1_section2_content": "Behandel je nog elke reservering en vraag handmatig via WhatsApp? Slimme websites zijn nu je 24/7 digitale werknemer.",
+    "post1_section3_title": "Nederlandse Innovatie, Tenerife Roots",
+    "post1_section3_content": "We verhuisden van Nederland naar Tenerife omdat we lokale bedrijven geld zagen verliezen aan slechte technologie. Met ervaring in AI-integratie en het beheren van 6 succesvolle PT-studio's combineren we Europese efficiëntie met diepe Tenerife-marktkennis.",
+    "post1_section4_title": "De Brute Waarheid: Bloedt Je Site Geld?",
+    "post1_section4_content": "Een website moet een investering zijn die zichzelf in maanden terugbetaalt. Ben je niet op Pagina 1 van Google, dan bestaat je niet voor de 100.000+ toeristen die nu je service zoeken.",
+    "post1_section5_title": "Klaar om de Lek te Dichten?",
+    "post1_section5_content": "Stop met gokken en begin met schalen. We bieden een gratis digitale groeiaudit. We identificeren precies waar je site geld verliest.",
+    "back_button": "← Terug naar Insights"
   },
   "servicesPage": {
     "title": "Onze Diensten",
-    "subtitle": "Alles wat u nodig hebt om uw online business te laten groeien"
+    "subtitle": "Alles wat je nodig hebt om je bedrijf online te laten groeien"
   },
   "keyBenefits": {
-    "sectionTitle": "Wat Je Krijgt Met Solon Digital",
-    "sectionSubtitle": "Deze 4 veranderingen zullen je bedrijf transformeren",
-    "benefit1": {
-      "title": "Meer Tijd",
-      "description": "Bespaar 15+ uren per week door automatisering. Geen handmatig werk meer met WhatsApp en bookings."
-    },
-    "benefit2": {
-      "title": "Betere Online Zichtbaarheid",
-      "description": "Verschijn op pagina 1 van Google. Bereik de 100.000+ toeristen die naar jouw service zoeken."
-    },
-    "benefit3": {
-      "title": "Beter Visitekaartje",
-      "description": "Professionele website die je bedrijf presenteert. Eerste indruk telt - maak het indruk."
-    },
-    "benefit4": {
-      "title": "Betere Opvolging op Leads",
-      "description": "24/7 automatische reacties op vragen. Verlies nooit meer een lead omdat je niet snel genoeg antwoordt."
-    }
+    "sectionTitle": "Wat Je Met Solon Digital Krijgt",
+    "sectionSubtitle": "Deze 4 veranderingen transformeren je bedrijf",
+    "benefit1": {"title": "Meer Tijd", "description": "Bespaar 15+ uren per week via automatisering. Geen manueel WhatsApp- en boekingswerk meer."},
+    "benefit2": {"title": "Betere Online Zichtbaarheid", "description": "Verschijn op pagina 1 van Google. Bereik de 100.000+ toeristen die je service zoeken."},
+    "benefit3": {"title": "Beter Visitekaartje", "description": "Professionele website die je bedrijf presenteert. Eerste indrukken tellen, zorg dat ze goed zijn."},
+    "benefit4": {"title": "Betere Leadopvolging", "description": "24/7 automatische antwoorden. Verlies nooit een lead omdat je niet snel genoeg hebt gereageerd."}
+  },
+  "ui": {
+    "language_english": "English",
+    "language_spanish": "Español",
+    "language_italian": "Italiano",
+    "language_dutch": "Nederlands",
+    "nav_services": "Diensten",
+    "nav_insights": "Insights",
+    "back_to_home": "Terug naar Home"
   }
 }

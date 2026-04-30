@@ -1,11 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ChatBot() {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
   const [isButtonHovered, setIsButtonHovered] = useState(false);
   const [messages, setMessages] = useState([
-    { id: 1, text: 'Hola! 👋 Soy el asistente de Solon Digital. ¿En qué puedo ayudarte?', sender: 'bot' }
+    { id: 1, text: t('chatbot.faq.greeting'), sender: 'bot' }
   ]);
   const [input, setInput] = useState('');
   const messagesEndRef = useRef(null);
@@ -19,19 +22,19 @@ export default function ChatBot() {
   }, [messages]);
 
   const faqResponses = {
-    'cuánto': 'Las webs empiezan desde €2,500. Te puedo dar un presupuesto personalizado. ¿Quieres hablar por WhatsApp?',
-    'cuanto': 'Las webs empiezan desde €2,500. Te puedo dar un presupuesto personalizado. ¿Quieres hablar por WhatsApp?',
-    'precio': 'Las webs empiezan desde €2,500. Te puedo dar un presupuesto personalizado. ¿Quieres hablar por WhatsApp?',
-    'time': 'Normalmente 1-2 semanas dependiendo de la complejidad. ¿Quieres agendar una llamada?',
-    'tiempo': 'Normalmente 1-2 semanas dependiendo de la complejidad. ¿Quieres agendar una llamada?',
-    'cuánto tiempo': 'Normalmente 1-2 semanas dependiendo de la complejidad. ¿Quieres agendar una llamada?',
+    'cuánto': t('chatbot.faq.pricing'),
+    'cuanto': t('chatbot.faq.pricing'),
+    'precio': t('chatbot.faq.pricing'),
+    'time': t('chatbot.faq.timeline'),
+    'tiempo': t('chatbot.faq.timeline'),
+    'cuánto tiempo': t('chatbot.faq.timeline'),
     'how long': '1-2 weeks depending on complexity. Want to schedule a call?',
-    'services': '✅ Web Development\n✅ SEO Optimization\n✅ AI Automation\n✅ AI Chatbots\n\n¿Cuál te interesa?',
-    'servicios': '✅ Desarrollo Web\n✅ Optimización SEO\n✅ Automatización IA\n✅ Chatbots IA\n\n¿Cuál te interesa?',
-    'seo': 'SEO te ayuda a aparecer en Google. Nuestros clientes ven resultados en 3-6 meses.',
-    'automation': 'La automatización IA maneja inquiries, bookings y leads 24/7 sin que hagas nada.',
-    'chatbot': 'Un chatbot IA responde clientes automáticamente en tu sitio web o WhatsApp.',
-    'desarrollo': 'Hacemos webs rápidas, modernas y que venden. Optimizadas para móvil y SEO.',
+    'services': t('chatbot.faq.services_list'),
+    'servicios': t('chatbot.faq.services_list_es'),
+    'seo': t('chatbot.faq.seo_info'),
+    'automation': t('chatbot.faq.automation_info'),
+    'chatbot': t('chatbot.faq.chatbot_info'),
+    'desarrollo': t('chatbot.faq.development_info'),
   };
 
   const handleSend = (e) => {
@@ -44,7 +47,7 @@ export default function ChatBot() {
     setInput('');
 
     // Find matching FAQ response
-    let response = 'No entiendo esa pregunta. 🤔 ¿Pregunta sobre servicios, precios o tiempo?';
+    let response = t('chatbot.faq.default');
 
     for (const [keyword, answer] of Object.entries(faqResponses)) {
       if (userInput.includes(keyword)) {

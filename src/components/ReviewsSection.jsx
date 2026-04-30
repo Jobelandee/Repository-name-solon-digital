@@ -1,16 +1,19 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 export default function ReviewsSection() {
+  const { t } = useTranslation();
+
   const ref = useRef(null);
   const inView = useInView(ref, { once: false, amount: 0.2 });
 
   const reviews = [
     {
-      name: 'Maria Garcia',
-      company: 'Gym Adeje',
+      name: t('reviews_section.review1_name'),
+      company: t('reviews_section.review1_company'),
       text: 'Solon Digital completely transformed our business. In 3 months, we tripled our bookings. Excellent customer service and the automation works perfectly.',
       rating: 5,
       image: 'https://i.pravatar.cc/150?img=1&u=mariagarcia',

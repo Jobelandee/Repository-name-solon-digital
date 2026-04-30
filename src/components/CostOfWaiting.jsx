@@ -1,15 +1,18 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 export default function CostOfWaiting() {
+  const { t } = useTranslation();
+
   const ref = useRef(null);
   const inView = useInView(ref, { once: false, amount: 0.2 });
 
   const painPoints = [
     {
-      title: 'The Lead Leak',
+      title: t('cost_of_waiting.painpoint1_title'),
       color: '#FF4444',
       description: 'Every day your site is slow, 40% of your visitors bounce to a competitor. That\'s pure profit walking out the door.',
       icon: '📉',

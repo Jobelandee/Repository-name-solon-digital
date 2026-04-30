@@ -9,8 +9,8 @@ export default function InsightsPage() {
   const blogPosts = [
     {
       id: 1,
-      category: 'Digital Strategy',
-      title: 'Is Your Website a Digital Ghost? The Hidden Cost of Outdated Web Design in Tenerife',
+      category: t('insights.post1_category'),
+      title: t('insights.post1_title'),
       excerpt: 'Tenerife is a land of opportunity, but many businesses are still living in the digital stone age. Discover why outdated websites are your biggest hidden expense.',
       description: 'An outdated, slow, or "manual" website might be your biggest hidden expense. Learn how to plug the leak.',
       date: '2025-05-06',

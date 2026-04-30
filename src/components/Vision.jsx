@@ -1,16 +1,19 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 export default function Vision() {
+  const { t } = useTranslation();
+
   const ref = useRef(null);
   const inView = useInView(ref, { once: false, amount: 0.2 });
 
   const visionPoints = [
     {
-      label: 'THE GAP',
-      title: 'Most local sites are digital ghosts.',
+      label: t('vision.gap_label'),
+      title: t('vision.gap_title'),
       description: 'If your site is slow or hard to find, you\'re losing clients to the competition every single day.',
     },
     {

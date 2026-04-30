@@ -7,8 +7,8 @@ export default function MobileMenu({ onClose }) {
   const { i18n, t } = useTranslation();
 
   const menuItems = [
-    { label: 'Services', path: '/services' },
-    { label: 'Insights', path: '/insights' },
+    { label: t('ui.nav_services'), path: '/services' },
+    { label: t('ui.nav_insights'), path: '/insights' },
     { label: t('header.process'), path: '/method' },
     { label: t('header.contact'), path: '/contact' },
   ];

@@ -12,14 +12,14 @@ export default function ServicesPage() {
   const services = [
     {
       icon: '🌐',
-      title: 'Web Development',
-      description: 'Custom websites that convert visitors into customers',
+      title: t('services_page.service1_title'),
+      description: t('services_page.service1_description'),
       features: ['Responsive Design', 'Fast Performance', 'SEO-Optimized', 'Secure & Scalable']
     },
     {
       icon: '📊',
-      title: 'SEO Optimization',
-      description: 'Rank first on Google and dominate your market',
+      title: t('services_page.service2_title'),
+      description: t('services_page.service2_description'),
       features: ['Keyword Research', 'On-Page SEO', 'Link Building', 'Monthly Reports']
     },
     {

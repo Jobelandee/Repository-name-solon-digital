@@ -1,16 +1,19 @@
+import { useTranslation } from 'react-i18next';
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 
 export default function Stats() {
+  const { t } = useTranslation();
+
   const ref = useRef(null);
   const inView = useInView(ref, { once: false, amount: 0.3 });
 
   const stats = [
     {
-      keyword: '100%',
-      label: 'Custom Built',
-      description: 'No templates. Every site is handcrafted for the Canary Island market.',
+      keyword: t('stats.stat1_keyword'),
+      label: t('stats.stat1_label'),
+      description: t('stats.stat1_description'),
       isLava: false,
     },
     {

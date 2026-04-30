@@ -1,13 +1,16 @@
+import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function FAQ() {
+  const { t } = useTranslation();
+
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
     {
-      question: 'How long does it take to build a website?',
-      answer: '1-2 weeks depending on what needs to happen. Simple websites start faster, while complex projects with integrations take longer.'
+      question: t('faq_section.q1_question'),
+      answer: t('faq_section.q1_answer')
     },
     {
       question: 'Do you offer ongoing support?',

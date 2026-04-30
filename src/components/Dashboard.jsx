@@ -1,17 +1,20 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function Dashboard() {
+  const { t } = useTranslation();
+
   const stats = [
     {
-      label: 'Leads Generated',
+      label: t('dashboard.stat1_label'),
       value: '12,847',
       change: '+312%',
-      changeDesc: 'This month',
+      changeDesc: t('dashboard.stat1_change_desc'),
       icon: '📈'
     },
     {
-      label: 'Revenue Impact',
+      label: t('dashboard.stat2_label'),
       value: '€487k',
       change: '+156%',
       changeDesc: 'YoY',

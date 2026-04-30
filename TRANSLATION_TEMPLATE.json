@@ -1,0 +1,651 @@
+{
+  "_info": {
+    "description": "Complete translation template for Solon Digital website - ALL hardcoded content extracted",
+    "languages": ["en", "es", "it", "nl"],
+    "status": "Ready for translation",
+    "sections": "ChatBot FAQ, FAQ Section, Reviews, Services, Cost of Waiting, Hidden Cost, Vision, Dashboard, Stats, Insights/Blog, Our Story, UI Labels",
+    "instructions": "1. Copy this template to each language: TRANSLATION_TEMPLATE_es.json, TRANSLATION_TEMPLATE_it.json, TRANSLATION_TEMPLATE_nl.json\n2. Translate all 'value' fields (keep 'key' unchanged)\n3. Return completed files for import into locale files"
+  },
+
+  "chatbot": {
+    "description": "ChatBot FAQ responses - these are keyword-triggered responses",
+    "greeting": {
+      "key": "chatbot.faq.greeting",
+      "en": "Hi! 👋 I'm the Solon Digital assistant. How can I help you?",
+      "trigger_keywords": ["hello", "hi", "hey", "start"]
+    },
+    "pricing_es": {
+      "key": "chatbot.faq.pricing",
+      "en": "Websites start from €2,500. I can give you a personalized quote. Want to talk on WhatsApp?",
+      "trigger_keywords": ["price", "cost", "pricing", "how much", "cuánto", "precio"]
+    },
+    "pricing_en": {
+      "key": "chatbot.faq.pricing_en",
+      "en": "Websites start from €2,500. I can give you a personalized quote. Want to talk on WhatsApp?",
+      "trigger_keywords": ["price", "cost", "pricing", "how much"]
+    },
+    "timeline": {
+      "key": "chatbot.faq.timeline",
+      "en": "Normally 1-2 weeks depending on complexity. Want to schedule a call?",
+      "trigger_keywords": ["how long", "timeline", "duration", "time", "tiempo", "cuánto tiempo"]
+    },
+    "services_list": {
+      "key": "chatbot.faq.services_list",
+      "en": "✅ Web Development\n✅ SEO Optimization\n✅ AI Automation\n✅ AI Chatbots\n\nWhich interests you?",
+      "trigger_keywords": ["services", "offerings", "what do you offer", "servicios"]
+    },
+    "services_list_es": {
+      "key": "chatbot.faq.services_list_es",
+      "en": "✅ Web Development\n✅ SEO Optimization\n✅ AI Automation\n✅ AI Chatbots\n\nWhich interests you?",
+      "trigger_keywords": ["servicios", "ofertas", "qué ofrecen"]
+    },
+    "seo_info": {
+      "key": "chatbot.faq.seo_info",
+      "en": "SEO helps you appear on Google. Our clients see results in 3-6 months.",
+      "trigger_keywords": ["seo", "google"]
+    },
+    "automation_info": {
+      "key": "chatbot.faq.automation_info",
+      "en": "AI automation handles inquiries, bookings, and leads 24/7 without you doing anything.",
+      "trigger_keywords": ["automation", "ai", "automate"]
+    },
+    "chatbot_info": {
+      "key": "chatbot.faq.chatbot_info",
+      "en": "An AI chatbot automatically replies to customers on your website or WhatsApp.",
+      "trigger_keywords": ["chatbot", "bot"]
+    },
+    "development_info": {
+      "key": "chatbot.faq.development_info",
+      "en": "We build fast, modern websites that sell. Optimized for mobile and SEO.",
+      "trigger_keywords": ["web development", "development", "website", "desarrollo"]
+    },
+    "default_response": {
+      "key": "chatbot.faq.default",
+      "en": "I don't understand that question. 🤔 Ask me about services, pricing, or timeline?"
+    },
+    "chat_input_placeholder": {
+      "key": "chatbot.input.placeholder",
+      "en": "Ask anything..."
+    },
+    "send_button": {
+      "key": "chatbot.input.send",
+      "en": "Send"
+    },
+    "whatsapp_button": {
+      "key": "chatbot.button.whatsapp",
+      "en": "💬 Chat on WhatsApp"
+    }
+  },
+
+  "faq_section": {
+    "description": "Frequently Asked Questions - accordion items",
+    "header": {
+      "key": "faq.header.label",
+      "en": "FAQ"
+    },
+    "header_title": {
+      "key": "faq.header.title",
+      "en": "Frequently Asked Questions"
+    },
+    "header_subtitle": {
+      "key": "faq.header.subtitle",
+      "en": "Everything you need to know about our services"
+    },
+    "q1_question": {
+      "key": "faq.items.q1.question",
+      "en": "How long does it take to build a website?"
+    },
+    "q1_answer": {
+      "key": "faq.items.q1.answer",
+      "en": "1-2 weeks depending on what needs to happen. Simple websites start faster, while complex projects with integrations take longer."
+    },
+    "q2_question": {
+      "key": "faq.items.q2.question",
+      "en": "Do you offer ongoing support?"
+    },
+    "q2_answer": {
+      "key": "faq.items.q2.answer",
+      "en": "Yes! We offer support with all projects including updates, security patches, and performance optimization."
+    },
+    "q3_question": {
+      "key": "faq.items.q3.question",
+      "en": "Can I expand my website later?"
+    },
+    "q3_answer": {
+      "key": "faq.items.q3.answer",
+      "en": "Absolutely. We build scalable solutions from day one. Adding new features, integrations, or pages is straightforward with our modular approach."
+    },
+    "q4_question": {
+      "key": "faq.items.q4.question",
+      "en": "Do you guarantee Google first page ranking?"
+    },
+    "q4_answer": {
+      "key": "faq.items.q4.answer",
+      "en": "We don't guarantee rankings, but we implement proven SEO strategies. Our clients typically see top positions within 3-6 months for targeted keywords."
+    },
+    "q5_question": {
+      "key": "faq.items.q5.question",
+      "en": "How does AI automation help my business?"
+    },
+    "q5_answer": {
+      "key": "faq.items.q5.answer",
+      "en": "AI automation handles repetitive tasks: customer support, lead qualification, booking scheduling, form responses. This saves time while improving customer experience and conversion rates."
+    },
+    "q6_question": {
+      "key": "faq.items.q6.question",
+      "en": "What languages do you support?"
+    },
+    "q6_answer": {
+      "key": "faq.items.q6.answer",
+      "en": "We support English, Spanish, Italian, and Dutch. We can build multilingual websites and chatbots for your audience."
+    }
+  },
+
+  "reviews_section": {
+    "description": "Customer testimonials/reviews",
+    "header_title": {
+      "key": "reviews.header.title",
+      "en": "What Our Clients Say"
+    },
+    "header_subtitle": {
+      "key": "reviews.header.subtitle",
+      "en": "Businesses worldwide have grown with our solutions"
+    },
+    "review1_name": {
+      "key": "reviews.review1.name",
+      "en": "Maria Garcia"
+    },
+    "review1_company": {
+      "key": "reviews.review1.company",
+      "en": "Gym Adeje"
+    },
+    "review1_text": {
+      "key": "reviews.review1.text",
+      "en": "Solon Digital completely transformed our business. In 3 months, we tripled our bookings. Excellent customer service and the automation works perfectly."
+    },
+    "review2_name": {
+      "key": "reviews.review2.name",
+      "en": "Carlos Rodriguez"
+    },
+    "review2_company": {
+      "key": "reviews.review2.company",
+      "en": "Real Estate Tenerife"
+    },
+    "review2_text": {
+      "key": "reviews.review2.text",
+      "en": "The AI automation they implemented is incredible. Now I receive qualified leads automatically. In two months I closed 5 sales that I wouldn't have been able to make otherwise."
+    },
+    "review3_name": {
+      "key": "reviews.review3.name",
+      "en": "Isabel Martinez"
+    },
+    "review3_company": {
+      "key": "reviews.review3.company",
+      "en": "Restaurant Las Americas"
+    },
+    "review3_text": {
+      "key": "reviews.review3.text",
+      "en": "Professional, efficient and results-oriented. They truly understand the local Tenerife market. My website now appears on Google's first page. Highly recommended!"
+    }
+  },
+
+  "services_page": {
+    "description": "Services page content with full descriptions",
+    "title": {
+      "key": "services_page.title",
+      "en": "Our Services"
+    },
+    "subtitle": {
+      "key": "services_page.subtitle",
+      "en": "Everything you need to grow your business online"
+    },
+    "service1_title": {
+      "key": "services_page.service1.title",
+      "en": "Web Development"
+    },
+    "service1_description": {
+      "key": "services_page.service1.description",
+      "en": "Custom websites that convert visitors into customers"
+    },
+    "service1_feature1": {
+      "key": "services_page.service1.features.f1",
+      "en": "Responsive Design"
+    },
+    "service1_feature2": {
+      "key": "services_page.service1.features.f2",
+      "en": "Fast Performance"
+    },
+    "service1_feature3": {
+      "key": "services_page.service1.features.f3",
+      "en": "SEO-Optimized"
+    },
+    "service1_feature4": {
+      "key": "services_page.service1.features.f4",
+      "en": "Secure & Scalable"
+    },
+    "service2_title": {
+      "key": "services_page.service2.title",
+      "en": "SEO Optimization"
+    },
+    "service2_description": {
+      "key": "services_page.service2.description",
+      "en": "Rank first on Google and dominate your market"
+    },
+    "service2_feature1": {
+      "key": "services_page.service2.features.f1",
+      "en": "Keyword Research"
+    },
+    "service2_feature2": {
+      "key": "services_page.service2.features.f2",
+      "en": "On-Page SEO"
+    },
+    "service2_feature3": {
+      "key": "services_page.service2.features.f3",
+      "en": "Link Building"
+    },
+    "service2_feature4": {
+      "key": "services_page.service2.features.f4",
+      "en": "Monthly Reports"
+    },
+    "service3_title": {
+      "key": "services_page.service3.title",
+      "en": "AI Automation"
+    },
+    "service3_description": {
+      "key": "services_page.service3.description",
+      "en": "Smart automation to save time and increase efficiency"
+    },
+    "service3_feature1": {
+      "key": "services_page.service3.features.f1",
+      "en": "Lead Qualification"
+    },
+    "service3_feature2": {
+      "key": "services_page.service3.features.f2",
+      "en": "24/7 Support"
+    },
+    "service3_feature3": {
+      "key": "services_page.service3.features.f3",
+      "en": "Workflow Automation"
+    },
+    "service3_feature4": {
+      "key": "services_page.service3.features.f4",
+      "en": "Cost Reduction"
+    },
+    "service4_title": {
+      "key": "services_page.service4.title",
+      "en": "AI Chatbots"
+    },
+    "service4_description": {
+      "key": "services_page.service4.description",
+      "en": "24/7 intelligent customer support and lead generation"
+    },
+    "service4_feature1": {
+      "key": "services_page.service4.features.f1",
+      "en": "Instant Responses"
+    },
+    "service4_feature2": {
+      "key": "services_page.service4.features.f2",
+      "en": "Lead Capture"
+    },
+    "service4_feature3": {
+      "key": "services_page.service4.features.f3",
+      "en": "FAQ Automation"
+    },
+    "service4_feature4": {
+      "key": "services_page.service4.features.f4",
+      "en": "Multi-language"
+    }
+  },
+
+  "cost_of_waiting": {
+    "description": "'The Cost of Waiting' section - problem/pain point messaging",
+    "title": {
+      "key": "cost_of_waiting.title",
+      "en": "The Cost of Waiting"
+    },
+    "subtitle": {
+      "key": "cost_of_waiting.subtitle",
+      "en": "Every day you delay is a day your competitors gain ground."
+    },
+    "painpoint1_title": {
+      "key": "cost_of_waiting.painpoint1.title",
+      "en": "The Lead Leak"
+    },
+    "painpoint1_description": {
+      "key": "cost_of_waiting.painpoint1.description",
+      "en": "Every day your site is slow, 40% of your visitors bounce to a competitor. That's pure profit walking out the door."
+    },
+    "painpoint2_title": {
+      "key": "cost_of_waiting.painpoint2.title",
+      "en": "The Time Thief"
+    },
+    "painpoint2_description": {
+      "key": "cost_of_waiting.painpoint2.description",
+      "en": "Managing bookings via WhatsApp and manual calls is a full-time job you shouldn't have. We automate the grind."
+    },
+    "painpoint3_title": {
+      "key": "cost_of_waiting.painpoint3.title",
+      "en": "The Invisible Brand"
+    },
+    "painpoint3_description": {
+      "key": "cost_of_waiting.painpoint3.description",
+      "en": "If you aren't on page 1 of Google, you don't exist for the 100,000+ tourists searching for your service right now."
+    },
+    "cta_heading": {
+      "key": "cost_of_waiting.cta.heading",
+      "en": "Your Competitors Aren't Waiting"
+    },
+    "cta_text": {
+      "key": "cost_of_waiting.cta.text",
+      "en": "Schedule your growth audit today. Let's show you exactly what you're losing."
+    },
+    "cta_button": {
+      "key": "cost_of_waiting.cta.button",
+      "en": "Claim Your Free Audit Now"
+    }
+  },
+
+  "hidden_cost": {
+    "description": "Hidden costs section - urgency messaging",
+    "title": {
+      "key": "hidden_cost.title",
+      "en": "Every day you wait is a day your competition wins."
+    },
+    "subtitle": {
+      "key": "hidden_cost.subtitle",
+      "en": "A slow, outdated website isn't just an eyesore—it's a profit killer."
+    },
+    "pillar1_title": {
+      "key": "hidden_cost.pillar1.title",
+      "en": "Vanishing Leads"
+    },
+    "pillar1_description": {
+      "key": "hidden_cost.pillar1.description",
+      "en": "While your site struggles to load, your potential clients are already booking with the competitor next door. You aren't just losing a click; you're losing a lifetime customer."
+    },
+    "pillar2_title": {
+      "key": "hidden_cost.pillar2.title",
+      "en": "The Manual Grind"
+    },
+    "pillar2_description": {
+      "key": "hidden_cost.pillar2.description",
+      "en": "Still handling every booking and question manually? That's 10+ hours a week stolen from your business growth or your family time. Automation isn't a luxury; it's your freedom."
+    },
+    "pillar3_title": {
+      "key": "hidden_cost.pillar3.title",
+      "en": "Digital Decay"
+    },
+    "pillar3_description": {
+      "key": "hidden_cost.pillar3.description",
+      "en": "The Google algorithm doesn't wait for anyone. The longer you stay on an old platform, the harder it becomes to ever catch up. Don't wake up a year from now wishing you started today."
+    },
+    "warning_heading": {
+      "key": "hidden_cost.warning.heading",
+      "en": "Don't wake up a year from now wishing you started today."
+    },
+    "warning_text": {
+      "key": "hidden_cost.warning.text",
+      "en": "Your competitors are moving fast. Every day you hesitate is a day they pull further ahead."
+    },
+    "warning_button": {
+      "key": "hidden_cost.warning.button",
+      "en": "Stop the Bleeding. Book Your Audit →"
+    }
+  },
+
+  "vision_section": {
+    "description": "Vision/Gap/Solution section",
+    "main_heading": {
+      "key": "vision.main_heading",
+      "en": "Your website is your silent partner. Make it work."
+    },
+    "gap_label": {
+      "key": "vision.gap.label",
+      "en": "THE GAP"
+    },
+    "gap_title": {
+      "key": "vision.gap.title",
+      "en": "Most local sites are digital ghosts."
+    },
+    "gap_description": {
+      "key": "vision.gap.description",
+      "en": "If your site is slow or hard to find, you're losing clients to the competition every single day."
+    },
+    "solution_label": {
+      "key": "vision.solution.label",
+      "en": "THE SOLUTION"
+    },
+    "solution_title": {
+      "key": "vision.solution.title",
+      "en": "Automate your daily chaos."
+    },
+    "solution_description": {
+      "key": "vision.solution.description",
+      "en": "From bookings to customer questions—we build systems that handle the work so you don't have to."
+    },
+    "growth_label": {
+      "key": "vision.growth.label",
+      "en": "THE GROWTH"
+    },
+    "growth_title": {
+      "key": "vision.growth.title",
+      "en": "Convert visitors into loyal members."
+    },
+    "growth_description": {
+      "key": "vision.growth.description",
+      "en": "Turn local traffic into long-term revenue with a seamless, 24/7 digital experience."
+    }
+  },
+
+  "dashboard": {
+    "description": "Dashboard metrics/KPI labels",
+    "stat1_label": {
+      "key": "dashboard.stat1.label",
+      "en": "Leads Generated"
+    },
+    "stat1_change_desc": {
+      "key": "dashboard.stat1.change_desc",
+      "en": "This month"
+    },
+    "stat2_label": {
+      "key": "dashboard.stat2.label",
+      "en": "Revenue Impact"
+    },
+    "stat2_change_desc": {
+      "key": "dashboard.stat2.change_desc",
+      "en": "YoY"
+    },
+    "stat3_label": {
+      "key": "dashboard.stat3.label",
+      "en": "Automations Active"
+    },
+    "stat3_change_desc": {
+      "key": "dashboard.stat3.change_desc",
+      "en": "Running"
+    },
+    "stat4_label": {
+      "key": "dashboard.stat4.label",
+      "en": "Client Satisfaction"
+    },
+    "stat4_change_desc": {
+      "key": "dashboard.stat4.change_desc",
+      "en": "This quarter"
+    }
+  },
+
+  "stats_section": {
+    "description": "Stats/features section with keywords and descriptions",
+    "stat1_keyword": {
+      "key": "stats.stat1.keyword",
+      "en": "100%"
+    },
+    "stat1_label": {
+      "key": "stats.stat1.label",
+      "en": "Custom Built"
+    },
+    "stat1_description": {
+      "key": "stats.stat1.description",
+      "en": "No templates. Every site is handcrafted for the Canary Island market."
+    },
+    "stat2_keyword": {
+      "key": "stats.stat2.keyword",
+      "en": "Lava"
+    },
+    "stat2_label": {
+      "key": "stats.stat2.label",
+      "en": "Fast Loading"
+    },
+    "stat2_description": {
+      "key": "stats.stat2.description",
+      "en": "Extreme performance optimization. Speed that keeps your customers engaged."
+    },
+    "stat3_keyword": {
+      "key": "stats.stat3.keyword",
+      "en": "AI-First"
+    },
+    "stat3_label": {
+      "key": "stats.stat3.label",
+      "en": "Future Proof"
+    },
+    "stat3_description": {
+      "key": "stats.stat3.description",
+      "en": "Digital systems that work 24/7, automating your bookings and leads."
+    }
+  },
+
+  "our_story": {
+    "description": "Our Story section - founder bios",
+    "founder1_name": {
+      "key": "our_story.founder1.name",
+      "en": "Job Eland"
+    },
+    "founder1_title": {
+      "key": "our_story.founder1.title",
+      "en": "Marketing Specialist & AI Expert"
+    },
+    "founder1_description": {
+      "key": "our_story.founder1.description",
+      "en": "He turns complex data into high-performance digital machines that convert traffic into predictable profit."
+    },
+    "founder2_name": {
+      "key": "our_story.founder2.name",
+      "en": "Rodney"
+    },
+    "founder2_title": {
+      "key": "our_story.founder2.title",
+      "en": "Former Owner of 6 PT Studios"
+    },
+    "founder2_description": {
+      "key": "our_story.founder2.description",
+      "en": "He knows exactly what it takes to lead a business, optimize operations, and scale local brands."
+    },
+    "image_alt": {
+      "key": "our_story.image.alt",
+      "en": "Job Eland and Rodney - Founders of Solon Digital"
+    }
+  },
+
+  "insights_page": {
+    "description": "Blog/Insights page content",
+    "blog_post1_category": {
+      "key": "insights.post1.category",
+      "en": "Digital Strategy"
+    },
+    "blog_post1_title": {
+      "key": "insights.post1.title",
+      "en": "Is Your Website a Digital Ghost? The Hidden Cost of Outdated Web Design in Tenerife"
+    },
+    "blog_post1_excerpt": {
+      "key": "insights.post1.excerpt",
+      "en": "Tenerife is a land of opportunity, but many businesses are still living in the digital stone age. Discover why outdated websites are your biggest hidden expense."
+    },
+    "blog_post1_date": {
+      "key": "insights.post1.date",
+      "en": "May 6, 2025"
+    },
+    "blog_post1_read_time": {
+      "key": "insights.post1.read_time",
+      "en": "8 min read"
+    },
+    "blog_post1_content_intro": {
+      "key": "insights.post1.content.intro",
+      "en": "Tenerife is a land of opportunity. From the bustling streets of Adeje and Los Cristianos to the luxury villas in Costa Adeje, the business spirit here is unmatched. But while the island's physical infrastructure thrives, many businesses are still living in the digital stone age."
+    },
+    "blog_post1_section1_title": {
+      "key": "insights.post1.section1.title",
+      "en": "The \"Mañana\" Trap: Why Speed is Your Greatest Competitor"
+    },
+    "blog_post1_section1_content": {
+      "key": "insights.post1.section1.content",
+      "en": "In the Tenerife web design market, we often hear \"mañana.\" But online, there is no tomorrow. Statistics show that 40% of visitors will leave a site if it takes more than 3 seconds to load. At Solon Digital, we build \"Lava-Fast\" systems."
+    },
+    "blog_post1_section2_title": {
+      "key": "insights.post1.section2.title",
+      "en": "Stop the WhatsApp Chaos: Automate or Die"
+    },
+    "blog_post1_section2_content": {
+      "key": "insights.post1.section2.content",
+      "en": "Are you still handling every single booking, inquiry, and question manually through WhatsApp? You aren't being personal—you are being inefficient. Smart Websites now act as your 24/7 Digital Employee."
+    },
+    "blog_post1_section3_title": {
+      "key": "insights.post1.section3.title",
+      "en": "Dutch Innovation, Tenerife Roots"
+    },
+    "blog_post1_section3_content": {
+      "key": "insights.post1.section3.content",
+      "en": "We moved from the Netherlands to Tenerife because we saw local legends losing money to bad tech. With background in AI integration and experience running 6 successful PT Studios, we combine Northern European efficiency with deep Tenerife market understanding."
+    },
+    "blog_post1_section4_title": {
+      "key": "insights.post1.section4.title",
+      "en": "The Blunt Truth: Is Your Site Bleeding Money?"
+    },
+    "blog_post1_section4_content": {
+      "key": "insights.post1.section4.content",
+      "en": "A website should be an investment that pays for itself within months. If you aren't on Page 1 of Google, you don't exist for the 100,000+ tourists searching for your service right now."
+    },
+    "blog_post1_section5_title": {
+      "key": "insights.post1.section5.title",
+      "en": "Ready to Plug the Leak?"
+    },
+    "blog_post1_section5_content": {
+      "key": "insights.post1.section5.content",
+      "en": "Stop guessing and start scaling. We're offering a Free Digital Growth Audit. We'll identify exactly where your current site is losing you money."
+    },
+    "back_button": {
+      "key": "insights.back_button",
+      "en": "← Back to Insights"
+    }
+  },
+
+  "ui_labels": {
+    "description": "Various UI labels and buttons",
+    "language_english": {
+      "key": "ui.language.english",
+      "en": "English"
+    },
+    "language_spanish": {
+      "key": "ui.language.spanish",
+      "en": "Español"
+    },
+    "language_italian": {
+      "key": "ui.language.italian",
+      "en": "Italiano"
+    },
+    "language_dutch": {
+      "key": "ui.language.dutch",
+      "en": "Nederlands"
+    },
+    "nav_services": {
+      "key": "ui.nav.services",
+      "en": "Services"
+    },
+    "nav_insights": {
+      "key": "ui.nav.insights",
+      "en": "Insights"
+    },
+    "back_to_home": {
+      "key": "ui.back_to_home",
+      "en": "Back to Home"
+    }
+  }
+}
