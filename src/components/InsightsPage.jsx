@@ -154,10 +154,13 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
           paddingTop: '2rem',
           paddingLeft: '2rem',
           paddingRight: '2rem',
+          maxWidth: 'clamp(280px, 90vw, 900px)',
+          marginLeft: 'auto',
+          marginRight: 'auto',
         }}
       >
         <h1 style={{
-          fontSize: 'clamp(2rem, 5vw, 3.5rem)',
+          fontSize: 'clamp(1.75rem, 5vw, 3.5rem)',
           fontWeight: 700,
           color: '#0077BE',
           fontFamily: 'Outfit, sans-serif',
@@ -167,7 +170,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
           {t('insights.title')}
         </h1>
         <p style={{
-          fontSize: '1.1rem',
+          fontSize: 'clamp(0.95rem, 3.5vw, 1.1rem)',
           color: '#555555',
           maxWidth: '600px',
           margin: '0 auto',
@@ -185,7 +188,7 @@ Stop guessing and start scaling. We are offering a Free Digital Growth Audit for
       }}>
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
           gap: '2rem',
         }}>
           {blogPosts.map((post, idx) => (

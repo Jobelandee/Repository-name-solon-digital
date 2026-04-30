@@ -56,9 +56,14 @@ export default function ServicesPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8 }}
+          style={{
+            maxWidth: 'clamp(280px, 90vw, 900px)',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
         >
           <h1 style={{
-            fontSize: 'clamp(2.5rem, 6vw, 4rem)',
+            fontSize: 'clamp(2rem, 5vw, 4rem)',
             fontWeight: 700,
             color: '#333333',
             fontFamily: 'Outfit, sans-serif',
@@ -68,7 +73,7 @@ export default function ServicesPage() {
             {t('servicesPage.title') || 'Our Services'}
           </h1>
           <p style={{
-            fontSize: '1.2rem',
+            fontSize: 'clamp(0.95rem, 3.5vw, 1.2rem)',
             color: '#555555',
             fontFamily: 'Outfit, sans-serif',
             lineHeight: 1.7,
@@ -88,7 +93,7 @@ export default function ServicesPage() {
       }}>
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
           gap: '2.5rem',
         }}>
           {services.map((service, index) => (
