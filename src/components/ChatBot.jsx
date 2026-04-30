@@ -152,12 +152,14 @@ export default function ChatBot() {
                     </div>
                     {msg.showWhatsAppButton && (
                       <motion.a
-                        href="tel:+34621805864"
+                        href="https://wa.me/34621805864"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         animate={{ scale: 1 }}
                         onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
                         onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
                         style={{
-                          background: '#0077BE',
+                          background: '#25D366',
                           color: '#FFFFFF',
                           padding: '0.6rem 1rem',
                           borderRadius: '6px',
@@ -171,7 +173,7 @@ export default function ChatBot() {
                           transition: 'transform 0.2s ease',
                         }}
                       >
-                        ☎️ Call us
+                        💬 Chat on WhatsApp
                       </motion.a>
                     )}
                   </div>
@@ -227,9 +229,11 @@ export default function ChatBot() {
                 </button>
               </form>
 
-              {/* Call Quick Link */}
+              {/* WhatsApp Quick Link */}
               <motion.a
-                href="tel:+34621805864"
+                href="https://wa.me/34621805864"
+                target="_blank"
+                rel="noopener noreferrer"
                 animate={{ scale: 1 }}
                 onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
                 onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
@@ -237,7 +241,7 @@ export default function ChatBot() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  background: '#0077BE',
+                  background: '#25D366',
                   color: '#FFFFFF',
                   padding: '0.5rem 1rem',
                   borderRadius: '6px',
@@ -250,7 +254,7 @@ export default function ChatBot() {
                   transition: 'transform 0.2s ease',
                 }}
               >
-                ☎️ Call us
+                💬 Chat on WhatsApp
               </motion.a>
             </div>
           </motion.div>
