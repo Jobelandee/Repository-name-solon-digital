@@ -111,12 +111,12 @@ export default function Hero() {
             }}
           >
             <div style={{ textAlign: 'center' }}>
-              <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>42+</h3>
-              <p style={{ fontSize: '0.95rem', color: '#666666', margin: 0 }}>Businesses Growing</p>
+              <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>4+</h3>
+              <p style={{ fontSize: '0.95rem', color: '#666666', margin: 0 }}>Years Experience</p>
             </div>
             <div style={{ textAlign: 'center' }}>
-              <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>40%</h3>
-              <p style={{ fontSize: '0.95rem', color: '#CCCCCC', margin: 0 }}>More Leads (Month 1)</p>
+              <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>🇪🇸</h3>
+              <p style={{ fontSize: '0.95rem', color: '#CCCCCC', margin: 0 }}>Based in Tenerife</p>
             </div>
             <div style={{ textAlign: 'center' }}>
               <h3 style={{ fontSize: '2.2rem', color: '#FF9500', margin: '0 0 0.5rem 0', fontWeight: 700 }}>15+</h3>
