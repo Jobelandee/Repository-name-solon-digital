@@ -119,15 +119,6 @@ function ServiceCard({ service, index, inView }) {
         position: 'relative',
         overflow: 'hidden',
         cursor: 'pointer',
-        transition: 'all 0.3s ease',
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = '#0077BE';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.12)';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#E0E0E0';
-        e.currentTarget.style.boxShadow = 'none';
       }}
     >
       {/* Icon */}

@@ -125,15 +125,8 @@ function ReviewCard({ review, index, inView }) {
         position: 'relative',
         overflow: 'hidden',
         boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)',
-        transition: 'all 0.3s ease',
         display: 'flex',
         flexDirection: 'column',
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.boxShadow = '0 4px 16px rgba(0, 119, 190, 0.15)';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.08)';
       }}
     >
       {/* Stars */}
