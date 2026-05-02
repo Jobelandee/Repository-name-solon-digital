@@ -2,7 +2,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { websiteContent } from '../data/websiteContent';
 
 export default function MethodPage() {
   const { t } = useTranslation();
