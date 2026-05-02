@@ -12,6 +12,7 @@ import { saveBookingToSheet } from '../services/googleSheetsService';
 export default function AuditForm() {
   const { t } = useTranslation();
   const ref = useRef(null);
+  // Force rebuild
   const inView = useInView(ref, { once: false, amount: 0.3 });
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
