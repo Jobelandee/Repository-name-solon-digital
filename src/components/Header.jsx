@@ -43,6 +43,7 @@ export default function Header() {
           <Link to="/services">Services</Link>
           <Link to="/insights">Insights</Link>
           <Link to="/method">{t('header.process')}</Link>
+          <Link to="/success-stories">{t('header.successStories')}</Link>
           <Link to="/contact">{t('header.contact')}</Link>
 
           {/* Language Switcher with Flags */}

@@ -10,6 +10,7 @@ export default function MobileMenu({ onClose }) {
     { label: t('ui.nav_services'), path: '/services' },
     { label: t('ui.nav_insights'), path: '/insights' },
     { label: t('header.process'), path: '/method' },
+    { label: t('header.successStories'), path: '/success-stories' },
     { label: t('header.contact'), path: '/contact' },
   ];
 

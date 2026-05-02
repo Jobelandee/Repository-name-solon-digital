@@ -4,6 +4,7 @@
     "services": "Servicios",
     "process": "Proceso",
     "about": "Sobre Nosotros",
+    "successStories": "Historias de Éxito",
     "contact": "Contacto"
   },
   "hero": {
@@ -176,6 +177,11 @@
     "review3_name": "Isabel Martinez",
     "review3_company": "Restaurante Las Americas",
     "review3_text": "Profesionales, eficientes y orientados a resultados. Realmente entienden el mercado local de Tenerife. Mi sitio web ahora aparece en la primera página de Google. ¡Altamente recomendado!"
+  },
+  "successStories": {
+    "title": "Historias de Éxito",
+    "subtitle": "Ve cómo negocios como el tuyo están creciendo con nuestras soluciones",
+    "empty": "Próximamente. Vuelve pronto para historias de éxito de clientes."
   },
   "services_page": {
     "title": "Nuestros Servicios",

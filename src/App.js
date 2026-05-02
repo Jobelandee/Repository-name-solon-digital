@@ -16,6 +16,7 @@ import ConfirmationPage from './components/ConfirmationPage';
 import InsightsPage from './components/InsightsPage';
 import MethodPage from './components/MethodPage';
 import ContactPage from './components/ContactPage';
+import SuccessStoriesPage from './components/SuccessStoriesPage';
 import ChatBot from './components/ChatBot';
 import WhatsAppButton from './components/WhatsAppButton';
 import './App.css';
@@ -70,6 +71,7 @@ function App() {
         <Route path="/insights" element={<Layout><InsightsPage /></Layout>} />
         <Route path="/method" element={<Layout><MethodPage /></Layout>} />
         <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
+        <Route path="/success-stories" element={<Layout><SuccessStoriesPage /></Layout>} />
       </Routes>
     </Router>
   );
