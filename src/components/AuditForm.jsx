@@ -325,6 +325,46 @@ export default function AuditForm() {
                 />
               </div>
 
+              {/* Email Field */}
+              <div>
+                <label
+                  style={{
+                    display: 'block',
+                    marginBottom: '0.6rem',
+                    fontSize: '0.9rem',
+                    fontWeight: 600,
+                    color: '#1a1a1a',
+                    fontFamily: 'Outfit, sans-serif',
+                    letterSpacing: '0.02em',
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  {t('auditForm.email')}
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  onFocus={() => setFocused('email')}
+                  onBlur={() => setFocused(null)}
+                  placeholder={t('auditForm.emailPlaceholder')}
+                  style={{
+                    width: '100%',
+                    padding: '0.95rem 1.2rem',
+                    background: '#F8F8F8',
+                    border: focused === 'email' ? '1.5px solid #FF9500' : '1.5px solid #D0D0D0',
+                    borderRadius: '8px',
+                    color: '#1a1a1a',
+                    fontSize: '1rem',
+                    fontFamily: 'Outfit, sans-serif',
+                    transition: 'all 0.3s ease',
+                    boxShadow: focused === 'email' ? '0 0 12px rgba(199, 53, 132, 0.15)' : 'none',
+                    outline: 'none',
+                  }}
+                />
+              </div>
+
               {/* Error Message */}
               {error && (
                 <motion.div

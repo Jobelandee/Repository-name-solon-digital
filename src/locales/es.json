@@ -78,6 +78,8 @@
     "businessPlaceholder": "Tu nombre de negocio",
     "whatsapp": "Número de WhatsApp",
     "whatsappPlaceholder": "+34 XXX XX XX XX",
+    "email": "Correo Electrónico",
+    "emailPlaceholder": "tu@email.com",
     "button": "Reserva Mi Auditoría Gratis →",
     "error": "Por favor, completa todos los campos",
     "privacy": "Nos pondremos en contacto por WhatsApp para agendar tu auditoría de 15 minutos.",

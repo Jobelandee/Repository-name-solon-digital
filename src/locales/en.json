@@ -78,6 +78,8 @@
     "businessPlaceholder": "Your business name",
     "whatsapp": "WhatsApp Number",
     "whatsappPlaceholder": "+34 XXX XX XX XX",
+    "email": "Email Address",
+    "emailPlaceholder": "your@email.com",
     "button": "Book My Free Audit →",
     "error": "Please fill in all fields",
     "privacy": "We'll contact you via WhatsApp to schedule your 15-minute audit.",
