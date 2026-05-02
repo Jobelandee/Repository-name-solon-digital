@@ -43,7 +43,7 @@ export default function ContactPage() {
           lineHeight: 1.6,
           fontFamily: 'Outfit, sans-serif',
         }}>
-          {t('contact.subtitle')} We'd love to hear from you. Reach out through any of the methods below.
+          {t('contact.subtitle')}
         </p>
       </motion.div>
 
@@ -87,14 +87,14 @@ export default function ContactPage() {
               marginBottom: '0.5rem',
               fontFamily: 'Outfit, sans-serif',
             }}>
-              Email
+              {t('contact.email_header')}
             </h3>
             <p style={{
               color: '#555555',
               marginBottom: '1rem',
               fontFamily: 'Outfit, sans-serif',
             }}>
-              {t('contact.email_label')}
+              {t('contact.email_description')}
             </p>
             <a href="mailto:info@solondigital.com" style={{
               color: '#0077BE',
@@ -135,14 +135,14 @@ export default function ContactPage() {
               marginBottom: '0.5rem',
               fontFamily: 'Outfit, sans-serif',
             }}>
-              WhatsApp
+              {t('contact.whatsapp_header')}
             </h3>
             <p style={{
               color: '#555555',
               marginBottom: '1rem',
               fontFamily: 'Outfit, sans-serif',
             }}>
-              Quick chat via WhatsApp
+              {t('contact.whatsapp_description')}
             </p>
             <a
               href={websiteContent.contact.whatsAppLink}
@@ -155,7 +155,7 @@ export default function ContactPage() {
                 fontFamily: 'Outfit, sans-serif',
               }}
             >
-              Start Chat
+              {t('contact.whatsapp_cta')}
             </a>
           </motion.div>
 
@@ -188,14 +188,14 @@ export default function ContactPage() {
               marginBottom: '0.5rem',
               fontFamily: 'Outfit, sans-serif',
             }}>
-              Book a Demo
+              {t('contact.booking_header')}
             </h3>
             <p style={{
               color: '#555555',
               marginBottom: '1rem',
               fontFamily: 'Outfit, sans-serif',
             }}>
-              Schedule your free strategy session
+              {t('contact.booking_description')}
             </p>
             <a href="/#audit" style={{
               color: '#0077BE',
@@ -203,7 +203,7 @@ export default function ContactPage() {
               fontWeight: 600,
               fontFamily: 'Outfit, sans-serif',
             }}>
-              Book Now
+              {t('contact.booking_cta')}
             </a>
           </motion.div>
         </div>
@@ -228,7 +228,7 @@ export default function ContactPage() {
           fontFamily: 'Outfit, sans-serif',
           color: '#0077BE',
         }}>
-          What to Expect
+          {t('contact.expect_title')}
         </h2>
         <p style={{
           fontSize: '1rem',
@@ -238,8 +238,7 @@ export default function ContactPage() {
           lineHeight: 1.8,
           fontFamily: 'Outfit, sans-serif',
         }}>
-          Whether you reach out via email, WhatsApp, or our booking form, we'll respond within 24 hours.
-          We'll listen to your needs, understand your goals, and discuss how we can help grow your digital presence.
+          {t('contact.expect_description')}
         </p>
       </motion.div>
     </div>

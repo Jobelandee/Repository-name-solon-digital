@@ -1,9 +1,11 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { websiteContent } from '../data/websiteContent';
 
 export default function MethodPage() {
+  const { t } = useTranslation();
   const methods = websiteContent.method;
 
   return (
@@ -129,7 +131,7 @@ export default function MethodPage() {
           marginBottom: '1rem',
           fontFamily: 'Outfit, sans-serif',
         }}>
-          Ready to Get Started?
+          {t('method.cta_title')}
         </h2>
         <p style={{
           fontSize: '1.1rem',
@@ -138,7 +140,7 @@ export default function MethodPage() {
           maxWidth: '600px',
           margin: '0 auto 2rem',
         }}>
-          Let's discuss how we can build a website that drives growth for your business.
+          {t('method.cta_description')}
         </p>
         <a href="/#audit" style={{
           display: 'inline-block',
@@ -161,7 +163,7 @@ export default function MethodPage() {
           e.currentTarget.style.transform = 'translateY(0)';
         }}
         >
-          Book Your Strategy Session
+          {t('method.cta_button')}
         </a>
       </motion.div>
     </div>

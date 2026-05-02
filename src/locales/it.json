@@ -33,20 +33,27 @@
   "services": {
     "title": "Cosa Facciamo",
     "description": "Soluzioni web professionali adattate alle tue esigenze",
-    "service1": {"name": "Sviluppo Web", "desc": "Siti web personalizzati che convertono visitatori in clienti"},
-    "service2": {"name": "Ottimizzazione SEO", "desc": "Posizionati primo su Google e domina il tuo mercato"},
-    "service3": {"name": "Automazione IA", "desc": "Automazione intelligente per risparmiare tempo ed efficienza"},
-    "service4": {"name": "Chatbot IA", "desc": "Supporto clienti 24/7 intelligente e generazione di lead"}
+    "service1": {
+      "name": "Sviluppo Web",
+      "desc": "Siti web personalizzati che convertono visitatori in clienti"
+    },
+    "service2": {
+      "name": "Ottimizzazione SEO",
+      "desc": "Posizionati primo su Google e domina il tuo mercato"
+    },
+    "service3": {
+      "name": "Automazione IA",
+      "desc": "Automazione intelligente per risparmiare tempo ed efficienza"
+    },
+    "service4": {
+      "name": "Chatbot IA",
+      "desc": "Supporto clienti 24/7 intelligente e generazione di lead"
+    }
   },
   "method": {
-    "title": "Il Nostro Processo di 5 Fasi",
-    "step1": {"title": "Scoperta", "desc": "Analizziamo il tuo business, obiettivi e concorrenti"},
-    "step2": {"title": "Strategia", "desc": "Creiamo una roadmap digitale personalizzata per il tuo successo"},
-    "step3": {"title": "Design", "desc": "Design bellissimo e focalizzato sull'utente che converte"},
-    "step4": {"title": "Sviluppo", "desc": "Costruiamo soluzioni veloci, sicure e scalabili"},
-    "step5": {"title": "Ottimizzazione", "desc": "Miglioramento continuo e tracciamento delle prestazioni"},
-    "general_title": "Il Nostro Metodo",
-    "general_subtitle": "Seguiamo un processo comprovato che garantisce che il tuo sito web sia costruito correttamente, lanciato senza intoppi e generi risultati reali per il tuo business."
+    "cta_title": "Pronto a Iniziare?",
+    "cta_description": "Discutiamo come possiamo costruire un sito web che guidi la crescita della tua azienda.",
+    "cta_button": "Prenota La Tua Sessione di Strategia"
   },
   "auditForm": {
     "title": "Richiedi il Tuo Audit di Crescita Gratuito",
@@ -84,11 +91,21 @@
   },
   "contact": {
     "title": "Mettiti in Contatto",
-    "subtitle": "Hai domande? Siamo qui per aiutarti.",
+    "subtitle": "Ci piacerebbe sentirvi. Contattaci attraverso uno dei metodi sottostanti.",
     "email_label": "Inviaci un'email quando vuoi",
     "whatsapp_label": "Scrivici su WhatsApp",
     "address_label": "Visitaci a Tenerife",
-    "address": "Tenerife, Spagna"
+    "address": "Tenerife, Spagna",
+    "email_header": "Email",
+    "email_description": "Mettiti in contatto tramite email",
+    "whatsapp_header": "WhatsApp",
+    "whatsapp_description": "Chat veloce su WhatsApp",
+    "whatsapp_cta": "Avvia Chat",
+    "booking_header": "Prenota Demo",
+    "booking_description": "Programma la tua sessione di strategia gratuita",
+    "booking_cta": "Prenota Ora",
+    "expect_title": "Cosa Aspettarsi",
+    "expect_description": "Che tu ci contatti via email, WhatsApp o il nostro modulo di prenotazione, risponderemo entro 24 ore. Ascolteremo i tuoi bisogni, capiremo i tuoi obiettivi e discuteremo come possiamo aiutarti a far crescere la tua presenza digitale."
   },
   "footer": {
     "company": "Solon Digital",
@@ -125,28 +142,28 @@
     "q1_question": "Quanto tempo impiega la costruzione di un sito web?",
     "q1_answer": "1-2 settimane a seconda di quello che è necessario. I siti semplici iniziano più velocemente, mentre i progetti complessi con integrazioni richiedono più tempo.",
     "q2_question": "Offrite supporto continuo?",
-    "q2_answer": "Sì! Offriamo supporto su tutti i progetti incluso aggiornamenti, patch di sicurezza e ottimizzazione delle prestazioni.",
-    "q3_question": "Posso espandere il mio sito web dopo?",
+    "q2_answer": "Sì! Offriamo supporto su tutti i progetti inclusi aggiornamenti, patch di sicurezza e ottimizzazione delle prestazioni.",
+    "q3_question": "Posso espandere il mio sito web in seguito?",
     "q3_answer": "Assolutamente. Costruiamo soluzioni scalabili dal primo giorno. Aggiungere nuove funzionalità, integrazioni o pagine è semplice con il nostro approccio modulare.",
-    "q4_question": "Garantite la posizione sulla prima pagina di Google?",
-    "q4_answer": "Non garantiamo ranking, ma implementiamo strategie SEO comprovate. I nostri clienti generalmente vedono posizioni alte entro 3-6 mesi per parole chiave mirate.",
-    "q5_question": "Come mi aiuta l'automazione IA?",
-    "q5_answer": "L'automazione IA gestisce compiti ripetitivi: supporto clienti, qualificazione lead, pianificazione prenotazioni, risposte moduli. Ciò fa risparmiare tempo migliorando esperienza e conversioni.",
+    "q4_question": "Garantite il posizionamento nella prima pagina di Google?",
+    "q4_answer": "Non garantiamo posizionamenti, ma implementiamo strategie SEO collaudate. I nostri clienti generalmente vedono posizioni alte entro 3-6 mesi per parole chiave mirate.",
+    "q5_question": "Come l'automazione AI aiuta la mia azienda?",
+    "q5_answer": "L'automazione IA gestisce attività ripetitive: supporto clienti, qualificazione lead, pianificazione prenotazioni, risposte ai moduli. Questo risparmia tempo mentre migliora l'esperienza del cliente e i tassi di conversione.",
     "q6_question": "Quali lingue supportate?",
-    "q6_answer": "Supportiamo Inglese, Spagnolo, Italiano e Olandese. Possiamo costruire siti web e chatbot multilingue per il tuo pubblico."
+    "q6_answer": "Supportiamo inglese, spagnolo, italiano e olandese. Possiamo costruire siti web e chatbot multilingue per il tuo pubblico."
   },
   "reviews_section": {
-    "header_title": "Cosa Dicono i Nostri Clienti",
+    "header_title": "Quello Che Dicono I Nostri Clienti",
     "header_subtitle": "Aziende in tutto il mondo sono cresciute con le nostre soluzioni",
     "review1_name": "Maria Garcia",
     "review1_company": "Gym Adeje",
-    "review1_text": "Solon Digital ha completamente trasformato il nostro business. In 3 mesi, abbiamo triplicato le nostre prenotazioni. Eccellente servizio clienti e l'automazione funziona perfettamente.",
+    "review1_text": "Solon Digital ha trasformato completamente il nostro business. In 3 mesi, abbiamo triplicato le nostre prenotazioni. Eccellente servizio clienti e l'automazione funziona perfettamente.",
     "review2_name": "Carlos Rodriguez",
-    "review2_company": "Real Estate Tenerife",
-    "review2_text": "L'automazione IA che hanno implementato è incredibile. Ora ricevo lead qualificati automaticamente. In due mesi ho chiuso 5 vendite che altrimenti non avrei potuto fare.",
+    "review2_company": "Immobiliare Tenerife",
+    "review2_text": "L'automazione IA che hanno implementato è incredibile. Ora ricevo lead qualificati automaticamente. In due mesi ho chiuso 5 vendite che non avrei potuto fare diversamente.",
     "review3_name": "Isabel Martinez",
-    "review3_company": "Restaurant Las Americas",
-    "review3_text": "Professionali, efficienti e orientati ai risultati. Capiscono veramente il mercato locale di Tenerife. Il mio sito web ora appare nella prima pagina di Google. Altamente consigliato!"
+    "review3_company": "Ristorante Las Americas",
+    "review3_text": "Professionali, efficienti e orientati ai risultati. Comprendono veramente il mercato locale di Tenerife. Il mio sito web ora appare nella prima pagina di Google. Altamente consigliato!"
   },
   "services_page": {
     "title": "I Nostri Servizi",
@@ -170,11 +187,35 @@
     "service3_feature3": "Automazione Flussi",
     "service3_feature4": "Riduzione Costi",
     "service4_title": "Chatbot IA",
-    "service4_description": "Supporto clienti 24/7 intelligente e generazione di lead",
+    "service4_description": "Supporto clienti intelligente 24/7 e generazione di lead",
     "service4_feature1": "Risposte Istantanee",
     "service4_feature2": "Cattura Lead",
     "service4_feature3": "Automazione FAQ",
-    "service4_feature4": "Multilingue"
+    "service4_feature4": "Multilingue",
+    "service1_features": [
+      "Design Responsivo",
+      "Prestazioni Veloci",
+      "Ottimizzato per SEO",
+      "Sicuro e Scalabile"
+    ],
+    "service2_features": [
+      "Ricerca di Parole Chiave",
+      "SEO On-Page",
+      "Link Building",
+      "Report Mensili"
+    ],
+    "service3_features": [
+      "Qualificazione Dei Lead",
+      "Supporto 24/7",
+      "Automazione Dei Flussi Di Lavoro",
+      "Riduzione Dei Costi"
+    ],
+    "service4_features": [
+      "Risposte Istantanee",
+      "Acquisizione Lead",
+      "Automazione FAQ",
+      "Multilingue"
+    ]
   },
   "cost_of_waiting": {
     "title": "Il Costo dell'Attesa",
@@ -227,9 +268,18 @@
   "industries": {
     "title": "Il Costo dell'Attesa",
     "subtitle": "Ogni giorno di ritardo è un giorno che i tuoi concorrenti guadagnano terreno.",
-    "gym": {"title": "Palestre e Padelclub", "description": "Ferma il caos WhatsApp nelle prenotazioni. Automatizza i tuoi campi e fai crescere la tua comunità."},
-    "realestate": {"title": "Immobiliare", "description": "Converti ricerche globali in lead prequalificati. Pagine ad alte prestazioni per proprietà a Tenerife."},
-    "services": {"title": "Servizi Locali", "description": "Da Ristoranti a Spa. Appari a pagina 1 di Google e automatizza le tue richieste."}
+    "gym": {
+      "title": "Palestre e Padelclub",
+      "description": "Ferma il caos WhatsApp nelle prenotazioni. Automatizza i tuoi campi e fai crescere la tua comunità."
+    },
+    "realestate": {
+      "title": "Immobiliare",
+      "description": "Converti ricerche globali in lead prequalificati. Pagine ad alte prestazioni per proprietà a Tenerife."
+    },
+    "services": {
+      "title": "Servizi Locali",
+      "description": "Da Ristoranti a Spa. Appari a pagina 1 di Google e automatizza le tue richieste."
+    }
   },
   "ourstory": {
     "headline": "Innovazione Olandese. Radici a Tenerife.",
@@ -270,10 +320,22 @@
   "keyBenefits": {
     "sectionTitle": "Cosa Ottieni Con Solon Digital",
     "sectionSubtitle": "Questi 4 cambiamenti trasformeranno il tuo business",
-    "benefit1": {"title": "Più Tempo", "description": "Risparmia 15+ ore settimanali con l'automazione. Addio lavoro manuale WhatsApp e prenotazioni."},
-    "benefit2": {"title": "Migliore Visibilità Online", "description": "Appari a pagina 1 di Google. Raggiungi i 100.000+ turisti che cercano il tuo servizio."},
-    "benefit3": {"title": "Miglior Biglietto da Visita", "description": "Sito web professionale che presenta il tuo business. Le prime impressioni contano, falle valere."},
-    "benefit4": {"title": "Miglior Gestione Lead", "description": "Risposte automatiche 24/7. Non perdere mai un lead perché non hai risposto in tempo."}
+    "benefit1": {
+      "title": "Più Tempo",
+      "description": "Risparmia 15+ ore settimanali con l'automazione. Addio lavoro manuale WhatsApp e prenotazioni."
+    },
+    "benefit2": {
+      "title": "Migliore Visibilità Online",
+      "description": "Appari a pagina 1 di Google. Raggiungi i 100.000+ turisti che cercano il tuo servizio."
+    },
+    "benefit3": {
+      "title": "Miglior Biglietto da Visita",
+      "description": "Sito web professionale che presenta il tuo business. Le prime impressioni contano, falle valere."
+    },
+    "benefit4": {
+      "title": "Miglior Gestione Lead",
+      "description": "Risposte automatiche 24/7. Non perdere mai un lead perché non hai risposto in tempo."
+    }
   },
   "ui": {
     "language_english": "English",

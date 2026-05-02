@@ -14,25 +14,25 @@ export default function ServicesPage() {
       icon: '🌐',
       title: t('services_page.service1_title'),
       description: t('services_page.service1_description'),
-      features: ['Responsive Design', 'Fast Performance', 'SEO-Optimized', 'Secure & Scalable']
+      features: t('services_page.service1_features', { returnObjects: true })
     },
     {
       icon: '📊',
       title: t('services_page.service2_title'),
       description: t('services_page.service2_description'),
-      features: ['Keyword Research', 'On-Page SEO', 'Link Building', 'Monthly Reports']
+      features: t('services_page.service2_features', { returnObjects: true })
     },
     {
       icon: '⚡',
-      title: 'AI Automation',
-      description: 'Smart automation to save time and increase efficiency',
-      features: ['Lead Qualification', '24/7 Support', 'Workflow Automation', 'Cost Reduction']
+      title: t('services_page.service3_title'),
+      description: t('services_page.service3_description'),
+      features: t('services_page.service3_features', { returnObjects: true })
     },
     {
       icon: '💬',
-      title: 'AI Chatbots',
-      description: '24/7 intelligent customer support and lead generation',
-      features: ['Instant Responses', 'Lead Capture', 'FAQ Automation', 'Multi-language']
+      title: t('services_page.service4_title'),
+      description: t('services_page.service4_description'),
+      features: t('services_page.service4_features', { returnObjects: true })
     }
   ];
 

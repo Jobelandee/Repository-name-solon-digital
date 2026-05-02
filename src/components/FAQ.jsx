@@ -13,24 +13,24 @@ export default function FAQ() {
       answer: t('faq_section.q1_answer')
     },
     {
-      question: 'Do you offer ongoing support?',
-      answer: 'Yes! We offer support with all projects including updates, security patches, and performance optimization.'
+      question: t('faq_section.q2_question'),
+      answer: t('faq_section.q2_answer')
     },
     {
-      question: 'Can I expand my website later?',
-      answer: 'Absolutely. We build scalable solutions from day one. Adding new features, integrations, or pages is straightforward with our modular approach.'
+      question: t('faq_section.q3_question'),
+      answer: t('faq_section.q3_answer')
     },
     {
-      question: 'Do you guarantee Google first page ranking?',
-      answer: 'We don\'t guarantee rankings, but we implement proven SEO strategies. Our clients typically see top positions within 3-6 months for targeted keywords.'
+      question: t('faq_section.q4_question'),
+      answer: t('faq_section.q4_answer')
     },
     {
-      question: 'How does AI automation help my business?',
-      answer: 'AI automation handles repetitive tasks: customer support, lead qualification, booking scheduling, form responses. This saves time while improving customer experience and conversion rates.'
+      question: t('faq_section.q5_question'),
+      answer: t('faq_section.q5_answer')
     },
     {
-      question: 'What languages do you support?',
-      answer: 'We support English, Spanish, Italian, and Dutch. We can build multilingual websites and chatbots for your audience.'
+      question: t('faq_section.q6_question'),
+      answer: t('faq_section.q6_answer')
     }
   ];
 

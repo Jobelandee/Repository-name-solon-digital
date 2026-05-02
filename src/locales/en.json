@@ -51,29 +51,9 @@
     }
   },
   "method": {
-    "title": "Our 5-Step Process",
-    "step1": {
-      "title": "Discovery",
-      "desc": "We analyze your business, goals, and competition"
-    },
-    "step2": {
-      "title": "Strategy",
-      "desc": "Create a tailored digital roadmap for your success"
-    },
-    "step3": {
-      "title": "Design",
-      "desc": "Beautiful, user-focused design that converts"
-    },
-    "step4": {
-      "title": "Development",
-      "desc": "Build fast, secure, and scalable solutions"
-    },
-    "step5": {
-      "title": "Optimization",
-      "desc": "Continuous improvement and performance tracking"
-    },
-    "general_title": "Our Method",
-    "general_subtitle": "We follow a proven process that ensures your website is built right, launches smoothly, and drives real results for your business."
+    "cta_title": "Ready to Get Started?",
+    "cta_description": "Let's discuss how we can build a website that drives growth for your business.",
+    "cta_button": "Book Your Strategy Session"
   },
   "auditForm": {
     "title": "Claim Your Free Growth Audit",
@@ -111,11 +91,21 @@
   },
   "contact": {
     "title": "Get In Touch",
-    "subtitle": "Have questions? We're here to help.",
+    "subtitle": "We'd love to hear from you. Reach out through any of the methods below.",
     "email_label": "Send us an email anytime",
     "whatsapp_label": "Message us on WhatsApp",
     "address_label": "Visit us in Tenerife",
-    "address": "Tenerife, Spain"
+    "address": "Tenerife, Spain",
+    "email_header": "Email",
+    "email_description": "Get in touch via email",
+    "whatsapp_header": "WhatsApp",
+    "whatsapp_description": "Quick chat via WhatsApp",
+    "whatsapp_cta": "Start Chat",
+    "booking_header": "Book a Demo",
+    "booking_description": "Schedule your free strategy session",
+    "booking_cta": "Book Now",
+    "expect_title": "What to Expect",
+    "expect_description": "Whether you reach out via email, WhatsApp, or our booking form, we'll respond within 24 hours. We'll listen to your needs, understand your goals, and discuss how we can help grow your digital presence."
   },
   "footer": {
     "company": "Solon Digital",
@@ -201,7 +191,31 @@
     "service4_feature1": "Instant Responses",
     "service4_feature2": "Lead Capture",
     "service4_feature3": "FAQ Automation",
-    "service4_feature4": "Multi-language"
+    "service4_feature4": "Multi-language",
+    "service1_features": [
+      "Responsive Design",
+      "Fast Performance",
+      "SEO-Optimized",
+      "Secure & Scalable"
+    ],
+    "service2_features": [
+      "Keyword Research",
+      "On-Page SEO",
+      "Link Building",
+      "Monthly Reports"
+    ],
+    "service3_features": [
+      "Lead Qualification",
+      "24/7 Support",
+      "Workflow Automation",
+      "Cost Reduction"
+    ],
+    "service4_features": [
+      "Instant Responses",
+      "Lead Capture",
+      "FAQ Automation",
+      "Multi-language"
+    ]
   },
   "cost_of_waiting": {
     "title": "The Cost of Waiting",

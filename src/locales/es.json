@@ -51,29 +51,9 @@
     }
   },
   "method": {
-    "title": "Nuestro Proceso de 5 Pasos",
-    "step1": {
-      "title": "Descubrimiento",
-      "desc": "Analizamos tu negocio, objetivos y competencia"
-    },
-    "step2": {
-      "title": "Estrategia",
-      "desc": "Creamos un plan digital personalizado para tu éxito"
-    },
-    "step3": {
-      "title": "Diseño",
-      "desc": "Diseño hermoso y enfocado en usuarios que convierte"
-    },
-    "step4": {
-      "title": "Desarrollo",
-      "desc": "Construimos soluciones rápidas, seguras y escalables"
-    },
-    "step5": {
-      "title": "Optimización",
-      "desc": "Mejora continua y seguimiento del desempeño"
-    },
-    "general_title": "Nuestro Método",
-    "general_subtitle": "Seguimos un proceso comprobado que garantiza que tu sitio web se construya correctamente, se lance sin problemas y genere resultados reales para tu negocio."
+    "cta_title": "¿Listo para Comenzar?",
+    "cta_description": "Discutamos cómo podemos construir un sitio web que impulse el crecimiento de tu negocio.",
+    "cta_button": "Reserva Tu Sesión de Estrategia"
   },
   "auditForm": {
     "title": "Reclama Tu Auditoría de Crecimiento Gratis",
@@ -111,11 +91,21 @@
   },
   "contact": {
     "title": "Ponte en Contacto",
-    "subtitle": "¿Tienes preguntas? Estamos aquí para ayudarte.",
+    "subtitle": "Nos encantaría escucharte. Ponte en contacto a través de cualquiera de los métodos a continuación.",
     "email_label": "Envíanos un correo cuando quieras",
     "whatsapp_label": "Escríbenos por WhatsApp",
     "address_label": "Visítanos en Tenerife",
-    "address": "Tenerife, España"
+    "address": "Tenerife, España",
+    "email_header": "Correo Electrónico",
+    "email_description": "Ponte en contacto por correo",
+    "whatsapp_header": "WhatsApp",
+    "whatsapp_description": "Chat rápido por WhatsApp",
+    "whatsapp_cta": "Iniciar Chat",
+    "booking_header": "Reservar Demo",
+    "booking_description": "Programa tu sesión de estrategia gratuita",
+    "booking_cta": "Reservar Ahora",
+    "expect_title": "Qué Esperar",
+    "expect_description": "Ya sea que te comuniques por correo, WhatsApp o nuestro formulario de reserva, responderemos en 24 horas. Escucharemos tus necesidades, comprenderemos tus objetivos y discutiremos cómo podemos ayudarte a crecer tu presencia digital."
   },
   "footer": {
     "company": "Solon Digital",
@@ -153,14 +143,14 @@
     "q1_answer": "1-2 semanas dependiendo de lo que necesite. Los sitios simples comienzan más rápido, mientras que los proyectos complejos con integraciones tardan más.",
     "q2_question": "¿Ofrecen soporte continuo?",
     "q2_answer": "¡Sí! Ofrecemos soporte en todos los proyectos incluyendo actualizaciones, parches de seguridad y optimización de rendimiento.",
-    "q3_question": "¿Puedo expandir mi sitio web después?",
-    "q3_answer": "Absolutamente. Construimos soluciones escalables desde el primer día. Agregar nuevas características, integraciones o páginas es fácil con nuestro enfoque modular.",
-    "q4_question": "¿Garantizan posición en la primera página de Google?",
-    "q4_answer": "No garantizamos rankings, pero implementamos estrategias SEO comprobadas. Nuestros clientes típicamente ven posiciones altas en 3-6 meses para palabras clave dirigidas.",
-    "q5_question": "¿Cómo me ayuda la automatización IA?",
-    "q5_answer": "La automatización IA maneja tareas repetitivas: soporte al cliente, calificación de leads, agendamiento de reservas, respuestas de formularios. Esto ahorra tiempo mejorando experiencia y conversión.",
+    "q3_question": "¿Puedo expandir mi sitio web más tarde?",
+    "q3_answer": "Absolutamente. Construimos soluciones escalables desde el primer día. Agregar nuevas características, integraciones o páginas es sencillo con nuestro enfoque modular.",
+    "q4_question": "¿Garantizan posicionamiento en la primera página de Google?",
+    "q4_answer": "No garantizamos posiciones, pero implementamos estrategias SEO probadas. Nuestros clientes normalmente ven posiciones altas dentro de 3-6 meses para palabras clave específicas.",
+    "q5_question": "¿Cómo ayuda la automatización de IA a mi negocio?",
+    "q5_answer": "La automatización de IA maneja tareas repetitivas: soporte al cliente, calificación de clientes potenciales, programación de reservas, respuestas de formularios. Esto ahorra tiempo mientras mejora la experiencia del cliente y las tasas de conversión.",
     "q6_question": "¿Qué idiomas soportan?",
-    "q6_answer": "Soportamos Inglés, Español, Italiano y Holandés. Podemos construir sitios web y chatbots multilingües para tu audiencia."
+    "q6_answer": "Soportamos inglés, español, italiano y holandés. Podemos construir sitios web y chatbots multilingües para tu audiencia."
   },
   "reviews_section": {
     "header_title": "Lo Que Dicen Nuestros Clientes",
@@ -169,11 +159,11 @@
     "review1_company": "Gym Adeje",
     "review1_text": "Solon Digital transformó completamente nuestro negocio. En 3 meses, triplicamos nuestras reservas. Excelente servicio al cliente y la automatización funciona perfectamente.",
     "review2_name": "Carlos Rodriguez",
-    "review2_company": "Real Estate Tenerife",
-    "review2_text": "La automatización IA que implementaron es increíble. Ahora recibo leads calificados automáticamente. En dos meses cerré 5 ventas que no hubiera podido hacer de otro modo.",
+    "review2_company": "Inmobiliaria Tenerife",
+    "review2_text": "La automatización de IA que implementaron es increíble. Ahora recibo clientes potenciales calificados automáticamente. En dos meses cerré 5 ventas que de otro modo no hubiera podido hacer.",
     "review3_name": "Isabel Martinez",
-    "review3_company": "Restaurant Las Americas",
-    "review3_text": "Profesionales, eficientes y orientados a resultados. Entienden realmente el mercado local de Tenerife. Mi sitio ahora aparece en la primera página de Google. ¡Altamente recomendado!"
+    "review3_company": "Restaurante Las Americas",
+    "review3_text": "Profesionales, eficientes y orientados a resultados. Realmente entienden el mercado local de Tenerife. Mi sitio web ahora aparece en la primera página de Google. ¡Altamente recomendado!"
   },
   "services_page": {
     "title": "Nuestros Servicios",
@@ -190,18 +180,42 @@
     "service2_feature2": "SEO en Página",
     "service2_feature3": "Construcción de Enlaces",
     "service2_feature4": "Reportes Mensuales",
-    "service3_title": "Automatización IA",
-    "service3_description": "Automatización inteligente para ahorrar tiempo y eficiencia",
+    "service3_title": "Automatización de IA",
+    "service3_description": "Automatización inteligente para ahorrar tiempo e aumentar la eficiencia",
     "service3_feature1": "Calificación de Leads",
     "service3_feature2": "Soporte 24/7",
     "service3_feature3": "Automatización de Flujos",
     "service3_feature4": "Reducción de Costos",
-    "service4_title": "Chatbots IA",
-    "service4_description": "Soporte al cliente 24/7 inteligente y generación de leads",
+    "service4_title": "Chatbots de IA",
+    "service4_description": "Soporte al cliente inteligente 24/7 y generación de clientes potenciales",
     "service4_feature1": "Respuestas Instantáneas",
     "service4_feature2": "Captura de Leads",
     "service4_feature3": "Automatización de FAQs",
-    "service4_feature4": "Multilingüe"
+    "service4_feature4": "Multilingüe",
+    "service1_features": [
+      "Diseño Responsivo",
+      "Rendimiento Rápido",
+      "Optimizado para SEO",
+      "Seguro y Escalable"
+    ],
+    "service2_features": [
+      "Investigación de Palabras Clave",
+      "SEO On-Page",
+      "Construcción de Enlaces",
+      "Reportes Mensuales"
+    ],
+    "service3_features": [
+      "Calificación de Clientes Potenciales",
+      "Soporte 24/7",
+      "Automatización de Flujos de Trabajo",
+      "Reducción de Costos"
+    ],
+    "service4_features": [
+      "Respuestas Instantáneas",
+      "Captura de Clientes Potenciales",
+      "Automatización de FAQ",
+      "Multiidioma"
+    ]
   },
   "cost_of_waiting": {
     "title": "El Costo de Esperar",

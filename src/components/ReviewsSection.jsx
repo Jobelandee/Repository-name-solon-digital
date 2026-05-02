@@ -14,21 +14,21 @@ export default function ReviewsSection() {
     {
       name: t('reviews_section.review1_name'),
       company: t('reviews_section.review1_company'),
-      text: 'Solon Digital completely transformed our business. In 3 months, we tripled our bookings. Excellent customer service and the automation works perfectly.',
+      text: t('reviews_section.review1_text'),
       rating: 5,
       image: 'https://i.pravatar.cc/150?img=1&u=mariagarcia',
     },
     {
-      name: 'Carlos Rodriguez',
-      company: 'Real Estate Tenerife',
-      text: 'The AI automation they implemented is incredible. Now I receive qualified leads automatically. In two months I closed 5 sales that I wouldn\'t have been able to make otherwise.',
+      name: t('reviews_section.review2_name'),
+      company: t('reviews_section.review2_company'),
+      text: t('reviews_section.review2_text'),
       rating: 5,
       image: 'https://i.pravatar.cc/150?img=2&u=carlosrodriguez',
     },
     {
-      name: 'Isabel Martinez',
-      company: 'Restaurant Las Americas',
-      text: 'Professional, efficient and results-oriented. They truly understand the local Tenerife market. My website now appears on Google\'s first page. Highly recommended!',
+      name: t('reviews_section.review3_name'),
+      company: t('reviews_section.review3_company'),
+      text: t('reviews_section.review3_text'),
       rating: 5,
       image: 'https://i.pravatar.cc/150?img=3&u=isabelmartinez',
     },
@@ -76,7 +76,7 @@ export default function ReviewsSection() {
               lineHeight: 1.1,
             }}
           >
-            What Our Clients Say
+            {t('reviews_section.header_title')}
           </h2>
           <p
             style={{
