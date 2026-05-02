@@ -1,11 +1,8 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function KeyBenefits() {
   const { t } = useTranslation();
-  const ref = useRef(null);
 
   const benefits = [
     {
@@ -36,7 +33,6 @@ export default function KeyBenefits() {
 
   return (
     <section
-      ref={ref}
       style={{
         background: '#FFFFFF',
         padding: '6rem 2rem',
@@ -54,10 +50,7 @@ export default function KeyBenefits() {
         }}
       >
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 1, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+        <div
           style={{
             textAlign: 'center',
             marginBottom: '5rem',
@@ -90,7 +83,7 @@ export default function KeyBenefits() {
           >
             {t('keyBenefits.sectionSubtitle')}
           </p>
-        </motion.div>
+        </div>
 
         {/* Benefits Grid */}
         <div
@@ -105,26 +98,14 @@ export default function KeyBenefits() {
           }}
         >
           {benefits.map((benefit, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 1, y: 0 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
               style={{
                 background: '#F5F5F5',
                 border: `2px solid ${benefit.color}`,
                 borderRadius: '16px',
                 padding: '2.5rem 2rem',
                 textAlign: 'center',
-                transition: 'all 0.3s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = `0 8px 24px ${benefit.color}22`;
-                e.currentTarget.style.transform = 'translateY(-4px)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = 'none';
-                e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
               <div
@@ -157,7 +138,7 @@ export default function KeyBenefits() {
               >
                 {t(benefit.descriptionKey)}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -70,10 +69,7 @@ export default function IndustriesScale() {
         }}
       >
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.8 }}
+        <div
           style={{
             textAlign: 'center',
             marginBottom: '5rem',
@@ -106,7 +102,7 @@ export default function IndustriesScale() {
           >
             {t('industries.subtitle')}
           </p>
-        </motion.div>
+        </div>
 
         {/* Industries Grid */}
         <div
@@ -124,10 +120,7 @@ export default function IndustriesScale() {
         </div>
 
         {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+        <div
           style={{
             textAlign: 'center',
             display: 'flex',
@@ -141,7 +134,7 @@ export default function IndustriesScale() {
           }}
         >
           {/* Secondary CTA - Show All Pillars */}
-          <motion.a
+          <a
             href="#industries"
             style={{
               color: '#0077BE',
@@ -155,23 +148,14 @@ export default function IndustriesScale() {
               border: '2px solid rgba(0, 119, 190, 0.5)',
               background: 'transparent',
               cursor: 'pointer',
-              transition: 'all 0.3s ease',
               display: 'inline-block',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'rgba(0, 119, 190, 0.1)';
-              e.currentTarget.style.borderColor = 'rgba(0, 119, 190, 1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'transparent';
-              e.currentTarget.style.borderColor = 'rgba(0, 119, 190, 0.5)';
             }}
           >
             {t('header.services')} →
-          </motion.a>
+          </a>
 
           {/* Primary CTA - Claim Your Audit */}
-          <motion.a
+          <a
             href="#audit"
             style={{
               background: '#FF9500',
@@ -186,21 +170,12 @@ export default function IndustriesScale() {
               border: 'none',
               cursor: 'pointer',
               boxShadow: '0 6px 16px rgba(0, 119, 190, 0.3)',
-              transition: 'all 0.3s ease',
               display: 'inline-block',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = '#A82A6F';
-              e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.4)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = '#FF9500';
-              e.currentTarget.style.boxShadow = '0 6px 16px rgba(0, 119, 190, 0.3)';
             }}
           >
             {t('auditForm.button')}
-          </motion.a>
-        </motion.div>
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -208,10 +183,7 @@ export default function IndustriesScale() {
 
 function IndustryCard({ industry, index, inView }) {
   return (
-    <motion.div
-      initial={{ opacity: 1, y: 0 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: index * 0.15 }}
+    <div
       style={{
         background: '#FFFFFF',
         border: '1px solid #E0E0E0',
@@ -220,16 +192,7 @@ function IndustryCard({ industry, index, inView }) {
         position: 'relative',
         overflow: 'hidden',
         boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
-        transition: 'all 0.4s ease',
         textAlign: 'center',
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = '#0077BE';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.12)';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#E0E0E0';
-        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.05)';
       }}
     >
       {/* Subtle Gradient Background */}
@@ -278,10 +241,7 @@ function IndustryCard({ industry, index, inView }) {
       />
 
       {/* Title */}
-      <motion.h3
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ delay: index * 0.15 + 0.15 }}
+      <h3
         style={{
           fontSize: '1.8rem',
           fontWeight: 800,
@@ -294,13 +254,10 @@ function IndustryCard({ industry, index, inView }) {
         }}
       >
         {industry.title}
-      </motion.h3>
+      </h3>
 
       {/* Description */}
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ delay: index * 0.15 + 0.2 }}
+      <p
         style={{
           fontSize: '1.05rem',
           lineHeight: 1.8,
@@ -313,8 +270,8 @@ function IndustryCard({ industry, index, inView }) {
         }}
       >
         {industry.text}
-      </motion.p>
+      </p>
 
-    </motion.div>
+    </div>
   );
 }
