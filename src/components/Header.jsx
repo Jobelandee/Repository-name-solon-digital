@@ -40,8 +40,8 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="nav-links">
           <Link to="/">{t('header.home') || 'Home'}</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/insights">Insights</Link>
+          <Link to="/services">{t('header.services') || 'Services'}</Link>
+          <Link to="/insights">{t('header.insights') || 'Insights'}</Link>
           <Link to="/method">{t('header.process')}</Link>
           <Link to="/success-stories">{t('header.successStories')}</Link>
           <Link to="/contact">{t('header.contact')}</Link>
