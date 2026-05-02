@@ -9,6 +9,12 @@ const USER_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_USER_TEMPLATE_ID || 'PAST
 const ADMIN_EMAIL = process.env.REACT_APP_ADMIN_EMAIL || 'job@gymtogether.nl';
 
 // Initialize EmailJS
+console.log('EmailJS Config:', {
+  publicKey: EMAILJS_PUBLIC_KEY ? EMAILJS_PUBLIC_KEY.substring(0, 5) + '...' : 'MISSING',
+  serviceId: SERVICE_ID ? SERVICE_ID.substring(0, 5) + '...' : 'MISSING',
+  adminTemplate: ADMIN_TEMPLATE_ID ? ADMIN_TEMPLATE_ID.substring(0, 5) + '...' : 'MISSING',
+  userTemplate: USER_TEMPLATE_ID ? USER_TEMPLATE_ID.substring(0, 5) + '...' : 'MISSING',
+});
 emailjs.init(EMAILJS_PUBLIC_KEY);
 
 export const sendEmails = async (bookingData) => {
