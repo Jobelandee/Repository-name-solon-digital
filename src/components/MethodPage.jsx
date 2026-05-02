@@ -6,7 +6,15 @@ import { websiteContent } from '../data/websiteContent';
 
 export default function MethodPage() {
   const { t } = useTranslation();
-  const methods = websiteContent.method;
+
+  // Build methods array from translations
+  const methods = [
+    { num: '1', title: t('method.step1_title'), description: t('method.step1_description') },
+    { num: '2', title: t('method.step2_title'), description: t('method.step2_description') },
+    { num: '3', title: t('method.step3_title'), description: t('method.step3_description') },
+    { num: '4', title: t('method.step4_title'), description: t('method.step4_description') },
+    { num: '5', title: t('method.step5_title'), description: t('method.step5_description') },
+  ];
 
   return (
     <div style={{
@@ -37,7 +45,7 @@ export default function MethodPage() {
           marginBottom: '1rem',
           letterSpacing: '-0.02em',
         }}>
-          {websiteContent.sections.methodTitle}
+          {t('method.title') || 'Our Method'}
         </h1>
         <p style={{
           fontSize: '1.1rem',
@@ -45,7 +53,7 @@ export default function MethodPage() {
           lineHeight: 1.6,
           fontFamily: 'Outfit, sans-serif',
         }}>
-          {websiteContent.sections.methodSubtitle}
+          {t('method.subtitle')}
         </p>
       </motion.div>
 

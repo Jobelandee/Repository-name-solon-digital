@@ -51,9 +51,21 @@
     }
   },
   "method": {
+    "title": "Nuestro Método",
+    "subtitle": "Seguimos un proceso probado que asegura que tu sitio web se construya bien, se lance sin problemas e impulse resultados reales para tu negocio.",
     "cta_title": "¿Listo para Comenzar?",
     "cta_description": "Discutamos cómo podemos construir un sitio web que impulse el crecimiento de tu negocio.",
-    "cta_button": "Reserva Tu Sesión de Estrategia"
+    "cta_button": "Reserva Tu Sesión de Estrategia",
+    "step1_title": "Descubrimiento y Estrategia",
+    "step1_description": "Comenzamos comprendiendo tu negocio, objetivos y audiencia para crear una estrategia digital personalizada.",
+    "step2_title": "Diseño y Planificación",
+    "step2_description": "Nuestro equipo diseña un sitio web hermoso y funcional que se alinea con tu marca y necesidades del usuario.",
+    "step3_title": "Desarrollo",
+    "step3_description": "Construimos tu sitio web con código limpio, rendimiento rápido y las últimas tecnologías web.",
+    "step4_title": "Pruebas y Lanzamiento",
+    "step4_description": "Pruebas rigurosas aseguran que todo funcione perfectamente antes del lanzamiento en tu dominio.",
+    "step5_title": "Soporte y Crecimiento",
+    "step5_description": "Soporte post-lanzamiento y optimización continua para ayudar tu sitio web a crecer y convertir."
   },
   "auditForm": {
     "title": "Reclama Tu Auditoría de Crecimiento Gratis",

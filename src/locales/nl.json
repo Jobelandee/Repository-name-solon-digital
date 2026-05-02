@@ -51,9 +51,21 @@
     }
   },
   "method": {
+    "title": "Ons Proces",
+    "subtitle": "We volgen een bewezen proces dat ervoor zorgt dat je website correct is gebouwd, soepel wordt gelanceerd en echte resultaten voor je bedrijf oplevert.",
     "cta_title": "Klaar om Te Beginnen?",
     "cta_description": "Laten we bespreken hoe we een website kunnen bouwen die de groei van je bedrijf stimuleert.",
-    "cta_button": "Boek Je Strategiesessie"
+    "cta_button": "Boek Je Strategiesessie",
+    "step1_title": "Onderzoek en Strategie",
+    "step1_description": "We beginnen met het begrijpen van je bedrijf, doelstellingen en doelgroep om een op maat gemaakte digitale strategie te creëren.",
+    "step2_title": "Ontwerp en Planning",
+    "step2_description": "Ons team ontwerpt een mooie, functionele website die aansluit bij je merk en gebruikersbehoeften.",
+    "step3_title": "Ontwikkeling",
+    "step3_description": "We bouwen je website met schone code, snelle prestaties en de nieuwste webtechnologieën.",
+    "step4_title": "Testen en Lancering",
+    "step4_description": "Rigoureus testen zorgen ervoor dat alles perfect werkt voordat je domein wordt gelanceerd.",
+    "step5_title": "Ondersteuning en Groei",
+    "step5_description": "Post-launch-ondersteuning en voortdurende optimalisatie om je website te laten groeien en omzetten."
   },
   "auditForm": {
     "title": "Claim Je Gratis Groeaudit",

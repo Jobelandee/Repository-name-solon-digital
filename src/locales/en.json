@@ -51,9 +51,21 @@
     }
   },
   "method": {
+    "title": "Our Method",
+    "subtitle": "We follow a proven process that ensures your website is built right, launches smoothly, and drives real results for your business.",
     "cta_title": "Ready to Get Started?",
     "cta_description": "Let's discuss how we can build a website that drives growth for your business.",
-    "cta_button": "Book Your Strategy Session"
+    "cta_button": "Book Your Strategy Session",
+    "step1_title": "Discovery & Strategy",
+    "step1_description": "We start by understanding your business, goals, and target audience to create a tailored digital strategy.",
+    "step2_title": "Design & Planning",
+    "step2_description": "Our team designs a beautiful, functional website that aligns with your brand and user needs.",
+    "step3_title": "Development",
+    "step3_description": "We build your website with clean code, fast performance, and the latest web technologies.",
+    "step4_title": "Testing & Launch",
+    "step4_description": "Rigorous testing ensures everything works perfectly before launch on your domain.",
+    "step5_title": "Support & Growth",
+    "step5_description": "Post-launch support and continuous optimization to help your website grow and convert."
   },
   "auditForm": {
     "title": "Claim Your Free Growth Audit",

@@ -51,9 +51,21 @@
     }
   },
   "method": {
+    "title": "Il Nostro Metodo",
+    "subtitle": "Seguiamo un processo comprovato che assicura che il tuo sito web sia costruito bene, lanciato senza problemi e guidi risultati reali per la tua azienda.",
     "cta_title": "Pronto a Iniziare?",
     "cta_description": "Discutiamo come possiamo costruire un sito web che guidi la crescita della tua azienda.",
-    "cta_button": "Prenota La Tua Sessione di Strategia"
+    "cta_button": "Prenota La Tua Sessione di Strategia",
+    "step1_title": "Scoperta e Strategia",
+    "step1_description": "Iniziamo comprendendo il tuo business, obiettivi e pubblico di destinazione per creare una strategia digitale su misura.",
+    "step2_title": "Design e Pianificazione",
+    "step2_description": "Il nostro team progetta un sito web bello e funzionale che si allinea con il tuo brand e le esigenze degli utenti.",
+    "step3_title": "Sviluppo",
+    "step3_description": "Costruiamo il tuo sito web con codice pulito, prestazioni veloci e le più recenti tecnologie web.",
+    "step4_title": "Test e Lancio",
+    "step4_description": "Test rigorosi assicurano che tutto funzioni perfettamente prima del lancio nel tuo dominio.",
+    "step5_title": "Supporto e Crescita",
+    "step5_description": "Supporto post-lancio e ottimizzazione continua per aiutare il tuo sito web a crescere e convertire."
   },
   "auditForm": {
     "title": "Richiedi il Tuo Audit di Crescita Gratuito",
