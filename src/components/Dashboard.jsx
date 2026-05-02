@@ -47,11 +47,7 @@ export default function Dashboard() {
         margin: '0 auto',
       }}>
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.2 }}
+        <div
           style={{
             textAlign: 'center',
             marginBottom: '4rem',
@@ -75,7 +71,7 @@ export default function Dashboard() {
               Results Dashboard
             </span>
           </div>
-        </motion.div>
+        </div>
 
         {/* Stats Grid */}
         <div style={{
@@ -96,11 +92,7 @@ export default function Dashboard() {
 
 function DashboardCard({ stat, index }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
-      viewport={{ once: false, amount: 0.2 }}
+    <div
       style={{
         background: '#FFFFFF',
         border: '1px solid #E0E0E0',
@@ -108,14 +100,6 @@ function DashboardCard({ stat, index }) {
         padding: '2.5rem',
         position: 'relative',
         overflow: 'hidden',
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = '#0077BE';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.12)';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#E0E0E0';
-        e.currentTarget.style.boxShadow = 'none';
       }}
     >
       {/* Background accent */}
@@ -194,6 +178,6 @@ function DashboardCard({ stat, index }) {
           {stat.changeDesc}
         </span>
       </div>
-    </motion.div>
+    </div>
   );
 }

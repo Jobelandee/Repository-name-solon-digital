@@ -68,10 +68,7 @@ export default function CostOfWaiting() {
         }}
       >
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.8 }}
+        <div
           style={{
             textAlign: 'center',
             marginBottom: '5rem',
@@ -105,7 +102,7 @@ export default function CostOfWaiting() {
           >
             Every day you delay is a day your competitors gain ground.
           </p>
-        </motion.div>
+        </div>
 
         {/* Pain Points Grid */}
         <div
@@ -125,10 +122,7 @@ export default function CostOfWaiting() {
         </div>
 
         {/* Call to Action - Urgency */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+        <div
           style={{
             textAlign: 'center',
             marginTop: '5rem',
@@ -161,7 +155,7 @@ export default function CostOfWaiting() {
           >
             Schedule your growth audit today. Let's show you exactly what you're losing.
           </p>
-          <motion.a
+          <a
             href="#audit"
             style={{
               background: '#FF4444',
@@ -177,18 +171,11 @@ export default function CostOfWaiting() {
               cursor: 'pointer',
               display: 'inline-block',
               boxShadow: '0 0 40px rgba(255, 68, 68, 0.7), 0 12px 35px rgba(255, 68, 68, 0.4)',
-              transition: 'all 0.3s ease',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = '0 0 60px rgba(255, 68, 68, 0.9), 0 18px 50px rgba(255, 68, 68, 0.5)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = '0 0 40px rgba(255, 68, 68, 0.7), 0 12px 35px rgba(255, 68, 68, 0.4)';
             }}
           >
             Claim Your Free Audit Now
-          </motion.a>
-        </motion.div>
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -196,10 +183,7 @@ export default function CostOfWaiting() {
 
 function PainPointCard({ point, index, inView }) {
   return (
-    <motion.div
-      initial={{ opacity: 1, y: 0 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: index * 0.15 }}
+    <div
       style={{
         background: 'rgba(255, 255, 255, 0.05)',
         backdropFilter: 'blur(15px)',
@@ -208,16 +192,8 @@ function PainPointCard({ point, index, inView }) {
         padding: '3rem 2.5rem',
         textAlign: 'center',
         boxShadow: `0 0 30px ${point.color}33, inset 0 1px 1px rgba(255, 255, 255, 0.05)`,
-        transition: 'all 0.3s ease',
         position: 'relative',
         overflow: 'hidden',
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.boxShadow = `0 0 50px ${point.color}66, inset 0 1px 1px rgba(255, 255, 255, 0.08)`;
-        e.currentTarget.style.borderColor = point.color;
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.boxShadow = `0 0 30px ${point.color}33, inset 0 1px 1px rgba(255, 255, 255, 0.05)`;
       }}
     >
       {/* Glow Background */}
@@ -235,10 +211,7 @@ function PainPointCard({ point, index, inView }) {
       />
 
       {/* Icon */}
-      <motion.div
-        initial={{ scale: 0, rotate: -20 }}
-        animate={inView ? { scale: 1, rotate: 0 } : { scale: 0, rotate: -20 }}
-        transition={{ delay: index * 0.15 + 0.1, type: 'spring', stiffness: 100 }}
+      <div
         style={{
           fontSize: '4rem',
           marginBottom: '1.5rem',
@@ -246,13 +219,10 @@ function PainPointCard({ point, index, inView }) {
         }}
       >
         {point.icon}
-      </motion.div>
+      </div>
 
       {/* Title - Pain Point in Color */}
-      <motion.h3
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ delay: index * 0.15 + 0.15 }}
+      <h3
         style={{
           fontSize: '1.8rem',
           fontWeight: 800,
@@ -264,13 +234,10 @@ function PainPointCard({ point, index, inView }) {
         }}
       >
         {point.title}
-      </motion.h3>
+      </h3>
 
       {/* Description */}
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ delay: index * 0.15 + 0.2 }}
+      <p
         style={{
           fontSize: '1.05rem',
           lineHeight: 1.8,
@@ -282,7 +249,7 @@ function PainPointCard({ point, index, inView }) {
         }}
       >
         {point.description}
-      </motion.p>
-    </motion.div>
+      </p>
+    </div>
   );
 }

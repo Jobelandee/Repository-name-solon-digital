@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
@@ -9,15 +9,6 @@ export default function HiddenCost() {
 
   const ref = useRef(null);
   const inView = useInView(ref, { once: false, amount: 0.2 });
-  const [timeElapsed, setTimeElapsed] = useState(0);
-
-  useEffect(() => {
-    if (!inView) return;
-    const interval = setInterval(() => {
-      setTimeElapsed(prev => (prev + 1) % 100);
-    }, 50);
-    return () => clearInterval(interval);
-  }, [inView]);
 
   const pillars = [
     {
@@ -93,10 +84,7 @@ export default function HiddenCost() {
         }}
       >
         {/* Header Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.8 }}
+        <div
           style={{
             textAlign: 'center',
             marginBottom: '4rem',
@@ -131,34 +119,18 @@ export default function HiddenCost() {
           >
             A slow, outdated website isn't just an eyesore—it's a profit killer.
           </p>
-        </motion.div>
+        </div>
 
-        {/* Time is Ticking - Animated Progress Bar */}
-        <motion.div
-          initial={{ opacity: 0, scaleX: 0 }}
-          animate={inView ? { opacity: 1, scaleX: 1 } : { opacity: 0, scaleX: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
+        {/* Time is Ticking - Progress Bar */}
+        <div
           style={{
             height: '3px',
             background: 'linear-gradient(90deg, #0099FF 0%, #FF4444 50%, #0099FF 100%)',
             marginBottom: '5rem',
             borderRadius: '2px',
             boxShadow: '0 0 20px rgba(212, 175, 55, 0.5)',
-            transformOrigin: 'center',
           }}
-        >
-          {/* Moving indicator */}
-          <motion.div
-            animate={{ x: ['0%', '100%', '0%'] }}
-            transition={{ duration: 3, repeat: Infinity }}
-            style={{
-              height: '100%',
-              width: '40px',
-              background: 'radial-gradient(circle, #FFFFFF 0%, transparent 70%)',
-              filter: 'blur(8px)',
-            }}
-          />
-        </motion.div>
+        />
 
         {/* The 3 Pillars */}
         <div
@@ -176,10 +148,7 @@ export default function HiddenCost() {
         </div>
 
         {/* Warning Banner & CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
+        <div
           style={{
             background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.05) 100%)',
             border: '2px solid rgba(212, 175, 55, 0.5)',
@@ -204,10 +173,7 @@ export default function HiddenCost() {
             }}
           />
 
-          <motion.h3
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ delay: 0.6 }}
+          <h3
             style={{
               fontSize: '2rem',
               fontWeight: 800,
@@ -221,12 +187,9 @@ export default function HiddenCost() {
             }}
           >
             Don't wake up a year from now wishing you started today.
-          </motion.h3>
+          </h3>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ delay: 0.65 }}
+          <p
             style={{
               fontSize: '1.1rem',
               color: '#E0E0E0',
@@ -239,10 +202,10 @@ export default function HiddenCost() {
             }}
           >
             Your competitors are moving fast. Every day you hesitate is a day they pull further ahead.
-          </motion.p>
+          </p>
 
           {/* CTA Button - High Impact */}
-          <motion.a
+          <a
             href="#audit"
             style={{
               background: 'linear-gradient(135deg, #FF4444 0%, #FF6B6B 100%)',
@@ -258,22 +221,14 @@ export default function HiddenCost() {
               cursor: 'pointer',
               display: 'inline-block',
               boxShadow: '0 0 50px rgba(255, 68, 68, 0.8), 0 15px 40px rgba(255, 68, 68, 0.5)',
-              transition: 'all 0.3s ease',
               position: 'relative',
               zIndex: 10,
               textTransform: 'uppercase',
-              position: 'relative',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = '0 0 80px rgba(255, 68, 68, 1), 0 20px 60px rgba(255, 68, 68, 0.6)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = '0 0 50px rgba(255, 68, 68, 0.8), 0 15px 40px rgba(255, 68, 68, 0.5)';
             }}
           >
             Stop the Bleeding. Book Your Audit →
-          </motion.a>
-        </motion.div>
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -281,10 +236,7 @@ export default function HiddenCost() {
 
 function RegretPillar({ pillar, index, inView }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-      transition={{ duration: 0.8, delay: index * 0.15 }}
+    <div
       style={{
         background: 'rgba(255, 255, 255, 0.06)',
         backdropFilter: 'blur(15px)',
@@ -295,22 +247,10 @@ function RegretPillar({ pillar, index, inView }) {
         position: 'relative',
         overflow: 'hidden',
         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.08)',
-        transition: 'all 0.4s ease',
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 0.7)';
-        e.currentTarget.style.boxShadow = '0 16px 48px rgba(212, 175, 55, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.1)';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 0.3)';
-        e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.08)';
       }}
     >
       {/* Number Badge - Large & Bold */}
-      <motion.div
-        initial={{ scale: 0, opacity: 0 }}
-        animate={inView ? { scale: 1, opacity: 1 } : { scale: 0, opacity: 0 }}
-        transition={{ delay: index * 0.15 + 0.1, type: 'spring', stiffness: 80 }}
+      <div
         style={{
           fontSize: '5rem',
           fontWeight: 900,
@@ -324,26 +264,20 @@ function RegretPillar({ pillar, index, inView }) {
         }}
       >
         {pillar.number}
-      </motion.div>
+      </div>
 
       {/* Icon */}
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-        transition={{ delay: index * 0.15 + 0.15 }}
+      <div
         style={{
           fontSize: '3rem',
           marginBottom: '1.2rem',
         }}
       >
         {pillar.icon}
-      </motion.div>
+      </div>
 
       {/* Title */}
-      <motion.h4
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ delay: index * 0.15 + 0.2 }}
+      <h4
         style={{
           fontSize: '1.6rem',
           fontWeight: 700,
@@ -355,13 +289,10 @@ function RegretPillar({ pillar, index, inView }) {
         }}
       >
         {pillar.title}
-      </motion.h4>
+      </h4>
 
       {/* Description */}
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ delay: index * 0.15 + 0.25 }}
+      <p
         style={{
           fontSize: '1.05rem',
           lineHeight: 1.8,
@@ -371,7 +302,7 @@ function RegretPillar({ pillar, index, inView }) {
         }}
       >
         {pillar.description}
-      </motion.p>
-    </motion.div>
+      </p>
+    </div>
   );
 }
