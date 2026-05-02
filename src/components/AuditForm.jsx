@@ -340,7 +340,7 @@ export default function AuditForm() {
                     textTransform: 'uppercase',
                   }}
                 >
-                  {t('auditForm.email')}
+                  Email Address
                 </label>
                 <input
                   type="email"
