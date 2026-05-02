@@ -159,8 +159,6 @@ export default function ChatBot() {
                         target="_blank"
                         rel="noopener noreferrer"
                         animate={{ scale: 1 }}
-                        onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-                        onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
                         style={{
                           background: '#25D366',
                           color: '#FFFFFF',
@@ -173,7 +171,6 @@ export default function ChatBot() {
                           cursor: 'pointer',
                           border: 'none',
                           display: 'block',
-                          transition: 'transform 0.2s ease',
                         }}
                       >
                         💬 Chat on WhatsApp
@@ -238,8 +235,6 @@ export default function ChatBot() {
                 target="_blank"
                 rel="noopener noreferrer"
                 animate={{ scale: 1 }}
-                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
-                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
                 style={{
                   display: 'flex',
                   alignItems: 'center',

@@ -47,11 +47,7 @@ export default function FAQ() {
         zIndex: 10,
       }}>
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.2 }}
+        <div
           style={{
             textAlign: 'center',
             marginBottom: '4rem',
@@ -93,7 +89,7 @@ export default function FAQ() {
           }}>
             Everything you need to know about our services
           </p>
-        </motion.div>
+        </div>
 
         {/* FAQ Items */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -115,17 +111,12 @@ export default function FAQ() {
 
 function FAQItem({ question, answer, index, isActive, onToggle }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
-      viewport={{ once: false, amount: 0.2 }}
+    <div
       style={{
         border: '1px solid #E0E0E0',
         borderRadius: '12px',
         background: '#FFFFFF',
         overflow: 'hidden',
-        transition: 'all 0.3s ease',
         borderColor: isActive ? '#0077BE' : '#E0E0E0',
         boxShadow: isActive ? '0 4px 16px rgba(0, 119, 190, 0.1)' : 'none',
       }}
@@ -143,13 +134,6 @@ function FAQItem({ question, answer, index, isActive, onToggle }) {
           alignItems: 'center',
           gap: '1rem',
           textAlign: 'left',
-          transition: 'all 0.3s ease',
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.background = '#F5F5F5';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.background = 'transparent';
         }}
       >
         <h3 style={{
@@ -178,31 +162,28 @@ function FAQItem({ question, answer, index, isActive, onToggle }) {
       </button>
 
       {/* Answer */}
-      <motion.div
-        initial={{ opacity: 0, height: 0 }}
-        animate={{ opacity: isActive ? 1 : 0, height: isActive ? 'auto' : 0 }}
-        transition={{ duration: 0.3 }}
-        style={{
-          overflow: 'hidden',
-        }}
-      >
+      {isActive && (
         <div style={{
-          padding: '0 1.5rem 1.5rem',
-          borderTop: '1px solid #E0E0E0',
-          paddingTop: '1rem',
+          overflow: 'hidden',
         }}>
-          <p style={{
-            fontSize: '0.95rem',
-            color: '#555555',
-            lineHeight: 1.7,
-            fontFamily: 'Outfit, sans-serif',
-            margin: 0,
-            fontWeight: 400,
+          <div style={{
+            padding: '0 1.5rem 1.5rem',
+            borderTop: '1px solid #E0E0E0',
+            paddingTop: '1rem',
           }}>
-            {answer}
-          </p>
+            <p style={{
+              fontSize: '0.95rem',
+              color: '#555555',
+              lineHeight: 1.7,
+              fontFamily: 'Outfit, sans-serif',
+              margin: 0,
+              fontWeight: 400,
+            }}>
+              {answer}
+            </p>
+          </div>
         </div>
-      </motion.div>
-    </motion.div>
+      )}
+    </div>
   );
 }

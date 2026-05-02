@@ -70,14 +70,6 @@ export default function ContactPage() {
               textAlign: 'center',
               border: '1px solid #E0E0E0',
             }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = '#0077BE';
-              e.currentTarget.style.boxShadow = '0 12px 32px rgba(0, 119, 190, 0.15)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = '#E0E0E0';
-              e.currentTarget.style.boxShadow = 'none';
-            }}
           >
             <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>📧</div>
             <h3 style={{
@@ -170,14 +162,6 @@ export default function ContactPage() {
               borderRadius: '12px',
               textAlign: 'center',
               border: '1px solid #E0E0E0',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = '#0077BE';
-              e.currentTarget.style.boxShadow = '0 12px 32px rgba(0, 119, 190, 0.15)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = '#E0E0E0';
-              e.currentTarget.style.boxShadow = 'none';
             }}
           >
             <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>📅</div>

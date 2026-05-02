@@ -158,16 +158,7 @@ export default function MethodPage() {
           textDecoration: 'none',
           fontWeight: 600,
           fontSize: '1rem',
-          transition: 'all 0.3s ease',
           boxShadow: '0 0 30px rgba(0, 119, 190, 0.7)',
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.boxShadow = '0 0 50px rgba(0, 119, 190, 0.9), 0 8px 25px rgba(0, 119, 190, 0.5)';
-          e.currentTarget.style.transform = 'translateY(-2px)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 119, 190, 0.7)';
-          e.currentTarget.style.transform = 'translateY(0)';
         }}
         >
           {t('method.cta_button')}
