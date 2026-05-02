@@ -139,18 +139,9 @@ function ServiceCard({ icon, translationKey, index, inView, t }) {
         position: 'relative',
         overflow: 'hidden',
         boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
-        transition: 'all 0.3s ease',
         display: 'flex',
         flexDirection: 'column',
         textAlign: 'center',
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = '#0077BE';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 119, 190, 0.12)';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#E0E0E0';
-        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.05)';
       }}
     >
       {/* Icon */}
