@@ -21,6 +21,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import CookiePolicy from './components/CookiePolicy';
 import ChatBot from './components/ChatBot';
 import WhatsAppButton from './components/WhatsAppButton';
+import AdminBookings from './pages/AdminBookings';
 import './App.css';
 
 function Layout({ children }) {
@@ -86,6 +87,7 @@ function App() {
         <Route path="/success-stories" element={<Layout><SuccessStoriesPage /></Layout>} />
         <Route path="/privacy" element={<Layout><PrivacyPolicy /></Layout>} />
         <Route path="/cookies" element={<Layout><CookiePolicy /></Layout>} />
+        <Route path="/admin/bookings" element={<AdminBookings />} />
       </Routes>
     </Router>
   );
