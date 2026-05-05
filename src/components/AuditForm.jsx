@@ -57,30 +57,6 @@ export default function AuditForm() {
 
     console.log('✅ Booking saved locally');
 
-    // Send email notification
-    if (process.env.REACT_APP_EMAILJS_PUBLIC_KEY) {
-      try {
-        emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
-        await emailjs.send(
-          process.env.REACT_APP_EMAILJS_SERVICE_ID,
-          process.env.REACT_APP_EMAILJS_ADMIN_TEMPLATE_ID,
-          {
-            to_email: process.env.REACT_APP_ADMIN_EMAIL || 'info@solondigital.com',
-            admin_name: 'Admin',
-            client_name: formData.name,
-            client_email: formData.email,
-            business_name: formData.businessName,
-            whatsapp: formData.whatsapp,
-            booking_date: new Date().toLocaleString('nl-NL'),
-          }
-        );
-        console.log('✅ Email sent to admin');
-      } catch (err) {
-        console.error('Email failed:', err);
-      }
-    } else {
-      console.warn('⚠️ EmailJS not configured');
-    }
 
     // Mark as submitted and redirect
     setSubmitted(true);
