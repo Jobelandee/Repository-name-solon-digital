@@ -4,6 +4,7 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import emailjs from '@emailjs/browser';
 
 export default function AuditForm() {
   const { t } = useTranslation();
@@ -55,6 +56,26 @@ export default function AuditForm() {
     localStorage.setItem('bookings', JSON.stringify(existingBookings));
 
     console.log('✅ Booking saved locally');
+
+    // Send email notification
+    try {
+      emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+      await emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_ADMIN_TEMPLATE_ID,
+        {
+          to_email: 'info@solondigital.com',
+          client_name: formData.name,
+          client_email: formData.email,
+          business_name: formData.businessName,
+          whatsapp: formData.whatsapp,
+          booking_date: new Date().toLocaleString('nl-NL'),
+        }
+      );
+      console.log('✅ Email sent to admin');
+    } catch (err) {
+      console.error('Email failed (non-blocking):', err);
+    }
 
     // Mark as submitted and redirect
     setSubmitted(true);
