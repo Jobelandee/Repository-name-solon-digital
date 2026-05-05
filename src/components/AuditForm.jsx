@@ -4,13 +4,10 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../config/firebase';
 
 export default function AuditForm() {
   const { t } = useTranslation();
   const ref = useRef(null);
-  // Force rebuild
   const inView = useInView(ref, { once: false, amount: 0.3 });
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -50,16 +47,14 @@ export default function AuditForm() {
       whatsapp: formData.whatsapp,
       email: formData.email || `${formData.name}@booking.local`,
       createdAt: new Date().toISOString(),
-      status: 'pending',
     };
 
-    // Save to Firebase
-    try {
-      await addDoc(collection(db, 'bookings'), bookingData);
-      console.log('✅ Booking saved to Firebase');
-    } catch (err) {
-      console.error('Firebase error:', err);
-    }
+    // Save to localStorage
+    const existingBookings = JSON.parse(localStorage.getItem('bookings') || '[]');
+    existingBookings.push(bookingData);
+    localStorage.setItem('bookings', JSON.stringify(existingBookings));
+
+    console.log('✅ Booking saved locally');
 
     // Mark as submitted and redirect
     setSubmitted(true);
