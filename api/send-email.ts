@@ -4,6 +4,10 @@ import emailjs from '@emailjs/nodejs';
 async function sendToSlack(bookingData: any) {
   try {
     const webhookUrl = process.env.SLACK_WEBHOOK_URL;
+    console.log('🔍 Checking webhook URL...');
+    console.log('Webhook URL exists:', !!webhookUrl);
+    console.log('Webhook URL length:', webhookUrl?.length);
+
     if (!webhookUrl) {
       throw new Error('Slack webhook URL not configured');
     }
