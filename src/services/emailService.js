@@ -9,20 +9,28 @@ export const sendEmails = async (bookingData, retryCount = 0) => {
   console.log('📧 Calling /api/send-email for:', { name, email, businessName });
 
   try {
-    const response = await fetch('/api/send-email', {
+    const apiUrl = process.env.REACT_APP_API_URL || '/api/send-email';
+    console.log('Using API URL:', apiUrl);
+
+    const response = await fetch(apiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, businessName, whatsapp }),
     });
 
+    console.log('API Response status:', response.status);
+
     if (!response.ok) {
-      throw new Error(`API error: ${response.status}`);
+      const errorText = await response.text();
+      console.error('API Error response:', errorText);
+      throw new Error(`API error: ${response.status} - ${errorText}`);
     }
 
     const result = await response.json();
-    console.log('✅ Emails sent successfully via serverless function');
+    console.log('✅ API Success:', result);
     return result;
   } catch (error) {
+    console.error('❌ Fetch error:', error.message);
     if (retryCount < RETRY_ATTEMPTS) {
       console.log(`⚠️ Retry attempt ${retryCount + 1}/${RETRY_ATTEMPTS}...`);
       await sleep(RETRY_DELAY * (retryCount + 1));
