@@ -65,7 +65,8 @@ export default function AuditForm() {
           process.env.REACT_APP_EMAILJS_SERVICE_ID,
           process.env.REACT_APP_EMAILJS_ADMIN_TEMPLATE_ID,
           {
-            to_email: 'info@solondigital.com',
+            to_email: process.env.REACT_APP_ADMIN_EMAIL || 'info@solondigital.com',
+            admin_name: 'Admin',
             client_name: formData.name,
             client_email: formData.email,
             business_name: formData.businessName,
@@ -75,7 +76,7 @@ export default function AuditForm() {
         );
         console.log('✅ Email sent to admin');
       } catch (err) {
-        console.error('Email failed (non-blocking):', err);
+        console.error('Email failed:', err);
       }
     } else {
       console.warn('⚠️ EmailJS not configured');
