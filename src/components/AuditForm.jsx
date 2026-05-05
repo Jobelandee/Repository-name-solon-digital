@@ -6,8 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../config/firebase';
-import { sendEmails } from '../services/emailService';
-import { saveBookingToSheet } from '../services/googleSheetsService';
 
 export default function AuditForm() {
   const { t } = useTranslation();
@@ -55,18 +53,12 @@ export default function AuditForm() {
       status: 'pending',
     };
 
-    // Save to localStorage immediately
-    localStorage.setItem('bookingData', JSON.stringify(bookingData));
-
-    // Try Firebase, Email & Google Sheets in background (don't wait)
+    // Save to Firebase
     try {
-      addDoc(collection(db, 'bookings'), bookingData).catch(() => {});
-      sendEmails(bookingData).catch((err) => {
-        console.error('Email send failed:', err);
-      });
-      saveBookingToSheet(bookingData).catch(() => {});
+      await addDoc(collection(db, 'bookings'), bookingData);
+      console.log('✅ Booking saved to Firebase');
     } catch (err) {
-      // Silently fail - don't block user experience
+      console.error('Firebase error:', err);
     }
 
     // Mark as submitted and redirect
