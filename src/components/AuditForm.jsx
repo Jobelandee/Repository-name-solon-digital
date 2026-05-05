@@ -4,7 +4,6 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import emailjs from '@emailjs/browser';
 
 export default function AuditForm() {
   const { t } = useTranslation();
