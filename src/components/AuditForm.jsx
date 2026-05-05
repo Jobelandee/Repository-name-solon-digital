@@ -61,7 +61,9 @@ export default function AuditForm() {
     // Try Firebase, Email & Google Sheets in background (don't wait)
     try {
       addDoc(collection(db, 'bookings'), bookingData).catch(() => {});
-      sendEmails(bookingData).catch(() => {});
+      sendEmails(bookingData).catch((err) => {
+        console.error('Email send failed:', err);
+      });
       saveBookingToSheet(bookingData).catch(() => {});
     } catch (err) {
       // Silently fail - don't block user experience

@@ -8,6 +8,24 @@ export default function InsightsPage() {
   const [selectedPost, setSelectedPost] = useState(null);
   const blogPosts = [
     {
+      id: 3,
+      category: t('insights.post3_category'),
+      title: t('insights.post3_title'),
+      description: t('insights.post3_description'),
+      date: '2025-07-01',
+      readTime: '9 min read',
+      content: t('insights.post3_content'),
+    },
+    {
+      id: 2,
+      category: t('insights.post2_category'),
+      title: t('insights.post2_title'),
+      description: t('insights.post2_description'),
+      date: '2025-06-15',
+      readTime: '7 min read',
+      content: t('insights.post2_content'),
+    },
+    {
       id: 1,
       category: t('insights.post1_category'),
       title: t('insights.post1_title'),
